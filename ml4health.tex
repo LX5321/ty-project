@@ -1,8 +1,11 @@
 \documentclass[12pt]{article}
 \usepackage[english]{babel}
 \usepackage{hyperref}
+\usepackage{makeidx}
 \usepackage{pgfplots}
 \usepackage[a4paper, inner=1.5cm, outer=3cm, top=2cm,bottom=3cm, bindingoffset=1cm]{geometry}
+\usepackage{chngcntr}
+\counterwithin*{section}{part}
 \begin{document}
 \begin{titlepage}
     \begin{center}
@@ -12,7 +15,8 @@
         \vspace{0.5cm}
         \normalsize
         \vspace{0cm}
-        Approaches to qualify and implement Machine learning algorithms in healthcare sector.
+        \\
+        Study of machine learning algorithms and application on the Pima Indians Diabetes Dataset.
  
         \vspace{1.5cm}
  
@@ -41,9 +45,12 @@
 \newpage
 \tableofcontents
 \newpage
-\part{Review of Literature}
-\newpage
 \part{Background}
+\section{What is Diabetes}
+
+
+\newpage
+\part{Review of Literature}
 \newpage
 \part{Feature Extraction}
 \section{Filters}
