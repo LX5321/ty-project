@@ -7,16 +7,15 @@
 \BOOKMARK [0][-]{part.4}{IV Machine Learning Algorithms}{}% 7
 \BOOKMARK [1][-]{section.4.1}{Linear Regression}{part.4}% 8
 \BOOKMARK [2][-]{subsection.4.1.1}{Introduction to Linear Regression}{section.4.1}% 9
-\BOOKMARK [2][-]{subsection.4.1.2}{Deriving the Algorithm}{section.4.1}% 10
-\BOOKMARK [2][-]{subsection.4.1.3}{Potential Areas of Use}{section.4.1}% 11
-\BOOKMARK [1][-]{section.4.2}{Logistic Regression}{part.4}% 12
-\BOOKMARK [1][-]{section.4.3}{K-Nearest Neighbours}{part.4}% 13
-\BOOKMARK [1][-]{section.4.4}{Decision Tree}{part.4}% 14
-\BOOKMARK [1][-]{section.4.5}{Random Forest}{part.4}% 15
-\BOOKMARK [1][-]{section.4.6}{Gradient Boosting}{part.4}% 16
-\BOOKMARK [1][-]{section.4.7}{Support Vector Machine}{part.4}% 17
-\BOOKMARK [1][-]{section.4.8}{Perceptron}{part.4}% 18
-\BOOKMARK [1][-]{section.4.9}{Multilayered Perceptron}{part.4}% 19
-\BOOKMARK [0][-]{part.5}{V Implementing the Algorithms}{}% 20
-\BOOKMARK [0][-]{part.6}{VI Future Scope}{}% 21
-\BOOKMARK [0][-]{part.7}{VII Conclusions}{}% 22
+\BOOKMARK [2][-]{subsection.4.1.2}{Potential Areas of Use}{section.4.1}% 10
+\BOOKMARK [1][-]{section.4.2}{Logistic Regression}{part.4}% 11
+\BOOKMARK [1][-]{section.4.3}{K-Nearest Neighbours}{part.4}% 12
+\BOOKMARK [1][-]{section.4.4}{Decision Tree}{part.4}% 13
+\BOOKMARK [1][-]{section.4.5}{Random Forest}{part.4}% 14
+\BOOKMARK [1][-]{section.4.6}{Gradient Boosting}{part.4}% 15
+\BOOKMARK [1][-]{section.4.7}{Support Vector Machine}{part.4}% 16
+\BOOKMARK [1][-]{section.4.8}{Perceptron}{part.4}% 17
+\BOOKMARK [1][-]{section.4.9}{Multilayered Perceptron}{part.4}% 18
+\BOOKMARK [0][-]{part.5}{V Implementing the Algorithms}{}% 19
+\BOOKMARK [0][-]{part.6}{VI Future Scope}{}% 20
+\BOOKMARK [0][-]{part.7}{VII Conclusions}{}% 21

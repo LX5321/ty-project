@@ -60,7 +60,7 @@
 \newpage
 \section{Linear Regression}
 \subsection{Introduction to Linear Regression}
-\index{Linear regression} is a forecasting technique that can be use to predict the future of a number series based on the historic data given. Linear Regression is the go to choice for many predictions since the linear regression algorithm. The Linear Regression model has however been the go to algorithm for predicting linear relationships from many years.
+Linear regression is a forecasting technique that can be use to predict the future of a number series based on the historic data given. The perks of using a linear regression model are as follows:
 
 \begin{itemize}
   \item produces decent and  easy to interpret results.
@@ -70,13 +70,25 @@
 \end{itemize}
 
 However, a major drawback of linear regression is that it \textbf{poorly models nonlinear data}.
-\subsection{Deriving the Algorithm}
 
-\begin{equation}
-y = \beta_{0}+\beta_{1}+\epsilon
-\end{equation}
+Considering a dataset that has values ranging from $X = \lbrace x_{1}+x_{2}+x_{3}+...+x_{n} \rbrace$ where
+all the entries of the dataset are real numbers. Each $x_{i}$ is associated with a corresponding value of
+$y_{i}$ from the dataset $Y = \lbrace y_{1}+y_{2}+y_{3}+...+y_{n} \rbrace$.
+\\\\
 The most basic equation for linear regression can be expressed via this simple equation.
+$$y = \beta_{0}x+\beta_{1}+\epsilon$$
+
+So to minimize the error in the predictions, a way to calculate the error should be formulated. A loss function in machine learning is simply a measure of how different the predicted value is from the actual value. The Quadratic Loss Function to calculate the loss or error in our linear regression model. It can be defined as:
+$$L(x) = \sum_{i=1}^{n}(y_{i}-p_{i})^{2} $$
+Therefore using the method of Least Squares, we can find the values of $\beta_{0}$ and $\beta_{1}$.
+\\
+$$\beta_{0} = \frac{\sum_{i=1}^{n} \lbrace x_{i}-\bar{x}\rbrace \lbrace y_{i}-\bar{y} \rbrace}{\sum_{i=1}^{n} \lbrace x_{i}-\bar{x}\rbrace^{2} } $$
+\\
+
+The linear regression model with an error value close to 1.00 indicates a perfect model and those with values closer to 0.00 indicates a model that delivers poor performance.
+
 \subsection{Potential Areas of Use}
+While Linear regression has limited applicability in business situations because it can work only when the dependent variable is of continuous nature, it still is a very well known technique in the situations it can be used. It assumes a linear relation between the independent and dependent variables. It must be noted that sometimes transformations can also be applied to non linear relationships to make them applicable in a linear regression model.
 \newpage
 \section{Logistic Regression}
 \newpage
