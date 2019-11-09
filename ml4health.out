@@ -1,13 +1,13 @@
 \BOOKMARK [0][-]{part.1}{I Background}{}% 1
-\BOOKMARK [1][-]{section.1.1}{What is Diabetes}{part.1}% 2
+\BOOKMARK [1][-]{section.1.1}{Diabetes Mellitus}{part.1}% 2
 \BOOKMARK [0][-]{part.2}{II Review of Literature}{}% 3
-\BOOKMARK [0][-]{part.3}{III Feature Extraction}{}% 4
-\BOOKMARK [1][-]{section.3.1}{Filters}{part.3}% 5
-\BOOKMARK [1][-]{section.3.2}{Wrappers}{part.3}% 6
-\BOOKMARK [0][-]{part.4}{IV Machine Learning Algorithms}{}% 7
-\BOOKMARK [1][-]{section.4.1}{Linear Regression}{part.4}% 8
-\BOOKMARK [2][-]{subsection.4.1.1}{Introduction to Linear Regression}{section.4.1}% 9
-\BOOKMARK [2][-]{subsection.4.1.2}{Potential Areas of Use}{section.4.1}% 10
+\BOOKMARK [0][-]{part.3}{III Data Preprocessing}{}% 4
+\BOOKMARK [1][-]{section.3.1}{Feature Extraction}{part.3}% 5
+\BOOKMARK [2][-]{subsection.3.1.1}{Filters}{section.3.1}% 6
+\BOOKMARK [2][-]{subsection.3.1.2}{Wrappers}{section.3.1}% 7
+\BOOKMARK [0][-]{part.4}{IV Machine Learning Algorithms}{}% 8
+\BOOKMARK [1][-]{section.4.1}{Linear Regression}{part.4}% 9
+\BOOKMARK [2][-]{subsection.4.1.1}{Introduction to Linear Regression}{section.4.1}% 10
 \BOOKMARK [1][-]{section.4.2}{Logistic Regression}{part.4}% 11
 \BOOKMARK [1][-]{section.4.3}{K-Nearest Neighbours}{part.4}% 12
 \BOOKMARK [1][-]{section.4.4}{Decision Tree}{part.4}% 13
