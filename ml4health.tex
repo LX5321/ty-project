@@ -75,7 +75,15 @@ and visualization of data.
 
 \newpage
 \section{Diabetes Mellitus}
+More commonly referred to as "diabetes" -- a chronic disease associated with abnormally high levels of the sugar glucose in the blood. Diabetes is due to one of two mechanisms:
 
+Inadequate production of insulin (which is made by the pancreas and lowers blood glucose), or
+Inadequate sensitivity of cells to the action of insulin.
+The two main types of diabetes correspond to these two mechanisms and are called insulin dependent (type 1) and non-insulin dependent (type 2) diabetes. In type 1 diabetes there is no insulin or not enough of it. In type 2 diabetes, there is generally enough insulin but the cells upon which it should act are not normally sensitive to its action.
+
+The signs and symptoms of both types of diabetes include increased urine output and decreased appetite as well as fatigue. Diabetes is diagnosed by blood glucose testing, the glucose tolerance test, and testing of the level of glycosylated hemoglobin (glycohemoglobin or hemoglobin A1C). The mode of treatment depends on the type of the diabetes.
+
+The major complications of diabetes include dangerously elevated blood sugar, abnormally low blood sugar due to diabetes medications, and disease of the blood vessels which can damage the eyes, kidneys, nerves, and heart.
 
 \newpage
 \part{Review of Literature}
@@ -111,7 +119,8 @@ So to minimize the error in the predictions, a way to calculate the error should
 $$L(x) = \sum_{i=1}^{n}(y_{i}-p_{i})^{2} $$
 Therefore using the method of Least Squares, we can find the values of $\beta_{0}$ and $\beta_{1}$.
 
-$$\beta_{0} = \frac{\sum_{i=1}^{n} ( x_{i}-\bar{x}) (y_{i}-\bar{y})}{\sum_{i=1}^{n} ( x_{i}-\bar{x})^{2} }
+$$
+\beta_{0} = \frac{\sum_{i=1}^{n} ( x_{i}-\bar{x}) (y_{i}-\bar{y})}{\sum_{i=1}^{n} ( x_{i}-\bar{x})^{2} }
 $$
 The linear regression model with an error value close to 1.00 indicates a perfect model and those with values closer to 0.00 indicates a model that delivers poor performance.
 
@@ -235,5 +244,9 @@ In today's world we have many algorithms and multiple datasets along with suffic
 \begin{thebibliography}{}
 \bibitem{WMG} 
 Wei M, Gibbons LW, Mitchell TL \textit{et al}. (1999) The Association between cardiorespiratory fitness and impaired fasting glucose and type 2 diabetes mellitus in men. \textit{Ann Intern Med} \textbf{130}, 427-34.
+\bibitem{DEFD}
+Jr., W. C. S. (2017, January 26). Definition of Diabetes mellitus. Retrieved November 17, 2019, from https://www.rxlist.com/script/main/art.asp?articlekey=2974.
+\bibitem{DBML}
+Zou, Q., Qu, K., Luo, Y., Yin, D., Ju, Y.,\& Tang, H. (2018, November 6). Predicting Diabetes Mellitus With Machine Learning Techniques. Retrieved November 17, 2019, from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6232260/.
 \end{thebibliography}
 \end{document}
