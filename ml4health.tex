@@ -109,10 +109,10 @@ Linear regression is a forecasting technique that can be use to predict the futu
 \end{itemize}
 
 However, a major drawback of linear regression is that it \textbf{poorly models nonlinear data}.
-\\\\
-Considering a dataset that has values ranging from $X = \lbrace x_{1}+x_{2}+x_{3}+...+x_{n} \rbrace$ where
-all the entries of the dataset are real numbers. Each $x_{i}$ is associated with a corresponding value of
-$y_{i}$ from the dataset $Y = \lbrace y_{1}+y_{2}+y_{3}+...+y_{n} \rbrace$.
+\\
+Considering a dataset that has values ranging from 
+$X = \lbrace x_{1}+x_{2}+x_{3}+...+x_{n} \rbrace$ where
+all the entries of the dataset are real numbers. Each $x_{i}$ is associated with a corresponding value of $y_{i}$ from the dataset $Y = \lbrace y_{1}+y_{2}+y_{3}+...+y_{n} \rbrace$.
 
 The most basic equation for linear regression can be expressed via this simple equation.
 $$y = \beta_{0}x+\beta_{1}+\epsilon$$
@@ -128,9 +128,43 @@ The linear regression model with an error value close to 1.00 indicates a perfec
 
 \newpage
 \section{Logistic Regression}
+Even if called regression, this is a classification method which is based on the probability for
+a sample to belong to a class. As our probabilities must be continuous in R and bounded
+between (0, 1), it's necessary to introduce a threshold function to filter the term z. The name
+logistic comes from the decision to use the sigmoid (or logistic) function:
+% page 97 sigmoid formula
 
 \newpage
 \section{K-Nearest Neighbours}
+The k-means algorithm is based on the (strong) initial condition to decide the number of
+clusters through the assignment of k initial centroids or means:
+% page 183
+\\
+Then the distance between each sample and each centroid is computed and the sample is
+assigned to the cluster where the distance is minimum. This approach is often called
+minimizing the inertia of the clusters, which is defined as follows:
+%page 183
+\\
+The process is iterative—once all the samples have been processed, a new set of centroids
+K (1) is computed (now considering the actual elements belonging to the cluster), and all the
+distances are recomputed. The algorithm stops when the desired tolerance is reached, or in
+other words, when the centroids become stable and, therefore, the inertia is minimized.
+Of course, this approach is quite sensitive to the initial conditions, and some methods have
+been studied to improve the convergence speed. One of them is called k-means++ (Karteeka
+Pavan K., Allam Appa Rao, Dattatreya Rao A. V., and Sridhar G.R., Robust Seed Selection
+Algorithm for K-Means Type Algorithms, International Journal of Computer Science and
+Information Technology 3, no. 5, October 30, 2011), which selects the initial centroids so that
+they are statistically close to the final ones. The mathematical explanation is quite difficult;
+however, this method is the default choice for scikit-learn, and it's normally the best choice
+for any clustering problem solvable with this algorithm.
+% page 188
+\subsection{Finding Optimum Number of Clusters}
+One of the most common disadvantages of k-means is related to the choice of the optimal
+number of clusters. An excessively small value will determine large groupings that contain
+heterogeneous elements, while a large number leads to a scenario where it can be difficult
+to identify the differences among clusters. Therefore, we're going to discuss some methods
+that can be employed to determine the appropriate number of splits and to evaluate the
+corresponding performance.
 
 \newpage
 \section{Decision Tree}
@@ -154,8 +188,7 @@ Let us consider a dataset of features we want to classify.
 
 $$
 X = \lbrace x_{1}, x_{2}, x_{3}, ... , x_{n} \rbrace 
-$$
-For the target variable, we will consider the dataset $Y$, with target outcomes as $\lbrace0,1\rbrace$ indicating a true or false condition.
+$$ For the target variable, we will consider the dataset $Y$, with target outcomes as $\lbrace0,1\rbrace$ indicating a true or false condition.
 
 $$
 Y = \lbrace y_{1}, y_{2}, y_{3}, ... , y_{n} \rbrace 
@@ -169,7 +202,7 @@ The perceptron is the foundation of neural networks.
 \section{Multilayered Perceptron}
 
 \newpage
-\part{Implementing the Algorithms}
+\part{Real World Application}
 
 \newpage
 \part{Building Information Systems for Prediction}
