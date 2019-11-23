@@ -3,6 +3,8 @@
 \usepackage{hyperref}
 \usepackage{makeidx}
 \usepackage{pgfplots}
+\usepackage[utf8]{inputenc}
+\usepackage[acronym]{glossaries}
 \usepackage[a4paper, inner=1.5cm, outer=3cm, top=2cm,bottom=3cm, bindingoffset=1cm]{geometry}
 \usepackage{chngcntr}
 \counterwithin*{section}{part}
@@ -168,7 +170,95 @@ corresponding performance.
 
 \newpage
 \section{Decision Tree}
+\subsection{Introduction}
+Decision trees are flowcharts that represent the decision-making process
+as rules for performing categorization. Decision trees start from a root and
+contain internal nodes that represent features and branches that represent
+outcomes. As such, decision trees are a representation of a classification
+problem. Decision trees can be exploited to make them easier to
+understand. Each decision tree is a disjunction of implications (i.e., if–then
+statements), and the implications are Horn clauses that are useful for logic
+programming. A Horn clause is a disjunction of literals.
+On the basis that there are no errors in the data in the form of
+inconsistencies, we can always construct a decision tree for training
+datasets with 100\% accuracy. However, this may not roll out in the real
+world and may indicate overfitting, as we will discuss.
+\\
+Classifying an example involves subjecting the data to an organized
+sequence of tests to determine the label. Trees are built and tested from
+top to bottom as so
+\begin{enumerate}
+\item Start at the root of the model
+\item Wait until all examples are in the same class
+\item Test features to determine best split based on a cost function
+\item Follow the branch value to the outcome
+\item Repeat number 2
+\item Leaf node output
+\end{enumerate}
 
+The central question in decision tree learning is which nodes should
+be placed in which positions, including the root node and decision nodes.
+There are three main decision tree algorithms. The difference in each
+algorithm is the measure or cost function for which nodes, or features, are
+selected. The root is the top node. The tree is split into branches; evaluated
+through a cost function; and a branch that doesn’t split is a terminal node,
+decision, or leaf.
+
+
+Decision trees are useful in the way that acquired knowledge can be
+expressed in an easy to read and understandable format (see Figure 4-1).
+It mimics human decision-making whereby priority—determined by
+feature importance, relationships, and decisions—is clear. They are simple
+in the way that outcomes can be expressed as a set of rules.
+Figure 4-1. Decision tree of n = 2 nodes
+Decision trees provide benefits in how they can represent big
+datasets and prioritize the most discriminatory features. If a decision tree
+depth is not set, it will eventually learn the data presented and overfit.
+It is recommended to set a small depth for decision tree modeling.
+Alternatively, the decision tree can be pruned, typically starting from the
+least important feature, or the incorporation of dimensionality reduction
+techniques.
+
+\subsection{Overfitting in Trees}
+Overfitting is a common machine learning obstacle, and not limited
+to decision trees. All algorithms are at risk of overfitting, and a variety
+of techniques exist to overcome this problem. Random forest or jungle
+decision trees can be extremely useful in this.
+Pruning reduces the size of a decision tree by removing features that
+provide the least information. As a result, the final classification rules are
+less complicated and improve predictive accuracy.
+The accuracy of a model is calculated as the percentage of examples in
+the test dataset that is classified correctly.
+
+\begin{itemize}
+
+\item{True Positive / TP: Where the actual class is yes, and
+the value of the predicted class is also yes.}
+
+\item{False Positive / FP: Actual class is no, and predicted
+class is yes}
+
+\item{True Negative / TN: The value of the actual class is no,
+and the value of the predicted class is no}
+
+\item{False Negative / FN: When the actual class value is yes,
+but predicted class is no}
+
+\item{Accuracy: (correctly predicted observation)/(total
+observation) = (TP + TN)/(TP + TN + FP + FN)}
+
+\item{Precision: (correctly predicted Positive)/(total
+predicted Positive) = TP/TP + FP}
+
+\item{Recall: (correctly predicted Positive)/(total correct
+Positive observation) = TP/TP + FN}
+
+\end{itemize}
+
+Classification is a common method used in machine learning; and
+ID3 (Iterative Dichotomizer 3), C4.5 (Classification 4.5), and CART
+(Classification And Regression Trees) are common decision tree methods
+where the resulting tree can be used to classify future samples.
 \newpage
 \section{Random Forest}
 
