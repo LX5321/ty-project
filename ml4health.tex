@@ -2,11 +2,12 @@
 \usepackage[english]{babel}
 \usepackage{hyperref}
 \usepackage{makeidx}
+\usepackage{chngcntr}
 \usepackage{pgfplots}
 \usepackage[utf8]{inputenc}
 \usepackage[acronym]{glossaries}
 \usepackage[a4paper, inner=1.5cm, outer=3cm, top=2cm,bottom=3cm, bindingoffset=1cm]{geometry}
-\usepackage{chngcntr}
+
 \counterwithin*{section}{part}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta}
@@ -89,8 +90,24 @@ The major complications of diabetes include dangerously elevated blood sugar, ab
 
 \newpage
 \part{Review of Literature}
-\section{Predicting Diabetes Mellitus With Machine Learning Techniques}
-Diabetes is segregated into 2 categories 
+\iffalse
+Source : https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5851210/
+\fi
+
+\iffalse
+PDF :
+Andreas Holzinger 1,2( B )
+
+Holzinger Group, HCI-KDD, Institute for Medical Informatics,
+Statistics and Documentation, Medical University Graz, Graz, Austria
+a.holzinger@hci-kdd.org
+
+Institute for Information Systems and Computer Media,
+Graz University of Technology, Graz, Austria
+\fi
+
+
+
 \newpage
 \part{Data Preprocessing}
 \section{Feature Extraction}
@@ -355,7 +372,7 @@ In today's world we have many algorithms and multiple datasets along with suffic
      {The activity comes to the foreground}(onResumeBlock.east);
   \end{tikzpicture}
 
-
+\newpage
 \section{Conclusion}
 
 \newpage
