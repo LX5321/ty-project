@@ -7,27 +7,38 @@
 \BOOKMARK [0][-]{part.5}{V Data Preprocessing}{}% 7
 \BOOKMARK [1][-]{section.5.1}{Feature Extraction}{part.5}% 8
 \BOOKMARK [2][-]{subsection.5.1.1}{Filters}{section.5.1}% 9
-\BOOKMARK [2][-]{subsection.5.1.2}{Wrappers}{section.5.1}% 10
-\BOOKMARK [0][-]{part.6}{VI Machine Learning Algorithms}{}% 11
-\BOOKMARK [1][-]{section.6.1}{Linear Regression}{part.6}% 12
-\BOOKMARK [2][-]{subsection.6.1.1}{Introduction to Linear Regression}{section.6.1}% 13
-\BOOKMARK [1][-]{section.6.2}{Logistic Regression}{part.6}% 14
-\BOOKMARK [1][-]{section.6.3}{K-Nearest Neighbours}{part.6}% 15
-\BOOKMARK [2][-]{subsection.6.3.1}{Finding Optimum Number of Clusters}{section.6.3}% 16
-\BOOKMARK [1][-]{section.6.4}{Decision Tree}{part.6}% 17
-\BOOKMARK [2][-]{subsection.6.4.1}{Introduction}{section.6.4}% 18
-\BOOKMARK [2][-]{subsection.6.4.2}{Overfitting in Trees}{section.6.4}% 19
-\BOOKMARK [1][-]{section.6.5}{Random Forest}{part.6}% 20
-\BOOKMARK [1][-]{section.6.6}{Gradient Boosting}{part.6}% 21
-\BOOKMARK [1][-]{section.6.7}{Support Vector Machine}{part.6}% 22
-\BOOKMARK [2][-]{subsection.6.7.1}{Linear Support Vector Machines}{section.6.7}% 23
-\BOOKMARK [1][-]{section.6.8}{Perceptron}{part.6}% 24
-\BOOKMARK [1][-]{section.6.9}{Multilayered Perceptron}{part.6}% 25
-\BOOKMARK [0][-]{part.7}{VII Real World Application}{}% 26
-\BOOKMARK [0][-]{part.8}{VIII Building Information Systems for Prediction}{}% 27
-\BOOKMARK [1][-]{section.8.1}{Introduction}{part.8}% 28
-\BOOKMARK [1][-]{section.8.2}{Feature Selection}{part.8}% 29
-\BOOKMARK [1][-]{section.8.3}{Models}{part.8}% 30
-\BOOKMARK [1][-]{section.8.4}{Conclusion}{part.8}% 31
-\BOOKMARK [0][-]{part.9}{IX Conclusion}{}% 32
-\BOOKMARK [0][-]{part.10}{X Bibliography}{}% 33
+\BOOKMARK [2][-]{subsection.5.1.2}{Information Gain}{section.5.1}% 10
+\BOOKMARK [2][-]{subsection.5.1.3}{Chi-square test}{section.5.1}% 11
+\BOOKMARK [2][-]{subsection.5.1.4}{Fisher score}{section.5.1}% 12
+\BOOKMARK [2][-]{subsection.5.1.5}{Correlation coefficient}{section.5.1}% 13
+\BOOKMARK [2][-]{subsection.5.1.6}{Variance threshold}{section.5.1}% 14
+\BOOKMARK [1][-]{section.5.2}{Wrappers}{part.5}% 15
+\BOOKMARK [2][-]{subsection.5.2.1}{Recursive Feature Elimination}{section.5.2}% 16
+\BOOKMARK [2][-]{subsection.5.2.2}{Sequential Feature Selection Algorithms}{section.5.2}% 17
+\BOOKMARK [2][-]{subsection.5.2.3}{Genetic Algorithms}{section.5.2}% 18
+\BOOKMARK [1][-]{section.5.3}{Embedded Methods}{part.5}% 19
+\BOOKMARK [2][-]{subsection.5.3.1}{L1 \(LASSO\) Regularization}{section.5.3}% 20
+\BOOKMARK [2][-]{subsection.5.3.2}{Decision Tree}{section.5.3}% 21
+\BOOKMARK [0][-]{part.6}{VI Machine Learning Algorithms}{}% 22
+\BOOKMARK [1][-]{section.6.1}{Linear Regression}{part.6}% 23
+\BOOKMARK [2][-]{subsection.6.1.1}{Introduction to Linear Regression}{section.6.1}% 24
+\BOOKMARK [1][-]{section.6.2}{Logistic Regression}{part.6}% 25
+\BOOKMARK [1][-]{section.6.3}{K-Nearest Neighbours}{part.6}% 26
+\BOOKMARK [2][-]{subsection.6.3.1}{Finding Optimum Number of Clusters}{section.6.3}% 27
+\BOOKMARK [1][-]{section.6.4}{Decision Tree}{part.6}% 28
+\BOOKMARK [2][-]{subsection.6.4.1}{Introduction}{section.6.4}% 29
+\BOOKMARK [2][-]{subsection.6.4.2}{Overfitting in Trees}{section.6.4}% 30
+\BOOKMARK [1][-]{section.6.5}{Random Forest}{part.6}% 31
+\BOOKMARK [1][-]{section.6.6}{Gradient Boosting}{part.6}% 32
+\BOOKMARK [1][-]{section.6.7}{Support Vector Machine}{part.6}% 33
+\BOOKMARK [2][-]{subsection.6.7.1}{Linear Support Vector Machines}{section.6.7}% 34
+\BOOKMARK [1][-]{section.6.8}{Perceptron}{part.6}% 35
+\BOOKMARK [1][-]{section.6.9}{Multilayered Perceptron}{part.6}% 36
+\BOOKMARK [0][-]{part.7}{VII Real World Application}{}% 37
+\BOOKMARK [0][-]{part.8}{VIII Building Information Systems for Prediction}{}% 38
+\BOOKMARK [1][-]{section.8.1}{Introduction}{part.8}% 39
+\BOOKMARK [1][-]{section.8.2}{Feature Selection}{part.8}% 40
+\BOOKMARK [1][-]{section.8.3}{Models}{part.8}% 41
+\BOOKMARK [1][-]{section.8.4}{Conclusion}{part.8}% 42
+\BOOKMARK [0][-]{part.9}{IX Conclusion}{}% 43
+\BOOKMARK [0][-]{part.10}{X Bibliography}{}% 44
