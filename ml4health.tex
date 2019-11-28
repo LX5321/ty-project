@@ -102,6 +102,9 @@ Graz University of Technology, Graz, Austria
 ---------------------
 \fi
 
+\section{Abstract}
+Hello \cite{WMG}
+
 
 
 
@@ -139,7 +142,7 @@ The linear regression model with an error value close to 1.00 indicates a perfec
 \section{Logistic Regression}
 Logistic Regression is a classification method which is based on the probability for a sample to belong to a class. As our probabilities must be continuous in $R$ and should bounded between the lower limit of 0 and upper limit of 1 it's necessary to introduce a threshold function to filter the term $z$. The name logistic comes from the decision to use the sigmoid (or logistic) function, defined as shown below.
 $$\sigma(z)= \dfrac{1}{1+e^{-z}}$$
-The sigmoid function in its domain is $R$ has two asymptotes\footnote{In analytic geometry, an asymptote of a curve is a line such that the distance between the curve and the line approaches zero as one or both of the x or y coordinates tends to infinity. Some sources include the requirement that the curve may not cross the line infinitely often, but this is unusual for modern authors.} that occur at 0 and 1. So, the probability for a sample to belong to a class from 0 and 1 can be defined as:
+The sigmoid function in its domain is $R$ has two asymptotes\footnote{In analytic geometry, an asymptote of a curve is a line such that the distance between the curve and the line approaches zero as one or both of the x or y coordinates tends to infinity.} that occur at 0 and 1. So, the probability for a sample to belong to a class from 0 and 1 can be defined as:
 $$P(y|\bar{x})=\sigma(\bar{x};\bar{w})$$
 At this point, finding the optimal parameters is equivalent to maximizing the log-likelihood\footnote{The log-likelihood is, as the term suggests, the natural logarithm of the likelihood.}
 given the output class:
