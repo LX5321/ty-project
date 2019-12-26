@@ -15,6 +15,12 @@
 \usepackage[a4paper, inner=1.5cm, outer=3cm, top=2cm,bottom=3cm, bindingoffset=1cm]{geometry}
 \counterwithin*{section}{part}
 \usetikzlibrary{arrows.meta}
+\usepackage{listings}
+\usepackage{xcolor} 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 \tikzset{
   			>={Latex[width=2mm,length=2mm]},
             base/.style = {rectangle, rounded corners, draw=black,
@@ -269,6 +275,37 @@ $$
 \newpage
 \part{Real World Application}
 This is the part on how the project results were obtained.\\
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+
+\begin{lstlisting}[language=Python]
+from sklearn.ensemble import GradientBoostingClassifier
+gb = GradientBoostingClassifier(random_state=0)
+gb.fit(X_train, y_train)
+print("Accuracy on training set: {:.3f}".format(gb.score(X_train,y_train)))
+print("Accuracy on test set: {:.3f}".format(gb.score(X_test,y_test)))
+\end{lstlisting}
+
+
 {%
     \clearpage% Flush earlier floats (otherwise order might not be correct)
     \thispagestyle{empty}% empty page style (?)
