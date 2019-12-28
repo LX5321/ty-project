@@ -49,7 +49,7 @@
         A dissertation presented for the degree of\\
         Bachelor in Computer Science 
         \vspace{0.8cm}
-        \Large
+        \Large        
         Department of Computer Science\\        
         Smt. Parvatibai Chowgule College of Arts and Science\\
         India\\
@@ -80,6 +80,7 @@ I, Alexander Roque Rodrigues, would like to acknowledge the role of the Departme
 \item[AEE]			Activity Energy Expenditure.
 \item[CSII] 		Continuous Subcutaneous Insulin Infusion.
 \item[MDI] 			Multiple Daily Injections.
+
 \end{abbrv}
 
 \newpage
@@ -122,16 +123,6 @@ Over the long term, T2D patients become resistant to the normal effects of insul
 
 In each class of diabetes, timely diagnosis, education of patients in self-management, and continuous medical care are required to prevent acute complications (eg, ketoacidosis) and minimize the risk of long-term complications (eg, nephropathy, retinopathy, diabetic foot, cardiovascular disease, or stroke). In addition to medication, management of diabetes requires adherence to an array of self-care behaviors that are often very burdensome for patients: carefully scheduling meals, counting carbohydrates, exercising, monitoring BG levels, and adjusting endeavors on a daily basis. The effects of non-adherence to recommended treatment are not immediately evident and long-term complications may take years to develop. Accordingly, diabetes therapy is complex, and therapeutic decisions need to take into account diverse medical factors and lifestyle-related activities that must be optimized to improve diabetic patients’ quality of life.
 
-Artificial intelligence (AI) is a quickly growing field, and its applications to diabetes research are growing even more rapidly. Machine learning is a branch of computer science that aims to create systems or methods that analyze information and allow the handling of complexity in a wide range of applications (in this case, diabetes management). Although the application of machine learning algorithms involves highly technical and specialized knowledge, this has not prevented machine learning from becoming an essential part of the technology industry and making contributions to major advances within the field. 
-
-Machine Learning is categorised into 3 types namely:
-\begin{itemize}
-\item \textbf{Unsupervised Machine Learning} -  is a type of self-organized Hebbian learning that helps find previously unknown patterns in data set without pre-existing labels.\cite{WIKIUML}
-
-\item \textbf{Machine Learning} Hello
-
-\item \textbf{Reinforcement Machine Learning} Hello
-\end{itemize}
 
 \newpage
 \part{Machine Learning Algorithms}
@@ -163,6 +154,8 @@ $$
 $$
 The linear regression model with an error value close to 1.00 indicates a perfect model and those with values closer to 0.00 indicates a model that delivers poor performance.
 
+
+
 \newpage
 \section{Logistic Regression}
 Logistic Regression is a classification method which is based on the probability for a sample to belong to a class. As our probabilities must be continuous in $R$ and should bounded between the lower limit of 0 and upper limit of 1 it's necessary to introduce a threshold function to filter the term $z$. The name logistic comes from the decision to use the sigmoid (or logistic) function, defined as shown below.
@@ -190,11 +183,36 @@ The process is iterative—once all the samples have been processed, a new set o
 \subsection{Finding Optimum Number of Clusters}
 One of the most common disadvantages of k-means is related to the choice of the optimal number of clusters. An excessively small value will determine large groupings that contain heterogeneous elements, while a large number leads to a scenario where it can be difficult to identify the differences among clusters. Therefore, we're going to discuss some methods that can be employed to determine the appropriate number of splits and to evaluate the corresponding performance.
 
+\subsection{Implementation}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+\lstinputlisting[language=Python]{lr.py}
+
+
+
 \newpage
 \section{Decision Tree}
 \subsection{Introduction}
-Decision trees are flowcharts that represent the decision-making process as rules for performing categorization. Decision trees start from a root and contain internal nodes that represent features and branches that represent outcomes. As such, decision trees are a representation of a classification problem. Decision trees can be exploited to make them easier to understand. Each decision tree is a dis-junction of implications (i.e., if–then statements), and the implications are Horn clauses that are useful for logic
-programming. A Horn clause is a dis-junction of literals.
+Decision trees are flowcharts that represent the decision-making process as rules for performing categorization. Decision trees start from a root and contain internal nodes that represent features and branches that represent outcomes. As such, decision trees are a representation of a classification problem. Decision trees can be exploited to make them easier to understand. Each decision tree is a dis-junction of implications (i.e., if–then statements), and the implications are Horn clauses that are useful for logic programming. A Horn clause is a dis-junction of literals.
 On the basis that there are no errors in the data in the form of inconsistencies, we can always construct a decision tree for training datasets with 100\% accuracy. However, this may not roll out in the real world and may indicate overfitting, as we will discuss.
 \\
 Classifying an example involves subjecting the data to an organized sequence of tests to determine the label. Trees are built and tested from top to bottom as so:
@@ -219,28 +237,31 @@ the test dataset that is classified correctly.
 
 \begin{itemize}
 
-\item{True Positive / TP: Where the actual class is yes, and
-the value of the predicted class is also yes.}
+\item{True Positive}: Where the actual class is yes, and
+the value of the predicted class is also yes.
 
-\item{False Positive / FP: Actual class is no, and predicted
-class is yes}
+\item{False Positive}: Actual class is no, and predicted
+class is yes.
 
-\item{True Negative / TN: The value of the actual class is no,
-and the value of the predicted class is no}
+\item{True Negative}: The value of the actual class is no,
+and the value of the predicted class is no.
 
-\item{False Negative / FN: When the actual class value is yes,
-but predicted class is no}
-
-\item{Accuracy: (correctly predicted observation)/(total
-observation) = (TP + TN)/(TP + TN + FP + FN)}
-
-\item{Precision: (correctly predicted Positive)/(total
-predicted Positive) = TP/TP + FP}
-
-\item{Recall: (correctly predicted Positive)/(total correct
-Positive observation) = TP/TP + FN}
+\item{False Negative}: When the actual class value is yes,
+but predicted class is no.
 
 \end{itemize}
+
+$$
+Accuracy= \frac{TP + TN}{TP + TN + FP + FN}
+$$
+
+$$
+Precision = \frac{TP}{TP} + FP
+$$
+
+$$
+Recall = \frac{TP}{TP} + FN
+$$
 
 Classification is a common method used in machine learning; and ID3 (Iterative Dichotomizer 3), C4.5 (Classification 4.5), and CART
 (Classification And Regression Trees) are common decision tree methods where the resulting tree can be used to classify future samples.
@@ -263,11 +284,16 @@ Let us consider a dataset of features we want to classify.
 
 $$
 X = \lbrace x_{1}, x_{2}, x_{3}, ... , x_{n} \rbrace 
-$$ For the target variable, we will consider the dataset $Y$, with target outcomes as $\lbrace0,1\rbrace$ indicating a true or false condition.
+$$ 
+For the target variable, we will consider the dataset $Y$, with target outcomes as 
+$\lbrace0,1\rbrace$ indicating a true or false condition.
 
 $$
 Y = \lbrace y_{1}, y_{2}, y_{3}, ... , y_{n} \rbrace 
 $$
+
+\newpage
+\section{Perceptron}
 
 \newpage
 \section{Multilayered Perceptron}
@@ -275,35 +301,6 @@ $$
 \newpage
 \part{Real World Application}
 This is the part on how the project results were obtained.\\
-
-\lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},   
-    commentstyle=\color{codegreen},
-    keywordstyle=\color{magenta},
-    numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurple},
-    basicstyle=\ttfamily\footnotesize,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                    
-    numbersep=5pt,                  
-    showspaces=false,                
-    showstringspaces=false,
-    showtabs=false,                  
-    tabsize=2
-}
- 
-\lstset{style=mystyle}
-
-\begin{lstlisting}[language=Python]
-from sklearn.ensemble import GradientBoostingClassifier
-gb = GradientBoostingClassifier(random_state=0)
-gb.fit(X_train, y_train)
-print("Accuracy on training set: {:.3f}".format(gb.score(X_train,y_train)))
-print("Accuracy on test set: {:.3f}".format(gb.score(X_test,y_test)))
-\end{lstlisting}
 
 
 {%
