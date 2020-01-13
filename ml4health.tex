@@ -30,7 +30,9 @@
        startstop/.style = {base, fill=red!30},
     activityRuns/.style = {base, fill=green!30},
          process/.style = {base, minimum width=2.5cm, fill=orange!15,
-                           font=\ttfamily},}		
+                           font=\ttfamily},
+        }
+        		
 \begin{document}
 \begin{titlepage}
     \begin{center}
@@ -96,7 +98,6 @@ Source : https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6000484/
 ---------------------
 PDF :
 Andreas Holzinger 1,2( B )
-
 Holzinger Group, HCI-KDD, Institute for Medical Informatics,
 Statistics and Documentation, Medical University Graz, Graz, Austria
 a.holzinger@hci-kdd.org
@@ -105,10 +106,24 @@ Institute for Information Systems and Computer Media,
 Graz University of Technology, Graz, Austria
 ---------------------
 \fi
+
+
+There have been advances in the field of biotechnology along with easier and inexpensive methods of production of medical equipment has enabled easy production of data thereby allowing the genereated big data to be used by machine learning algorithms.
+
+To date, besides high performance sequencing methods, there is a plethora of digital machines and sensors from various research fields generating data, including super-resolution digital microscopy, mass spectrometry, Magnetic Resonance Imagery (MRI), etc. Although these technologies produce a wealth of data, they do not provide any kind of analysis, interpretation or extraction of knowledge. To this end, the area of Biological Data Mining or otherwise Knowledge Discovery in Biological Data, is more than ever necessary and important. The primary objective is to delve into the rapidly accruing body of biological data
+and set the basis potentiating answers to fundamental questions in biology and medicine.
+
+The power and effectiveness of these approaches are derived from the ability of commensurate methods to extract patterns and create
+models from data. The aforementioned fact is particularly significant in the big data era, especially when the dataset can reach terabytes or petabytes of data. Consequently, the abundance of data has strengthened considerably data-oriented research in biology. In such a hybrid field, one of the most important research applications is prognosis and
+diagnosis related to human-threatening and/or life quality reducing diseases. One such disease is diabetes mellitus (DM).
+
+
+
 As defined by the American Diabetes Association\cite{classdiag},
 \begin{quote}
 Diabetes is a group of metabolic diseases characterized by hyperglycemia resulting from defects in insulin secretion, insulin action, or both. The chronic hyperglycemia of diabetes is associated with long-term damage, dysfunction, and failure of different organs, especially the eyes, kidneys, nerves, heart, and blood vessels.
 \end{quote}
+
 
 Diabetes Mellitus refers collectively to a group of diseases resulting from dysfunction of the glucoregulatory system. Hyperglycemia, the hallmark of diabetes, is the primary consequence of this dysregulation. Chronic hyperglycemia in diabetes is associated with long-term complications involving tissue damage and organ failure, which can decrease life expectancy and even cause death. The International Diabetes Federation estimates that, by 2017, diabetes affected 425 million people worldwide, of whom, 4 million died in the same year. These figures are expected to increase dramatically in the coming decades, placing a rising burden on health care systems. According to the growing morbidity in recent years, in 2040, the world’s diabetic patients will reach 642 million, which means that one of the ten adults in the future is suffering from diabetes. There is no doubt that this alarming figure needs great attention. With the rapid development of machine learning, machine learning has been applied to many aspects of medical health.\cite{DBTW}
 
@@ -122,6 +137,11 @@ Most diabetes cases can be categorized into 3 subgroups:
 Over the long term, T2D patients become resistant to the normal effects of insulin and gradually lose their capacity to produce enough of this hormone. A wide range of therapeutic options are available for patients with T2D. At the early stages of disease, they commonly receive medications that improve insulin secretion or insulin absorption, but eventually they must receive external doses of insulin. On the other hand, T1D patients have severe impairments in insulin production, and must use external insulin exclusively to manage their blood glucose. Treatment of T1D requires consistent doses of insulin through MDI or CSII using a pump. GDM is treated similarly to T2D, but only occurs during pregnancy due to the interaction between insulin and hormones released by the placenta.
 
 In each class of diabetes, timely diagnosis, education of patients in self-management, and continuous medical care are required to prevent acute complications (eg, ketoacidosis) and minimize the risk of long-term complications (eg, nephropathy, retinopathy, diabetic foot, cardiovascular disease, or stroke). In addition to medication, management of diabetes requires adherence to an array of self-care behaviors that are often very burdensome for patients: carefully scheduling meals, counting carbohydrates, exercising, monitoring BG levels, and adjusting endeavors on a daily basis. The effects of non-adherence to recommended treatment are not immediately evident and long-term complications may take years to develop. Accordingly, diabetes therapy is complex, and therapeutic decisions need to take into account diverse medical factors and lifestyle-related activities that must be optimized to improve diabetic patients’ quality of life.
+
+Applying machine learning and data mining methods in diabetes mellitus research is a key approach to utilizing large volumes of available diabetes related data for extracting knowledge. The severe social impact of the specific disease renders DM one of the main priorities in medical science research, which inevitably generates huge amounts of data. Undoubtedly, therefore, machine learning and data mining approaches in DM are of great concern when it comes to diagnosis, management and other related clinical administration aspects. Hence, in the framework of this study, efforts were made to review the current literature on machine learning and data mining approaches in diabetes research.
+
+Machine learning tasks are typically classified into three broad categories. These are: a) supervised learning, in which the system infers a function from labeled training data, b) unsupervised learning, in which the learning system tries to infer the structure of unlabeled data, and c) reinforcement learning, in which the system interacts with a dynamic environment.
+
 
 
 \newpage
@@ -169,8 +189,7 @@ $$L(\bar{w};y) = log P(y|\bar{w}) = \sum_{i} log P(y_{i}|\bar{x_{i}}, \bar{w})$$
 
 \newpage
 \section{K-Nearest Neighbours}
-The k-means algorithm is based on the (strong) initial condition to decide the number of
-clusters through the assignment of k initial centroids or means:
+The k-means algorithm is based on the (strong) initial condition to decide the number of clusters through the assignment of k initial centroids or means:
 % page 183
 \\
 Then the distance between each sample and each centroid is computed and the sample is
@@ -205,7 +224,7 @@ One of the most common disadvantages of k-means is related to the choice of the 
 }
  
 \lstset{style=mystyle}
-\lstinputlisting[language=Python]{lr.py}
+\lstinputlisting[language=Python]{knn.py}
 
 
 
@@ -427,6 +446,8 @@ Zou, Q., Qu, K., Luo, Y., Yin, D., Ju, Y.,\& Tang, H. (2018, November 6). Predic
 
 \bibitem{WIKIUML}
 Hinton, Geoffrey; Sejnowski, Terrence (1999). Unsupervised Learning: Foundations of Neural Computation. MIT Press. ISBN 978-0262581684.
+
+
 
 \end{thebibliography}
 \end{document}
