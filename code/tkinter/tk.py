@@ -1,6 +1,6 @@
 import tkinter as tk  
 from functools import partial  
-   
+import sklearn
    
 def call_result(label_result, n1, n2):  
     num1 = (n1.get())  
@@ -17,8 +17,7 @@ root.title('Calculator')
 number1 = tk.StringVar()  
 number2 = tk.StringVar()  
   
-labelNum1 = tk.Label(root, text="A").grid(row=1, column=0)  
-  
+labelNum1 = tk.Label(root, text="A").grid(row=1, column=0)
 labelNum2 = tk.Label(root, text="B").grid(row=2, column=0)  
   
 labelResult = tk.Label(root)  
