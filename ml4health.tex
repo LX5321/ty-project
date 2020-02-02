@@ -11,6 +11,8 @@
 \usepackage{capt-of}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
 \usepackage[acronym]{glossaries}
 \usepackage[a4paper, inner=1.5cm, outer=3cm, top=2cm,bottom=3cm, bindingoffset=1cm]{geometry}
 \counterwithin*{section}{part}
@@ -107,7 +109,6 @@ Graz University of Technology, Graz, Austria
 ---------------------
 \fi
 
-
 There have been advances in the field of biotechnology along with easier and inexpensive methods of production of medical equipment has enabled easy production of data thereby allowing the generated big data to be used by machine learning algorithms.
 
 To date, besides high performance sequencing methods, there is a plethora of digital machines and sensors from various research fields generating data, including super-resolution digital microscopy, mass spectrometry, Magnetic Resonance Imagery (MRI), etc. Although these technologies produce a wealth of data, they do not provide any kind of analysis, interpretation or extraction of knowledge. To this end, the area of Biological Data Mining or otherwise Knowledge Discovery in Biological Data, is more than ever necessary and important. The primary objective is to delve into the rapidly accruing body of biological data
@@ -116,8 +117,6 @@ and set the basis potentiating answers to fundamental questions in biology and m
 The power and effectiveness of these approaches are derived from the ability of commensurate methods to extract patterns and create
 models from data. The aforementioned fact is particularly significant in the big data era, especially when the dataset can reach terabytes or petabytes of data. Consequently, the abundance of data has strengthened considerably data-oriented research in biology. In such a hybrid field, one of the most important research applications is prognosis and
 diagnosis related to human-threatening and/or life quality reducing diseases. One such disease is diabetes mellitus (DM).
-
-
 
 As defined by the American Diabetes Association\cite{classdiag},
 \begin{quote}
@@ -323,10 +322,11 @@ This is the part on how the project results were obtained.\\
 
 
 {%
+
     \clearpage% Flush earlier floats (otherwise order might not be correct)
     \thispagestyle{empty}% empty page style (?)
     \begin{landscape}% Landscape page
-        \centering % Center table
+    \centering % Center table
 \begin{table}[]
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -360,6 +360,7 @@ MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0 & 0.
 
 \newpage
 \part{Building Information Systems for Prediction}
+\includegraphics[width=\textwidth]{universe}
 \section{Introduction}
 In today's world we have many algorithms and multiple datasets along with sufficient data available for testing and training the algorithms for classifying whether or not a person from the healthy population has the risk of contracting diabetes or not. The system should be able to firstly mine the data or handle the incoming data and filter or process it according to the parameters described by the required specifications.
 
