@@ -117,41 +117,10 @@ As the patient, one should be able to:
 \item Should be able to view notes or suggestions left by doctor.
 \end{itemize}
 
-\subsection{Functionalities for Master Nodes}
-As the patient, one should be able to:
-\begin{itemize}
-\item Should be able to see the predicted risk of developing diabetes.
-\item Should be able to view historic data.
-\item Should be able to view notes or suggestions left by doctor.
-\end{itemize}
-
-\subsection{Functionalities for Slave Nodes}
-As the patient, one should be able to:
-\begin{itemize}
-\item Should be able to see the predicted risk of developing diabetes.
-\item Should be able to view historic data.
-\item Should be able to view notes or suggestions left by doctor.
-\end{itemize}
-
 \newpage
 \section{Hardware Requirements}
 \subsection{Raspberry Pi}
-
-According to raspberrypi.org, the Raspberry Pi 3 Model B is the earliest model of the third-generation Raspberry Pi. It replaced the Raspberry Pi 2 Model B in February 2016. Some of the key features of this single board computer or SBC are:
-\begin{itemize}
-\item Quad Core 1.2GHz Broadcom BCM2837 64bit CPU.
-\item 1GB RAM.
-\item BCM43438 wireless LAN and Bluetooth Low Energy (BLE) on board.
-\item 100 Base Ethernet.
-\item 40-pin extended GPIO.
-\item 4 USB 2 ports.
-\item Full size HDMI.
-\item Micro SD port for loading your operating system and storing data.
-\end{itemize}
-In this project I will be using 3 Raspberry Pi's to implement a cluster and deploy the machine learning algorithm on.
-
 \subsection{Switch}
-A network switch was used in the project to make up for the lack of ethernet ports available on the router. The dumb network switch was able to connect upto 3 Raspberry Pi and one cable back to the network router itself to connect the switch to the main network.
 \subsection{Router}
 \subsection{Master Node}
 \subsection{Miscalleneous Components}
