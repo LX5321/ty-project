@@ -21,19 +21,8 @@
 \BOOKMARK [2][-]{subsection.5.4}{PHP}{section.5}% 21
 \BOOKMARK [2][-]{subsection.5.5}{AJAX}{section.5}% 22
 \BOOKMARK [2][-]{subsection.5.6}{GitHub}{section.5}% 23
-\BOOKMARK [1][-]{section.6}{Finding the Right Algorithm}{}% 24
+\BOOKMARK [1][-]{section.6}{The Multi Layered Perceptron}{}% 24
 \BOOKMARK [2][-]{subsection.6.1}{Introduction}{section.6}% 25
-\BOOKMARK [2][-]{subsection.6.2}{Algorithms}{section.6}% 26
-\BOOKMARK [3][-]{subsubsection.6.2.1}{Decision Tree}{subsection.6.2}% 27
-\BOOKMARK [3][-]{subsubsection.6.2.2}{Random Forest}{subsection.6.2}% 28
-\BOOKMARK [3][-]{subsubsection.6.2.3}{Gradient Boosting}{subsection.6.2}% 29
-\BOOKMARK [3][-]{subsubsection.6.2.4}{Support Vector Machine}{subsection.6.2}% 30
-\BOOKMARK [3][-]{subsubsection.6.2.5}{Linear Support Vector Machines}{subsection.6.2}% 31
-\BOOKMARK [3][-]{subsubsection.6.2.6}{Perceptron}{subsection.6.2}% 32
-\BOOKMARK [3][-]{subsubsection.6.2.7}{Multilayered Perceptron}{subsection.6.2}% 33
-\BOOKMARK [3][-]{subsubsection.6.2.8}{Linear Regression}{subsection.6.2}% 34
-\BOOKMARK [3][-]{subsubsection.6.2.9}{Logistic Regression}{subsection.6.2}% 35
-\BOOKMARK [3][-]{subsubsection.6.2.10}{K-Nearest Neighbours}{subsection.6.2}% 36
-\BOOKMARK [3][-]{subsubsection.6.2.11}{Finding Optimum Number of Clusters}{subsection.6.2}% 37
-\BOOKMARK [1][-]{section.7}{Writing Code}{}% 38
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 39
+\BOOKMARK [1][-]{section.7}{Writing Code}{}% 26
+\BOOKMARK [1][-]{section.8}{Tables}{}% 27
+\BOOKMARK [1][-]{section.9}{Conclusion}{}% 28

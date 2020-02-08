@@ -13,6 +13,7 @@
 \usepackage{capt-of} 
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{setspace}
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -80,12 +81,16 @@ Mrs. Ashweta Fondekar\\Asst. Professor\\Dept. of CSE
 \newpage
 \tableofcontents
 \newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
 
 
 \begin{abstract}
 Your abstract.
 \end{abstract}
-
+\doublespacing
 \section{Introduction}
 In recent days, there has been a sharp increase in the cases of diabetes mellitus. Diabetes mellitus is on the rise amongst many people and the rate of contracting this lifestyle disease could be reduced significantly if proper measures and precautions were to be instilled amongst people the number of people can be reduced.
 
@@ -97,7 +102,8 @@ The objective of this project is to create a  system that is able to use the mac
 
 \newpage
 \section{Software Requirements}
-The main function of this project is to enable the doctors to advise their patients with the help of the prediction software. The system should be accessible to the patient as weel as the doctor, therefore it should have a web interface for the two parties to interact with. 
+The main function of this project is to enable the doctors to advise their patients with the help of the prediction software. The system should be accessible to the patient as wel\\
+l as the doctor, therefore it should have a web interface for the two parties to interact with. 
 
 \subsection{Functionalities for Doctors}
 As an owner of a doctors account a doctor should be able to:
@@ -162,180 +168,80 @@ The master node is assigned the task of managing the the slave nodes connected t
 \newpage
 \section{Technology Stack}
 \subsection{Python}
-
 \subsubsection{Pandas}
+Pandas, is a library that is required for loading the comma separated value file into python. Pandas is a package for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
 
 \subsubsection{Sklearn}
+Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy.
 
 \subsubsection{Numpy}
+NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. The ancestor of NumPy, Numeric, was originally created by Jim Hugunin with contributions from several other developers. In 2005, Travis Oliphant created NumPy by incorporating features of the competing Numarray into Numeric, with extensive modifications. NumPy is open-source software and has many contributors.
 
 \subsubsection{Itertools}
+The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
 
 \subsection{MYSQL}
+MySQL is an open-source relational database management system (RDBMS). Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language.
+
+MySQL is free and open-source software under the terms of the GNU General Public License, and is also available under a variety of proprietary licenses. MySQL was owned and sponsored by the Swedish company MySQL AB, which was bought by Sun Microsystems (now Oracle Corporation). In 2010, when Oracle acquired Sun, Widenius forked the open-source MySQL project to create MariaDB.
+
+MySQL is a component of the LAMP web application software stack (and others), which is an acronym for Linux, Apache, MySQL, Perl/PHP/Python. MySQL is used by many database-driven web applications, including Drupal, Joomla, phpBB, and WordPress. MySQL is also used by many popular websites, including Facebook, Flickr, MediaWiki, Twitter and YouTube.
 
 \subsection{Apache Web Server}
+The Apache HTTP Server, colloquially called Apache, is free and open-source cross-platform web server software, released under the terms of Apache License 2.0. Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation.
+
+The vast majority of Apache HTTP Server instances run on a Linux distribution, but current versions also run on Microsoft Windows and a wide variety of Unix-like systems. Past versions also ran on OpenVMS, NetWare, OS/2 and other operating systems, including ports to mainframes.
 
 \subsection{PHP}
+PHP is a general-purpose programming language originally designed for web development. PHP originally stood for Personal Home Page,
+but it now stands for the recursive initialism PHP: Hypertext Preprocessor.
+
+PHP code may be executed with a command line interface (CLI), embedded into HTML code, or used in combination with various web template systems, web content management systems, and web frameworks. PHP code is usually processed by a PHP interpreter implemented as a module in a web server or as a Common Gateway Interface (CGI) executable. The web server outputs the results of the interpreted and executed PHP code, which may be any type of data, such as generated HTML code or binary image data. PHP can be used for many programming tasks outside of the web context, such as standalone graphical applications[8] and robotic drone control.
 
 \subsection{AJAX}
+Ajax is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. By decoupling the data interchange layer from the presentation layer, Ajax allows web pages and, by extension, web applications, to change content dynamically without the need to reload the entire page.[3] In practice, modern implementations commonly utilize JSON instead of XML.
+
+Ajax is not a single technology, but rather a group of technologies. HTML and CSS can be used in combination to mark up and style information. The webpage can then be modified by JavaScript to dynamically display—and allow the user to interact with—the new information. The built-in XMLHttpRequest object, or since 2017 the new "fetch()" function within JavaScript, is commonly used to execute Ajax on webpages allowing websites to load content onto the screen without refreshing the page. Ajax is not a new technology, or different language, just existing technologies used in new ways.
 
 \subsection{GitHub}
+GitHub is a global company that provides hosting for software development version control using Git. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
 
 \newpage
-\section{Finding the Right Algorithm}
+\section{The Multi Layered Perceptron}
 \subsection{Introduction}
-For our predictions we need to use algorithms that give us the maximum accuracy and once we find that algorithm we will further need to tune the selected algorithm from the algorithms we selected to optimise the performance of the predictions generated by the machine learning algorithm. For this purpose we turn to the EDA or exploratory data analysis stage of any machine learning project. 
-
-\subsection{Algorithms}
-\subsubsection{Decision Tree}
-Decision trees are flowcharts that represent the decision-making process as rules for performing categorization. Decision trees start from a root and contain internal nodes that represent features and branches that represent outcomes. As such, decision trees are a representation of a classification problem. Decision trees can be exploited to make them easier to understand. Each decision tree is a dis-junction of implications (i.e., if–then statements), and the implications are Horn clauses that are useful for logic programming. A Horn clause is a dis-junction of literals.
-On the basis that there are no errors in the data in the form of inconsistencies, we can always construct a decision tree for training datasets with 100\% accuracy. However, this may not roll out in the real world and may indicate overfitting, as we will discuss.
-
-Classifying an example involves subjecting the data to an organized sequence of tests to determine the label. Trees are built and tested from top to bottom as so:
-\begin{enumerate}
-\item Start at the root of the model
-\item Wait until all examples are in the same class
-\item Test features to determine best split based on a cost function
-\item Follow the branch value to the outcome
-\item Repeat number 2
-\item Leaf node output
-\end{enumerate}
-
-The central question in decision tree learning is which nodes should be placed in which positions, including the root node and decision nodes. There are three main decision tree algorithms. The difference in each algorithm is the measure or cost function for which nodes, or features, are selected. The root is the top node. The tree is split into branches; evaluated through a cost function; and a branch that doesn’t split is a terminal node, decision, or leaf.
-
-Decision trees are useful in the way that acquired knowledge can be expressed in an easy to read and understandable format (see Figure 4-1). It mimics human decision-making whereby priority—determined by feature importance, relationships, and decisions—is clear. They are simple in the way that outcomes can be expressed as a set of rules. Figure 4-1. Decision tree of n = 2 nodes
-Decision trees provide benefits in how they can represent big datasets and prioritize the most discriminatory features. If a decision tree depth is not set, it will eventually learn the data presented and overfit. It is recommended to set a small depth for decision tree modeling. Alternatively, the decision tree can be pruned, typically starting from the least important feature, or the incorporation of dimensionality reduction techniques.
-
-Overfitting is a common machine learning obstacle, and not limited to decision trees. All algorithms are at risk of overfitting, and a variety of techniques exist to overcome this problem. Random forest or jungle decision trees can be extremely useful in this. Pruning reduces the size of a decision tree by removing features that provide the least information. As a result, the final classification rules are
-less complicated and improve predictive accuracy. The accuracy of a model is calculated as the percentage of examples in
-the test dataset that is classified correctly.
-
-\begin{itemize}
-
-\item{True Positive}: Where the actual class is yes, and
-the value of the predicted class is also yes.
-
-\item{False Positive}: Actual class is no, and predicted
-class is yes.
-
-\item{True Negative}: The value of the actual class is no,
-and the value of the predicted class is no.
-
-\item{False Negative}: When the actual class value is yes,
-but predicted class is no.
-
-\end{itemize}
-
-$$
-Accuracy= \frac{TP + TN}{TP + TN + FP + FN}
-$$
-
-$$
-Precision = \frac{TP}{TP} + FP
-$$
-
-$$
-Recall = \frac{TP}{TP} + FN
-$$
-
-Classification is a common method used in machine learning; and ID3 (Iterative Dichotomizer 3), C4.5 (Classification 4.5), and CART
-(Classification And Regression Trees) are common decision tree methods where the resulting tree can be used to classify future samples.
-
-\newpage
-\subsubsection{Random Forest}
-
-\newpage
-\subsubsection{Gradient Boosting}
-
-\newpage
-\subsubsection{Support Vector Machine}
-Support Vector Machines is an algorithm that is capable of handling 
-linear as well as data that occurs non-linearly. For example, for a long time, SVMs were the best
-choice for MNIST dataset classification, thanks to the fact that they can capture very high
-non-linear dynamics using a mathematical trick, without complex modifications in the
-algorithm.
-
-\subsubsection{Linear Support Vector Machines}
-Let us consider a dataset of features we want to classify.
-
-$$
-X = \lbrace x_{1}, x_{2}, x_{3}, ... , x_{n} \rbrace 
-$$ 
-For the target variable, we will consider the dataset $Y$, with target outcomes as 
-$\lbrace0,1\rbrace$ indicating a true or false condition.
-
-$$
-Y = \lbrace y_{1}, y_{2}, y_{3}, ... , y_{n} \rbrace 
-$$
-
-\newpage
-\subsubsection{Perceptron}
-
-\newpage
-\subsubsection{Multilayered Perceptron}
-
-\subsubsection{Linear Regression}
-Linear regression is a forecasting technique that can be use to predict the future of a number series based on the historic data given. The perks of using a linear regression model are as follows:
-
-\begin{itemize}
-  \item produces decent and  easy to interpret results.
-  \item is computationally inexpensive.
-  \item conversion of algorithm into code does not take much effort or time.
-  \item numeric values as well as nominal values support is offered.
-\end{itemize}
-
-However, a major drawback of linear regression is that it \textbf{poorly models nonlinear data}.
-\\
-Considering a dataset that has values ranging from 
-$X = \lbrace x_{1}+x_{2}+x_{3}+...+x_{n} \rbrace$ where
-all the entries of the dataset are real numbers. Each $x_{i}$ is associated with a corresponding value of $y_{i}$ from the dataset $Y = \lbrace y_{1}+y_{2}+y_{3}+...+y_{n} \rbrace$.
-
-The most basic equation for linear regression can be expressed via this simple equation.
-$$y = \beta_{0}x+\beta_{1}+\epsilon$$
-
-So to minimize the error in the predictions, a way to calculate the error should be formulated. A loss function in machine learning is simply a measure of how different the predicted value is from the actual value. The Quadratic Loss Function to calculate the loss or error in our linear regression model. It can be defined as:
-$$L(x) = \sum_{i=1}^{n}(y_{i}-p_{i})^{2} $$
-Therefore using the method of Least Squares, we can find the values of $\beta_{0}$ and $\beta_{1}$.
-
-$$
-\beta_{0} = \frac{\sum_{i=1}^{n} ( x_{i}-\bar{x}) (y_{i}-\bar{y})}{\sum_{i=1}^{n} ( x_{i}-\bar{x})^{2} }
-$$
-The linear regression model with an error value close to 1.00 indicates a perfect model and those with values closer to 0.00 indicates a model that delivers poor performance.
-
-
-
-\newpage
-\subsubsection{Logistic Regression}
-Logistic Regression is a classification method which is based on the probability for a sample to belong to a class. As our probabilities must be continuous in $R$ and should bounded between the lower limit of 0 and upper limit of 1 it's necessary to introduce a threshold function to filter the term $z$. The name logistic comes from the decision to use the sigmoid (or logistic) function, defined as shown below.
-$$\sigma(z)= \dfrac{1}{1+e^{-z}}$$
-The sigmoid function in its domain is $R$ has two asymptotes\footnote{In analytic geometry, an asymptote of a curve is a line such that the distance between the curve and the line approaches zero as one or both of the x or y coordinates tends to infinity.} that occur at 0 and 1. So, the probability for a sample to belong to a class from 0 and 1 can be defined as:
-$$P(y|\bar{x})=\sigma(\bar{x};\bar{w})$$
-At this point, finding the optimal parameters is equivalent to maximizing the log-likelihood\footnote{The log-likelihood is, as the term suggests, the natural logarithm of the likelihood.}
-given the output class:
-$$L(\bar{w};y) = log P(y|\bar{w}) = \sum_{i} log P(y_{i}|\bar{x_{i}}, \bar{w})$$
-
-\newpage
-\subsubsection{K-Nearest Neighbours}
-The k-means algorithm is based on the (strong) initial condition to decide the number of clusters through the assignment of k initial centroids or means:
-% page 183
-\\
-Then the distance between each sample and each centroid is computed and the sample is
-assigned to the cluster where the distance is minimum. This approach is often called
-minimizing the inertia of the clusters, which is defined as follows:
-%page 183
-\\
-The process is iterative—once all the samples have been processed, a new set of centroids K (1) is computed (now considering the actual elements belonging to the cluster), and all the distances are recomputed. The algorithm stops when the desired tolerance is reached, or in other words, when the centroids become stable and, therefore, the inertia is minimized. Of course, this approach is quite sensitive to the initial conditions, and some methods have been studied to improve the convergence speed. One of them is called k-means++ (Karteeka Pavan K., Allam Appa Rao, Dattatreya Rao A. V., and Sridhar G.R., Robust Seed Selection Algorithm for K-Means Type Algorithms, International Journal of Computer Science and Information Technology 3, no. 5, October 30, 2011), which selects the initial centroids so that they are statistically close to the final ones. The mathematical explanation is quite difficult; however, this method is the default choice for scikit-learn, and it's normally the best choice for any clustering problem solvable with this algorithm.
-% page 188
-\subsubsection{Finding Optimum Number of Clusters}
-One of the most common disadvantages of k-means is related to the choice of the optimal number of clusters. An excessively small value will determine large groupings that contain heterogeneous elements, while a large number leads to a scenario where it can be difficult to identify the differences among clusters. Therefore, we're going to discuss some methods that can be employed to determine the appropriate number of splits and to evaluate the corresponding performance.
-
-
+The multilayer perceptron (MLP) is the one of the most commonly used artificial neural networks. The name is a slight misnomer; a multilayer perceptron is not a single perceptron with multiple layers, but rather multiple layers of artificial neurons
+that can be perceptrons. The layers of the MLP form a directed, acyclic graph.
+Generally, each layer is fully connected to the subsequent layer; the output of each
+artificial neuron in a layer is an input to every artificial neuron in the next layer
+towards the output. MLPs have three or more layers of artificial neurons.
 
 
 
 \newpage
 \section{Writing Code}
 \lstinputlisting[language=Python]{code/master.py}
+
+
+\newpage
+\section{Tables}
+The table \ref{table:1} is an example of referenced \LaTeX elements.
+ 
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c c c c||} 
+ \hline
+ Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
+ \hline\hline
+ 1 & 6 & 87837 & 787 \\ 
+ 2 & 7 & 78 & 5415 \\
+ 3 & 545 & 778 & 7507 \\
+ 4 & 545 & 18744 & 7560 \\
+ 5 & 88 & 788 & 6344 \\ [1ex] 
+ \hline
+\end{tabular}
+\caption{Table to test captions and labels}
+\label{table:1}
+\end{table}
 
 \newpage
 \section{Conclusion}
