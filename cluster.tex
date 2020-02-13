@@ -88,9 +88,9 @@ Mrs. Ashweta Fondekar\\Asst. Professor\\Dept. of CSE
 
 
 \begin{abstract}
-Your abstract.
+
 \end{abstract}
-\doublespacing
+\onehalfspacing
 \section{Introduction}
 In recent days, there has been a sharp increase in the cases of diabetes mellitus. Diabetes mellitus is on the rise amongst many people and the rate of contracting this lifestyle disease could be reduced significantly if proper measures and precautions were to be instilled amongst people the number of people can be reduced.
 
@@ -102,16 +102,13 @@ The objective of this project is to create a  system that is able to use the mac
 
 \newpage
 \section{Software Requirements}
-The main function of this project is to enable the doctors to advise their patients with the help of the prediction software. The system should be accessible to the patient as wel\\
-l as the doctor, therefore it should have a web interface for the two parties to interact with. 
+The main function of this project is to enable the doctors to advise their patients with the help of the prediction software. The system should be accessible to the patient as well as the doctor, therefore it should have a web interface for the two parties to interact with. 
 
 \subsection{Functionalities for Doctors}
 As an owner of a doctors account a doctor should be able to:
 \begin{itemize}
-\item Add new patients.
 \item Add new observations for the machine learning algorithm to predict.
 \item Analyse the patients previous records.
-\item Leave notes for patients to act on.
 \end{itemize}
 
 \subsection{Functionalities for Patients}
@@ -123,19 +120,18 @@ As the patient, one should be able to:
 \end{itemize}
 
 \subsection{Functionalities for Master Nodes}
-As the patient, one should be able to:
+As the master nodes:
 \begin{itemize}
-\item Should be able to see the predicted risk of developing diabetes.
-\item Should be able to view historic data.
-\item Should be able to view notes or suggestions left by doctor.
+\item Control chunk size.
+\item Remotely update the slave nodes.
+\item Check the availability of nodes.
+\item Control the SQL database.
 \end{itemize}
 
 \subsection{Functionalities for Slave Nodes}
-As the patient, one should be able to:
 \begin{itemize}
-\item Should be able to see the predicted risk of developing diabetes.
-\item Should be able to view historic data.
-\item Should be able to view notes or suggestions left by doctor.
+\item should have the machine learning algorithm with can be updated.
+\item Remote access should be possible.
 \end{itemize}
 
 \newpage
@@ -164,6 +160,13 @@ A router is required to assign internet protocol addresses to the nodes using dy
 
 \subsection{Master Node}
 The master node is assigned the task of managing the the slave nodes connected to the network. The master node and the slave nodes should be connected to the same database to run and execute queries.
+
+\subsection{Slave Node}
+The slave nodes are to be configured with the selected algorithm and are.
+
+\subsection{Database}
+
+\subsection{Web Server}
 
 \newpage
 \section{Technology Stack}
@@ -196,7 +199,7 @@ The vast majority of Apache HTTP Server instances run on a Linux distribution, b
 PHP is a general-purpose programming language originally designed for web development. PHP originally stood for Personal Home Page,
 but it now stands for the recursive initialism PHP: Hypertext Preprocessor.
 
-PHP code may be executed with a command line interface (CLI), embedded into HTML code, or used in combination with various web template systems, web content management systems, and web frameworks. PHP code is usually processed by a PHP interpreter implemented as a module in a web server or as a Common Gateway Interface (CGI) executable. The web server outputs the results of the interpreted and executed PHP code, which may be any type of data, such as generated HTML code or binary image data. PHP can be used for many programming tasks outside of the web context, such as standalone graphical applications[8] and robotic drone control.
+PHP code may be executed with a command line interface (CLI), embedded into HTML code, or used in combination with various web template systems, web content management systems, and web frameworks. PHP code is usually processed by a PHP interpreter implemented as a module in a web server or as a Common Gateway Interface (CGI) executable. The web server outputs the results of the interpreted and executed PHP code, which may be any type of data, such as generated HTML code or binary image data. PHP can be used for many programming tasks outside of the web context, such as standalone graphical applications and robotic drone control.
 
 \subsection{AJAX}
 Ajax is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. By decoupling the data interchange layer from the presentation layer, Ajax allows web pages and, by extension, web applications, to change content dynamically without the need to reload the entire page.[3] In practice, modern implementations commonly utilize JSON instead of XML.
@@ -206,46 +209,218 @@ Ajax is not a single technology, but rather a group of technologies. HTML and CS
 \subsection{GitHub}
 GitHub is a global company that provides hosting for software development version control using Git. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
 
+\subsection{SSH}
+
+\newpage
+\section{Selecting an Algorithm}
+% Write about the EDA and algorithm selection process.
+
 \newpage
 \section{The Multi Layered Perceptron}
 \subsection{Introduction}
 The multilayer perceptron (MLP) is the one of the most commonly used artificial neural networks. The name is a slight misnomer; a multilayer perceptron is not a single perceptron with multiple layers, but rather multiple layers of artificial neurons
-that can be perceptrons. The layers of the MLP form a directed, acyclic graph.
-Generally, each layer is fully connected to the subsequent layer; the output of each
-artificial neuron in a layer is an input to every artificial neuron in the next layer
+that can be perceptrons. The layers of the MLP form a directed, acyclic graph. Generally, each layer is fully connected to the subsequent layer; the output of each artificial neuron in a layer is an input to every artificial neuron in the next layer
 towards the output. MLPs have three or more layers of artificial neurons.
 
+\newpage
+\section{Coding Process}
+% Describe the coding process; write pseudocode; and include images.
+\subsection{Designing the System}
+%step 1 start
 
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Can [id:dp3989446731507247] 
+\draw   (606,68.75) -- (606,170.25) .. controls (606,182.26) and (573.09,192) .. (532.5,192) .. controls (491.91,192) and (459,182.26) .. (459,170.25) -- (459,68.75) .. controls (459,56.74) and (491.91,47) .. (532.5,47) .. controls (573.09,47) and (606,56.74) .. (606,68.75) .. controls (606,80.76) and (573.09,90.5) .. (532.5,90.5) .. controls (491.91,90.5) and (459,80.76) .. (459,68.75) ;
+%Shape: Rectangle [id:dp14170681543352437] 
+\draw   (102,89) -- (325,89) -- (325,158) -- (102,158) -- cycle ;
+%Straight Lines [id:da9571038146445507] 
+\draw    (458,121) -- (326.5,121) ;
+\draw [shift={(324.5,121)}, rotate = 360] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+
+
+% Text Node
+\draw (213.5,123.5) node   [align=left] {Master Node};
+% Text Node
+\draw (534,129) node   [align=left] {SQL Database};
+
+
+\end{tikzpicture}
+\end{figure}
+%step 1 end
+
+
+%step 3
+
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Rectangle [id:dp7056891731575645] 
+\draw   (100,151) -- (220,151) -- (220,190) -- (100,190) -- cycle ;
+%Shape: Rectangle [id:dp652502983568856] 
+\draw   (100,200) -- (220,200) -- (220,239) -- (100,239) -- cycle ;
+%Shape: Rectangle [id:dp1370792081503991] 
+\draw   (100,50) -- (220,50) -- (220,89) -- (100,89) -- cycle ;
+%Shape: Rectangle [id:dp3403063589466713] 
+\draw   (100,100) -- (220,100) -- (220,139) -- (100,139) -- cycle ;
+%Shape: Rectangle [id:dp05437739213565784] 
+\draw   (340,100) -- (560,100) -- (560,190) -- (340,190) -- cycle ;
+%Straight Lines [id:da17081303413935167] 
+\draw    (340,150) -- (221.66,71.11) ;
+\draw [shift={(220,70)}, rotate = 393.69] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da6256697337377781] 
+\draw    (340,150) -- (221.94,120.49) ;
+\draw [shift={(220,120)}, rotate = 374.03999999999996] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da3463514586442602] 
+\draw    (340,150) -- (221.97,169.67) ;
+\draw [shift={(220,170)}, rotate = 350.53999999999996] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da6887749797140261] 
+\draw    (340,150) -- (221.73,218.99) ;
+\draw [shift={(220,220)}, rotate = 329.74] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+
+% Text Node
+\draw (160,170.5) node   [align=left] {Slave Node};
+% Text Node
+\draw (160,219.5) node   [align=left] {Slave Node};
+% Text Node
+\draw (160,119.5) node   [align=left] {Slave Node};
+% Text Node
+\draw (160,69.5) node   [align=left] {Slave Node};
+% Text Node
+\draw (450,145) node   [align=left] {Master Node};
+
+
+\end{tikzpicture}
+\end{figure}
+
+%step 3 end
 
 \newpage
-\section{Writing Code}
-\lstinputlisting[language=Python]{code/master.py}
+\section{Deploying to Cluster}
+A cluster is a group of two or more servers connected to each other in such a way that they behave like a single server. Each machine in the cluster is called a node. Because each machine in the cluster runs the same services as other machines in the cluster, any machine can stand in for any other machine in the cluster. This becomes important when one machine goes down or must be taken out of service for a time. The remaining machines in the cluster can seamlessly take over the work of the downed machine, providing users with uninterrupted access to services and data.
+
+Benefits of Clustering
+Clustering Intelligence Servers provides the following benefits:
+
+Increased resource availability: If one Intelligence Server in a cluster fails, the other Intelligence Servers in the cluster can pick up the workload. This prevents the loss of valuable time and information if a server fails.
+Strategic resource usage: You can distribute projects across nodes in whatever configuration you prefer. This reduces overhead because not all machines need to be running all projects, and allows you to use your resources flexibly.
+Increased performance: Multiple machines provide greater processing power.
+Greater scalability: As your user base grows and report complexity increases, your resources can grow.
+Simplified management: Clustering simplifies the management of large or rapidly growing systems.
+Failover Support
+Failover support ensures that a business intelligence system remains available for use if an application or hardware failure occurs. Clustering provides failover support in two ways:
+
+Load redistribution: When a node fails, the work for which it is responsible is directed to another node or set of nodes.
+Request recovery: When a node fails, the system attempts to reconnect MicroStrategy Web users with queued or processing requests to another node. Users must log in again to be authenticated on the new node. The user is prompted to resubmit job requests.
+Load Balancing
+Load balancing is a strategy aimed at achieving even distribution of user sessions across Intelligence Servers, so that no single machine is overwhelmed. This strategy is especially valuable when it is difficult to predict the number of requests a server will receive. MicroStrategy achieves four-tier load balancing by incorporating load balancers into the MicroStrategy Web and Web products.
+
+Load is calculated as the number of user sessions connected to a node. The load balancers collect information on the number of user sessions each node is carrying. Using this information at the time a user logs in to a project, MicroStrategy Web connects them to the Intelligence Server node that is carrying the lightest session load. All requests by that user are routed to the node to which they are connected until the user disconnects from the MicroStrategy Web product.
+
+Project Distribution and Project Failover
+When you set up several server machines in a cluster, you can distribute projects across those clustered machines or nodes in any configuration, in both Windows and Linux environments. All servers in a cluster do not need to be running all projects. Each node in the cluster can host a different set of projects, which means only a subset of projects need to be loaded on a specific Intelligence Server machine. This feature provides you with flexibility in using your resources, and it provides better scalability and performance because of less overhead on each Intelligence Server machine.
+
+Distributing projects across nodes also provides project failover support. For example, one server is hosting project A and another server is hosting projects B and C. If the first server fails, the other server can host all three projects to ensure project availability.
+
+Project creation, duplication, and deletion in a three-tier, or server, connection are automatically broadcast to all nodes during runtime to ensure synchronization across the cluster.
+
+Work Fencing
+User fences and workload fences allow you to reserve nodes of a cluster for either users or a project subscriptions. 
+
+\newpage
+\section{Future Scope}
+
+%\newpage
+%\section{Writing Code}
+%\lstinputlisting[language=Python]{code/master.py}
 
 
 \newpage
 \section{Tables}
 The table \ref{table:1} is an example of referenced \LaTeX elements.
- 
-\begin{table}[h!]
+
+
+
+{%
+
+\clearpage% Flush earlier floats (otherwise order might not be correct)
+\thispagestyle{empty}% empty page style (?)
+\begin{landscape}% Landscape page
+\centering % Center table
+\begin{table}[]
 \centering
-\begin{tabular}{||c c c c||} 
- \hline
- Col1 & Col2 & Col2 & Col3 \\ [0.5ex] 
- \hline\hline
- 1 & 6 & 87837 & 787 \\ 
- 2 & 7 & 78 & 5415 \\
- 3 & 545 & 778 & 7507 \\
- 4 & 545 & 18744 & 7560 \\
- 5 & 88 & 788 & 6344 \\ [1ex] 
- \hline
+\begin{tabular}{|l|l|}
+\hline
+Column Name                & Description                                                               \\ \hline
+Pregnancies                & Number of times pregnant.                                                 \\ \hline
+Glucose                    & Plasma glucose concentration a 2 hours in an oral glucose tolerance test. \\ \hline
+Blood Pressure             & Diastolic blood pressure (mm Hg)                                          \\ \hline
+Skin Thickness             & Triceps skin fold thickness (mm)                                          \\ \hline
+Insulin                    & 2-Hour serum insulin (muU/ml)                                            \\ \hline
+Body Mass Index            & Body mass index (weight in kg/(height in m)\textasciicircum{}2)           \\ \hline
+Diabetes Pedigree Function & Diabetes pedigree function                                                \\ \hline
+Age                        & Age (years)                                                               \\ \hline
+Outcome                    & Class variable (0 or 1) 268 of 768 are 1, the others are 0                \\ \hline
 \end{tabular}
-\caption{Table to test captions and labels}
-\label{table:1}
 \end{table}
+\captionof{table}{Test and Train accuracy's using various machine learning algorithms with various parameters.}
+\label{table:1}
+\end{landscape}
+\clearpage
+}
+
+
+{%
+
+\clearpage% Flush earlier floats (otherwise order might not be correct)
+\thispagestyle{empty}% empty page style (?)
+\begin{landscape}% Landscape page
+\centering % Center table
+\begin{table}[]
+\begin{tabular}{|c|c|c|c|}
+\hline
+Algorithm              & Additional Parameters                              & Train Set Accuracy & Test Set Accuracy \\ \hline
+K Nearest Neighbour    & -                                                  & 0.79               & 0.78              \\ \hline
+Logistic Regression    & C = 1                                              & 0.781              & 0.771             \\ \hline
+Logistic Regression    & C = 0.01                                           & 0.700              & 0.703             \\ \hline
+Logistic Regression    & C = 100                                            & 0.785              & 0.766             \\ \hline
+Decision Tree          & -                                                  & 1.00               & 0.714             \\ \hline
+Decision Tree          & Max Depth = 3                                      & 0.773              & 0.740             \\ \hline
+Random Forest          & Estimators = 100                                   & 1.000              & 0.786             \\ \hline
+Random Forest          & Estimators = 100; Max Depth = 3                    & 0.800              & 0.755             \\ \hline
+Gradient Boosting      & -                                                  & 0.917              & 0.792             \\ \hline
+Gradient Boosting      & Max Depth = 1                                      & 0.804              & 0.781             \\ \hline
+Gradient Boosting      & Learning Rate = 0.01                               & 0.802              & 0.776             \\ \hline
+Support Vector Machine & -                                                  & 1.00               & 0.65              \\ \hline
+Support Vector Machine & Train and Test set scaled using MinMaxScaler       & 0.77               & 0.77              \\ \hline
+Support Vector Machine & C = 1000                                           & 0.790              & 0.797             \\ \hline
+MLP Classifier         & Random State = 42                                  & 0.73               & 0.72              \\ \hline
+MLP Classifier         & Random State = 0                                   & 0.823              & 0.802             \\ \hline
+MLP Classifier         & Max Iterations = 1000                              & 0.908              & 0.792             \\ \hline
+MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0 & 0.806              & 0.797             \\ \hline
+\end{tabular}
+\end{table}
+\captionof{table}{Test and Train accuracy's using various machine learning algorithms with various parameters.}% Add 'table' caption
+\end{landscape}
+\clearpage% Flush page
+}
+
+
 
 \newpage
 \section{Conclusion}
 %https://www.scott-clark.com/2018/10/01/types-of-information-systems-used-in-healthcare-facilities/
+%https://doc-archives.microstrategy.com/producthelp/10.11/SystemAdmin/WebHelp/Lang_1033/Content/Benefits_of_clustering.htm
 \newpage
 \bibliography{bib}
 \end{document}
