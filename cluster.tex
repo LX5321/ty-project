@@ -5,6 +5,8 @@
 \usepackage{amsmath}
 \usepackage{tikz}
 \usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{pdflscape}
@@ -90,7 +92,8 @@ Mrs. Ashweta Fondekar\\Asst. Professor\\Dept. of CSE
 \begin{abstract}
 
 \end{abstract}
-\onehalfspacing
+%\onehalfspacing
+\doublespacing
 \section{Introduction}
 In recent days, there has been a sharp increase in the cases of diabetes mellitus. Diabetes mellitus is on the rise amongst many people and the rate of contracting this lifestyle disease could be reduced significantly if proper measures and precautions were to be instilled amongst people the number of people can be reduced.
 
@@ -212,11 +215,12 @@ Ajax is not a single technology, but rather a group of technologies. HTML and CS
 GitHub is a global company that provides hosting for software development version control using Git. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
 
 \subsection{SSH}
+Secure Shell is a cryptographic network protocol for operating network services securely over an unsecured network. Typical applications include remote command-line, login, and remote command execution, but any network service can be secured with SSH. The SSH is used to communicate between the master and slave nodes.
 
 \newpage
 \section{Selecting an Algorithm}
 % Write about the EDA and algorithm selection process.
-
+The dataset used for this project is from the UCI Machine learning repository and can be found at their website. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and predict the outcomes for given sets of patients. 
 \newpage
 \section{The Multi Layered Perceptron}
 \subsection{Introduction}
@@ -227,6 +231,7 @@ towards the output. MLPs have three or more layers of artificial neurons.
 \newpage
 \section{Coding Process}
 % Describe the coding process; write pseudocode; and include images.
+The concept of the system remains simple. The system can be described using the following diagrams.
 \subsection{Designing the System}
 %step 1 start
 
@@ -383,8 +388,32 @@ towards the output. MLPs have three or more layers of artificial neurons.
 
 %step 3 end
 
-
-
+\newpage
+\subsection{Writing Pseudocode}
+\begin{algorithm}
+\caption{Calculate $y = x^n$}
+\begin{algorithmic}
+\REQUIRE $n \geq 0 \vee x \neq 0$
+\ENSURE $y = x^n$
+\STATE $y \leftarrow 1$
+\IF{$n < 0$}
+\STATE $X \leftarrow 1 / x$
+\STATE $N \leftarrow -n$
+\ELSE
+\STATE $X \leftarrow x$
+\STATE $N \leftarrow n$
+\ENDIF
+\WHILE{$N \neq 0$}
+\IF{$N$ is even}
+\STATE $X \leftarrow X \times X$
+\STATE $N \leftarrow N / 2$
+\ELSE[$N$ is odd]
+\STATE $y \leftarrow y \times X$
+\STATE $N \leftarrow N - 1$
+\ENDIF
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
 
 
 \newpage
@@ -422,17 +451,8 @@ User fences and workload fences allow you to reserve nodes of a cluster for eith
 \newpage
 \section{Future Scope}
 
-%\newpage
-%\section{Writing Code}
-%\lstinputlisting[language=Python]{code/master.py}
-
-
 \newpage
 \section{Tables}
-The table \ref{table:1} is an example of referenced \LaTeX elements.
-
-
-
 {%
 
 \clearpage% Flush earlier floats (otherwise order might not be correct)
@@ -462,8 +482,7 @@ Outcome                    & Class variable (0 or 1) 268 of 768 are 1, the other
 }
 
 
-{%
-
+{
 \clearpage% Flush earlier floats (otherwise order might not be correct)
 \thispagestyle{empty}% empty page style (?)
 \begin{landscape}% Landscape page
@@ -492,9 +511,12 @@ MLP Classifier         & Max Iterations = 1000                              & 0.
 MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0 & 0.806              & 0.797             \\ \hline
 \end{tabular}
 \end{table}
-\captionof{table}{Test and Train accuracy's using various machine learning algorithms with various parameters.}% Add 'table' caption
+\captionof{table}{Test and Train accuracy's using various machine learning algorithms with various parameters.}
+% Add 'table' caption
+\label{table:2}
 \end{landscape}
-\clearpage% Flush page
+\clearpage
+% Flush page
 }
 
 
