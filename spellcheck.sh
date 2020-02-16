@@ -1,1 +1,1 @@
-aspell --mode=tex -c ml4health.tex
+aspell --mode=tex -c cluster.tex

@@ -1,0 +1,157 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{pdflscape}
+\usepackage{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage{capt-of}
+ 
+\usepackage{listings}
+\usepackage{xcolor}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+ 
+\begin{document}
+
+\begin{titlepage}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+\center
+\textsc{\LARGE SMT. PARVATIBAI CHOWGULE }\\[0.3cm] 
+\textsc{\LARGE OF ARTS AND SCIENCE  }\\[0.3cm]
+\textsc{\Large GOA-403601, GOA(INDIA) }\\[0.3cm]
+\textsc{\Large Computer Science and Engineering}\\[0.5cm] 
+
+\HRule \\[0.4cm] 
+{ \huge \bfseries Clustered Machine Learning\par for Predicting Diabetes}\\[0.04cm] 
+\HRule \\[1.5cm]
+
+ 
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Submitted By:}\\
+Alexander Roque Rodrigues\\SU170331\\TYBSC
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Submitted To:} \\
+Mrs. Ashweta Fondekar\\Asst. Professor\\Dept. of CSE 
+\end{flushright}
+\end{minipage}\\[1cm]
+
+
+{\large June-February\\2019-2020 \\Graduation Dissertation}\\[1cm] 
+
+
+\vfill
+\end{titlepage}
+
+\section{Acknowledgements}
+
+\newpage
+\tableofcontents
+\newpage
+
+
+\begin{abstract}
+Your abstract.
+\end{abstract}
+
+\section{Introduction}
+In recent days, there has been a sharp increase in the cases of diabetes mellitus. Diabetes mellitus is on the rise amongst many people and the rate of contracting this lifestyle disease could be reduced significantly if proper measures and precautions were to be instilled amongst people the number of people can be reduced.
+
+Machine learning is a growing field in computer science. With the development and introduction of many algorithms the prediction and accuracy of the predictions itself has improved substantially. Machine learning and healthcare systems are also becoming increasingly popular in the healthcare sector.
+
+The project encompasses the qualities of Remote Patient Monitoring (RPM) and Clinical Decision Support (CDS). RPM provides medical facilities that have the ability to transmit patient data to healthcare professionals who might very well be halfway around the world. RPM can monitor blood glucose levels and blood pressure. It is particularly helpful for patients with chronic conditions such as type 2 diabetes, hypertension, or cardiac disease. Data collected and transmitted via PRM can be used by a healthcare professional or a healthcare team to detect medical events such as stroke or heart attack that require immediate and aggressive medical intervention. Data collected may be used as part of a research project or health study. RPM is a life-saving system for patients in remote areas who cannot access face-to-face health care. CDS analyzes data from clinical and administrative systems. The aim is to assist healthcare providers in making informed clinical decisions. Data available can provide information to medical professions who are preparing diagnoses or predicting medical conditions like drug interactions and reactions. CDS tools filter information to assist healthcare professionals in caring for individual clients. 
+
+The objective of this project is to create a  system that is able to use the machine learning algorithms and predict the outcome of the parameters entered into the algorithm and help the patient draw a conclusion whether or not he/she has the same traits exibhited by simillar patients that have diabetes. Also the system should have a UI that is capable of displaying the data of the patients to the doctor and to the patients themselves for further interpretation.
+
+\newpage
+\section{Software Requirements}
+The main function of this project is to enable the doctors to advise their patients with the help of the prediction software. The system should be accessible to the patient as weel as the doctor, therefore it should have a web interface for the two parties to interact with. 
+
+\subsection{Functionalities for Doctors}
+As an owner of a doctors account a doctor should be able to:
+\begin{itemize}
+\item Add new patients.
+\item Add new observations for the machine learning algorithm to predict.
+\item Analyse the patients previous records.
+\item Leave notes for patients to act on.
+\end{itemize}
+
+\subsection{Functionalities for Patients}
+As the patient, one should be able to:
+\begin{itemize}
+\item Should be able to see the predicted risk of developing diabetes.
+\item Should be able to view historic data.
+\item Should be able to view notes or suggestions left by doctor.
+\end{itemize}
+
+\newpage
+\section{Hardware Requirements}
+\subsection{Raspberry Pi}
+\subsection{Switch}
+\subsection{Router}
+\subsection{Master Node}
+\subsection{Miscalleneous Components}
+\subsubsection{WiFi Enabled Router}
+
+
+
+\newpage
+\section{Technology Stack}
+\subsection{Python}
+\subsubsection{Pandas}
+\subsubsection{Sklearn}
+\subsubsection{Numpy}
+\subsubsection{Itertools}
+\subsection{MYSQL}
+\subsection{Apache Web Server}
+\subsection{PHP}
+\subsection{AJAX}
+\subsection{GitHub}
+
+\newpage
+\section{Finding the Right Algorithm}
+For our predictions we need to use algorithms that give us the maximum accuracy and once we find that algorithm we will further need to tune the selected algorithm from the algorithms we selected to optimise the performance of the predictions generated by the machine learning algorithm. For this purpose we turn to the EDA or exploratory data analysis stage of any machine learning project. 
+
+\newpage
+\section{Writing Code}
+\lstinputlisting[language=Python]{code/master.py}
+
+\newpage
+\section{Conclusion}
+%https://www.scott-clark.com/2018/10/01/types-of-information-systems-used-in-healthcare-facilities/
+\newpage
+\bibliography{bib}
+\end{document}
