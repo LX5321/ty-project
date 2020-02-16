@@ -36,4 +36,13 @@
 \contentsline {section}{\numberline {10}Future Scope}{23}{section.10}
 \contentsline {section}{\numberline {11}Tables}{24}{section.11}
 \contentsline {section}{\numberline {12}Appendices}{27}{section.12}
-\contentsline {section}{\numberline {13}Conclusion}{28}{section.13}
+\contentsline {subsection}{\numberline {12.1}K Nearest Neighbours}{27}{subsection.12.1}
+\contentsline {subsubsection}{\numberline {12.1.1}Function Syntax}{27}{subsubsection.12.1.1}
+\contentsline {subsubsection}{\numberline {12.1.2}Parameters}{27}{subsubsection.12.1.2}
+\contentsline {subsubsection}{\numberline {12.1.3}Logistic Regression}{29}{subsubsection.12.1.3}
+\contentsline {subsubsection}{\numberline {12.1.4}Decision Tree}{31}{subsubsection.12.1.4}
+\contentsline {subsubsection}{\numberline {12.1.5}Random Forest Classifier}{34}{subsubsection.12.1.5}
+\contentsline {subsubsection}{\numberline {12.1.6}Gradient Boosting}{38}{subsubsection.12.1.6}
+\contentsline {subsubsection}{\numberline {12.1.7}Multi Layered Perceptron}{42}{subsubsection.12.1.7}
+\contentsline {subsection}{\numberline {12.2}SVM}{45}{subsection.12.2}
+\contentsline {section}{\numberline {13}Conclusion}{47}{section.13}
