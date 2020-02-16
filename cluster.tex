@@ -242,6 +242,7 @@ Secure Shell is a cryptographic network protocol for operating network services 
 \section{Selecting an Algorithm}
 % Write about the EDA and algorithm selection process.
 The dataset used for this project is from the UCI Machine learning repository and can be found at their website. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and predict the outcomes for given sets of patients. 
+
 \newpage
 \section{The Multi Layered Perceptron}
 \subsection{Introduction}
@@ -414,6 +415,8 @@ The concept of the system remains simple. The system can be described using the 
 \end{itemize}
 
 \newpage
+\clearpage% Flush earlier floats (otherwise order might not be correct)
+\thispagestyle{empty}% empty page style (?)
 \subsection{Writing Pseudocode}
 \begin{algorithm}
 \caption{Calculate $y = x^n$}
@@ -478,12 +481,11 @@ User fences and workload fences allow you to reserve nodes of a cluster for eith
 
 \newpage
 \section{Tables}
-{%
-
-\clearpage% Flush earlier floats (otherwise order might not be correct)
-\thispagestyle{empty}% empty page style (?)
-\begin{landscape}% Landscape page
-\centering % Center table
+{
+\clearpage
+\thispagestyle{empty}
+\begin{landscape}
+\centering
 \begin{table}[]
 \centering
 \begin{tabular}{|l|l|}
@@ -500,7 +502,7 @@ Age                        & Age (years)                                        
 Outcome                    & Class variable (0 or 1) 268 of 768 are 1, the others are 0                \\ \hline
 \end{tabular}
 \end{table}
-\captionof{table}{Test and Train accuracy's using various machine learning algorithms with various parameters.}
+\captionof{table}{Pima Indians dataset header.}
 \label{table:1}
 \end{landscape}
 \clearpage
@@ -508,10 +510,10 @@ Outcome                    & Class variable (0 or 1) 268 of 768 are 1, the other
 
 
 {
-\clearpage% Flush earlier floats (otherwise order might not be correct)
-\thispagestyle{empty}% empty page style (?)
-\begin{landscape}% Landscape page
-\centering % Center table
+\clearpage
+\thispagestyle{empty}
+\begin{landscape}
+\centering
 \begin{table}[]
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -537,12 +539,13 @@ MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0 & 0.
 \end{tabular}
 \end{table}
 \captionof{table}{Test and Train accuracy's using various machine learning algorithms with various parameters.}
-% Add 'table' caption
 \label{table:2}
 \end{landscape}
 \clearpage
-% Flush page
 }
+
+\newpage
+\section{Appendices}
 
 
 
@@ -550,6 +553,9 @@ MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0 & 0.
 \section{Conclusion}
 %https://www.scott-clark.com/2018/10/01/types-of-information-systems-used-in-healthcare-facilities/
 %https://doc-archives.microstrategy.com/producthelp/10.11/SystemAdmin/WebHelp/Lang_1033/Content/Benefits_of_clustering.htm
+%https://www.sciencedirect.com/science/article/pii/S1319157819316076
+%https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291096-9136%28199807%2915%3A7%3C539%3A%3AAID-DIA668%3E3.0.CO%3B2-S
+%https://link.springer.com/chapter/10.1007/978-981-15-0339-9_17
 \newpage
 \bibliography{bib}
 \end{document}
