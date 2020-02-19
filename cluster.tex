@@ -5,8 +5,6 @@
 \usepackage{amsmath}
 \usepackage{tikz}
 \usepackage{booktabs}
-\usepackage{algorithm}
-\usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{pdflscape}
@@ -361,8 +359,8 @@ The concept of the system remains simple. The system can be described using the 
 \end{figure}
 %Step 2 end
 
-
-\item The chunks containing the data of the queries that were left unpredicted are sent to the cluster in a round robin fashion.
+\newpage
+\item The chunks containing the data of the queries that were left unpredicted via the cluster are sent to the cluster in a round robin fashion. The 
 %step 3
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
@@ -412,37 +410,7 @@ The concept of the system remains simple. The system can be described using the 
 %step 3 end
 
 \end{itemize}
-
-\newpage
-\clearpage% Flush earlier floats (otherwise order might not be correct)
-\thispagestyle{empty}% empty page style (?)
-\subsection{Writing Pseudocode}
-\begin{algorithm}
-\caption{Calculate $y = x^n$}
-\begin{algorithmic}
-\REQUIRE $n \geq 0 \vee x \neq 0$
-\ENSURE $y = x^n$
-\STATE $y \leftarrow 1$
-\IF{$n < 0$}
-\STATE $X \leftarrow 1 / x$
-\STATE $N \leftarrow -n$
-\ELSE
-\STATE $X \leftarrow x$
-\STATE $N \leftarrow n$
-\ENDIF
-\WHILE{$N \neq 0$}
-\IF{$N$ is even}
-\STATE $X \leftarrow X \times X$
-\STATE $N \leftarrow N / 2$
-\ELSE[$N$ is odd]
-\STATE $y \leftarrow y \times X$
-\STATE $N \leftarrow N - 1$
-\ENDIF
-\ENDWHILE
-\end{algorithmic}
-\end{algorithm}
-
-
+\clearpage
 \newpage
 \section{Deploying to Cluster}
 A cluster is a group of two or more servers connected to each other in such a way that they behave like a single server. Each machine in the cluster is called a node. Because each machine in the cluster runs the same services as other machines in the cluster, any machine can stand in for any other machine in the cluster. This becomes important when one machine goes down or must be taken out of service for a time. The remaining machines in the cluster can seamlessly take over the work of the downed machine, providing users with uninterrupted access to services and data.
@@ -755,15 +723,6 @@ Grow a tree with max\textunderscore leaf\textunderscore nodes in best-first fash
 min\textunderscore impurity\textunderscore decreasefloat, default=0.0
 A node will be split if this split induces a decrease of the impurity greater than or equal to this value.
 
-The weighted impurity decrease equation is the following:
-
-N\textunderscore t / N * (impurity - N\textunderscore t\textunderscore R / N\textunderscore t * right\textunderscore impurity
-                    - N\textunderscore t\textunderscore L / N\textunderscore t * left\textunderscore impurity)
-where N is the total number of samples, N\textunderscore t is the number of samples at the current node, N\textunderscore t\textunderscore L is the number of samples in the left child, and N\textunderscore t\textunderscore R is the number of samples in the right child.
-
-N, N\textunderscore t, N\textunderscore t\textunderscore R and N\textunderscore t\textunderscore L all refer to the weighted sum, if sample\textunderscore weight is passed.
-
-
 \item
 ccp\textunderscore alphanon-negative float, default=0.0
 Complexity parameter used for Minimal Cost-Complexity Pruning. The subtree with the largest cost complexity that is smaller than ccp\textunderscore alpha will be chosen. By default, no pruning is performed. See Minimal Cost-Complexity Pruning for details.
@@ -776,123 +735,110 @@ Complexity parameter used for Minimal Cost-Complexity Pruning. The subtree with 
 class sklearn.ensemble.RandomForestClassifier(n_estimators=100, criterion='gini', max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features='auto', max_leaf_nodes=None, min_impurity_decrease=0.0, min_impurity_split=None, bootstrap=True, oob_score=False, n_jobs=None, random_state=None, verbose=0, warm_start=False, class_weight=None, ccp_alpha=0.0, max_samples=None)
 \end{lstlisting}
 
-\begin{verbatim}
-n_estimatorsinteger, optional (default=100)
+\begin{itemize}
+\item
+n\textunderscore estimatorsinteger, optional (default=100)
 The number of trees in the forest.
 
-Changed in version 0.22: The default value of n_estimators changed from 10 to 100 in 0.22.
-
+\item
 criterionstring, optional (default=”gini”)
 The function to measure the quality of a split. Supported criteria are “gini” for the Gini impurity and “entropy” for the information gain. Note: this parameter is tree-specific.
 
-max_depthinteger or None, optional (default=None)
-The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than min_samples_split samples.
+\item
+max\textunderscore depthinteger or None, optional (default=None)
+The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than min\textunderscore samples\textunderscore split samples.
 
-min_samples_splitint, float, optional (default=2)
+\item
+min\textunderscore samples\textunderscore splitint, float, optional (default=2)
 The minimum number of samples required to split an internal node:
 
-If int, then consider min_samples_split as the minimum number.
+If int, then consider min\textunderscore samples\textunderscore split as the minimum number.
 
-If float, then min_samples_split is a fraction and ceil(min_samples_split * n_samples) are the minimum number of samples for each split.
+If float, then min\textunderscore samples\textunderscore split is a fraction and ceil(min\textunderscore samples\textunderscore split * n\textunderscore samples) are the minimum number of samples for each split.
+
+\item
+min\textunderscore samples\textunderscore leafint, float, optional (default=1)
+The minimum number of samples required to be at a leaf node. A split point at any depth will only be considered if it leaves at least min\textunderscore samples\textunderscore leaf training samples in each of the left and right branches. This may have the effect of smoothing the model, especially in regression.
+
+If int, then consider min\textunderscore samples\textunderscore leaf as the minimum number.
+
+If float, then min\textunderscore samples\textunderscore leaf is a fraction and ceil(min\textunderscore samples\textunderscore leaf * n\textunderscore samples) are the minimum number of samples for each node.
 
 Changed in version 0.18: Added float values for fractions.
 
-min_samples_leafint, float, optional (default=1)
-The minimum number of samples required to be at a leaf node. A split point at any depth will only be considered if it leaves at least min_samples_leaf training samples in each of the left and right branches. This may have the effect of smoothing the model, especially in regression.
+\item
+min\textunderscore weight\textunderscore fraction\textunderscore leaffloat, optional (default=0.)
+The minimum weighted fraction of the sum total of weights (of all the input samples) required to be at a leaf node. Samples have equal weight when sample\textunderscore weight is not provided.
 
-If int, then consider min_samples_leaf as the minimum number.
-
-If float, then min_samples_leaf is a fraction and ceil(min_samples_leaf * n_samples) are the minimum number of samples for each node.
-
-Changed in version 0.18: Added float values for fractions.
-
-min_weight_fraction_leaffloat, optional (default=0.)
-The minimum weighted fraction of the sum total of weights (of all the input samples) required to be at a leaf node. Samples have equal weight when sample_weight is not provided.
-
-max_featuresint, float, string or None, optional (default=”auto”)
+\item
+max\textunderscore featuresint, float, string or None, optional (default=”auto”)
 The number of features to consider when looking for the best split:
 
-If int, then consider max_features features at each split.
+If int, then consider max\textunderscore features features at each split.
 
-If float, then max_features is a fraction and int(max_features * n_features) features are considered at each split.
+If float, then max\textunderscore features is a fraction and int(max\textunderscore features * n\textunderscore features) features are considered at each split.
 
-If “auto”, then max_features=sqrt(n_features).
+If “auto”, then max\textunderscore features=sqrt(n\textunderscore features).
 
-If “sqrt”, then max_features=sqrt(n_features) (same as “auto”).
+If “sqrt”, then max\textunderscore features=sqrt(n\textunderscore features) (same as “auto”).
 
-If “log2”, then max_features=log2(n_features).
+If “log2”, then max\textunderscore features=log2(n\textunderscore features).
 
-If None, then max_features=n_features.
+If None, then max\textunderscore features=n\textunderscore features.
 
-Note: the search for a split does not stop until at least one valid partition of the node samples is found, even if it requires to effectively inspect more than max_features features.
+Note: the search for a split does not stop until at least one valid partition of the node samples is found, even if it requires to effectively inspect more than max\textunderscore features features.
 
-max_leaf_nodesint or None, optional (default=None)
-Grow trees with max_leaf_nodes in best-first fashion. Best nodes are defined as relative reduction in impurity. If None then unlimited number of leaf nodes.
+\item
+max\textunderscore leaf\textunderscore nodesint or None, optional (default=None)
+Grow trees with max\textunderscore leaf\textunderscore nodes in best-first fashion. Best nodes are defined as relative reduction in impurity. If None then unlimited number of leaf nodes.
 
-min_impurity_decreasefloat, optional (default=0.)
+\item
+min\textunderscore impurity\textunderscore decreasefloat, optional (default=0.)
 A node will be split if this split induces a decrease of the impurity greater than or equal to this value.
 
-The weighted impurity decrease equation is the following:
-
-N_t / N * (impurity - N_t_R / N_t * right_impurity
-                    - N_t_L / N_t * left_impurity)
-where N is the total number of samples, N_t is the number of samples at the current node, N_t_L is the number of samples in the left child, and N_t_R is the number of samples in the right child.
-
-N, N_t, N_t_R and N_t_L all refer to the weighted sum, if sample_weight is passed.
-
-New in version 0.19.
-
-min_impurity_splitfloat, (default=1e-7)
+\item
+min\textunderscore impurity\textunderscore splitfloat, (default=1e-7)
 Threshold for early stopping in tree growth. A node will split if its impurity is above the threshold, otherwise it is a leaf.
 
-Deprecated since version 0.19: min_impurity_split has been deprecated in favor of min_impurity_decrease in 0.19. The default value of min_impurity_split will change from 1e-7 to 0 in 0.23 and it will be removed in 0.25. Use min_impurity_decrease instead.
-bootstrapboolean, optional (default=True)
-Whether bootstrap samples are used when building trees. If False, the whole datset is used to build each tree.
-
-oob_scorebool (default=False)
+\item
+oob\textunderscore scorebool (default=False)
 Whether to use out-of-bag samples to estimate the generalization accuracy.
 
-n_jobsint or None, optional (default=None)
-The number of jobs to run in parallel. fit, predict, decision_path and apply are all parallelized over the trees. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.
+\item
+n\textunderscore jobsint or None, optional (default=None)
+The number of jobs to run in parallel. fit, predict, decision\textunderscore path and apply are all parallelized over the trees. None means 1 unless in a joblib.parallel\textunderscore backend context. -1 means using all processors. See Glossary for more details.
 
-random_stateint, RandomState instance or None, optional (default=None)
-Controls both the randomness of the bootstrapping of the samples used when building trees (if bootstrap=True) and the sampling of the features to consider when looking for the best split at each node (if max_features < n_features). See Glossary for details.
+\item
+random\textunderscore stateint, RandomState instance or None, optional (default=None)
+Controls both the randomness of the bootstrapping of the samples used when building trees (if bootstrap=True) and the sampling of the features to consider when looking for the best split at each node (if max\textunderscore features < n\textunderscore features). See Glossary for details.
 
+\item
 verboseint, optional (default=0)
 Controls the verbosity when fitting and predicting.
 
-warm_startbool, optional (default=False)
+\item
+warm\textunderscore startbool, optional (default=False)
 When set to True, reuse the solution of the previous call to fit and add more estimators to the ensemble, otherwise, just fit a whole new forest. See the Glossary.
 
-class_weightdict, list of dicts, “balanced”, “balanced_subsample” or None, optional (default=None)
-Weights associated with classes in the form {class_label: weight}. If not given, all classes are supposed to have weight one. For multi-output problems, a list of dicts can be provided in the same order as the columns of y.
+\item
+class\textunderscore weightdict, list of dicts, “balanced”, “balanced\textunderscore subsample” or None, optional (default=None)
+Weights associated with classes in the form {class\textunderscore label: weight}. If not given, all classes are supposed to have weight one. For multi-output problems, a list of dicts can be provided in the same order as the columns of y.
 
-Note that for multioutput (including multilabel) weights should be defined for each class of every column in its own dict. For example, for four-class multilabel classification weights should be [{0: 1, 1: 1}, {0: 1, 1: 5}, {0: 1, 1: 1}, {0: 1, 1: 1}] instead of [{1:1}, {2:5}, {3:1}, {4:1}].
+\item
+ccp\textunderscore alphanon-negative float, optional (default=0.0)
+Complexity parameter used for Minimal Cost-Complexity Pruning. The subtree with the largest cost complexity that is smaller than ccp\textunderscore alpha will be chosen. By default, no pruning is performed. See Minimal Cost-Complexity Pruning for details.
 
-The “balanced” mode uses the values of y to automatically adjust weights inversely proportional to class frequencies in the input data as n_samples / (n_classes * np.bincount(y))
-
-The “balanced_subsample” mode is the same as “balanced” except that weights are computed based on the bootstrap sample for every tree grown.
-
-For multi-output, the weights of each column of y will be multiplied.
-
-Note that these weights will be multiplied with sample_weight (passed through the fit method) if sample_weight is specified.
-
-ccp_alphanon-negative float, optional (default=0.0)
-Complexity parameter used for Minimal Cost-Complexity Pruning. The subtree with the largest cost complexity that is smaller than ccp_alpha will be chosen. By default, no pruning is performed. See Minimal Cost-Complexity Pruning for details.
-
-New in version 0.22.
-
-max_samplesint or float, default=None
+\item
+max\textunderscore samplesint or float, default=None
 If bootstrap is True, the number of samples to draw from X to train each base estimator.
 
 If None (default), then draw X.shape[0] samples.
 
-If int, then draw max_samples samples.
+If int, then draw max\textunderscore samples samples.
 
-If float, then draw max_samples * X.shape[0] samples. Thus, max_samples should be in the interval (0, 1).
+If float, then draw max\textunderscore samples * X.shape[0] samples. Thus, max\textunderscore samples should be in the interval (0, 1).
 
-New in version 0.22.
-\end{verbatim}
+\end{itemize}
 
 \newpage
 \subsubsection{Gradient Boosting}
@@ -900,123 +846,124 @@ New in version 0.22.
 class sklearn.ensemble.GradientBoostingClassifier(loss='deviance', learning_rate=0.1, n_estimators=100, subsample=1.0, criterion='friedman_mse', min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_depth=3, min_impurity_decrease=0.0, min_impurity_split=None, init=None, random_state=None, max_features=None, verbose=0, max_leaf_nodes=None, warm_start=False, presort='deprecated', validation_fraction=0.1, n_iter_no_change=None, tol=0.0001, ccp_alpha=0.0)
 \end{lstlisting}
 
-\begin{verbatim}
+\begin{itemize}
+\item
 loss{‘deviance’, ‘exponential’}, optional (default=’deviance’)
 loss function to be optimized. ‘deviance’ refers to deviance (= logistic regression) for classification with probabilistic outputs. For loss ‘exponential’ gradient boosting recovers the AdaBoost algorithm.
 
-learning_ratefloat, optional (default=0.1)
-learning rate shrinks the contribution of each tree by learning_rate. There is a trade-off between learning_rate and n_estimators.
+learning\textunderscore ratefloat, optional (default=0.1)
+learning rate shrinks the contribution of each tree by learning\textunderscore rate. There is a trade-off between learning\textunderscore rate and n\textunderscore estimators.
 
-n_estimatorsint (default=100)
+n\textunderscore estimatorsint (default=100)
 The number of boosting stages to perform. Gradient boosting is fairly robust to over-fitting so a large number usually results in better performance.
 
 subsamplefloat, optional (default=1.0)
-The fraction of samples to be used for fitting the individual base learners. If smaller than 1.0 this results in Stochastic Gradient Boosting. subsample interacts with the parameter n_estimators. Choosing subsample < 1.0 leads to a reduction of variance and an increase in bias.
+The fraction of samples to be used for fitting the individual base learners. If smaller than 1.0 this results in Stochastic Gradient Boosting. subsample interacts with the parameter n\textunderscore estimators. Choosing subsample < 1.0 leads to a reduction of variance and an increase in bias.
 
-criterionstring, optional (default=”friedman_mse”)
-The function to measure the quality of a split. Supported criteria are “friedman_mse” for the mean squared error with improvement score by Friedman, “mse” for mean squared error, and “mae” for the mean absolute error. The default value of “friedman_mse” is generally the best as it can provide a better approximation in some cases.
+criterionstring, optional (default=”friedman\textunderscore mse”)
+The function to measure the quality of a split. Supported criteria are “friedman\textunderscore mse” for the mean squared error with improvement score by Friedman, “mse” for mean squared error, and “mae” for the mean absolute error. The default value of “friedman\textunderscore mse” is generally the best as it can provide a better approximation in some cases.
 
 New in version 0.18.
 
-min_samples_splitint, float, optional (default=2)
+min\textunderscore samples\textunderscore splitint, float, optional (default=2)
 The minimum number of samples required to split an internal node:
 
-If int, then consider min_samples_split as the minimum number.
+If int, then consider min\textunderscore samples\textunderscore split as the minimum number.
 
-If float, then min_samples_split is a fraction and ceil(min_samples_split * n_samples) are the minimum number of samples for each split.
-
-Changed in version 0.18: Added float values for fractions.
-
-min_samples_leafint, float, optional (default=1)
-The minimum number of samples required to be at a leaf node. A split point at any depth will only be considered if it leaves at least min_samples_leaf training samples in each of the left and right branches. This may have the effect of smoothing the model, especially in regression.
-
-If int, then consider min_samples_leaf as the minimum number.
-
-If float, then min_samples_leaf is a fraction and ceil(min_samples_leaf * n_samples) are the minimum number of samples for each node.
+If float, then min\textunderscore samples\textunderscore split is a fraction and ceil(min\textunderscore samples\textunderscore split * n\textunderscore samples) are the minimum number of samples for each split.
 
 Changed in version 0.18: Added float values for fractions.
 
-min_weight_fraction_leaffloat, optional (default=0.)
-The minimum weighted fraction of the sum total of weights (of all the input samples) required to be at a leaf node. Samples have equal weight when sample_weight is not provided.
+min\textunderscore samples\textunderscore leafint, float, optional (default=1)
+The minimum number of samples required to be at a leaf node. A split point at any depth will only be considered if it leaves at least min\textunderscore samples\textunderscore leaf training samples in each of the left and right branches. This may have the effect of smoothing the model, especially in regression.
 
-max_depthinteger, optional (default=3)
+If int, then consider min\textunderscore samples\textunderscore leaf as the minimum number.
+
+If float, then min\textunderscore samples\textunderscore leaf is a fraction and ceil(min\textunderscore samples\textunderscore leaf * n\textunderscore samples) are the minimum number of samples for each node.
+
+Changed in version 0.18: Added float values for fractions.
+
+min\textunderscore weight\textunderscore fraction\textunderscore leaffloat, optional (default=0.)
+The minimum weighted fraction of the sum total of weights (of all the input samples) required to be at a leaf node. Samples have equal weight when sample\textunderscore weight is not provided.
+
+max\textunderscore depthinteger, optional (default=3)
 maximum depth of the individual regression estimators. The maximum depth limits the number of nodes in the tree. Tune this parameter for best performance; the best value depends on the interaction of the input variables.
 
-min_impurity_decreasefloat, optional (default=0.)
+min\textunderscore impurity\textunderscore decreasefloat, optional (default=0.)
 A node will be split if this split induces a decrease of the impurity greater than or equal to this value.
 
 The weighted impurity decrease equation is the following:
 
-N_t / N * (impurity - N_t_R / N_t * right_impurity
-                    - N_t_L / N_t * left_impurity)
-where N is the total number of samples, N_t is the number of samples at the current node, N_t_L is the number of samples in the left child, and N_t_R is the number of samples in the right child.
+N\textunderscore t / N * (impurity - N\textunderscore t\textunderscore R / N\textunderscore t * right\textunderscore impurity
+                    - N\textunderscore t\textunderscore L / N\textunderscore t * left\textunderscore impurity)
+where N is the total number of samples, N\textunderscore t is the number of samples at the current node, N\textunderscore t\textunderscore L is the number of samples in the left child, and N\textunderscore t\textunderscore R is the number of samples in the right child.
 
-N, N_t, N_t_R and N_t_L all refer to the weighted sum, if sample_weight is passed.
+N, N\textunderscore t, N\textunderscore t\textunderscore R and N\textunderscore t\textunderscore L all refer to the weighted sum, if sample\textunderscore weight is passed.
 
 New in version 0.19.
 
-min_impurity_splitfloat, (default=1e-7)
+min\textunderscore impurity\textunderscore splitfloat, (default=1e-7)
 Threshold for early stopping in tree growth. A node will split if its impurity is above the threshold, otherwise it is a leaf.
 
-Deprecated since version 0.19: min_impurity_split has been deprecated in favor of min_impurity_decrease in 0.19. The default value of min_impurity_split will change from 1e-7 to 0 in 0.23 and it will be removed in 0.25. Use min_impurity_decrease instead.
+Deprecated since version 0.19: min\textunderscore impurity\textunderscore split has been deprecated in favor of min\textunderscore impurity\textunderscore decrease in 0.19. The default value of min\textunderscore impurity\textunderscore split will change from 1e-7 to 0 in 0.23 and it will be removed in 0.25. Use min\textunderscore impurity\textunderscore decrease instead.
 initestimator or ‘zero’, optional (default=None)
-An estimator object that is used to compute the initial predictions. init has to provide fit and predict_proba. If ‘zero’, the initial raw predictions are set to zero. By default, a DummyEstimator predicting the classes priors is used.
+An estimator object that is used to compute the initial predictions. init has to provide fit and predict\textunderscore proba. If ‘zero’, the initial raw predictions are set to zero. By default, a DummyEstimator predicting the classes priors is used.
 
-random_stateint, RandomState instance or None, optional (default=None)
-If int, random_state is the seed used by the random number generator; If RandomState instance, random_state is the random number generator; If None, the random number generator is the RandomState instance used by np.random.
+random\textunderscore stateint, RandomState instance or None, optional (default=None)
+If int, random\textunderscore state is the seed used by the random number generator; If RandomState instance, random\textunderscore state is the random number generator; If None, the random number generator is the RandomState instance used by np.random.
 
-max_featuresint, float, string or None, optional (default=None)
+max\textunderscore featuresint, float, string or None, optional (default=None)
 The number of features to consider when looking for the best split:
 
-If int, then consider max_features features at each split.
+If int, then consider max\textunderscore features features at each split.
 
-If float, then max_features is a fraction and int(max_features * n_features) features are considered at each split.
+If float, then max\textunderscore features is a fraction and int(max\textunderscore features * n\textunderscore features) features are considered at each split.
 
-If “auto”, then max_features=sqrt(n_features).
+If “auto”, then max\textunderscore features=sqrt(n\textunderscore features).
 
-If “sqrt”, then max_features=sqrt(n_features).
+If “sqrt”, then max\textunderscore features=sqrt(n\textunderscore features).
 
-If “log2”, then max_features=log2(n_features).
+If “log2”, then max\textunderscore features=log2(n\textunderscore features).
 
-If None, then max_features=n_features.
+If None, then max\textunderscore features=n\textunderscore features.
 
-Choosing max_features < n_features leads to a reduction of variance and an increase in bias.
+Choosing max\textunderscore features < n\textunderscore features leads to a reduction of variance and an increase in bias.
 
-Note: the search for a split does not stop until at least one valid partition of the node samples is found, even if it requires to effectively inspect more than max_features features.
+Note: the search for a split does not stop until at least one valid partition of the node samples is found, even if it requires to effectively inspect more than max\textunderscore features features.
 
 verboseint, default: 0
 Enable verbose output. If 1 then it prints progress and performance once in a while (the more trees the lower the frequency). If greater than 1 then it prints progress and performance for every tree.
 
-max_leaf_nodesint or None, optional (default=None)
-Grow trees with max_leaf_nodes in best-first fashion. Best nodes are defined as relative reduction in impurity. If None then unlimited number of leaf nodes.
+max\textunderscore leaf\textunderscore nodesint or None, optional (default=None)
+Grow trees with max\textunderscore leaf\textunderscore nodes in best-first fashion. Best nodes are defined as relative reduction in impurity. If None then unlimited number of leaf nodes.
 
-warm_startbool, default: False
+warm\textunderscore startbool, default: False
 When set to True, reuse the solution of the previous call to fit and add more estimators to the ensemble, otherwise, just erase the previous solution. See the Glossary.
 
 presortdeprecated, default=’deprecated’
 This parameter is deprecated and will be removed in v0.24.
 
 Deprecated since version 0.22.
-validation_fractionfloat, optional, default 0.1
-The proportion of training data to set aside as validation set for early stopping. Must be between 0 and 1. Only used if n_iter_no_change is set to an integer.
+validation\textunderscore fractionfloat, optional, default 0.1
+The proportion of training data to set aside as validation set for early stopping. Must be between 0 and 1. Only used if n\textunderscore iter\textunderscore no\textunderscore change is set to an integer.
 
 New in version 0.20.
 
-n_iter_no_changeint, default None
-n_iter_no_change is used to decide if early stopping will be used to terminate training when validation score is not improving. By default it is set to None to disable early stopping. If set to a number, it will set aside validation_fraction size of the training data as validation and terminate training when validation score is not improving in all of the previous n_iter_no_change numbers of iterations. The split is stratified.
+n\textunderscore iter\textunderscore no\textunderscore changeint, default None
+n\textunderscore iter\textunderscore no\textunderscore change is used to decide if early stopping will be used to terminate training when validation score is not improving. By default it is set to None to disable early stopping. If set to a number, it will set aside validation\textunderscore fraction size of the training data as validation and terminate training when validation score is not improving in all of the previous n\textunderscore iter\textunderscore no\textunderscore change numbers of iterations. The split is stratified.
 
 New in version 0.20.
 
 tolfloat, optional, default 1e-4
-Tolerance for the early stopping. When the loss is not improving by at least tol for n_iter_no_change iterations (if set to a number), the training stops.
+Tolerance for the early stopping. When the loss is not improving by at least tol for n\textunderscore iter\textunderscore no\textunderscore change iterations (if set to a number), the training stops.
 
 New in version 0.20.
 
-ccp_alphanon-negative float, optional (default=0.0)
-Complexity parameter used for Minimal Cost-Complexity Pruning. The subtree with the largest cost complexity that is smaller than ccp_alpha will be chosen. By default, no pruning is performed. See Minimal Cost-Complexity Pruning for details.
+ccp\textunderscore alphanon-negative float, optional (default=0.0)
+Complexity parameter used for Minimal Cost-Complexity Pruning. The subtree with the largest cost complexity that is smaller than ccp\textunderscore alpha will be chosen. By default, no pruning is performed. See Minimal Cost-Complexity Pruning for details.
 
 New in version 0.22.
-\end{verbatim}
+\end{itemize}
 
 \newpage
 \subsubsection{Multi Layered Perceptron}
