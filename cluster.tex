@@ -508,27 +508,65 @@ Outcome                    & Class variable (0 or 1) 268 of 768 are 1, the other
 \begin{landscape}
 \centering
 \begin{table}[]
+\centering
 \begin{tabular}{|c|c|c|c|}
 \hline
-Algorithm              & Additional Parameters                              & Train Set Accuracy & Test Set Accuracy \\ \hline
-K Nearest Neighbour    & -                                                  & 0.79               & 0.78              \\ \hline
-Logistic Regression    & C = 1                                              & 0.781              & 0.771             \\ \hline
-Logistic Regression    & C = 0.01                                           & 0.700              & 0.703             \\ \hline
-Logistic Regression    & C = 100                                            & 0.785              & 0.766             \\ \hline
-Decision Tree          & -                                                  & 1.00               & 0.714             \\ \hline
-Decision Tree          & Max Depth = 3                                      & 0.773              & 0.740             \\ \hline
-Random Forest          & Estimators = 100                                   & 1.000              & 0.786             \\ \hline
-Random Forest          & Estimators = 100; Max Depth = 3                    & 0.800              & 0.755             \\ \hline
-Gradient Boosting      & -                                                  & 0.917              & 0.792             \\ \hline
-Gradient Boosting      & Max Depth = 1                                      & 0.804              & 0.781             \\ \hline
-Gradient Boosting      & Learning Rate = 0.01                               & 0.802              & 0.776             \\ \hline
-Support Vector Machine & -                                                  & 1.00               & 0.65              \\ \hline
-Support Vector Machine & Train and Test set scaled using MinMaxScaler       & 0.77               & 0.77              \\ \hline
-Support Vector Machine & C = 1000                                           & 0.790              & 0.797             \\ \hline
-MLP Classifier         & Random State = 42                                  & 0.73               & 0.72              \\ \hline
-MLP Classifier         & Random State = 0                                   & 0.823              & 0.802             \\ \hline
-MLP Classifier         & Max Iterations = 1000                              & 0.908              & 0.792             \\ \hline
-MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0 & 0.806              & 0.797             \\ \hline
+Algorithm              & Additional Parameters                              & Train Set Accuracy \\ \hline
+K Nearest Neighbour    & -                                                  & 0.79               \\ \hline
+Logistic Regression    & C = 1                                              & 0.781              \\ \hline
+Logistic Regression    & C = 0.01                                           & 0.700              \\\hline
+Logistic Regression    & C = 100                                            & 0.785              \\ \hline
+Decision Tree          & -                                                  & 1.00               \\ \hline
+Decision Tree          & Max Depth = 3                                      & 0.773              \\ \hline
+Random Forest          & Estimators = 100                                   & 1.000              \\ \hline
+Random Forest          & Estimators = 100; Max Depth = 3                    & 0.800              \\ \hline
+Gradient Boosting      & -                                                  & 0.917              \\ \hline
+Gradient Boosting      & Max Depth = 1                                      & 0.804              \\ \hline
+Gradient Boosting      & Learning Rate = 0.01                               & 0.802              \\ \hline
+Support Vector Machine & -                                                  & 1.00               \\ \hline
+Support Vector Machine & Train and Test set scaled using MinMaxScaler       & 0.77               \\ \hline
+Support Vector Machine & C = 1000                                           & 0.790              \\ \hline
+MLP Classifier         & Random State = 42                                  & 0.73               \\ \hline
+MLP Classifier         & Random State = 0                                   & 0.823              \\ \hline
+MLP Classifier         & Max Iterations = 1000                              & 0.908              \\ \hline
+MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0 & 0.806              \\ \hline
+\end{tabular}
+\end{table}
+\captionof{table}{Test and Train accuracy's using various machine learning algorithms with various parameters.}
+\label{table:2}
+\end{landscape}
+\clearpage
+}
+
+
+{
+\clearpage
+\thispagestyle{empty}
+\begin{landscape}
+\centering
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+Algorithm              & Additional Parameters                               & Test Set Accuracy \\ \hline
+K Nearest Neighbour    & -                                                   & 0.78              \\ \hline
+Logistic Regression    & C = 1                                               & 0.771             \\ \hline
+Logistic Regression    & C = 0.01                                            & 0.703             \\ \hline
+Logistic Regression    & C = 100                                             & 0.766             \\ \hline
+Decision Tree          & -                                                   & 0.714             \\ \hline
+Decision Tree          & Max Depth = 3                                       & 0.740             \\ \hline
+Random Forest          & Estimators = 100                                    & 0.786             \\ \hline
+Random Forest          & Estimators = 100; Max Depth = 3                     & 0.755             \\ \hline
+Gradient Boosting      & -                                                   & 0.792             \\ \hline
+Gradient Boosting      & Max Depth = 1                                       & 0.781             \\ \hline
+Gradient Boosting      & Learning Rate = 0.01                                & 0.776             \\ \hline
+Support Vector Machine & -                                                   & 0.65              \\ \hline
+Support Vector Machine & Train and Test set scaled using MinMaxScaler        & 0.77              \\ \hline
+Support Vector Machine & C = 1000                                            & 0.797             \\ \hline
+MLP Classifier         & Random State = 42                                   & 0.72              \\ \hline
+MLP Classifier         & Random State = 0                                    & 0.802             \\ \hline
+MLP Classifier         & Max Iterations = 1000                               & 0.792             \\ \hline
+MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0  & 0.797             \\ \hline
 \end{tabular}
 \end{table}
 \captionof{table}{Test and Train accuracy's using various machine learning algorithms with various parameters.}
