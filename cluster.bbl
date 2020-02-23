@@ -1,3 +1,54 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{alberti_zimmet_2004}
+K.~Alberti and P.~Zimmet, ``Definition, diagnosis and classification of
+  diabetes mellitus and its complications. part 1: diagnosis and classification
+  of diabetes mellitus. provisional report of a who consultation,'' Jul 2004.
+
+\bibitem{8.21.2.}
+
+
+\bibitem{benefits}
+
+
+\bibitem{chatrati_hossain_goyal_bhan_bhattacharya_gaurav_tiwari_2020}
+S.~P. Chatrati, G.~Hossain, A.~Goyal, A.~Bhan, S.~Bhattacharya, D.~Gaurav, and
+  S.~M. Tiwari, ``Smart home health monitoring system for predicting type 2
+  diabetes and hypertension,'' Jan 2020.
+
+\bibitem{deva_2015}
+D.~Deva, ``Qcon rio - machine learning for everyone,'' Aug 2015.
+
+\bibitem{discrimination}
+
+
+\bibitem{kaur_kaur_1970}
+P.~Kaur and R.~Kaur, ``Comparative analysis of classification techniques for
+  diagnosis of diabetes,'' Jan 1970.
+
+\bibitem{lisa_gladman_lisa_2019}
+L.~G. Lisa, L.~Gladman, and Lisa, ``Types of healthcare information systems -
+  scott-clark medical,'' Nov 2019.
+
+\bibitem{maladkar_2019}
+K.~Maladkar, ``Why is random search better than grid search for machine
+  learning,'' Sep 2019.
+
+\bibitem{mandal_2019}
+A.~Mandal, ``What is diabetes?,'' Feb 2019.
+
+\bibitem{mandot_2018}
+P.~Mandot, ``What is lightgbm, how to implement it? how to fine tune the
+  parameters?,'' Dec 2018.
+
+\bibitem{norena_2018}
+S.~Norena, ``Python model tuning methods using cross validation and grid
+  search,'' Jun 2018.
+
+\bibitem{scikit}
+``sklearn.preprocessing.labelencoder.''
+
+\bibitem{national}
+
 
 \end{thebibliography}

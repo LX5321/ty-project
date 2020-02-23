@@ -124,7 +124,7 @@ which is now able to classify the subject as diabetic or healthy with a new accu
 of ~93.10\%. A significant change which boosted the accuracy by 13.4\%. After
 selection of the algorithm I further advanced the platform of cluster computing to
 deploy the algorithm onto and generate predictions in without any human
-interference (​ apart from entering the data itself ) ​ and also made the data available
+interference (apart from entering the data itself) ​ and also made the data available
 to the users via an easy to use web application which gives them access to the
 observations then stored in the database after being predicted by the algorithm
 deployed on the nodes.
@@ -151,6 +151,7 @@ As an owner of a doctors account a doctor should be able to:
 \begin{itemize}
 \item Add new observations for the machine learning algorithm to predict.
 \item Analyse the patients previous records.
+\item Have a dashboard for patient performance monitoring.
 \end{itemize}
 
 \subsection{Functionalities for Patients}
@@ -165,13 +166,14 @@ As the master nodes:
 \begin{itemize}
 \item Control chunk size.
 \item Remotely update the slave nodes.
-\item Check the availability of nodes.
+\item Check the status of nodes.
 \item Control the SQL database.
 \end{itemize}
 
 \subsection{Functionalities for Slave Nodes}
 \begin{itemize}
-\item should have the machine learning algorithm with can be updated.
+\item Should have the machine learning algorithm tuned as per specifications.
+\item Remote update should be possible.
 \item Remote access should be possible.
 \end{itemize}
 
@@ -193,8 +195,7 @@ According to raspberrypi.org, the Raspberry Pi 3 Model B is the earliest model o
 In this project I will be using 3 Raspberry Pi's to implement a cluster and deploy the machine learning algorithm on.
 
 \subsection{Switch}
-A network switch was used in the project to make up for the lack of ethernet ports available on the router. The dumb network switch 
-was able to connect up-to 3 Raspberry Pi and one cable back to the network router itself to connect the switch to the main network.
+A network switch was used in the project to make up for the lack of ethernet ports available on the router.
 
 \subsection{Router}
 A router is required to assign internet protocol addresses to the nodes using dynamic host control protocol (DHCP). The router also is responsible for displaying the nodes connected to the network thereby displaying host names and making it more easier to capture the addresses of each node.
@@ -258,7 +259,7 @@ Secure Shell is a cryptography network protocol for operating network services s
 \newpage
 \section{Selecting an Algorithm}
 % Write about the EDA and algorithm selection process.
-The dataset used for this project is from the UCI Machine learning repository and can be found at their website. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and predict the outcomes for given sets of patients. 
+The dataset used for this project is from the UCI Machine learning repository and can be found at their website. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and predict the outcomes for given sets of patients. After analysis of multiple papers, I have seen that many data scientists have trained and tested the algorithms with the raw, untreated datasets, thereby causing the model to perform poorly. After much inspection I was able to remove the null values from the dataset which were leading it to reduce the model performance. After 
 
 \newpage
 \section{The Multi Layered Perceptron}
@@ -1307,133 +1308,128 @@ The seed of the pseudo random number generator used when shuffling the data for 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(26).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{N6 Distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(27).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{Glucose v/s BMI}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(28).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{N7}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(29).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{Missing values in count and percentage.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(2).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{N7 distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(30).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{N7.}
 \end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(31).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(32).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{N9 distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(33).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{N10 distribution for diabetic and healthy people bp<80.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(34).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{N10 distribution for diabetic and healthy people.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(35).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{Pregnancies distribution for diabetic and healthy people.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(36).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{N11 feature obtained with patients > 0 and < 4.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(37).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{N11 distribution via target labels.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(38).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{N0 Distribution.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(39).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{Correlation plot of raw dataset.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(3).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{N15 where N0 is less than 1034.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(40).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{N15 distribution by target labels.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(41).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{Correlation plot with newly added features.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(42).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{Model Performance report measured with 5 fold iterations.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(43).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{5 Fold Cross Validation score for the MLP Classifier.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(44).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{Insulin distribution for diabetic and healthy people.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(4).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{Glucose distribution for diabetic and healthy people.}
 \end{figure}
 
 \begin{figure}[ht]
@@ -1445,31 +1441,31 @@ The seed of the pseudo random number generator used when shuffling the data for 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(6).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{Skin Thickness distribution for diabetic and healthy people.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(7).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{Blood pressure distribution for diabetic and healthy people.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(8).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{BMI distribution for diabetic and healthy people.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(9).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{Age distribution for diabetic and healthy people.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot.png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{Count of Outcome Variable.}
 \end{figure}
 \clearpage
 \newpage
@@ -1480,7 +1476,6 @@ The seed of the pseudo random number generator used when shuffling the data for 
 %https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291096-9136%28199807%2915%3A7%3C539%3A%3AAID-DIA668%3E3.0.CO%3B2-S
 %https://link.springer.com/chapter/10.1007/978-981-15-0339-9_17
 %https://medium.com/@pushkarmandot/https-medium-com-pushkarmandot-what-is-lightgbm-how-to-implement-it-how-to-fine-tune-the-parameters-60347819b7fc
-%https://en.wikipedia.org/wiki/Body_mass_index
 %http://rasbt.github.io/mlxtend/user_guide/classifier/EnsembleVoteClassifier/
 %https://www.news-medical.net/health/What-is-Diabetes.aspx
 %https://lightgbm.readthedocs.io/en/latest/Parameters-Tuning.html
@@ -1490,12 +1485,11 @@ The seed of the pseudo random number generator used when shuffling the data for 
 %https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html
 %https://scikit-learn.org/stable/modules/preprocessing_targets.html#preprocessing-targets
 %https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
-%https://twitter.com/bearda24
 %https://www.slideshare.net/DhianaDevaRocha/qcon-rio-machine-learning-for-everyone
 %https://medium.com/@sebastiannorena/some-model-tuning-methods-bfef3e6544f0
 %https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes
-%https://en.wikipedia.org/wiki/Pima_people
 \newpage
 \bibliography{bib}
 \bibliographystyle{ieeetr}
+\nocite{*}
 \end{document}
