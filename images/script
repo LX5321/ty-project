@@ -1,0 +1,8 @@
+for i in *.png ; do
+ printf "\n"
+ echo "\begin{figure}[ht]"
+ echo "\centering"
+ echo "\includegraphics[width=1\textwidth]{$i}"
+ echo "\caption{Master Node reading data from the SQL Database.}"
+ echo "\end{figure}"
+done

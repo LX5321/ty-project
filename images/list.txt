@@ -1,0 +1,306 @@
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{download(1).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{download(2).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{download(3).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{download(4).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{download(5).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{download.png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(10).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(11).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(12).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(13).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(14).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(15).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(16).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(17).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(18).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(19).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(1).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(20).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(21).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(22).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(23).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(24).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(25).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(26).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(27).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(28).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(29).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(2).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(30).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(31).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(32).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(33).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(34).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(35).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(36).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(37).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(38).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(39).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(3).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(40).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(41).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(42).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(43).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(44).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(4).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(5).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(6).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(7).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(8).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(9).png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot.png}
+\caption{Master Node reading data from the SQL Database.}
+\end{figure}
