@@ -26,22 +26,20 @@
 \BOOKMARK [2][-]{subsection.5.6}{GitHub}{section.5}% 26
 \BOOKMARK [2][-]{subsection.5.7}{SSH}{section.5}% 27
 \BOOKMARK [1][-]{section.6}{Methodology}{}% 28
-\BOOKMARK [1][-]{section.7}{The Multi Layered Perceptron}{}% 29
-\BOOKMARK [2][-]{subsection.7.1}{Introduction}{section.7}% 30
-\BOOKMARK [1][-]{section.8}{Coding Process}{}% 31
-\BOOKMARK [2][-]{subsection.8.1}{Designing the System}{section.8}% 32
-\BOOKMARK [1][-]{section.9}{Deploying to Cluster}{}% 33
-\BOOKMARK [2][-]{subsection.9.1}{Benefits of Clustering}{section.9}% 34
-\BOOKMARK [1][-]{section.10}{Future Scope}{}% 35
-\BOOKMARK [1][-]{section.11}{Tables}{}% 36
-\BOOKMARK [1][-]{section.12}{Appendix I}{}% 37
-\BOOKMARK [2][-]{subsection.12.1}{K Nearest Neighbours}{section.12}% 38
-\BOOKMARK [2][-]{subsection.12.2}{Logistic Regression}{section.12}% 39
-\BOOKMARK [2][-]{subsection.12.3}{Decision Tree}{section.12}% 40
-\BOOKMARK [2][-]{subsection.12.4}{Random Forest Classifier}{section.12}% 41
-\BOOKMARK [2][-]{subsection.12.5}{Gradient Boosting}{section.12}% 42
-\BOOKMARK [2][-]{subsection.12.6}{Multi Layered Perceptron}{section.12}% 43
-\BOOKMARK [2][-]{subsection.12.7}{SVM}{section.12}% 44
-\BOOKMARK [1][-]{section.13}{Appendix II}{}% 45
-\BOOKMARK [1][-]{section.14}{Student Profile}{}% 46
-\BOOKMARK [1][-]{section.15}{Conclusion}{}% 47
+\BOOKMARK [1][-]{section.7}{Coding Process}{}% 29
+\BOOKMARK [2][-]{subsection.7.1}{Designing the System}{section.7}% 30
+\BOOKMARK [1][-]{section.8}{Deploying to Cluster}{}% 31
+\BOOKMARK [2][-]{subsection.8.1}{Benefits of Clustering}{section.8}% 32
+\BOOKMARK [1][-]{section.9}{Future Scope}{}% 33
+\BOOKMARK [1][-]{section.10}{Tables}{}% 34
+\BOOKMARK [1][-]{section.11}{Appendix I}{}% 35
+\BOOKMARK [2][-]{subsection.11.1}{K Nearest Neighbours}{section.11}% 36
+\BOOKMARK [2][-]{subsection.11.2}{Logistic Regression}{section.11}% 37
+\BOOKMARK [2][-]{subsection.11.3}{Decision Tree}{section.11}% 38
+\BOOKMARK [2][-]{subsection.11.4}{Random Forest Classifier}{section.11}% 39
+\BOOKMARK [2][-]{subsection.11.5}{Gradient Boosting}{section.11}% 40
+\BOOKMARK [2][-]{subsection.11.6}{Multi Layered Perceptron}{section.11}% 41
+\BOOKMARK [2][-]{subsection.11.7}{SVM}{section.11}% 42
+\BOOKMARK [1][-]{section.13}{Appendix II}{}% 43
+\BOOKMARK [1][-]{section.14}{Student Profile}{}% 44
+\BOOKMARK [1][-]{section.15}{Conclusion}{}% 45

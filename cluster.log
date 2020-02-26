@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.2.13)  26 FEB 2020 09:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.2.13)  26 FEB 2020 22:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -802,7 +802,7 @@ ination with the same identifier (name{page.1}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.83 \newpage
+l.85 \newpage
               [1] [2] [3] [4] (./cluster.toc [5])
 \tf@toc=\write5
 \openout5 = `cluster.toc'.
@@ -829,20 +829,42 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
  [12] [13] [14]
-[15] [16] [17] [18] [19] [20] [21] [22
+[15] [16] [17] [18] [19] [20]
+Overfull \hbox (1.20407pt too wide) in paragraph at lines 446--447
+[]\OT1/cmtt/m/n/12 Simplified management \OT1/cmr/m/n/12 Clus-ter-ing sim-pli-f
+ies the man-age-ment of large or rapidly
+ []
 
-] [23] [24]
+[21
+
+]
+Overfull \hbox (4.2374pt too wide) in paragraph at lines 457--460
+[]\OT1/cmtt/m/n/12 Project Distribution and Project Fail over \OT1/cmr/m/n/12 W
+hen you set up sev-eral server
+ []
+
+[22] [23]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 477.
+               Default added (so using `tbp') on input line 475.
 
-[25
+[24
 
 
 ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 506.
+               Default added (so using `tbp') on input line 504.
+
+[25
+
+
+
+
+]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 541.
 
 [26
 
@@ -852,293 +874,295 @@ LaTeX Warning: No positions in optional float specifier.
 ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 543.
+               Default added (so using `tbp') on input line 576.
 
 [27
 
 
 
-
 ] [28
 
-
 ] [29]
-<./images/download(1).png, id=508, 720.6925pt x 500.87125pt>
+<./images/10.png, id=503, 702.625pt x 451.6875pt>
+File: ./images/10.png Graphic file (type png)
+<use ./images/10.png>
+Package pdftex.def Info: ./images/10.png  used on input line 642.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/11.png, id=505, 702.625pt x 451.6875pt>
+File: ./images/11.png Graphic file (type png)
+<use ./images/11.png>
+Package pdftex.def Info: ./images/11.png  used on input line 648.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/12.png, id=506, 702.625pt x 451.6875pt>
+File: ./images/12.png Graphic file (type png)
+<use ./images/12.png>
+Package pdftex.def Info: ./images/12.png  used on input line 654.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/13.png, id=507, 702.625pt x 451.6875pt>
+File: ./images/13.png Graphic file (type png)
+<use ./images/13.png>
+Package pdftex.def Info: ./images/13.png  used on input line 660.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/14.png, id=508, 702.625pt x 451.6875pt>
+File: ./images/14.png Graphic file (type png)
+<use ./images/14.png>
+Package pdftex.def Info: ./images/14.png  used on input line 666.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/15.png, id=509, 702.625pt x 451.6875pt>
+File: ./images/15.png Graphic file (type png)
+<use ./images/15.png>
+Package pdftex.def Info: ./images/15.png  used on input line 672.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/16.png, id=510, 702.625pt x 451.6875pt>
+File: ./images/16.png Graphic file (type png)
+<use ./images/16.png>
+Package pdftex.def Info: ./images/16.png  used on input line 678.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/1.png, id=511, 702.625pt x 451.6875pt>
+File: ./images/1.png Graphic file (type png)
+<use ./images/1.png>
+Package pdftex.def Info: ./images/1.png  used on input line 684.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/2.png, id=512, 702.625pt x 451.6875pt>
+File: ./images/2.png Graphic file (type png)
+<use ./images/2.png>
+Package pdftex.def Info: ./images/2.png  used on input line 690.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/3.png, id=513, 779.91376pt x 866.23625pt>
+File: ./images/3.png Graphic file (type png)
+<use ./images/3.png>
+Package pdftex.def Info: ./images/3.png  used on input line 696.
+(pdftex.def)             Requested size: 441.01775pt x 489.82092pt.
+<./images/4a.png, id=514, 702.625pt x 451.6875pt>
+File: ./images/4a.png Graphic file (type png)
+<use ./images/4a.png>
+Package pdftex.def Info: ./images/4a.png  used on input line 702.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/4.png, id=515, 702.625pt x 451.6875pt>
+File: ./images/4.png Graphic file (type png)
+<use ./images/4.png>
+Package pdftex.def Info: ./images/4.png  used on input line 708.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/5.png, id=516, 702.625pt x 451.6875pt>
+File: ./images/5.png Graphic file (type png)
+<use ./images/5.png>
+Package pdftex.def Info: ./images/5.png  used on input line 714.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/6.png, id=517, 702.625pt x 451.6875pt>
+File: ./images/6.png Graphic file (type png)
+<use ./images/6.png>
+Package pdftex.def Info: ./images/6.png  used on input line 720.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/7.png, id=518, 702.625pt x 451.6875pt>
+File: ./images/7.png Graphic file (type png)
+<use ./images/7.png>
+Package pdftex.def Info: ./images/7.png  used on input line 726.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/8.png, id=519, 702.625pt x 451.6875pt>
+File: ./images/8.png Graphic file (type png)
+<use ./images/8.png>
+Package pdftex.def Info: ./images/8.png  used on input line 732.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/9.png, id=520, 702.625pt x 451.6875pt>
+File: ./images/9.png Graphic file (type png)
+<use ./images/9.png>
+Package pdftex.def Info: ./images/9.png  used on input line 738.
+(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
+<./images/download(1).png, id=521, 720.6925pt x 500.87125pt>
 File: ./images/download(1).png Graphic file (type png)
 <use ./images/download(1).png>
-Package pdftex.def Info: ./images/download(1).png  used on input line 620.
+Package pdftex.def Info: ./images/download(1).png  used on input line 744.
 (pdftex.def)             Requested size: 441.01775pt x 306.50162pt.
-<./images/download(2).png, id=510, 720.6925pt x 500.87125pt>
+<./images/download(2).png, id=522, 720.6925pt x 500.87125pt>
 File: ./images/download(2).png Graphic file (type png)
 <use ./images/download(2).png>
-Package pdftex.def Info: ./images/download(2).png  used on input line 626.
+Package pdftex.def Info: ./images/download(2).png  used on input line 750.
 (pdftex.def)             Requested size: 441.01775pt x 306.50162pt.
-<./images/download(3).png, id=511, 725.71124pt x 500.87125pt>
+<./images/download(3).png, id=523, 725.71124pt x 500.87125pt>
 File: ./images/download(3).png Graphic file (type png)
 <use ./images/download(3).png>
-Package pdftex.def Info: ./images/download(3).png  used on input line 632.
+Package pdftex.def Info: ./images/download(3).png  used on input line 756.
 (pdftex.def)             Requested size: 441.01775pt x 304.3846pt.
-<./images/download(4).png, id=512, 720.6925pt x 500.87125pt>
+<./images/download(4).png, id=524, 720.6925pt x 500.87125pt>
 File: ./images/download(4).png Graphic file (type png)
 <use ./images/download(4).png>
-Package pdftex.def Info: ./images/download(4).png  used on input line 638.
+Package pdftex.def Info: ./images/download(4).png  used on input line 762.
 (pdftex.def)             Requested size: 441.01775pt x 306.50162pt.
-<./images/download(5).png, id=513, 720.6925pt x 500.87125pt>
+<./images/download(5).png, id=525, 720.6925pt x 500.87125pt>
 File: ./images/download(5).png Graphic file (type png)
 <use ./images/download(5).png>
-Package pdftex.def Info: ./images/download(5).png  used on input line 644.
+Package pdftex.def Info: ./images/download(5).png  used on input line 768.
 (pdftex.def)             Requested size: 441.01775pt x 306.50162pt.
-<./images/download.png, id=514, 779.91376pt x 866.23625pt>
-File: ./images/download.png Graphic file (type png)
-<use ./images/download.png>
-Package pdftex.def Info: ./images/download.png  used on input line 650.
-(pdftex.def)             Requested size: 441.01775pt x 489.82092pt.
-<./images/newplot(10).png, id=515, 702.625pt x 451.6875pt>
-File: ./images/newplot(10).png Graphic file (type png)
-<use ./images/newplot(10).png>
-Package pdftex.def Info: ./images/newplot(10).png  used on input line 656.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(11).png, id=516, 702.625pt x 451.6875pt>
-File: ./images/newplot(11).png Graphic file (type png)
-<use ./images/newplot(11).png>
-Package pdftex.def Info: ./images/newplot(11).png  used on input line 662.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(12).png, id=517, 702.625pt x 451.6875pt>
-File: ./images/newplot(12).png Graphic file (type png)
-<use ./images/newplot(12).png>
-Package pdftex.def Info: ./images/newplot(12).png  used on input line 668.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(13).png, id=518, 702.625pt x 451.6875pt>
+<./images/newplot(13).png, id=526, 702.625pt x 451.6875pt>
 File: ./images/newplot(13).png Graphic file (type png)
 <use ./images/newplot(13).png>
-Package pdftex.def Info: ./images/newplot(13).png  used on input line 674.
+Package pdftex.def Info: ./images/newplot(13).png  used on input line 774.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(14).png, id=519, 702.625pt x 451.6875pt>
+<./images/newplot(14).png, id=527, 702.625pt x 451.6875pt>
 File: ./images/newplot(14).png Graphic file (type png)
 <use ./images/newplot(14).png>
-Package pdftex.def Info: ./images/newplot(14).png  used on input line 680.
+Package pdftex.def Info: ./images/newplot(14).png  used on input line 780.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(15).png, id=520, 702.625pt x 451.6875pt>
+<./images/newplot(15).png, id=528, 702.625pt x 451.6875pt>
 File: ./images/newplot(15).png Graphic file (type png)
 <use ./images/newplot(15).png>
-Package pdftex.def Info: ./images/newplot(15).png  used on input line 686.
+Package pdftex.def Info: ./images/newplot(15).png  used on input line 786.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(16).png, id=521, 702.625pt x 451.6875pt>
+<./images/newplot(16).png, id=529, 702.625pt x 451.6875pt>
 File: ./images/newplot(16).png Graphic file (type png)
 <use ./images/newplot(16).png>
-Package pdftex.def Info: ./images/newplot(16).png  used on input line 692.
+Package pdftex.def Info: ./images/newplot(16).png  used on input line 792.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(17).png, id=522, 702.625pt x 451.6875pt>
+<./images/newplot(17).png, id=530, 702.625pt x 451.6875pt>
 File: ./images/newplot(17).png Graphic file (type png)
 <use ./images/newplot(17).png>
-Package pdftex.def Info: ./images/newplot(17).png  used on input line 698.
+Package pdftex.def Info: ./images/newplot(17).png  used on input line 798.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(18).png, id=523, 702.625pt x 451.6875pt>
+<./images/newplot(18).png, id=531, 702.625pt x 451.6875pt>
 File: ./images/newplot(18).png Graphic file (type png)
 <use ./images/newplot(18).png>
-Package pdftex.def Info: ./images/newplot(18).png  used on input line 704.
+Package pdftex.def Info: ./images/newplot(18).png  used on input line 804.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(19).png, id=524, 702.625pt x 451.6875pt>
+<./images/newplot(19).png, id=532, 702.625pt x 451.6875pt>
 File: ./images/newplot(19).png Graphic file (type png)
 <use ./images/newplot(19).png>
-Package pdftex.def Info: ./images/newplot(19).png  used on input line 710.
+Package pdftex.def Info: ./images/newplot(19).png  used on input line 810.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(1).png, id=525, 702.625pt x 451.6875pt>
-File: ./images/newplot(1).png Graphic file (type png)
-<use ./images/newplot(1).png>
-Package pdftex.def Info: ./images/newplot(1).png  used on input line 716.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(20).png, id=526, 702.625pt x 451.6875pt>
+<./images/newplot(20).png, id=533, 702.625pt x 451.6875pt>
 File: ./images/newplot(20).png Graphic file (type png)
 <use ./images/newplot(20).png>
-Package pdftex.def Info: ./images/newplot(20).png  used on input line 722.
+Package pdftex.def Info: ./images/newplot(20).png  used on input line 816.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(21).png, id=527, 702.625pt x 451.6875pt>
+<./images/newplot(21).png, id=534, 702.625pt x 451.6875pt>
 File: ./images/newplot(21).png Graphic file (type png)
 <use ./images/newplot(21).png>
-Package pdftex.def Info: ./images/newplot(21).png  used on input line 728.
+Package pdftex.def Info: ./images/newplot(21).png  used on input line 822.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(22).png, id=528, 702.625pt x 451.6875pt>
+<./images/newplot(22).png, id=535, 702.625pt x 451.6875pt>
 File: ./images/newplot(22).png Graphic file (type png)
 <use ./images/newplot(22).png>
-Package pdftex.def Info: ./images/newplot(22).png  used on input line 734.
+Package pdftex.def Info: ./images/newplot(22).png  used on input line 828.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(23).png, id=529, 702.625pt x 451.6875pt>
+<./images/newplot(23).png, id=536, 702.625pt x 451.6875pt>
 File: ./images/newplot(23).png Graphic file (type png)
 <use ./images/newplot(23).png>
-Package pdftex.def Info: ./images/newplot(23).png  used on input line 740.
+Package pdftex.def Info: ./images/newplot(23).png  used on input line 834.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(24).png, id=530, 702.625pt x 451.6875pt>
+<./images/newplot(24).png, id=537, 702.625pt x 451.6875pt>
 File: ./images/newplot(24).png Graphic file (type png)
 <use ./images/newplot(24).png>
-Package pdftex.def Info: ./images/newplot(24).png  used on input line 746.
+Package pdftex.def Info: ./images/newplot(24).png  used on input line 840.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(25).png, id=531, 702.625pt x 451.6875pt>
+<./images/newplot(25).png, id=538, 702.625pt x 451.6875pt>
 File: ./images/newplot(25).png Graphic file (type png)
 <use ./images/newplot(25).png>
-Package pdftex.def Info: ./images/newplot(25).png  used on input line 752.
+Package pdftex.def Info: ./images/newplot(25).png  used on input line 846.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(26).png, id=532, 702.625pt x 451.6875pt>
+<./images/newplot(26).png, id=539, 702.625pt x 451.6875pt>
 File: ./images/newplot(26).png Graphic file (type png)
 <use ./images/newplot(26).png>
-Package pdftex.def Info: ./images/newplot(26).png  used on input line 758.
+Package pdftex.def Info: ./images/newplot(26).png  used on input line 852.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(27).png, id=533, 702.625pt x 451.6875pt>
+<./images/newplot(27).png, id=540, 702.625pt x 451.6875pt>
 File: ./images/newplot(27).png Graphic file (type png)
 <use ./images/newplot(27).png>
-Package pdftex.def Info: ./images/newplot(27).png  used on input line 764.
+Package pdftex.def Info: ./images/newplot(27).png  used on input line 858.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(28).png, id=534, 702.625pt x 451.6875pt>
+<./images/newplot(28).png, id=541, 702.625pt x 451.6875pt>
 File: ./images/newplot(28).png Graphic file (type png)
 <use ./images/newplot(28).png>
-Package pdftex.def Info: ./images/newplot(28).png  used on input line 770.
+Package pdftex.def Info: ./images/newplot(28).png  used on input line 864.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(29).png, id=535, 702.625pt x 451.6875pt>
+<./images/newplot(29).png, id=542, 702.625pt x 451.6875pt>
 File: ./images/newplot(29).png Graphic file (type png)
 <use ./images/newplot(29).png>
-Package pdftex.def Info: ./images/newplot(29).png  used on input line 776.
+Package pdftex.def Info: ./images/newplot(29).png  used on input line 870.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(2).png, id=536, 702.625pt x 451.6875pt>
-File: ./images/newplot(2).png Graphic file (type png)
-<use ./images/newplot(2).png>
-Package pdftex.def Info: ./images/newplot(2).png  used on input line 782.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(30).png, id=537, 702.625pt x 451.6875pt>
+<./images/newplot(30).png, id=543, 702.625pt x 451.6875pt>
 File: ./images/newplot(30).png Graphic file (type png)
 <use ./images/newplot(30).png>
-Package pdftex.def Info: ./images/newplot(30).png  used on input line 788.
+Package pdftex.def Info: ./images/newplot(30).png  used on input line 876.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(32).png, id=538, 702.625pt x 451.6875pt>
+<./images/newplot(32).png, id=544, 702.625pt x 451.6875pt>
 File: ./images/newplot(32).png Graphic file (type png)
 <use ./images/newplot(32).png>
-Package pdftex.def Info: ./images/newplot(32).png  used on input line 795.
+Package pdftex.def Info: ./images/newplot(32).png  used on input line 882.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(33).png, id=539, 702.625pt x 451.6875pt>
+<./images/newplot(33).png, id=545, 702.625pt x 451.6875pt>
 File: ./images/newplot(33).png Graphic file (type png)
 <use ./images/newplot(33).png>
-Package pdftex.def Info: ./images/newplot(33).png  used on input line 801.
+Package pdftex.def Info: ./images/newplot(33).png  used on input line 888.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(34).png, id=540, 702.625pt x 451.6875pt>
+<./images/newplot(34).png, id=546, 702.625pt x 451.6875pt>
 File: ./images/newplot(34).png Graphic file (type png)
 <use ./images/newplot(34).png>
-Package pdftex.def Info: ./images/newplot(34).png  used on input line 807.
+Package pdftex.def Info: ./images/newplot(34).png  used on input line 894.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(35).png, id=541, 702.625pt x 451.6875pt>
+<./images/newplot(35).png, id=547, 702.625pt x 451.6875pt>
 File: ./images/newplot(35).png Graphic file (type png)
 <use ./images/newplot(35).png>
-Package pdftex.def Info: ./images/newplot(35).png  used on input line 813.
+Package pdftex.def Info: ./images/newplot(35).png  used on input line 900.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(36).png, id=542, 702.625pt x 451.6875pt>
-File: ./images/newplot(36).png Graphic file (type png)
-<use ./images/newplot(36).png>
-Package pdftex.def Info: ./images/newplot(36).png  used on input line 819.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(37).png, id=543, 702.625pt x 451.6875pt>
+<./images/newplot(37).png, id=548, 702.625pt x 451.6875pt>
 File: ./images/newplot(37).png Graphic file (type png)
 <use ./images/newplot(37).png>
-Package pdftex.def Info: ./images/newplot(37).png  used on input line 825.
+Package pdftex.def Info: ./images/newplot(37).png  used on input line 906.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(38).png, id=544, 702.625pt x 451.6875pt>
+<./images/newplot(38).png, id=549, 702.625pt x 451.6875pt>
 File: ./images/newplot(38).png Graphic file (type png)
 <use ./images/newplot(38).png>
-Package pdftex.def Info: ./images/newplot(38).png  used on input line 831.
+Package pdftex.def Info: ./images/newplot(38).png  used on input line 912.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(39).png, id=545, 702.625pt x 451.6875pt>
-File: ./images/newplot(39).png Graphic file (type png)
-<use ./images/newplot(39).png>
-Package pdftex.def Info: ./images/newplot(39).png  used on input line 837.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(3).png, id=546, 702.625pt x 451.6875pt>
-File: ./images/newplot(3).png Graphic file (type png)
-<use ./images/newplot(3).png>
-Package pdftex.def Info: ./images/newplot(3).png  used on input line 843.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(40).png, id=547, 702.625pt x 451.6875pt>
+<./images/newplot(40).png, id=550, 702.625pt x 451.6875pt>
 File: ./images/newplot(40).png Graphic file (type png)
 <use ./images/newplot(40).png>
-Package pdftex.def Info: ./images/newplot(40).png  used on input line 849.
+Package pdftex.def Info: ./images/newplot(40).png  used on input line 918.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(41).png, id=548, 702.625pt x 451.6875pt>
+<./images/newplot(41).png, id=551, 702.625pt x 451.6875pt>
 File: ./images/newplot(41).png Graphic file (type png)
 <use ./images/newplot(41).png>
-Package pdftex.def Info: ./images/newplot(41).png  used on input line 855.
+Package pdftex.def Info: ./images/newplot(41).png  used on input line 924.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(42).png, id=549, 702.625pt x 451.6875pt>
+<./images/newplot(42).png, id=552, 702.625pt x 451.6875pt>
 File: ./images/newplot(42).png Graphic file (type png)
 <use ./images/newplot(42).png>
-Package pdftex.def Info: ./images/newplot(42).png  used on input line 861.
+Package pdftex.def Info: ./images/newplot(42).png  used on input line 930.
 (pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(43).png, id=550, 833.1125pt x 833.1125pt>
+<./images/newplot(43).png, id=553, 833.1125pt x 833.1125pt>
 File: ./images/newplot(43).png Graphic file (type png)
 <use ./images/newplot(43).png>
-Package pdftex.def Info: ./images/newplot(43).png  used on input line 867.
+Package pdftex.def Info: ./images/newplot(43).png  used on input line 936.
 (pdftex.def)             Requested size: 441.01775pt x 441.02632pt.
-<./images/newplot(44).png, id=551, 803.0pt x 401.5pt>
+<./images/newplot(44).png, id=554, 803.0pt x 401.5pt>
 File: ./images/newplot(44).png Graphic file (type png)
 <use ./images/newplot(44).png>
-Package pdftex.def Info: ./images/newplot(44).png  used on input line 873.
+Package pdftex.def Info: ./images/newplot(44).png  used on input line 942.
 (pdftex.def)             Requested size: 441.01775pt x 220.51323pt.
-<./images/newplot(4).png, id=552, 702.625pt x 451.6875pt>
-File: ./images/newplot(4).png Graphic file (type png)
-<use ./images/newplot(4).png>
-Package pdftex.def Info: ./images/newplot(4).png  used on input line 879.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(5).png, id=553, 702.625pt x 451.6875pt>
-File: ./images/newplot(5).png Graphic file (type png)
-<use ./images/newplot(5).png>
-Package pdftex.def Info: ./images/newplot(5).png  used on input line 885.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(6).png, id=554, 702.625pt x 451.6875pt>
-File: ./images/newplot(6).png Graphic file (type png)
-<use ./images/newplot(6).png>
-Package pdftex.def Info: ./images/newplot(6).png  used on input line 891.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(7).png, id=555, 702.625pt x 451.6875pt>
-File: ./images/newplot(7).png Graphic file (type png)
-<use ./images/newplot(7).png>
-Package pdftex.def Info: ./images/newplot(7).png  used on input line 897.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(8).png, id=556, 702.625pt x 451.6875pt>
-File: ./images/newplot(8).png Graphic file (type png)
-<use ./images/newplot(8).png>
-Package pdftex.def Info: ./images/newplot(8).png  used on input line 903.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot(9).png, id=557, 702.625pt x 451.6875pt>
-File: ./images/newplot(9).png Graphic file (type png)
-<use ./images/newplot(9).png>
-Package pdftex.def Info: ./images/newplot(9).png  used on input line 909.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
-<./images/newplot.png, id=558, 702.625pt x 451.6875pt>
-File: ./images/newplot.png Graphic file (type png)
-<use ./images/newplot.png>
-Package pdftex.def Info: ./images/newplot.png  used on input line 915.
-(pdftex.def)             Requested size: 441.01775pt x 283.51701pt.
  [30
 
- <./images/download(1).png>] [31 <./images/download(2).png> <./images/download(
-3).png>] [32 <./images/download(4).png> <./images/download(5).png>] [33 <./imag
-es/download.png>] [34 <./images/newplot(10).png> <./images/newplot(11).png>] [3
-5 <./images/newplot(12).png> <./images/newplot(13).png>]
-[36 <./images/newplot(14).png> <./images/newplot(15).png>] [37 <./images/newplo
-t(16).png> <./images/newplot(17).png>] [38 <./images/newplot(18).png> <./images
-/newplot(19).png>] [39 <./images/newplot(1).png> <./images/newplot(20).png>]
-[40 <./images/newplot(21).png> <./images/newplot(22).png>] [41 <./images/newplo
-t(23).png> <./images/newplot(24).png>] [42 <./images/newplot(25).png> <./images
-/newplot(26).png>] [43 <./images/newplot(27).png> <./images/newplot(28).png>]
-[44 <./images/newplot(29).png> <./images/newplot(2).png>] [45 <./images/newplot
-(30).png> <./images/newplot(32).png>] [46 <./images/newplot(33).png> <./images/
-newplot(34).png>] [47 <./images/newplot(35).png> <./images/newplot(36).png>]
-[48 <./images/newplot(37).png> <./images/newplot(38).png>] [49 <./images/newplo
-t(39).png> <./images/newplot(3).png>] [50 <./images/newplot(40).png> <./images/
-newplot(41).png>] [51 <./images/newplot(42).png>] [52 <./images/newplot(43).png
->] [53 <./images/newplot(44).png> <./images/newplot(4).png>] [54 <./images/newp
-lot(5).png> <./images/newplot(6).png>] [55 <./images/newplot(7).png> <./images/
-newplot(8).png>] [56 <./images/newplot(9).png> <./images/newplot.png>] [57
+ <./images/10.png>] [31 <./images/11.png> <./images/12.png>]
+[32 <./images/13.png> <./images/14.png>] [33 <./images/15.png> <./images/16.png
+>] [34 <./images/1.png> <./images/2.png>] [35 <./images/3.png>] [36 <./images/4
+a.png> <./images/4.png>] [37 <./images/5.png> <./images/6.png>] [38 <./images/7
+.png> <./images/8.png>] [39 <./images/9.png> <./images/download(1).png>]
+[40 <./images/download(2).png> <./images/download(3).png>] [41 <./images/downlo
+ad(4).png> <./images/download(5).png>] [42 <./images/newplot(13).png> <./images
+/newplot(14).png>] [43 <./images/newplot(15).png> <./images/newplot(16).png>]
+[44 <./images/newplot(17).png> <./images/newplot(18).png>] [45 <./images/newplo
+t(19).png> <./images/newplot(20).png>] [46 <./images/newplot(21).png> <./images
+/newplot(22).png>] [47 <./images/newplot(23).png> <./images/newplot(24).png>]
+[48 <./images/newplot(25).png> <./images/newplot(26).png>] [49 <./images/newplo
+t(27).png> <./images/newplot(28).png>] [50 <./images/newplot(29).png> <./images
+/newplot(30).png>] [51 <./images/newplot(32).png> <./images/newplot(33).png>]
+[52 <./images/newplot(34).png> <./images/newplot(35).png>] [53 <./images/newplo
+t(37).png> <./images/newplot(38).png>] [54 <./images/newplot(40).png> <./images
+/newplot(41).png>] [55 <./images/newplot(42).png>] [56 <./images/newplot(43).pn
+g>] [57 <./images/newplot(44).png>] [58
 
-]
-[58
+] [59
 
-] (./cluster.bbl (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+] (./cluster.bbl
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 Underfull \hbox (badness 1163) in paragraph at lines 16--18
@@ -1152,39 +1176,39 @@ Underfull \hbox (badness 1308) in paragraph at lines 20--22
 b-jek-to-ri-en-tierte Mod-ell-bil-dung von
  []
 
-) [59]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 947.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 947.
+) [60]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 958.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 958.
  (./cluster.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 947.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 947.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 958.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 958.
 Package rerunfilecheck Info: File `cluster.out' has not changed.
-(rerunfilecheck)             Checksum: 2089E56DD1C69962D13D9F929D3F80D8;2840.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 947.
+(rerunfilecheck)             Checksum: 7609F52697E0CE73897F438E83A5BF7B;2713.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 958.
  ) 
 Here is how much of TeX's memory you used:
- 20655 strings out of 494805
- 366289 string characters out of 6178000
- 517651 words of memory out of 5000000
- 23354 multiletter control sequences out of 15000+600000
+ 20711 strings out of 494805
+ 366068 string characters out of 6178000
+ 519279 words of memory out of 5000000
+ 23408 multiletter control sequences out of 15000+600000
  10466 words of font info for 38 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 249i,9n,243p,1252b,1085s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 249i,9n,243p,1252b,1084s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-t10.pfb>
-Output written on cluster.pdf (60 pages, 1791699 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+t12.pfb>
+Output written on cluster.pdf (61 pages, 1803872 bytes).
 PDF statistics:
- 835 PDF objects out of 1000 (max. 8388607)
- 655 compressed objects within 7 object streams
- 195 named destinations out of 1000 (max. 500000)
- 639 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 837 PDF objects out of 1000 (max. 8388607)
+ 654 compressed objects within 7 object streams
+ 196 named destinations out of 1000 (max. 500000)
+ 628 words of extra memory for PDF output out of 10000 (max. 10000000)
 

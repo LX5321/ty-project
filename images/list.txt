@@ -1,306 +1,306 @@
 
 \begin{figure}[ht]
 \centering
+\includegraphics[width=1\textwidth]{10.png}
+\caption{\label{fig:1} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{11.png}
+\caption{\label{fig:2} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{12.png}
+\caption{\label{fig:3} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{13.png}
+\caption{\label{fig:4} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{14.png}
+\caption{\label{fig:5} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{15.png}
+\caption{\label{fig:6} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{16.png}
+\caption{\label{fig:7} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{1.png}
+\caption{\label{fig:8} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{2.png}
+\caption{\label{fig:9} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{3.png}
+\caption{\label{fig:10} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{4a.png}
+\caption{\label{fig:11} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{4.png}
+\caption{\label{fig:12} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{5.png}
+\caption{\label{fig:13} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{6.png}
+\caption{\label{fig:14} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{7.png}
+\caption{\label{fig:15} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{8.png}
+\caption{\label{fig:16} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{9.png}
+\caption{\label{fig:17} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
 \includegraphics[width=1\textwidth]{download(1).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:18} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(2).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:19} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(3).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:20} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(4).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:21} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(5).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{download.png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(10).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(11).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(12).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:22} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(13).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:23} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(14).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:24} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(15).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:25} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(16).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:26} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(17).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:27} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(18).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:28} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(19).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(1).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:29} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(20).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:30} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(21).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:31} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(22).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:32} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(23).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:33} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(24).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:34} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(25).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:35} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(26).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:36} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(27).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:37} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(28).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:38} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(29).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(2).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:39} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(30).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(31).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:40} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(32).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:41} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(33).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:42} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(34).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:43} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(35).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(36).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:44} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(37).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:45} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(38).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(39).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(3).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:46} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(40).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:47} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(41).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:48} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(42).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:49} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(43).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:50} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(44).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(4).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(5).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(6).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(7).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(8).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(9).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot.png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:51} Caption}
 \end{figure}

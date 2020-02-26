@@ -70,6 +70,8 @@ Ashweta Fondekar
 \end{titlepage}
 
 %declaration
+\onehalfspacing
+%\doublespacing
 \newpage
 \vspace{15cm}
 \begin{center}
@@ -129,8 +131,6 @@ to the users via an easy to use web application which gives them access to the
 observations then stored in the database after being predicted by the algorithm
 deployed on the nodes.
 \end{abstract}
-\onehalfspacing
-%\doublespacing
 
 
 \section{Introduction}
@@ -250,15 +250,22 @@ Secure Shell is a cryptography network protocol for operating network services s
 
 \newpage
 \section{Methodology}
-% Write about the EDA and algorithm selection process.
-The dataset used for this project is from the UCI Machine learning repository and can be found at their respective website. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and \ref{table:3} is the accuracy obtained from the predicted outcomes for given sets of patients. 
+The dataset used for this project is from the UCI Machine learning repository and can be found at their respective website. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and \ref{table:3} is the accuracy obtained from the predicted outcomes for given sets of patients.
+
+Firstly, I began the experiment by examining the amount of people that were recorded by the dataset. We can see that the dataset contains a total of 768 observations. From figure \ref{fig:1} we can see that 268 people are healthy, while the rest of the 500 subjects are diabetic. If converted to percentage, 65.1\% of the subjects are healthy and 34.9\% of subjects are diabetic.
+
+To proceed with the eploratory data analysis, we can examine the missing values in the dataset. 
 
 
 
-\newpage
-\section{The Multi Layered Perceptron}
-\subsection{Introduction}
-The multi layer perceptron (MLP) is the one of the most commonly used artificial neural networks. A multilayer perceptron is not a single perceptron with multiple layers, but rather multiple layers of artificial neurons that can be perceptrons. The layers of the MLP form a directed, acyclic graph. Generally, each layer is fully connected to the subsequent layer; the output of each artificial neuron in a layer is an input to every artificial neuron in the next layer towards the output. MLPs have three or more layers of artificial neurons.
+
+
+
+
+
+
+
+
 
 \newpage
 \section{Coding Process}
@@ -431,38 +438,29 @@ A cluster is a group of two or more servers connected to each other in such a wa
 
 \subsection{Benefits of Clustering}
 \begin{itemize}
-\item
-Increased resource availability: If one Intelligence Server in a cluster fails, the other Intelligence Servers in the cluster can pick up the workload. This prevents the loss of valuable time and information if a server fails.
+\item \texttt{Increased resource availability} If one Intelligence Server in a cluster fails, the other Intelligence Servers in the cluster can pick up the workload. This prevents the loss of valuable time and information if a server fails.
 Strategic resource usage: You can distribute projects across nodes in whatever configuration you prefer. This reduces overhead because not all machines need to be running all projects, and allows you to use your resources flexibly.
-\begin{itemize}
-\item
-Increased performance: Multiple machines provide greater processing power.
-\item
-Greater scalability: As your user base grows and report complexity increases, your resources can grow.
-\item
-Simplified management: Clustering simplifies the management of large or rapidly growing systems.
-\item
-Fail-over support ensures that a business intelligence system remains available for use if an application or hardware failure occurs. Clustering provides failover support in two ways:
 
-Load redistribution: When a node fails, the work for which it is responsible is directed to another node or set of nodes.
+\item \texttt{Increased performance} Multiple machines provide greater processing power.
+\item \texttt{Greater scalability} As your user base grows and report complexity increases, your resources can grow.
+\item \texttt{Simplified management} Clustering simplifies the management of large or rapidly growing systems.
+
+Fail-over support ensures that a business intelligence system remains available for use if an application or hardware failure occurs. Clustering provides failover support in two ways:
+\item
+\texttt{Load redistribution} When a node fails, the work for which it is responsible is directed to another node or set of nodes.
 Request recovery: When a node fails, the system attempts to reconnect MicroStrategy Web users with queued or processing requests to another node. Users must log in again to be authenticated on the new node. The user is prompted to resubmit job requests.
 
-\end{itemize}
-\end{itemize}
-Load Balancing
-Load balancing is a strategy aimed at achieving even distribution of user sessions across Intelligence Servers, so that no single machine is overwhelmed. This strategy is especially valuable when it is difficult to predict the number of requests a server will receive. MicroStrategy achieves four-tier load balancing by incorporating load balancers into the MicroStrategy Web and Web products.
+\item \texttt{Load Balancing}
+Load balancing is a strategy aimed at achieving even distribution of user sessions across Intelligence Servers, so that no single machine is overwhelmed. This strategy is especially valuable when it is difficult to predict the number of requests a server will receive. MicroStrategy achieves four-tier load balancing by incorporating load balancers into the MicroStrategy Web and Web products. Load is calculated as the number of user sessions connected to a node. The load balancers collect information on the number of user sessions each node is carrying. Using this information at the time a user logs in to a project, MicroStrategy Web connects them to the Intelligence Server node that is carrying the lightest session load. All requests by that user are routed to the node to which they are connected until the user disconnects from the MicroStrategy Web product.
 
-Load is calculated as the number of user sessions connected to a node. The load balancers collect information on the number of user sessions each node is carrying. Using this information at the time a user logs in to a project, MicroStrategy Web connects them to the Intelligence Server node that is carrying the lightest session load. All requests by that user are routed to the node to which they are connected until the user disconnects from the MicroStrategy Web product.
-
-Project Distribution and Project Fail over
-When you set up several server machines in a cluster, you can distribute projects across those clustered machines or nodes in any configuration, in both Windows and Linux environments. All servers in a cluster do not need to be running all projects. Each node in the cluster can host a different set of projects, which means only a subset of projects need to be loaded on a specific Intelligence Server machine. This feature provides you with flexibility in using your resources, and it provides better scalability and performance because of less overhead on each Intelligence Server machine.
-
-Distributing projects across nodes also provides project fail-over support. For example, one server is hosting project A and another server is hosting projects B and C. If the first server fails, the other server can host all three projects to ensure project availability.
-
-Project creation, duplication, and deletion in a three-tier, or server, connection are automatically broadcast to all nodes during run-time to ensure synchronization across the cluster.
-
-Work Fencing
+\item
+\texttt{Project Distribution and Project Fail over}
+When you set up several server machines in a cluster, you can distribute projects across those clustered machines or nodes in any configuration, in both Windows and Linux environments. All servers in a cluster do not need to be running all projects. Each node in the cluster can host a different set of projects, which means only a subset of projects need to be loaded on a specific Intelligence Server machine. This feature provides you with flexibility in using your resources, and it provides better scalability and performance because of less overhead on each Intelligence Server machine. Distributing projects across nodes also provides project fail-over support. For example, one server is hosting project A and another server is hosting projects B and C. If the first server fails, the other server can host all three projects to ensure project availability. Project creation, duplication, and deletion in a three-tier, or server, connection are automatically broadcast to all nodes during run-time to ensure synchronization across the cluster.
+\item
+\texttt{Work Fencing}
 User fences and workload fences allow you to reserve nodes of a cluster for either users or a project subscriptions. 
+
+\end{itemize}
 
 \newpage
 \section{Future Scope}
@@ -508,27 +506,27 @@ Outcome                    & Class variable (0 or 1) 268 of 768 are 1, the other
 \begin{tabular}{|c|c|c|c|}
 \hline
 Algorithm              & Additional Parameters                              & Train Set Accuracy \\ \hline
-K Nearest Neighbour    & -                                                  & 0.79               \\ \hline
+K Nearest Neighbour    & -                                                  & 0.790               \\ \hline
 Logistic Regression    & C = 1                                              & 0.781              \\ \hline
 Logistic Regression    & C = 0.01                                           & 0.700              \\\hline
 Logistic Regression    & C = 100                                            & 0.785              \\ \hline
-Decision Tree          & -                                                  & 1.00               \\ \hline
+Decision Tree          & -                                                  & 1.000              \\ \hline
 Decision Tree          & Max Depth = 3                                      & 0.773              \\ \hline
 Random Forest          & Estimators = 100                                   & 1.000              \\ \hline
 Random Forest          & Estimators = 100; Max Depth = 3                    & 0.800              \\ \hline
 Gradient Boosting      & -                                                  & 0.917              \\ \hline
 Gradient Boosting      & Max Depth = 1                                      & 0.804              \\ \hline
 Gradient Boosting      & Learning Rate = 0.01                               & 0.802              \\ \hline
-Support Vector Machine & -                                                  & 1.00               \\ \hline
-Support Vector Machine & Train and Test set scaled using MinMaxScaler       & 0.77               \\ \hline
+Support Vector Machine & -                                                  & 1.000              \\ \hline
+Support Vector Machine & Train and Test set scaled using MinMaxScaler       & 0.770              \\ \hline
 Support Vector Machine & C = 1000                                           & 0.790              \\ \hline
-MLP Classifier         & Random State = 42                                  & 0.73               \\ \hline
+MLP Classifier         & Random State = 42                                  & 0.730              \\ \hline
 MLP Classifier         & Random State = 0                                   & 0.823              \\ \hline
 MLP Classifier         & Max Iterations = 1000                              & 0.908              \\ \hline
 MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0 & 0.806              \\ \hline
 \end{tabular}
 \end{table}
-\captionof{table}{Test and Train accuracy's using various machine learning algorithms with various parameters.}
+\captionof{table}{Train accuracy using various machine learning algorithms with various parameters.}
 \label{table:2}
 \end{landscape}
 \clearpage
@@ -545,7 +543,7 @@ MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0 & 0.
 \begin{tabular}{|c|c|c|c|}
 \hline
 Algorithm              & Additional Parameters                               & Test Set Accuracy \\ \hline
-K Nearest Neighbour    & -                                                   & 0.78              \\ \hline
+K Nearest Neighbour    & -                                                   & 0.780             \\ \hline
 Logistic Regression    & C = 1                                               & 0.771             \\ \hline
 Logistic Regression    & C = 0.01                                            & 0.703             \\ \hline
 Logistic Regression    & C = 100                                             & 0.766             \\ \hline
@@ -556,18 +554,43 @@ Random Forest          & Estimators = 100; Max Depth = 3                     & 0
 Gradient Boosting      & -                                                   & 0.792             \\ \hline
 Gradient Boosting      & Max Depth = 1                                       & 0.781             \\ \hline
 Gradient Boosting      & Learning Rate = 0.01                                & 0.776             \\ \hline
-Support Vector Machine & -                                                   & 0.65              \\ \hline
-Support Vector Machine & Train and Test set scaled using MinMaxScaler        & 0.77              \\ \hline
+Support Vector Machine & -                                                   & 0.650             \\ \hline
+Support Vector Machine & Train and Test set scaled using MinMaxScaler        & 0.770              \\ \hline
 Support Vector Machine & C = 1000                                            & 0.797             \\ \hline
-MLP Classifier         & Random State = 42                                   & 0.72              \\ \hline
+MLP Classifier         & Random State = 42                                   & 0.720              \\ \hline
 MLP Classifier         & Random State = 0                                    & 0.802             \\ \hline
 MLP Classifier         & Max Iterations = 1000                               & 0.792             \\ \hline
 MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0  & 0.797             \\ \hline
 \end{tabular}
 \end{table}
-\captionof{table}{Test and Train accuracy's using various machine learning algorithms with various parameters.}
+\captionof{table}{Test accuracy using various machine learning algorithms with various parameters.}
 \label{table:3}
 \end{landscape}
+\clearpage
+}
+
+{
+\clearpage
+\thispagestyle{empty}
+\centering
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+Column                     & Number of Non-Zero Values & Percentage \\ \hline
+Pregnancies                & 0                         & 0          \\ \hline
+Glucose                    & 763                       & 0.65       \\ \hline
+Blood Pressure             & 733                       & 4.56       \\ \hline
+Skin Thickness             & 541                       & 29.56      \\ \hline
+Insulin                    & 394                       & 48.7       \\ \hline
+Body Mass Index            & 757                       & 1.43       \\ \hline
+Diabetes Pedigree Function & 0                         & 0          \\ \hline
+Age                        & 0                         & 0          \\ \hline
+Outcome                    & 0                         & 0          \\ \hline
+\end{tabular}
+\end{table}
+\captionof{table}{Null Value Check.}
+\label{table:4}
 \clearpage
 }
 
@@ -611,310 +634,316 @@ class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, s
 %include for many images
 \clearpage
 
+\stepcounter{section} 
 \section{Appendix II}
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{10.png}
+\caption{\label{fig:1} Caption}
+\end{figure}
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{11.png}
+\caption{\label{fig:2} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{12.png}
+\caption{\label{fig:3} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{13.png}
+\caption{\label{fig:4} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{14.png}
+\caption{\label{fig:5} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{15.png}
+\caption{\label{fig:6} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{16.png}
+\caption{\label{fig:7} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{1.png}
+\caption{\label{fig:8} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{2.png}
+\caption{\label{fig:9} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{3.png}
+\caption{\label{fig:10} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{4a.png}
+\caption{\label{fig:11} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{4.png}
+\caption{\label{fig:12} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{5.png}
+\caption{\label{fig:13} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{6.png}
+\caption{\label{fig:14} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{7.png}
+\caption{\label{fig:15} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{8.png}
+\caption{\label{fig:16} Caption}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{9.png}
+\caption{\label{fig:17} Caption}
+\end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(1).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:18} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(2).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:19} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(3).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:20} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(4).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:21} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(5).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{download.png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(10).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(11).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(12).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:22} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(13).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:23} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(14).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:24} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(15).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:25} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(16).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:26} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(17).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:27} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(18).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:28} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(19).png}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(1).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:29} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(20).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:30} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(21).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:31} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(22).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:32} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(23).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:33} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(24).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:34} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(25).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{\label{fig:35} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(26).png}
-\caption{N6 Distribution by target.}
+\caption{\label{fig:36} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(27).png}
-\caption{Glucose v/s BMI}
+\caption{\label{fig:37} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(28).png}
-\caption{N7}
+\caption{\label{fig:38} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(29).png}
-\caption{Missing values in count and percentage.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(2).png}
-\caption{N7 distribution by target.}
+\caption{\label{fig:39} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(30).png}
-\caption{N7.}
+\caption{\label{fig:40} Caption}
 \end{figure}
-
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(32).png}
-\caption{N9 where $insulin<200$.}
+\caption{\label{fig:41} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(33).png}
-\caption{N9 distribution by target.}
+\caption{\label{fig:42} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(34).png}
-\caption{N10 distribution for diabetic and healthy people bp<80.}
+\caption{\label{fig:43} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(35).png}
-\caption{N10 distribution for diabetic and healthy people.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(36).png}
-\caption{Pregnancies distribution for diabetic and healthy people.}
+\caption{\label{fig:44} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(37).png}
-\caption{N11 feature obtained with patients > 0 and < 4.}
+\caption{\label{fig:45} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(38).png}
-\caption{N11 distribution via target labels.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(39).png}
-\caption{N0 Distribution.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(3).png}
-\caption{Correlation plot of raw dataset.}
+\caption{\label{fig:46} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(40).png}
-\caption{N15 where N0 is less than 1034.}
+\caption{\label{fig:47} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(41).png}
-\caption{N15 distribution by target labels.}
+\caption{\label{fig:48} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(42).png}
-\caption{Correlation plot with newly added features.}
+\caption{\label{fig:49} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(43).png}
-\caption{Model Performance report measured with 5 fold iterations.}
+\caption{\label{fig:50} Caption}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(44).png}
-\caption{5 Fold Cross Validation score for the MLP Classifier.}
+\caption{\label{fig:51} Caption}
 \end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(4).png}
-\caption{Insulin distribution for diabetic and healthy people.}
-\end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(5).png}
-\caption{Glucose distribution for diabetic and healthy people.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(6).png}
-\caption{Skin Thickness distribution for diabetic and healthy people.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(7).png}
-\caption{Blood pressure distribution for diabetic and healthy people.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(8).png}
-\caption{BMI distribution for diabetic and healthy people.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(9).png}
-\caption{Age distribution for diabetic and healthy people.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot.png}
-\caption{Count of Outcome Variable.}
-\end{figure}
 \clearpage
 \newpage
 \section{Student Profile}
@@ -922,24 +951,6 @@ class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, s
 \clearpage
 \newpage
 \section{Conclusion}
-%https://www.scott-clark.com/2018/10/01/types-of-information-systems-used-in-healthcare-facilities/
-%https://doc-archives.microstrategy.com/producthelp/10.11/SystemAdmin/WebHelp/Lang_1033/Content/Benefits_of_clustering.htm
-%https://www.sciencedirect.com/science/article/pii/S1319157819316076
-%https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291096-9136%28199807%2915%3A7%3C539%3A%3AAID-DIA668%3E3.0.CO%3B2-S
-%https://link.springer.com/chapter/10.1007/978-981-15-0339-9_17
-%https://medium.com/@pushkarmandot/https-medium-com-pushkarmandot-what-is-lightgbm-how-to-implement-it-how-to-fine-tune-the-parameters-60347819b7fc
-%http://rasbt.github.io/mlxtend/user_guide/classifier/EnsembleVoteClassifier/
-%https://www.news-medical.net/health/What-is-Diabetes.aspx
-%https://lightgbm.readthedocs.io/en/latest/Parameters-Tuning.html
-%http://ogrisel.github.io/scikit-learn.org/sklearn-tutorial/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
-%https://www.scikit-yb.org/en/latest/api/classifier/threshold.html
-%https://www.analyticsindiamag.com/why-is-random-search-better-than-grid-search-for-machine-learning/
-%https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html
-%https://scikit-learn.org/stable/modules/preprocessing_targets.html#preprocessing-targets
-%https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
-%https://www.slideshare.net/DhianaDevaRocha/qcon-rio-machine-learning-for-everyone
-%https://medium.com/@sebastiannorena/some-model-tuning-methods-bfef3e6544f0
-%https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes
 \newpage
 \bibliography{bib}
 \bibliographystyle{ieeetr}
