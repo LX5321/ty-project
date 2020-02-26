@@ -19,7 +19,8 @@
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
- 
+\maxdeadcycles=1000
+
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},   
     commentstyle=\color{codegreen},
@@ -73,19 +74,18 @@ Ashweta Fondekar
 \vspace{15cm}
 \begin{center}
 
-\textbf{Declaration by Candidate}\\
-
+\Huge{\textbf{Declaration by Candidate}}\\
+\normalsize
 I declare that this project report has been prepared by me and to the best of my
 knowledge, it has not previously formed the basis for the award of any diploma or degree by
 any other University.
-
-
-
 \end{center}
 \newpage
 \vspace{15cm}
+
 \begin{center}
-\textbf{Certificate by Supervisor}\\
+\Huge{\textbf{Certificate by Supervisor}}\\
+\normalsize
 Certified that the Project Report is a record of work done by the candidate himself/herself/themselves under my guidance during the period of study and that to the best of my knowledge, it has not previously formed the basis of the award of any degree or diploma of any other University.\\
 \vspace{5cm}
 Ashweta Fondekar\\
@@ -222,28 +222,20 @@ Pandas, is a library that is required for loading the comma separated value file
 Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to inter-operate with the Python numerical and scientific libraries NumPy and SciPy.
 
 \subsubsection{Numpy}
-NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. The ancestor of NumPy, Numeric, was originally created by Jim Hugunin with contributions from several other developers. In 2005, Travis Oliphant created NumPy by incorporating features of the competing Numarray into Numeric, with extensive modifications. NumPy is open-source software and has many contributors.
+NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. NumPy is open-source software and has many contributors.
 
 \subsubsection{Itertools}
-The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
+The itertools module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
 
 \subsection{MYSQL}
-MySQL is an open-source relational database management system (RDBMS). Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language.
-
-MySQL is free and open-source software under the terms of the GNU General Public License, and is also available under a variety of proprietary licenses. MySQL was owned and sponsored by the Swedish company MySQL AB, which was bought by Sun Microsystems (now Oracle Corporation). In 2010, when Oracle acquired Sun, Widenius forked the open-source MySQL project to create MariaDB.
-
-MySQL is a component of the LAMP web application software stack (and others), which is an acronym for Linux, Apache, MySQL, Perl/PHP/Python. MySQL is used by many database-driven web applications, including Drupal, Joomla, phpBB, and WordPress. MySQL is also used by many popular websites, including Facebook, Flickr, MediaWiki, Twitter and YouTube.
+MySQL is an open-source relational database management system. MySQL is free and open-source software under the terms of the GNU General Public License, and is also available under a variety of proprietary licenses. MySQL was owned and sponsored by the Swedish company MySQL AB, which was bought by Sun Microsystems (now Oracle Corporation). MySQL is a component of the LAMP web application software stack (and others), which is an acronym for Linux, Apache, MySQL, Perl/PHP/Python. MySQL is used by many database-driven web applications, including Drupal, Joomla, phpBB, and WordPress. MySQL is also used by many popular websites, including Facebook, Flickr, MediaWiki, Twitter and YouTube.
 
 \subsection{Apache Web Server}
-The Apache HTTP Server, colloquially called Apache, is free and open-source cross-platform web server software, released under the terms of Apache License 2.0. Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation.
-
-The vast majority of Apache HTTP Server instances run on a Linux distribution, but current versions also run on Microsoft Windows and a wide variety of Unix-like systems. Past versions also ran on OpenVMS, NetWare, OS/2 and other operating systems, including ports to mainframes.
+The Apache HTTP Server, colloquially called Apache, is free and open-source cross-platform web server software, released under the terms of Apache License 2.0. Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation. The vast majority of Apache HTTP Server instances run on a Linux distribution, but current versions also run on Microsoft Windows and a wide variety of Unix-like systems. Past versions also ran on OpenVMS, NetWare, OS/2 and other operating systems, including ports to mainframes.
 
 \subsection{PHP}
 PHP is a general-purpose programming language originally designed for web development. PHP originally stood for Personal Home Page,
-but it now stands for the recursive initialism PHP: Hypertext Preprocessor.
-
-PHP code may be executed with a command line interface (CLI), embedded into HTML code, or used in combination with various web template systems, web content management systems, and web frameworks. PHP code is usually processed by a PHP interpreter implemented as a module in a web server or as a Common Gateway Interface (CGI) executable. The web server outputs the results of the interpreted and executed PHP code, which may be any type of data, such as generated HTML code or binary image data. PHP can be used for many programming tasks outside of the web context, such as standalone graphical applications and robotic drone control.
+but it now stands for the recursive initialism PHP: Hypertext Preprocessor. PHP code may be executed with a command line interface (CLI), embedded into HTML code, or used in combination with various web template systems, web content management systems, and web frameworks. PHP code is usually processed by a PHP interpreter implemented as a module in a web server or as a Common Gateway Interface (CGI) executable. The web server outputs the results of the interpreted and executed PHP code, which may be any type of data, such as generated HTML code or binary image data. PHP can be used for many programming tasks outside of the web context, such as standalone graphical applications and robotic drone control.
 
 \subsection{AJAX}
 Ajax is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. By decoupling the data interchange layer from the presentation layer, Ajax allows web pages and, by extension, web applications, to change content dynamically without the need to reload the entire page.[3] In practice, modern implementations commonly utilize JSON instead of XML.
@@ -257,9 +249,11 @@ GitHub is a global company that provides hosting for software development versio
 Secure Shell is a cryptography network protocol for operating network services securely over an unsecured network. Typical applications include remote command-line, login, and remote command execution, but any network service can be secured with SSH. The SSH is used to communicate between the master and slave nodes.
 
 \newpage
-\section{Selecting an Algorithm}
+\section{Methodology}
 % Write about the EDA and algorithm selection process.
-The dataset used for this project is from the UCI Machine learning repository and can be found at their website. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and predict the outcomes for given sets of patients. After analysis of multiple papers, I have seen that many data scientists have trained and tested the algorithms with the raw, untreated datasets, thereby causing the model to perform poorly. After much inspection I was able to remove the null values from the dataset which were leading it to reduce the model performance. After 
+The dataset used for this project is from the UCI Machine learning repository and can be found at their respective website. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and \ref{table:3} is the accuracy obtained from the predicted outcomes for given sets of patients. 
+
+
 
 \newpage
 \section{The Multi Layered Perceptron}
@@ -376,10 +370,11 @@ The concept of the system remains simple. The system can be described using the 
 
 \end{tikzpicture}
 \end{figure}
+
 %Step 2 end
 
 \newpage
-\item The chunks containing the data of the queries that were left unpredicted via the cluster are sent to the cluster in a round robin fashion. The method of sending the queries can be set to either round robin fashion or all at once. The 
+\item The chunks containing the data of the queries that were left unpredicted via the cluster are broken up via the chunk size set in the master environment and then are sent to the cluster in a round robin fashion. The method of sending the queries can be set to either round robin fashion or all at once. The 
 %step 3
 
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
@@ -473,7 +468,7 @@ User fences and workload fences allow you to reserve nodes of a cluster for eith
 \section{Future Scope}
 
 \newpage
-\section{Tables}
+
 {
 \clearpage
 \thispagestyle{empty}
@@ -481,6 +476,7 @@ User fences and workload fences allow you to reserve nodes of a cluster for eith
 \centering
 \begin{table}[]
 \centering
+\section{Tables}
 \begin{tabular}{|l|l|}
 \hline
 Column Name                & Description                                                               \\ \hline
@@ -570,39 +566,40 @@ MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0  & 0
 \end{tabular}
 \end{table}
 \captionof{table}{Test and Train accuracy's using various machine learning algorithms with various parameters.}
-\label{table:2}
+\label{table:3}
 \end{landscape}
 \clearpage
 }
 
 \newpage
-\section{Appendices}
+\section{Appendix I}
 \subsection{K Nearest Neighbours}
 \begin{lstlisting}
 class sklearn.neighbors.KNeighborsClassifier(n_neighbors=5, weights='uniform', algorithm='auto', leaf_size=30, p=2, metric='minkowski', metric_params=None, n_jobs=None, **kwargs)
 \end{lstlisting}
 
-\subsubsection{Logistic Regression}
+\subsection{Logistic Regression}
 \begin{lstlisting}
 class sklearn.linear_model.LogisticRegression(penalty='l2', dual=False, tol=0.0001, C=1.0, fit_intercept=True, intercept_scaling=1, class_weight=None, random_state=None, solver='lbfgs', max_iter=100, multi_class='auto', verbose=0, warm_start=False, n_jobs=None, l1_ratio=None)
 \end{lstlisting}
 
-\subsubsection{Decision Tree}
+\subsection{Decision Tree}
 \begin{lstlisting}
 class sklearn.tree.DecisionTreeClassifier(criterion='gini', splitter='best', max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features=None, random_state=None, max_leaf_nodes=None, min_impurity_decrease=0.0, min_impurity_split=None, class_weight=None, presort='deprecated', ccp_alpha=0.0)
 \end{lstlisting}
 
-\subsubsection{Random Forest Classifier}
+\subsection{Random Forest Classifier}
 \begin{lstlisting}
 class sklearn.ensemble.RandomForestClassifier(n_estimators=100, criterion='gini', max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features='auto', max_leaf_nodes=None, min_impurity_decrease=0.0, min_impurity_split=None, bootstrap=True, oob_score=False, n_jobs=None, random_state=None, verbose=0, warm_start=False, class_weight=None, ccp_alpha=0.0, max_samples=None)
 \end{lstlisting}
 
-\subsubsection{Gradient Boosting}
+\subsection{Gradient Boosting}
 \begin{lstlisting}
 class sklearn.ensemble.GradientBoostingClassifier(loss='deviance', learning_rate=0.1, n_estimators=100, subsample=1.0, criterion='friedman_mse', min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_depth=3, min_impurity_decrease=0.0, min_impurity_split=None, init=None, random_state=None, max_features=None, verbose=0, max_leaf_nodes=None, warm_start=False, presort='deprecated', validation_fraction=0.1, n_iter_no_change=None, tol=0.0001, ccp_alpha=0.0)
 \end{lstlisting}
 
-\subsubsection{Multi Layered Perceptron}
+\newpage
+\subsection{Multi Layered Perceptron}
 \begin{lstlisting}
 class sklearn.neural_network.MLPClassifier(hidden_layer_sizes=(100, ), activation='relu', solver='adam', alpha=0.0001, batch_size='auto', learning_rate='constant', learning_rate_init=0.001, power_t=0.5, max_iter=200, shuffle=True, random_state=None, tol=0.0001, verbose=False, warm_start=False, momentum=0.9, nesterovs_momentum=True, early_stopping=False, validation_fraction=0.1, beta_1=0.9, beta_2=0.999, epsilon=1e-08, n_iter_no_change=10, max_fun=15000)
 \end{lstlisting}
@@ -611,10 +608,11 @@ class sklearn.neural_network.MLPClassifier(hidden_layer_sizes=(100, ), activatio
 \begin{lstlisting}
 class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, decision_function_shape='ovr', break_ties=False, random_state=None)
 \end{lstlisting}
-
-\clearpage
 %include for many images
-\maxdeadcycles=1000
+\clearpage
+
+\section{Appendix II}
+
 
 
 \begin{figure}[ht]
@@ -795,97 +793,97 @@ class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, s
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(32).png}
-\caption{N9 distribution by target.}
+\caption{N9 where $insulin<200$.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(33).png}
-\caption{N10 distribution for diabetic and healthy people bp<80.}
+\caption{N9 distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(34).png}
-\caption{N10 distribution for diabetic and healthy people.}
+\caption{N10 distribution for diabetic and healthy people bp<80.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(35).png}
-\caption{Pregnancies distribution for diabetic and healthy people.}
+\caption{N10 distribution for diabetic and healthy people.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(36).png}
-\caption{N11 feature obtained with patients > 0 and < 4.}
+\caption{Pregnancies distribution for diabetic and healthy people.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(37).png}
-\caption{N11 distribution via target labels.}
+\caption{N11 feature obtained with patients > 0 and < 4.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(38).png}
-\caption{N0 Distribution.}
+\caption{N11 distribution via target labels.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(39).png}
-\caption{Correlation plot of raw dataset.}
+\caption{N0 Distribution.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(3).png}
-\caption{N15 where N0 is less than 1034.}
+\caption{Correlation plot of raw dataset.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(40).png}
-\caption{N15 distribution by target labels.}
+\caption{N15 where N0 is less than 1034.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(41).png}
-\caption{Correlation plot with newly added features.}
+\caption{N15 distribution by target labels.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(42).png}
-\caption{Model Performance report measured with 5 fold iterations.}
+\caption{Correlation plot with newly added features.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(43).png}
-\caption{5 Fold Cross Validation score for the MLP Classifier.}
+\caption{Model Performance report measured with 5 fold iterations.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(44).png}
-\caption{Insulin distribution for diabetic and healthy people.}
+\caption{5 Fold Cross Validation score for the MLP Classifier.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(4).png}
-\caption{Glucose distribution for diabetic and healthy people.}
+\caption{Insulin distribution for diabetic and healthy people.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(5).png}
-\caption{Master Node reading data from the SQL Database.}
+\caption{Glucose distribution for diabetic and healthy people.}
 \end{figure}
 
 \begin{figure}[ht]

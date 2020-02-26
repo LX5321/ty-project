@@ -35,13 +35,14 @@
 \contentsline {subsection}{\numberline {9.1}Benefits of Clustering}{22}{subsection.9.1}
 \contentsline {section}{\numberline {10}Future Scope}{24}{section.10}
 \contentsline {section}{\numberline {11}Tables}{25}{section.11}
-\contentsline {section}{\numberline {12}Appendices}{29}{section.12}
-\contentsline {subsection}{\numberline {12.1}K Nearest Neighbours}{29}{subsection.12.1}
-\contentsline {subsubsection}{\numberline {12.1.1}Logistic Regression}{29}{subsubsection.12.1.1}
-\contentsline {subsubsection}{\numberline {12.1.2}Decision Tree}{29}{subsubsection.12.1.2}
-\contentsline {subsubsection}{\numberline {12.1.3}Random Forest Classifier}{29}{subsubsection.12.1.3}
-\contentsline {subsubsection}{\numberline {12.1.4}Gradient Boosting}{29}{subsubsection.12.1.4}
-\contentsline {subsubsection}{\numberline {12.1.5}Multi Layered Perceptron}{29}{subsubsection.12.1.5}
-\contentsline {subsection}{\numberline {12.2}SVM}{30}{subsection.12.2}
-\contentsline {section}{\numberline {13}Student Profile}{58}{section.13}
-\contentsline {section}{\numberline {14}Conclusion}{59}{section.14}
+\contentsline {section}{\numberline {12}Appendix I}{28}{section.12}
+\contentsline {subsection}{\numberline {12.1}K Nearest Neighbours}{28}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Logistic Regression}{28}{subsection.12.2}
+\contentsline {subsection}{\numberline {12.3}Decision Tree}{28}{subsection.12.3}
+\contentsline {subsection}{\numberline {12.4}Random Forest Classifier}{28}{subsection.12.4}
+\contentsline {subsection}{\numberline {12.5}Gradient Boosting}{28}{subsection.12.5}
+\contentsline {subsection}{\numberline {12.6}Multi Layered Perceptron}{29}{subsection.12.6}
+\contentsline {subsection}{\numberline {12.7}SVM}{29}{subsection.12.7}
+\contentsline {section}{\numberline {13}Appendix II}{30}{section.13}
+\contentsline {section}{\numberline {14}Student Profile}{57}{section.14}
+\contentsline {section}{\numberline {15}Conclusion}{58}{section.15}

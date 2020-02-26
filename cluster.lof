@@ -1,52 +1,52 @@
 \babel@toc {english}{}
 \contentsline {figure}{\numberline {1}{\ignorespaces Master Node reading data from the SQL Database.}}{20}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Master Node reading data from the SQL Database.}}{31}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Master Node reading data from the SQL Database.}}{32}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Master Node reading data from the SQL Database.}}{32}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Master Node reading data from the SQL Database.}}{33}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Master Node reading data from the SQL Database.}}{33}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Master Node reading data from the SQL Database.}}{34}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Master Node reading data from the SQL Database.}}{35}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Master Node reading data from the SQL Database.}}{35}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Master Node reading data from the SQL Database.}}{36}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Master Node reading data from the SQL Database.}}{36}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Master Node reading data from the SQL Database.}}{37}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Master Node reading data from the SQL Database.}}{37}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Master Node reading data from the SQL Database.}}{38}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Master Node reading data from the SQL Database.}}{38}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Master Node reading data from the SQL Database.}}{39}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Master Node reading data from the SQL Database.}}{39}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Master Node reading data from the SQL Database.}}{40}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Master Node reading data from the SQL Database.}}{40}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Master Node reading data from the SQL Database.}}{41}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Master Node reading data from the SQL Database.}}{41}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Master Node reading data from the SQL Database.}}{42}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Master Node reading data from the SQL Database.}}{42}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Master Node reading data from the SQL Database.}}{43}{figure.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces N6 Distribution by target.}}{43}{figure.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Glucose v/s BMI}}{44}{figure.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces N7}}{44}{figure.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces Missing values in count and percentage.}}{45}{figure.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces N7 distribution by target.}}{45}{figure.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces N7.}}{46}{figure.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces N9 distribution by target.}}{46}{figure.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces N10 distribution for diabetic and healthy people bp<80.}}{47}{figure.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces N10 distribution for diabetic and healthy people.}}{47}{figure.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces Pregnancies distribution for diabetic and healthy people.}}{48}{figure.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces N11 feature obtained with patients > 0 and < 4.}}{48}{figure.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces N11 distribution via target labels.}}{49}{figure.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces N0 Distribution.}}{49}{figure.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces Correlation plot of raw dataset.}}{50}{figure.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces N15 where N0 is less than 1034.}}{50}{figure.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces N15 distribution by target labels.}}{51}{figure.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces Correlation plot with newly added features.}}{51}{figure.41}
-\contentsline {figure}{\numberline {42}{\ignorespaces Model Performance report measured with 5 fold iterations.}}{52}{figure.42}
-\contentsline {figure}{\numberline {43}{\ignorespaces 5 Fold Cross Validation score for the MLP Classifier.}}{53}{figure.43}
-\contentsline {figure}{\numberline {44}{\ignorespaces Insulin distribution for diabetic and healthy people.}}{54}{figure.44}
-\contentsline {figure}{\numberline {45}{\ignorespaces Glucose distribution for diabetic and healthy people.}}{54}{figure.45}
-\contentsline {figure}{\numberline {46}{\ignorespaces Master Node reading data from the SQL Database.}}{55}{figure.46}
-\contentsline {figure}{\numberline {47}{\ignorespaces Skin Thickness distribution for diabetic and healthy people.}}{55}{figure.47}
-\contentsline {figure}{\numberline {48}{\ignorespaces Blood pressure distribution for diabetic and healthy people.}}{56}{figure.48}
-\contentsline {figure}{\numberline {49}{\ignorespaces BMI distribution for diabetic and healthy people.}}{56}{figure.49}
-\contentsline {figure}{\numberline {50}{\ignorespaces Age distribution for diabetic and healthy people.}}{57}{figure.50}
-\contentsline {figure}{\numberline {51}{\ignorespaces Count of Outcome Variable.}}{57}{figure.51}
+\contentsline {figure}{\numberline {2}{\ignorespaces Master Node reading data from the SQL Database.}}{30}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Master Node reading data from the SQL Database.}}{31}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Master Node reading data from the SQL Database.}}{31}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Master Node reading data from the SQL Database.}}{32}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Master Node reading data from the SQL Database.}}{32}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Master Node reading data from the SQL Database.}}{33}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Master Node reading data from the SQL Database.}}{34}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Master Node reading data from the SQL Database.}}{34}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Master Node reading data from the SQL Database.}}{35}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Master Node reading data from the SQL Database.}}{35}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Master Node reading data from the SQL Database.}}{36}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Master Node reading data from the SQL Database.}}{36}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Master Node reading data from the SQL Database.}}{37}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Master Node reading data from the SQL Database.}}{37}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Master Node reading data from the SQL Database.}}{38}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Master Node reading data from the SQL Database.}}{38}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Master Node reading data from the SQL Database.}}{39}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Master Node reading data from the SQL Database.}}{39}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Master Node reading data from the SQL Database.}}{40}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Master Node reading data from the SQL Database.}}{40}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Master Node reading data from the SQL Database.}}{41}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Master Node reading data from the SQL Database.}}{41}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Master Node reading data from the SQL Database.}}{42}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces N6 Distribution by target.}}{42}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Glucose v/s BMI}}{43}{figure.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces N7}}{43}{figure.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces Missing values in count and percentage.}}{44}{figure.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces N7 distribution by target.}}{44}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces N7.}}{45}{figure.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces N9 where $insulin<200$.}}{45}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces N9 distribution by target.}}{46}{figure.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces N10 distribution for diabetic and healthy people bp<80.}}{46}{figure.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces N10 distribution for diabetic and healthy people.}}{47}{figure.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces Pregnancies distribution for diabetic and healthy people.}}{47}{figure.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces N11 feature obtained with patients > 0 and < 4.}}{48}{figure.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces N11 distribution via target labels.}}{48}{figure.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces N0 Distribution.}}{49}{figure.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces Correlation plot of raw dataset.}}{49}{figure.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces N15 where N0 is less than 1034.}}{50}{figure.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces N15 distribution by target labels.}}{50}{figure.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces Correlation plot with newly added features.}}{51}{figure.42}
+\contentsline {figure}{\numberline {43}{\ignorespaces Model Performance report measured with 5 fold iterations.}}{52}{figure.43}
+\contentsline {figure}{\numberline {44}{\ignorespaces 5 Fold Cross Validation score for the MLP Classifier.}}{53}{figure.44}
+\contentsline {figure}{\numberline {45}{\ignorespaces Insulin distribution for diabetic and healthy people.}}{53}{figure.45}
+\contentsline {figure}{\numberline {46}{\ignorespaces Glucose distribution for diabetic and healthy people.}}{54}{figure.46}
+\contentsline {figure}{\numberline {47}{\ignorespaces Skin Thickness distribution for diabetic and healthy people.}}{54}{figure.47}
+\contentsline {figure}{\numberline {48}{\ignorespaces Blood pressure distribution for diabetic and healthy people.}}{55}{figure.48}
+\contentsline {figure}{\numberline {49}{\ignorespaces BMI distribution for diabetic and healthy people.}}{55}{figure.49}
+\contentsline {figure}{\numberline {50}{\ignorespaces Age distribution for diabetic and healthy people.}}{56}{figure.50}
+\contentsline {figure}{\numberline {51}{\ignorespaces Count of Outcome Variable.}}{56}{figure.51}
