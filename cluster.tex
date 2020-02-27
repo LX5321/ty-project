@@ -2,6 +2,7 @@
 \usepackage[a4paper, inner=1.5cm, outer=3cm, top=2cm,bottom=3cm, bindingoffset=1cm]{geometry}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
+\usepackage{import}
 \usepackage{amsmath}
 \usepackage{tikz}
 \usepackage[maxfloats=256]{morefloats}
@@ -41,7 +42,7 @@
 }
  
 \lstset{style=mystyle}
- 
+
 \begin{document}
 \begin{titlepage}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
@@ -141,6 +142,75 @@ Machine learning is a growing field in computer science. With the development an
 The project encompasses the qualities of Remote Patient Monitoring (RPM) and Clinical Decision Support (CDS). RPM provides medical facilities that have the ability to transmit patient data to healthcare professionals who might very well be halfway around the world. RPM can monitor blood glucose levels and blood pressure. It is particularly helpful for patients with chronic conditions such as type 2 diabetes, hypertension, or cardiac disease. Data collected and transmitted via PRM can be used by a healthcare professional or a healthcare team to detect medical events such as stroke or heart attack that require immediate and aggressive medical intervention. Data collected may be used as part of a research project or health study. RPM is a life-saving system for patients in remote areas who cannot access face-to-face health care. CDS analyzes data from clinical and administrative systems. The aim is to assist healthcare providers in making informed clinical decisions. Data available can provide information to medical professions who are preparing diagnoses or predicting medical conditions like drug interactions and reactions. CDS tools filter information to assist healthcare professionals in caring for individual clients. 
 
 The objective of this project is to create a  system that is able to use the machine learning algorithms and predict the outcome of the parameters entered into the algorithm and help the patient draw a conclusion whether or not he/she has the same traits exhibited by similar patients that have diabetes. Also the system should have a UI that is capable of displaying the data of the patients to the doctor and to the patients themselves for further interpretation.
+
+\newpage
+\section{Project Rationale}
+Key facts
+The number of people with diabetes has risen from 108 million in 1980 to 422 million in 2014.
+The global prevalence of diabetes* among adults over 18 years of age has risen from 4.7\% in 1980 to 8.5\% in 2014 (1).
+Diabetes prevalence has been rising more rapidly in middle- and low-income countries.
+Diabetes is a major cause of blindness, kidney failure, heart attacks, stroke and lower limb amputation.
+In 2016, an estimated 1.6 million deaths were directly caused by diabetes. Another 2.2 million deaths were attributable to high blood glucose in 2012**.
+Almost half of all deaths attributable to high blood glucose occur before the age of 70 years. WHO estimates that diabetes was the seventh leading cause of death in 2016.
+Healthy diet, regular physical activity, maintaining a normal body weight and avoiding tobacco use are ways to prevent or delay the onset of type 2 diabetes.
+Diabetes can be treated and its consequences avoided or delayed with diet, physical activity, medication and regular screening and treatment for complications.
+What is diabetes?
+Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood sugar. Hyperglycaemia, or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to serious damage to many of the body's systems, especially the nerves and blood vessels.
+
+In 2014, 8.5\% of adults aged 18 years and older had diabetes. In 2016, diabetes was the direct cause of 1.6 million deaths and in 2012 high blood glucose was the cause of another 2.2 million deaths.
+
+Type 1 diabetes
+Type 1 diabetes (previously known as insulin-dependent, juvenile or childhood-onset) is characterized by deficient insulin production and requires daily administration of insulin. The cause of type 1 diabetes is not known and it is not preventable with current knowledge.
+
+Symptoms include excessive excretion of urine (polyuria), thirst (polydipsia), constant hunger, weight loss, vision changes, and fatigue. These symptoms may occur suddenly.
+
+Type 2 diabetes
+Type 2 diabetes (formerly called non-insulin-dependent, or adult-onset) results from the body’s ineffective use of insulin. Type 2 diabetes comprises the majority of people with diabetes around the world, and is largely the result of excess body weight and physical inactivity.
+
+Symptoms may be similar to those of type 1 diabetes, but are often less marked. As a result, the disease may be diagnosed several years after onset, once complications have already arisen.
+
+Until recently, this type of diabetes was seen only in adults but it is now also occurring increasingly frequently in children.
+
+Gestational diabetes
+Gestational diabetes is hyperglycaemia with blood glucose values above normal but below those diagnostic of diabetes, occurring during pregnancy.
+
+Women with gestational diabetes are at an increased risk of complications during pregnancy and at delivery. They and their children are also at increased risk of type 2 diabetes in the future.
+
+Gestational diabetes is diagnosed through prenatal screening, rather than through reported symptoms.
+
+Impaired glucose tolerance and impaired fasting glycaemia
+Impaired glucose tolerance (IGT) and impaired fasting glycaemia (IFG) are intermediate conditions in the transition between normality and diabetes. People with IGT or IFG are at high risk of progressing to type 2 diabetes, although this is not inevitable.
+
+What are common consequences of diabetes?
+Over time, diabetes can damage the heart, blood vessels, eyes, kidneys, and nerves.
+
+Adults with diabetes have a two- to three-fold increased risk of heart attacks and strokes (1).
+Combined with reduced blood flow, neuropathy (nerve damage) in the feet increases the chance of foot ulcers, infection and eventual need for limb amputation.
+Diabetic retinopathy is an important cause of blindness, and occurs as a result of long-term accumulated damage to the small blood vessels in the retina. 2.6\% of global blindness can be attributed to diabetes (2).
+Diabetes is among the leading causes of kidney failure (3).
+How can the burden of diabetes be reduced?
+Prevention
+Simple lifestyle measures have been shown to be effective in preventing or delaying the onset of type 2 diabetes. To help prevent type 2 diabetes and its complications, people should:
+
+achieve and maintain healthy body weight;
+be physically active – at least 30 minutes of regular, moderate-intensity activity on most days. More activity is required for weight control;
+eat a healthy diet, avoiding sugar and saturated fats intake; and
+avoid tobacco use – smoking increases the risk of diabetes and cardiovascular diseases.
+Diagnosis and treatment
+Early diagnosis can be accomplished through relatively inexpensive testing of blood sugar.
+
+Treatment of diabetes involves diet and physical activity along with lowering blood glucose and the levels of other known risk factors that damage blood vessels. Tobacco use cessation is also important to avoid complications.
+
+Interventions that are both cost-saving and feasible in developing countries include:
+
+blood glucose control, particularly in type 1 diabetes. People with type 1 diabetes require insulin, people with type 2 diabetes can be treated with oral medication, but may also require insulin;
+blood pressure control; and
+foot care.
+Other cost saving interventions include:
+
+screening and treatment for retinopathy (which causes blindness)
+blood lipid control (to regulate cholesterol levels)
+screening for early signs of diabetes-related kidney disease and treatment.
 
 \newpage
 \section{Software Requirements}
@@ -750,28 +820,13 @@ class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, s
 \caption{\label{fig:49} Extended heatmap with new features combined.}
 \end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(43).png}
-\caption{\label{fig:50} Performance reports.}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{newplot(44).png}
-\caption{\label{fig:51} cross validation}
-\end{figure}
-
-
-\clearpage
-\newpage
-\section{Student Profile}
-
 \clearpage
 \newpage
 \section{Conclusion}
+
+\clearpage
 \newpage
-\bibliography{bib}
-\bibliographystyle{ieeetr}
 \nocite{*}
+\bibliographystyle{plain}
+\bibliography{bib}
 \end{document}

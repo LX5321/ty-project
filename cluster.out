@@ -1,43 +1,43 @@
 \BOOKMARK [1][-]{section.1}{Acknowledgements}{}% 1
 \BOOKMARK [1][-]{section.2}{Introduction}{}% 2
-\BOOKMARK [1][-]{section.3}{Software Requirements}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Functionalities for Doctors}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Functionalities for Patients}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.3}{Functionalities for Master Nodes}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.4}{Functionalities for Slave Nodes}{section.3}% 7
-\BOOKMARK [1][-]{section.4}{Hardware Requirements}{}% 8
-\BOOKMARK [2][-]{subsection.4.1}{Raspberry Pi}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.2}{Switch}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.3}{Router}{section.4}% 11
-\BOOKMARK [2][-]{subsection.4.4}{Master Node}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.5}{Slave Node}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.6}{Database}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.7}{Web Server}{section.4}% 15
-\BOOKMARK [1][-]{section.5}{Technology Stack}{}% 16
-\BOOKMARK [2][-]{subsection.5.1}{Python}{section.5}% 17
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Pandas}{subsection.5.1}% 18
-\BOOKMARK [3][-]{subsubsection.5.1.2}{Sklearn}{subsection.5.1}% 19
-\BOOKMARK [3][-]{subsubsection.5.1.3}{Numpy}{subsection.5.1}% 20
-\BOOKMARK [3][-]{subsubsection.5.1.4}{Itertools}{subsection.5.1}% 21
-\BOOKMARK [2][-]{subsection.5.2}{MYSQL}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.3}{Apache Web Server}{section.5}% 23
-\BOOKMARK [2][-]{subsection.5.4}{PHP}{section.5}% 24
-\BOOKMARK [2][-]{subsection.5.5}{AJAX}{section.5}% 25
-\BOOKMARK [2][-]{subsection.5.6}{GitHub}{section.5}% 26
-\BOOKMARK [2][-]{subsection.5.7}{SSH}{section.5}% 27
-\BOOKMARK [1][-]{section.6}{Methodology}{}% 28
-\BOOKMARK [1][-]{section.7}{Deploying to Cluster}{}% 29
-\BOOKMARK [2][-]{subsection.7.1}{Benefits of Clustering}{section.7}% 30
-\BOOKMARK [1][-]{section.8}{Future Scope}{}% 31
-\BOOKMARK [1][-]{section.9}{Tables}{}% 32
-\BOOKMARK [1][-]{section.10}{Appendix I}{}% 33
-\BOOKMARK [2][-]{subsection.10.1}{K Nearest Neighbours}{section.10}% 34
-\BOOKMARK [2][-]{subsection.10.2}{Logistic Regression}{section.10}% 35
-\BOOKMARK [2][-]{subsection.10.3}{Decision Tree}{section.10}% 36
-\BOOKMARK [2][-]{subsection.10.4}{Random Forest Classifier}{section.10}% 37
-\BOOKMARK [2][-]{subsection.10.5}{Gradient Boosting}{section.10}% 38
-\BOOKMARK [2][-]{subsection.10.6}{Multi Layered Perceptron}{section.10}% 39
-\BOOKMARK [2][-]{subsection.10.7}{SVM}{section.10}% 40
-\BOOKMARK [1][-]{section.12}{Appendix II}{}% 41
-\BOOKMARK [1][-]{section.13}{Student Profile}{}% 42
+\BOOKMARK [1][-]{section.3}{Project Rationale}{}% 3
+\BOOKMARK [1][-]{section.4}{Software Requirements}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Functionalities for Doctors}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Functionalities for Patients}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Functionalities for Master Nodes}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.4}{Functionalities for Slave Nodes}{section.4}% 8
+\BOOKMARK [1][-]{section.5}{Hardware Requirements}{}% 9
+\BOOKMARK [2][-]{subsection.5.1}{Raspberry Pi}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.2}{Switch}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.3}{Router}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.4}{Master Node}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.5}{Slave Node}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.6}{Database}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.7}{Web Server}{section.5}% 16
+\BOOKMARK [1][-]{section.6}{Technology Stack}{}% 17
+\BOOKMARK [2][-]{subsection.6.1}{Python}{section.6}% 18
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Pandas}{subsection.6.1}% 19
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Sklearn}{subsection.6.1}% 20
+\BOOKMARK [3][-]{subsubsection.6.1.3}{Numpy}{subsection.6.1}% 21
+\BOOKMARK [3][-]{subsubsection.6.1.4}{Itertools}{subsection.6.1}% 22
+\BOOKMARK [2][-]{subsection.6.2}{MYSQL}{section.6}% 23
+\BOOKMARK [2][-]{subsection.6.3}{Apache Web Server}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.4}{PHP}{section.6}% 25
+\BOOKMARK [2][-]{subsection.6.5}{AJAX}{section.6}% 26
+\BOOKMARK [2][-]{subsection.6.6}{GitHub}{section.6}% 27
+\BOOKMARK [2][-]{subsection.6.7}{SSH}{section.6}% 28
+\BOOKMARK [1][-]{section.7}{Methodology}{}% 29
+\BOOKMARK [1][-]{section.8}{Deploying to Cluster}{}% 30
+\BOOKMARK [2][-]{subsection.8.1}{Benefits of Clustering}{section.8}% 31
+\BOOKMARK [1][-]{section.9}{Future Scope}{}% 32
+\BOOKMARK [1][-]{section.10}{Tables}{}% 33
+\BOOKMARK [1][-]{section.11}{Appendix I}{}% 34
+\BOOKMARK [2][-]{subsection.11.1}{K Nearest Neighbours}{section.11}% 35
+\BOOKMARK [2][-]{subsection.11.2}{Logistic Regression}{section.11}% 36
+\BOOKMARK [2][-]{subsection.11.3}{Decision Tree}{section.11}% 37
+\BOOKMARK [2][-]{subsection.11.4}{Random Forest Classifier}{section.11}% 38
+\BOOKMARK [2][-]{subsection.11.5}{Gradient Boosting}{section.11}% 39
+\BOOKMARK [2][-]{subsection.11.6}{Multi Layered Perceptron}{section.11}% 40
+\BOOKMARK [2][-]{subsection.11.7}{SVM}{section.11}% 41
+\BOOKMARK [1][-]{section.13}{Appendix II}{}% 42
 \BOOKMARK [1][-]{section.14}{Conclusion}{}% 43

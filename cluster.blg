@@ -1,83 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: cluster.aux
-The style file: ieeetr.bst
+The style file: plain.bst
 Database file #1: bib.bib
-I was expecting a `,' or a `}'---line 10 of file bib.bib
- : @article{benefits 
- :                   of clustering, title={Benefits of Clustering}, url={https://doc-archives.microstrategy.com/producthelp/10.11/SystemAdmin/WebHelp/Lang_1033/Content/Benefits_of_clustering.htm}, journal={Benefits of clustering}}
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 16 of file bib.bib
- : @article{discrimination 
- :                         threshold - yellowbrick v1.0.1 documentation, title={Discrimination Threshold¶}, url={https://www.scikit-yb.org/en/latest/api/classifier/threshold.html}, journal={Discrimination Threshold - Yellowbrick v1.0.1 documentation}}
-I'm skipping whatever remains of this entry
-Repeated entry---line 31 of file bib.bib
- : @article{scikit
- :                , title={sklearn.preprocessing.LabelEncoder}, url={https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html}, journal={scikit}}
-I'm skipping whatever remains of this entry
-Repeated entry---line 33 of file bib.bib
- : @article{scikit
- :                , title={sklearn.preprocessing.StandardScaler}, url={https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html}, journal={scikit}}
-I'm skipping whatever remains of this entry
-Repeated entry---line 35 of file bib.bib
- : @article{scikit
- :                , title={sklearn.preprocessing.StandardScaler}, url={https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html}, journal={scikit}}
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 37 of file bib.bib
- : @article{national 
- :                   institute of diabetes and digestive and kidney diseases_2016, title={What is Diabetes?}, url={https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes}, journal={National Institute of Diabetes and Digestive and Kidney Diseases}, publisher={U.S. Department of Health and Human Services}, year={2016}, month={Dec}}
-I'm skipping whatever remains of this entry
-Warning--empty author in benefits
-Warning--empty title in benefits
-Warning--empty journal in benefits
-Warning--empty year in benefits
-Warning--empty author in discrimination
-Warning--empty title in discrimination
-Warning--empty journal in discrimination
-Warning--empty year in discrimination
-Warning--empty author in national
-Warning--empty title in national
-Warning--empty journal in national
-Warning--empty year in national
-You've used 16 entries,
-            1876 wiz_defined-function locations,
-            551 strings with 5266 characters,
-and the built_in function-call counts, 2500 in all, are:
-= -- 206
-> -- 86
+You've used 1 entry,
+            2118 wiz_defined-function locations,
+            504 strings with 4095 characters,
+and the built_in function-call counts, 319 in all, are:
+= -- 32
+> -- 7
 < -- 0
-+ -- 38
-- -- 22
-* -- 166
-:= -- 355
-add.period$ -- 12
-call.type$ -- 16
-change.case$ -- 13
++ -- 4
+- -- 2
+* -- 24
+:= -- 58
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 156
-empty$ -- 278
-format.name$ -- 22
-if$ -- 594
+cite$ -- 1
+duplicate$ -- 11
+empty$ -- 28
+format.name$ -- 2
+if$ -- 62
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 13
-newline$ -- 51
-num.names$ -- 12
-pop$ -- 78
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 2
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 3
 quote$ -- 0
-skip$ -- 96
+skip$ -- 7
 stack$ -- 0
-substring$ -- 36
-swap$ -- 46
+substring$ -- 31
+swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 12
-while$ -- 14
-width$ -- 18
-write$ -- 115
-(There were 6 error messages)
+type$ -- 4
+warning$ -- 0
+while$ -- 4
+width$ -- 2
+write$ -- 13
