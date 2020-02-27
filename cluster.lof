@@ -1,53 +1,51 @@
 \babel@toc {english}{}
-\contentsline {figure}{\numberline {1}{\ignorespaces Master Node reading data from the SQL Database.}}{19}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Caption}}{30}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Caption}}{31}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Caption}}{31}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Caption}}{32}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Caption}}{32}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Caption}}{33}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Caption}}{33}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Caption}}{34}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Caption}}{34}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Caption}}{35}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Caption}}{36}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Caption}}{36}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Caption}}{37}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Caption}}{37}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Caption}}{38}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Caption}}{38}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Caption}}{39}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Caption}}{39}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Caption}}{40}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Caption}}{40}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Caption}}{41}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Caption}}{41}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Caption}}{42}{figure.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces Caption}}{42}{figure.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Caption}}{43}{figure.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces Caption}}{43}{figure.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces Caption}}{44}{figure.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces Caption}}{44}{figure.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces Caption}}{45}{figure.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces Caption}}{45}{figure.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces Caption}}{46}{figure.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces Caption}}{46}{figure.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces Caption}}{47}{figure.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces Caption}}{47}{figure.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces Caption}}{48}{figure.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces Caption}}{48}{figure.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces Caption}}{49}{figure.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces Caption}}{49}{figure.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces Caption}}{50}{figure.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces Caption}}{50}{figure.41}
-\contentsline {figure}{\numberline {42}{\ignorespaces Caption}}{51}{figure.42}
-\contentsline {figure}{\numberline {43}{\ignorespaces Caption}}{51}{figure.43}
-\contentsline {figure}{\numberline {44}{\ignorespaces Caption}}{52}{figure.44}
-\contentsline {figure}{\numberline {45}{\ignorespaces Caption}}{52}{figure.45}
-\contentsline {figure}{\numberline {46}{\ignorespaces Caption}}{53}{figure.46}
-\contentsline {figure}{\numberline {47}{\ignorespaces Caption}}{53}{figure.47}
-\contentsline {figure}{\numberline {48}{\ignorespaces Caption}}{54}{figure.48}
-\contentsline {figure}{\numberline {49}{\ignorespaces Caption}}{54}{figure.49}
-\contentsline {figure}{\numberline {50}{\ignorespaces Caption}}{55}{figure.50}
-\contentsline {figure}{\numberline {51}{\ignorespaces Caption}}{56}{figure.51}
-\contentsline {figure}{\numberline {52}{\ignorespaces Caption}}{57}{figure.52}
+\contentsline {figure}{\numberline {1}{\ignorespaces Subject distribution across Body Mass Index range.}}{28}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Subject distribution across age.}}{29}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Subjects distribution via Pregnancies.}}{29}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Subjects distribution via Diabetes Pedigree Function.}}{30}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Subjects Insulin Distribution across ranges.}}{30}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Plot of N0}}{31}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Diabetic v/s Healthy Subject Count.}}{31}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Diabetic v/s Healthy Subjects Percentage.}}{32}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Boxplot for all attributes with outliers.}}{33}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Heatmap using Pearsons Correlation Coefficient.}}{34}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Number of missing values in count and percentage.}}{34}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Glucose v/s Age scatterplot.}}{35}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Subjects Insulin distributon.}}{35}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Subjects glucose distribution.}}{36}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Skin Thickness distribution of subjects.}}{36}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Blood Pressure distribution of subjects.}}{37}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces New feature N1.}}{37}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces New feature N3.}}{38}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces New feature N4.}}{38}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces New feature N6.}}{39}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces New feature N7.}}{39}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces N1 barplot for diabetic and healthy population.}}{40}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces N1 distribution in percentage.}}{40}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces N2 barplot for diabetic and healthy population.}}{41}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces N2 distribution in percentage.}}{41}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Pregnancies v/s age scatterplot.}}{42}{figure.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces N3 barplot for diabetic and healthy population.}}{42}{figure.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces N3 distribution in percentage.}}{43}{figure.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces Glucose v/s Blood Pressure scatterplot.}}{43}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces N4 barplot for diabetic and healthy population.}}{44}{figure.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces N4 distribution by target.}}{44}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces N5 barplot for diabetic and healthy population.}}{45}{figure.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces N5 distribution by target.}}{45}{figure.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces Skin Thickness v/s BMI scatterplot.}}{46}{figure.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces N6 barplot for diabetic and healthy population.}}{46}{figure.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces N6 distribution by target.}}{47}{figure.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces Glucose v/s Body Mass Index scatterplot.}}{47}{figure.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces N7 barplot for diabetic and healthy population.}}{48}{figure.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces N7 distribution by target.}}{48}{figure.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces N9 barplot for diabetic and healthy population.}}{49}{figure.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces N9 distribution by target.}}{49}{figure.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces N10 barplot for diabetic and healthy population.}}{50}{figure.42}
+\contentsline {figure}{\numberline {43}{\ignorespaces N10 distribution by target.}}{50}{figure.43}
+\contentsline {figure}{\numberline {44}{\ignorespaces N11 barplot for diabetic and healthy population.}}{51}{figure.44}
+\contentsline {figure}{\numberline {45}{\ignorespaces N11 distribution by target.}}{51}{figure.45}
+\contentsline {figure}{\numberline {46}{\ignorespaces N15 barplot for diabetic and healthy population.}}{52}{figure.46}
+\contentsline {figure}{\numberline {47}{\ignorespaces N15 distribution by target.}}{52}{figure.47}
+\contentsline {figure}{\numberline {48}{\ignorespaces Extended heatmap with new features combined.}}{53}{figure.48}
+\contentsline {figure}{\numberline {49}{\ignorespaces Performance reports.}}{54}{figure.49}
+\contentsline {figure}{\numberline {50}{\ignorespaces cross validation}}{55}{figure.50}

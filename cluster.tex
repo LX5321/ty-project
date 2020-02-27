@@ -257,181 +257,6 @@ Firstly, I began the experiment by examining the amount of people that were reco
 To proceed with the eploratory data analysis, we can examine the missing values in the dataset. 
 
 
-
-
-
-
-
-
-
-
-
-
-\newpage
-\section{Coding Process}
-% Describe the coding process; write pseudocode; and include images.
-The concept of the system remains simple. The system can be described using the following diagrams.
-\subsection{Designing the System}
-\begin{itemize}
-
-\item The system firstly reads the records from the database that are not classified as 0 or 1. The master node then converts all the results obtained from the database into chunks as specified by the code. 
-%step 1 start
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-\begin{figure}[!h]
-\centering
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-
-%Shape: Can [id:dp3989446731507247] 
-\draw   (606,68.75) -- (606,170.25) .. controls (606,182.26) and (573.09,192) .. (532.5,192) .. controls (491.91,192) and (459,182.26) .. (459,170.25) -- (459,68.75) .. controls (459,56.74) and (491.91,47) .. (532.5,47) .. controls (573.09,47) and (606,56.74) .. (606,68.75) .. controls (606,80.76) and (573.09,90.5) .. (532.5,90.5) .. controls (491.91,90.5) and (459,80.76) .. (459,68.75) ;
-%Shape: Rectangle [id:dp14170681543352437] 
-\draw   (102,89) -- (325,89) -- (325,158) -- (102,158) -- cycle ;
-%Straight Lines [id:da9571038146445507] 
-\draw    (458,121) -- (326.5,121) ;
-\draw [shift={(324.5,121)}, rotate = 360] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-
-
-% Text Node
-\draw (213.5,123.5) node   [align=left] {Master Node};
-% Text Node
-\draw (534,129) node   [align=left] {SQL Database};
-
-
-\end{tikzpicture}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-%step 1 end
-
-\item odei
-%Step 2 start
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-\begin{figure}[!h]
-\centering
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-
-%Shape: Rectangle [id:dp3356543770553979] 
-\draw   (70,30) -- (560,30) -- (560,250) -- (70,250) -- cycle ;
-%Shape: Square [id:dp5256435827897643] 
-\draw   (190,40) -- (230,40) -- (230,80) -- (190,80) -- cycle ;
-%Shape: Square [id:dp5270357160077517] 
-\draw   (190,90) -- (230,90) -- (230,130) -- (190,130) -- cycle ;
-%Shape: Square [id:dp06437153710385335] 
-\draw   (190,160) -- (230,160) -- (230,200) -- (190,200) -- cycle ;
-%Shape: Circle [id:dp6202571690827927] 
-\draw   (300,60) .. controls (300,48.95) and (308.95,40) .. (320,40) .. controls (331.05,40) and (340,48.95) .. (340,60) .. controls (340,71.05) and (331.05,80) .. (320,80) .. controls (308.95,80) and (300,71.05) .. (300,60) -- cycle ;
-%Shape: Circle [id:dp7260170908934287] 
-\draw   (300,110) .. controls (300,98.95) and (308.95,90) .. (320,90) .. controls (331.05,90) and (340,98.95) .. (340,110) .. controls (340,121.05) and (331.05,130) .. (320,130) .. controls (308.95,130) and (300,121.05) .. (300,110) -- cycle ;
-%Shape: Circle [id:dp9546670114782507] 
-\draw   (300,180) .. controls (300,168.95) and (308.95,160) .. (320,160) .. controls (331.05,160) and (340,168.95) .. (340,180) .. controls (340,191.05) and (331.05,200) .. (320,200) .. controls (308.95,200) and (300,191.05) .. (300,180) -- cycle ;
-%Shape: Circle [id:dp8873752821258001] 
-\draw   (390,110) .. controls (390,98.95) and (398.95,90) .. (410,90) .. controls (421.05,90) and (430,98.95) .. (430,110) .. controls (430,121.05) and (421.05,130) .. (410,130) .. controls (398.95,130) and (390,121.05) .. (390,110) -- cycle ;
-%Straight Lines [id:da6624191220110807] 
-\draw    (230,60) -- (298,60) ;
-\draw [shift={(300,60)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da0866384249373997] 
-\draw    (230,110) -- (298,110) ;
-\draw [shift={(300,110)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da13965027003077846] 
-\draw    (230,180) -- (298,180) ;
-\draw [shift={(300,180)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da7863905838920622] 
-\draw    (230,60) -- (298.37,108.84) ;
-\draw [shift={(300,110)}, rotate = 215.54] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da16736595128940945] 
-\draw    (230,110) -- (298.59,178.59) ;
-\draw [shift={(300,180)}, rotate = 225] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da837081391568496] 
-\draw    (230,180) -- (298.59,111.41) ;
-\draw [shift={(300,110)}, rotate = 495] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da0751297016521475] 
-\draw    (230,110) -- (298.37,61.16) ;
-\draw [shift={(300,60)}, rotate = 504.46] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da2549769311708434] 
-\draw    (340,180) -- (388.84,111.63) ;
-\draw [shift={(390,110)}, rotate = 485.54] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da5966427506538203] 
-\draw    (340,110) -- (388,110) ;
-\draw [shift={(390,110)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da30294544760077824] 
-\draw    (340,60) -- (388.59,108.59) ;
-\draw [shift={(390,110)}, rotate = 225] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da77593748506778] 
-\draw    (430,110) -- (478,110) ;
-\draw [shift={(480,110)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-
-% Text Node
-\draw (314,229.5) node   [align=left] {Slave node with Multilayered Perceptron};
-% Text Node
-\draw (210,60) node   [align=left] {x{\scriptsize 1}};
-% Text Node
-\draw (210,110) node   [align=left] {x{\scriptsize 2}};
-% Text Node
-\draw (210,180) node   [align=left] {x{\scriptsize n}};
-% Text Node
-\draw (501.5,110) node   [align=left] {{\Large y}};
-
-
-\end{tikzpicture}
-\end{figure}
-
-%Step 2 end
-
-\newpage
-\item The chunks containing the data of the queries that were left unpredicted via the cluster are broken up via the chunk size set in the master environment and then are sent to the cluster in a round robin fashion. The method of sending the queries can be set to either round robin fashion or all at once. The 
-%step 3
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-\begin{figure}[!h]
-\centering
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-
-%Shape: Rectangle [id:dp7056891731575645] 
-\draw   (100,151) -- (220,151) -- (220,190) -- (100,190) -- cycle ;
-%Shape: Rectangle [id:dp652502983568856] 
-\draw   (100,200) -- (220,200) -- (220,239) -- (100,239) -- cycle ;
-%Shape: Rectangle [id:dp1370792081503991] 
-\draw   (100,50) -- (220,50) -- (220,89) -- (100,89) -- cycle ;
-%Shape: Rectangle [id:dp3403063589466713] 
-\draw   (100,100) -- (220,100) -- (220,139) -- (100,139) -- cycle ;
-%Shape: Rectangle [id:dp05437739213565784] 
-\draw   (340,100) -- (560,100) -- (560,190) -- (340,190) -- cycle ;
-%Straight Lines [id:da17081303413935167] 
-\draw    (340,150) -- (221.66,71.11) ;
-\draw [shift={(220,70)}, rotate = 393.69] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da6256697337377781] 
-\draw    (340,150) -- (221.94,120.49) ;
-\draw [shift={(220,120)}, rotate = 374.03999999999996] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da3463514586442602] 
-\draw    (340,150) -- (221.97,169.67) ;
-\draw [shift={(220,170)}, rotate = 350.53999999999996] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da6887749797140261] 
-\draw    (340,150) -- (221.73,218.99) ;
-\draw [shift={(220,220)}, rotate = 329.74] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-
-% Text Node
-\draw (160,170.5) node   [align=left] {Slave Node};
-% Text Node
-\draw (160,219.5) node   [align=left] {Slave Node};
-% Text Node
-\draw (160,119.5) node   [align=left] {Slave Node};
-% Text Node
-\draw (160,69.5) node   [align=left] {Slave Node};
-% Text Node
-\draw (450,145) node   [align=left] {Master Node};
-
-
-\end{tikzpicture}
-\end{figure}
-
-%step 3 end
-
-\end{itemize}
-\clearpage
 \newpage
 \section{Deploying to Cluster}
 A cluster is a group of two or more servers connected to each other in such a way that they behave like a single server. Each machine in the cluster is called a node. Because each machine in the cluster runs the same services as other machines in the cluster, any machine can stand in for any other machine in the cluster. This becomes important when one machine goes down or must be taken out of service for a time. The remaining machines in the cluster can seamlessly take over the work of the downed machine, providing users with uninterrupted access to services and data.
@@ -640,307 +465,301 @@ class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, s
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{10.png}
-\caption{\label{fig:1} Caption}
+\caption{\label{fig:1} Subject distribution across Body Mass Index range.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{11.png}
-\caption{\label{fig:2} Caption}
+\caption{\label{fig:2} Subject distribution across age.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{12.png}
-\caption{\label{fig:3} Caption}
+\caption{\label{fig:3} Subjects distribution via Pregnancies.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{13.png}
-\caption{\label{fig:4} Caption}
+\caption{\label{fig:4} Subjects distribution via Diabetes Pedigree Function.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{14.png}
-\caption{\label{fig:5} Caption}
+\caption{\label{fig:5} Subjects Insulin Distribution across ranges.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{15.png}
-\caption{\label{fig:6} Caption}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{16.png}
-\caption{\label{fig:7} Caption}
+\caption{\label{fig:6} Plot of N0}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{1.png}
-\caption{\label{fig:8} Caption}
+\caption{\label{fig:8} Diabetic v/s Healthy Subject Count.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{2.png}
-\caption{\label{fig:9} Caption}
+\caption{\label{fig:9} Diabetic v/s Healthy Subjects Percentage.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{3.png}
-\caption{\label{fig:10} Caption}
+\caption{\label{fig:10} Boxplot for all attributes with outliers.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{4a.png}
-\caption{\label{fig:11} Caption}
+\caption{\label{fig:11} Heatmap using Pearsons Correlation Coefficient.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{4.png}
-\caption{\label{fig:12} Caption}
+\caption{\label{fig:12} Number of missing values in count and percentage.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{5.png}
-\caption{\label{fig:13} Caption}
+\caption{\label{fig:13} Glucose v/s Age scatterplot.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{6.png}
-\caption{\label{fig:14} Caption}
+\caption{\label{fig:14} Subjects Insulin distributon.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{7.png}
-\caption{\label{fig:15} Caption}
+\caption{\label{fig:15} Subjects glucose distribution.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{8.png}
-\caption{\label{fig:16} Caption}
+\caption{\label{fig:16} Skin Thickness distribution of subjects.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{9.png}
-\caption{\label{fig:17} Caption}
+\caption{\label{fig:17} Blood Pressure distribution of subjects.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(1).png}
-\caption{\label{fig:18} Caption}
+\caption{\label{fig:18} New feature N1.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(2).png}
-\caption{\label{fig:19} Caption}
+\caption{\label{fig:19} New feature N3.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(3).png}
-\caption{\label{fig:20} Caption}
+\caption{\label{fig:20}  New feature N4.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(4).png}
-\caption{\label{fig:21} Caption}
+\caption{\label{fig:21}  New feature N6.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{download(5).png}
-\caption{\label{fig:22} Caption}
+\caption{\label{fig:22}  New feature N7.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(13).png}
-\caption{\label{fig:23} Caption}
+\caption{\label{fig:23} N1 barplot for diabetic and healthy population.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(14).png}
-\caption{\label{fig:24} Caption}
+\caption{\label{fig:24} N1 distribution in percentage.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(15).png}
-\caption{\label{fig:25} Caption}
+\caption{\label{fig:25} N2 barplot for diabetic and healthy population.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(16).png}
-\caption{\label{fig:26} Caption}
+\caption{\label{fig:26} N2 distribution in percentage.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(17).png}
-\caption{\label{fig:27} Caption}
+\caption{\label{fig:27} Pregnancies v/s age scatterplot.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(18).png}
-\caption{\label{fig:28} Caption}
+\caption{\label{fig:28} N3 barplot for diabetic and healthy population.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(19).png}
-\caption{\label{fig:29} Caption}
+\caption{\label{fig:29} N3 distribution in percentage.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(20).png}
-\caption{\label{fig:30} Caption}
+\caption{\label{fig:30} Glucose v/s Blood Pressure scatterplot.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(21).png}
-\caption{\label{fig:31} Caption}
+\caption{\label{fig:31} N4 barplot for diabetic and healthy population.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(22).png}
-\caption{\label{fig:32} Caption}
+\caption{\label{fig:32} N4 distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(23).png}
-\caption{\label{fig:33} Caption}
+\caption{\label{fig:33} N5 barplot for diabetic and healthy population.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(24).png}
-\caption{\label{fig:34} Caption}
+\caption{\label{fig:34} N5 distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(25).png}
-\caption{\label{fig:35} Caption}
+\caption{\label{fig:35} Skin Thickness v/s BMI scatterplot.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(26).png}
-\caption{\label{fig:36} Caption}
+\caption{\label{fig:36} N6 barplot for diabetic and healthy population.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(27).png}
-\caption{\label{fig:37} Caption}
+\caption{\label{fig:37} N6 distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(28).png}
-\caption{\label{fig:38} Caption}
+\caption{\label{fig:38} Glucose v/s Body Mass Index scatterplot.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(29).png}
-\caption{\label{fig:39} Caption}
+\caption{\label{fig:39} N7 barplot for diabetic and healthy population.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(30).png}
-\caption{\label{fig:40} Caption}
+\caption{\label{fig:40} N7 distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(32).png}
-\caption{\label{fig:41} Caption}
+\caption{\label{fig:41} N9 barplot for diabetic and healthy population.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(33).png}
-\caption{\label{fig:42} Caption}
+\caption{\label{fig:42} N9 distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(34).png}
-\caption{\label{fig:43} Caption}
+\caption{\label{fig:43} N10 barplot for diabetic and healthy population.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(35).png}
-\caption{\label{fig:44} Caption}
+\caption{\label{fig:44} N10 distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(37).png}
-\caption{\label{fig:45} Caption}
+\caption{\label{fig:45} N11 barplot for diabetic and healthy population.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(38).png}
-\caption{\label{fig:46} Caption}
+\caption{\label{fig:46} N11 distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(40).png}
-\caption{\label{fig:47} Caption}
+\caption{\label{fig:47} N15 barplot for diabetic and healthy population.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(41).png}
-\caption{\label{fig:48} Caption}
+\caption{\label{fig:48} N15 distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(42).png}
-\caption{\label{fig:49} Caption}
+\caption{\label{fig:49} Extended heatmap with new features combined.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(43).png}
-\caption{\label{fig:50} Caption}
+\caption{\label{fig:50} Performance reports.}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(44).png}
-\caption{\label{fig:51} Caption}
+\caption{\label{fig:51} cross validation}
 \end{figure}
 
 
