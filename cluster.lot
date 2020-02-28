@@ -3,3 +3,11 @@
 \contentsline {table}{\numberline {2}{\ignorespaces Train accuracy using various machine learning algorithms with various parameters.}}{25}{table.2}
 \contentsline {table}{\numberline {3}{\ignorespaces Test accuracy using various machine learning algorithms with various parameters.}}{26}{table.3}
 \contentsline {table}{\numberline {4}{\ignorespaces Null Value Check.}}{27}{table.4}
+\contentsline {table}{\numberline {5}{\ignorespaces First 15 rows of the raw dataset.}}{28}{table.5}
+\contentsline {table}{\numberline {6}{\ignorespaces Correlation Plot.}}{29}{table.6}
+\contentsline {table}{\numberline {7}{\ignorespaces MLP 5 fold verification.}}{30}{table.7}
+\contentsline {table}{\numberline {8}{\ignorespaces Insulin Median Comparison.}}{30}{table.8}
+\contentsline {table}{\numberline {9}{\ignorespaces Glucose Median Comparison.}}{30}{table.9}
+\contentsline {table}{\numberline {10}{\ignorespaces Skin Thickness Median Comparison.}}{30}{table.10}
+\contentsline {table}{\numberline {11}{\ignorespaces Blood Pressure Median Comparison.}}{30}{table.11}
+\contentsline {table}{\numberline {12}{\ignorespaces Body Mass Index Median Comparison.}}{30}{table.12}

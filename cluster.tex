@@ -20,6 +20,7 @@
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
 \maxdeadcycles=1000
 
 \lstdefinestyle{mystyle}{
@@ -141,76 +142,31 @@ Machine learning is a growing field in computer science. With the development an
 
 The project encompasses the qualities of Remote Patient Monitoring (RPM) and Clinical Decision Support (CDS). RPM provides medical facilities that have the ability to transmit patient data to healthcare professionals who might very well be halfway around the world. RPM can monitor blood glucose levels and blood pressure. It is particularly helpful for patients with chronic conditions such as type 2 diabetes, hypertension, or cardiac disease. Data collected and transmitted via PRM can be used by a healthcare professional or a healthcare team to detect medical events such as stroke or heart attack that require immediate and aggressive medical intervention. Data collected may be used as part of a research project or health study. RPM is a life-saving system for patients in remote areas who cannot access face-to-face health care. CDS analyzes data from clinical and administrative systems. The aim is to assist healthcare providers in making informed clinical decisions. Data available can provide information to medical professions who are preparing diagnoses or predicting medical conditions like drug interactions and reactions. CDS tools filter information to assist healthcare professionals in caring for individual clients. 
 
+Cluster computing or High-Performance computing frameworks is a form of computing in which bunch of computers (often called nodes) that are connected through a LAN (local area network) so that, they behave like a single machine. A computer cluster help to solve complex operations more efficiently with much faster processing speed, better data integrity than a single computer and they only used for mission-critical applications.
+
 The objective of this project is to create a  system that is able to use the machine learning algorithms and predict the outcome of the parameters entered into the algorithm and help the patient draw a conclusion whether or not he/she has the same traits exhibited by similar patients that have diabetes. Also the system should have a UI that is capable of displaying the data of the patients to the doctor and to the patients themselves for further interpretation.
 
 \newpage
 \section{Project Rationale}
-Key facts
-The number of people with diabetes has risen from 108 million in 1980 to 422 million in 2014.
-The global prevalence of diabetes* among adults over 18 years of age has risen from 4.7\% in 1980 to 8.5\% in 2014 (1).
-Diabetes prevalence has been rising more rapidly in middle- and low-income countries.
-Diabetes is a major cause of blindness, kidney failure, heart attacks, stroke and lower limb amputation.
-In 2016, an estimated 1.6 million deaths were directly caused by diabetes. Another 2.2 million deaths were attributable to high blood glucose in 2012**.
-Almost half of all deaths attributable to high blood glucose occur before the age of 70 years. WHO estimates that diabetes was the seventh leading cause of death in 2016.
-Healthy diet, regular physical activity, maintaining a normal body weight and avoiding tobacco use are ways to prevent or delay the onset of type 2 diabetes.
-Diabetes can be treated and its consequences avoided or delayed with diet, physical activity, medication and regular screening and treatment for complications.
-What is diabetes?
+
 Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood sugar. Hyperglycaemia, or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to serious damage to many of the body's systems, especially the nerves and blood vessels.
 
-In 2014, 8.5\% of adults aged 18 years and older had diabetes. In 2016, diabetes was the direct cause of 1.6 million deaths and in 2012 high blood glucose was the cause of another 2.2 million deaths.
+Taking a look at the number of people with diabetes, the count has risen from 108 million in 1980 to 422 million in 2014.
+The global prevalence of diabetes among adults over 18 years of age has risen from 4.7\% in 1980 to 8.5\% in 2014. Diabetes prevalence has been rising more rapidly in middle-income and low-income countries.
+Diabetes as a disease is a major cause of blindness, kidney failure, heart attacks, stroke and lower limb amputation amongst those who recognise the fatal disease late in life.
+In 2016, an estimated 1.6 million deaths were directly caused by diabetes. Another 2.2 million deaths were attributable to high blood glucose in 2012. Almost half of all deaths attributable to high blood glucose occur before the age of 70 years. WHO estimates that diabetes was the seventh leading cause of death in 2016. A healthy diet, regular physical activity, maintaining a normal body weight and avoiding tobacco use are ways to prevent or delay the onset of type 2 diabetes. Diabetes can be treated and its consequences avoided or delayed with diet, physical activity, medication and regular screening and treatment for complications. In 2014, 8.5\% of adults aged 18 years and older had diabetes. In 2016, diabetes was the direct cause of 1.6 million deaths and in 2012 high blood glucose was the cause of another 2.2 million deaths.
 
-Type 1 diabetes
-Type 1 diabetes (previously known as insulin-dependent, juvenile or childhood-onset) is characterized by deficient insulin production and requires daily administration of insulin. The cause of type 1 diabetes is not known and it is not preventable with current knowledge.
+Diabetes patients are segregated into types. Type 1 diabetes is characterized by deficient insulin production and requires daily administration of insulin. The cause of type 1 diabetes is not known and it is not preventable with current knowledge. A person with type 1 diabetes may have symptoms like excessive excretion of urine, thirst, constant hunger, weight loss, vision changes, and fatigue. These symptoms may occur suddenly.
 
-Symptoms include excessive excretion of urine (polyuria), thirst (polydipsia), constant hunger, weight loss, vision changes, and fatigue. These symptoms may occur suddenly.
-
-Type 2 diabetes
-Type 2 diabetes (formerly called non-insulin-dependent, or adult-onset) results from the body’s ineffective use of insulin. Type 2 diabetes comprises the majority of people with diabetes around the world, and is largely the result of excess body weight and physical inactivity.
-
-Symptoms may be similar to those of type 1 diabetes, but are often less marked. As a result, the disease may be diagnosed several years after onset, once complications have already arisen.
+Type 2 diabetes results from the body’s ineffective use of insulin. Type 2 diabetes comprises the majority of people with diabetes around the world, and is largely the result of excess body weight and physical inactivity. Symptoms may be similar to those of type 1 diabetes, but are often less marked. As a result, the disease may be diagnosed several years after onset, once complications have already arisen.
 
 Until recently, this type of diabetes was seen only in adults but it is now also occurring increasingly frequently in children.
 
-Gestational diabetes
-Gestational diabetes is hyperglycaemia with blood glucose values above normal but below those diagnostic of diabetes, occurring during pregnancy.
+Gestational diabetes is another type of diabtetes where hyperglycaemia with blood glucose values above normal but below those diagnostic of diabetes, occurring during pregnancy. Women with gestational diabetes are at an increased risk of complications during pregnancy and at delivery. They and their children are also at increased risk of type 2 diabetes in the future. Gestational diabetes is diagnosed through prenatal screening, rather than through reported symptoms.
 
-Women with gestational diabetes are at an increased risk of complications during pregnancy and at delivery. They and their children are also at increased risk of type 2 diabetes in the future.
+Untreated diabetes can damage the heart, blood vessels, eyes, kidneys, and nerves. Adults with diabetes have a two- to three-fold increased risk of heart attacks and strokes. Combined with reduced blood flow, neuropathy (nerve damage) in the feet increases the chance of foot ulcers, infection and eventual need for limb amputation. Diabetic retinopathy is an important cause of blindness, and occurs as a result of long-term accumulated damage to the small blood vessels in the retina. 2.6\% of global blindness can be attributed to diabetes. Diabetes is among the leading causes of kidney failure.
 
-Gestational diabetes is diagnosed through prenatal screening, rather than through reported symptoms.
-
-Impaired glucose tolerance and impaired fasting glycaemia
-Impaired glucose tolerance (IGT) and impaired fasting glycaemia (IFG) are intermediate conditions in the transition between normality and diabetes. People with IGT or IFG are at high risk of progressing to type 2 diabetes, although this is not inevitable.
-
-What are common consequences of diabetes?
-Over time, diabetes can damage the heart, blood vessels, eyes, kidneys, and nerves.
-
-Adults with diabetes have a two- to three-fold increased risk of heart attacks and strokes (1).
-Combined with reduced blood flow, neuropathy (nerve damage) in the feet increases the chance of foot ulcers, infection and eventual need for limb amputation.
-Diabetic retinopathy is an important cause of blindness, and occurs as a result of long-term accumulated damage to the small blood vessels in the retina. 2.6\% of global blindness can be attributed to diabetes (2).
-Diabetes is among the leading causes of kidney failure (3).
-How can the burden of diabetes be reduced?
-Prevention
-Simple lifestyle measures have been shown to be effective in preventing or delaying the onset of type 2 diabetes. To help prevent type 2 diabetes and its complications, people should:
-
-achieve and maintain healthy body weight;
-be physically active – at least 30 minutes of regular, moderate-intensity activity on most days. More activity is required for weight control;
-eat a healthy diet, avoiding sugar and saturated fats intake; and
-avoid tobacco use – smoking increases the risk of diabetes and cardiovascular diseases.
-Diagnosis and treatment
-Early diagnosis can be accomplished through relatively inexpensive testing of blood sugar.
-
-Treatment of diabetes involves diet and physical activity along with lowering blood glucose and the levels of other known risk factors that damage blood vessels. Tobacco use cessation is also important to avoid complications.
-
-Interventions that are both cost-saving and feasible in developing countries include:
-
-blood glucose control, particularly in type 1 diabetes. People with type 1 diabetes require insulin, people with type 2 diabetes can be treated with oral medication, but may also require insulin;
-blood pressure control; and
-foot care.
-Other cost saving interventions include:
-
-screening and treatment for retinopathy (which causes blindness)
-blood lipid control (to regulate cholesterol levels)
-screening for early signs of diabetes-related kidney disease and treatment.
+Early diagnosis can be accomplished through relatively inexpensive testing of blood sugar. Treatment of diabetes involves diet and physical activity along with lowering blood glucose and the levels of other known risk factors that damage blood vessels. Tobacco use cessation is also important to avoid complications. 
 
 \newpage
 \section{Software Requirements}
@@ -322,9 +278,13 @@ Secure Shell is a cryptography network protocol for operating network services s
 \section{Methodology}
 The dataset used for this project is from the UCI Machine learning repository and can be found at their respective website. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and \ref{table:3} is the accuracy obtained from the predicted outcomes for given sets of patients.
 
-Firstly, I began the experiment by examining the amount of people that were recorded by the dataset. We can see that the dataset contains a total of 768 observations. From figure \ref{fig:1} we can see that 268 people are healthy, while the rest of the 500 subjects are diabetic. If converted to percentage, 65.1\% of the subjects are healthy and 34.9\% of subjects are diabetic.
+Firstly, I began the experiment by examining the amount of people that were recorded by the dataset. We can see that the dataset contains a total of 768 observations. We can see that 268 people are healthy, while the rest of the 500 subjects are diabetic. If converted to percentage, 65.1\% of the subjects are healthy and 34.9\% of subjects are diabetic.
 
-To proceed with the eploratory data analysis, we can examine the missing values in the dataset. 
+To proceed with the eploratory data analysis, we can examine the missing values in the dataset. We can see that the dataset has multiple missing values across the columns of the dataset. Plotting of boxplots reveals that the dataset has multiple outliers. To replace these missing values with values to make the predictions more accurate we need to understand the relation of the data to the target variable. To get an understanding we can use the table \ref{table:6} for clarity on the correlation of values.
+
+To fill the missing values in the dataset we have to consider each of the attributes. For example in the insulin parameter, I have observed that the median value for diabetic people is 169.50 muU/ml, while for the section of healthy participants the median insulin value is recorded at 102.50 muU/ml. Likewise, I carried out the observations on the other attibutes of the dataset to fill the missing values via the median of healthy subjects for the healthy subjects whose insulin record is missing and diabetic insulin median for the subjects that are diabetic and do not have values in the columns.
+
+In order to generate new values for the dataset to render more accurate outcomes we look at scatterplots for our attributes. An example would be the Glucose vs Age scatterplot. According to the scatter plot of glucose to age we can see that higher glucose value with increase in age, depicts the glucose level of a diabetic person. 
 
 
 \newpage
@@ -377,7 +337,7 @@ Pregnancies                & Number of times pregnant.                          
 Glucose                    & Plasma glucose concentration a 2 hours in an oral glucose tolerance test. \\ \hline
 Blood Pressure             & Diastolic blood pressure (mm Hg)                                          \\ \hline
 Skin Thickness             & Triceps skin fold thickness (mm)                                          \\ \hline
-Insulin                    & 2-Hour serum insulin (muU/ml)                                            \\ \hline
+Insulin                    & 2-Hour serum insulin (muU/ml)                                             \\ \hline
 Body Mass Index            & Body mass index (weight in kg/(height in m)\textasciicircum{}2)           \\ \hline
 Diabetes Pedigree Function & Diabetes pedigree function                                                \\ \hline
 Age                        & Age (years)                                                               \\ \hline
@@ -401,7 +361,7 @@ Outcome                    & Class variable (0 or 1) 268 of 768 are 1, the other
 \begin{tabular}{|c|c|c|c|}
 \hline
 Algorithm              & Additional Parameters                              & Train Set Accuracy \\ \hline
-K Nearest Neighbour    & -                                                  & 0.790               \\ \hline
+K Nearest Neighbour    & -                                                  & 0.790              \\ \hline
 Logistic Regression    & C = 1                                              & 0.781              \\ \hline
 Logistic Regression    & C = 0.01                                           & 0.700              \\\hline
 Logistic Regression    & C = 100                                            & 0.785              \\ \hline
@@ -430,7 +390,6 @@ MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0 & 0.
 
 {
 \clearpage
-\thispagestyle{empty}
 \begin{landscape}
 \centering
 \begin{table}[]
@@ -450,9 +409,9 @@ Gradient Boosting      & -                                                   & 0
 Gradient Boosting      & Max Depth = 1                                       & 0.781             \\ \hline
 Gradient Boosting      & Learning Rate = 0.01                                & 0.776             \\ \hline
 Support Vector Machine & -                                                   & 0.650             \\ \hline
-Support Vector Machine & Train and Test set scaled using MinMaxScaler        & 0.770              \\ \hline
+Support Vector Machine & Train and Test set scaled using MinMaxScaler        & 0.770             \\ \hline
 Support Vector Machine & C = 1000                                            & 0.797             \\ \hline
-MLP Classifier         & Random State = 42                                   & 0.720              \\ \hline
+MLP Classifier         & Random State = 42                                   & 0.720             \\ \hline
 MLP Classifier         & Random State = 0                                    & 0.802             \\ \hline
 MLP Classifier         & Max Iterations = 1000                               & 0.792             \\ \hline
 MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0  & 0.797             \\ \hline
@@ -466,7 +425,7 @@ MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0  & 0
 
 {
 \clearpage
-\thispagestyle{empty}
+\begin{landscape}
 \centering
 \begin{table}[]
 \centering
@@ -486,10 +445,178 @@ Outcome                    & 0                         & 0          \\ \hline
 \end{table}
 \captionof{table}{Null Value Check.}
 \label{table:4}
+\end{landscape}
 \clearpage
 }
 
+{
+\clearpage
+\begin{landscape}
+\centering
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+\hline
+ Pregnancies &  Glucose &  BloodPressure &  SkinThickness &  Insulin &   BMI &  DiabetesPedigreeFunction &  Age &  Outcome \\\hline
+           6 &      148 &             72 &             35 &        0 &  33.6 &                     0.627 &   50 &        1 \\\hline
+           1 &       85 &             66 &             29 &        0 &  26.6 &                     0.351 &   31 &        0 \\\hline
+           8 &      183 &             64 &              0 &        0 &  23.3 &                     0.672 &   32 &        1 \\\hline
+           1 &       89 &             66 &             23 &       94 &  28.1 &                     0.167 &   21 &        0 \\\hline
+           0 &      137 &             40 &             35 &      168 &  43.1 &                     2.288 &   33 &        1 \\\hline
+           5 &      116 &             74 &              0 &        0 &  25.6 &                     0.201 &   30 &        0 \\\hline
+           3 &       78 &             50 &             32 &       88 &  31.0 &                     0.248 &   26 &        1 \\\hline
+          10 &      115 &              0 &              0 &        0 &  35.3 &                     0.134 &   29 &        0 \\\hline
+           2 &      197 &             70 &             45 &      543 &  30.5 &                     0.158 &   53 &        1 \\\hline
+           8 &      125 &             96 &              0 &        0 &   0.0 &                     0.232 &   54 &        1 \\\hline
+           4 &      110 &             92 &              0 &        0 &  37.6 &                     0.191 &   30 &        0 \\\hline
+          10 &      168 &             74 &              0 &        0 &  38.0 &                     0.537 &   34 &        1 \\\hline
+          10 &      139 &             80 &              0 &        0 &  27.1 &                     1.441 &   57 &        0 \\\hline
+           1 &      189 &             60 &             23 &      846 &  30.1 &                     0.398 &   59 &        1 \\\hline
+           5 &      166 &             72 &             19 &      175 &  25.8 &                     0.587 &   51 &        1 \\\hline
+\end{tabular}
+\end{table}
+\captionof{table}{First 15 rows of the raw dataset.}
+\label{table:5}
+\end{landscape}
+\clearpage
+}
+
+
+{
+\clearpage
+\begin{landscape}
+\centering
+\begin{table}[]
+\centering
+\vspace{5cm}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+{} &  Pregnancies &   Glucose &  BloodPressure &  SkinThickness &   Insulin &       BMI &  DPF &       Age &   Outcome 
+\\\hline
+Pregnancies              &     1.000000 &  0.129459 &       0.141282 &      -0.081672 & -0.073535 &  0.017683 &                 -0.03352 &  0.544341 &  0.221898 \\\hline
+Glucose                  &     0.129459 &  1.000000 &       0.152590 &       0.057328 &  0.331357 &  0.221071 &                  0.137337 &  0.263514 &  0.466581 \\\hline
+BloodPressure            &     0.141282 &  0.152590 &       1.000000 &       0.207371 &  0.088933 &  0.281805 &                  0.041265 &  0.239528 &  0.065068 \\\hline
+SkinThickness            &    -0.081672 &  0.057328 &       0.207371 &       1.000000 &  0.436783 &  0.392573 &                  0.183928 & -0.113970 &  0.074752 \\\hline
+Insulin                  &    -0.073535 &  0.331357 &       0.088933 &       0.436783 &  1.000000 &  0.197859 &                  0.185071 & -0.042163 &  0.130548 \\\hline
+BMI                      &     0.017683 &  0.221071 &       0.281805 &       0.392573 &  0.197859 &  1.000000 &                  0.140647 &  0.036242 &  0.292695 \\\hline
+DPF &    -0.033523 &  0.137337 &       0.041265 &       0.183928 &  0.185071 &  0.140647 &                  1.000000 &  0.033561 &  0.173844 \\\hline
+Age                      &     0.544341 &  0.263514 &       0.239528 &      -0.113970 & -0.042163 &  0.036242 &                  0.033561 &  1.000000 &  0.238356 \\\hline
+Outcome                  &     0.221898 &  0.466581 &       0.065068 &       0.074752 &  0.130548 &  0.292695 &                  0.173844 &  0.238356 &  1.000000 \\\hline
+
+\end{tabular}
+\end{table}
+\captionof{table}{Correlation Plot.}
+\label{table:6}
+\end{landscape}
+\clearpage
+}
+
+{
+\clearpage
+\centering
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Fold & Precision & F1 Score & Accuracy & Recall & ROC-AUC Curve \\ \hline
+1    & 0.811     & 0.804    & 0.864    & 0.796  & 0.908         \\ \hline
+2    & 0.787     & 0.733    & 0.825    & 0.685  & 0.896         \\ \hline
+3    & 0.841     & 0.755    & 0.844    & 0.685  & 0.902         \\ \hline
+4    & 0.820     & 0.796    & 0.863    & 0.774  & 0.920         \\ \hline
+5    & 0.783     & 0.832    & 0.876    & 0.887  & 0.933         \\ \hline
+mean & 0.809     & 0.784    & 0.854    & 0.765  & 0.912         \\ \hline
+std  & 0.021     & 0.035    & 0.018    & 0.076  & 0.013         \\ \hline
+\end{tabular}
+\captionof{table}{MLP 5 fold verification.}
+\label{table:7}
+\end{table}
+
+}
+
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Insulin} \\ \hline
+Subject Type      & Level     \\ \hline
+Healthy           & 102.5     \\ \hline
+Diabetic          & 169.5     \\ \hline
+\end{tabular}
+\captionof{table}{Insulin Median Comparison.}
+\label{table:8}
+\end{table}
+
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Glucose} \\ \hline
+Subject Type      & Level     \\ \hline
+Healthy           & 107.0     \\ \hline
+Diabetic          & 140.0     \\ \hline
+\end{tabular}
+\captionof{table}{Glucose Median Comparison.}
+\label{table:9}
+
+\end{table}
+
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Skin Thickness} \\ \hline
+Subject Type      & Level     \\ \hline
+Healthy           & 27.0     \\ \hline
+Diabetic          & 32.0     \\ \hline
+\end{tabular}
+\captionof{table}{Skin Thickness Median Comparison.}
+\label{table:10}
+\end{table}
+
+
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Blood Pressure} \\ \hline
+Subject Type      & Level     \\ \hline
+Healthy           & 70.0    \\ \hline
+Diabetic          & 74.0     \\ \hline
+\end{tabular}
+\captionof{table}{Blood Pressure Median Comparison.}
+\label{table:11}
+\end{table}
+
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Body Mass Index} \\ \hline
+Subject Type      & Level     \\ \hline
+Healthy           & 30.1      \\ \hline
+Diabetic          & 34.3      \\ \hline
+\end{tabular}
+\captionof{table}{Body Mass Index Median Comparison.}
+\label{table:12}
+\end{table}
+
+
+
+
+
+
+
+
+
+
 \newpage
+\clearpage
+
 \section{Appendix I}
 \subsection{K Nearest Neighbours}
 \begin{lstlisting}
@@ -534,6 +661,12 @@ class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, s
 
 \begin{figure}[ht]
 \centering
+\includegraphics[width=1\textwidth]{1.png}
+\caption{\label{fig:8} Diabetic v/s Healthy Subject Count.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
 \includegraphics[width=1\textwidth]{10.png}
 \caption{\label{fig:1} Subject distribution across Body Mass Index range.}
 \end{figure}
@@ -542,6 +675,12 @@ class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, s
 \centering
 \includegraphics[width=1\textwidth]{11.png}
 \caption{\label{fig:2} Subject distribution across age.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{14.png}
+\caption{\label{fig:5} Subjects Insulin Distribution across ranges.}
 \end{figure}
 
 \begin{figure}[ht]
@@ -556,11 +695,6 @@ class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, s
 \caption{\label{fig:4} Subjects distribution via Diabetes Pedigree Function.}
 \end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{14.png}
-\caption{\label{fig:5} Subjects Insulin Distribution across ranges.}
-\end{figure}
 
 \begin{figure}[ht]
 \centering
@@ -568,11 +702,6 @@ class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, s
 \caption{\label{fig:6} Plot of N0}
 \end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{1.png}
-\caption{\label{fig:8} Diabetic v/s Healthy Subject Count.}
-\end{figure}
 
 \begin{figure}[ht]
 \centering
@@ -604,11 +733,6 @@ class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, s
 \caption{\label{fig:13} Glucose v/s Age scatterplot.}
 \end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{6.png}
-\caption{\label{fig:14} Subjects Insulin distributon.}
-\end{figure}
 
 \begin{figure}[ht]
 \centering
@@ -626,6 +750,12 @@ class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, s
 \centering
 \includegraphics[width=1\textwidth]{9.png}
 \caption{\label{fig:17} Blood Pressure distribution of subjects.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{6.png}
+\caption{\label{fig:14} Subjects Insulin distributon.}
 \end{figure}
 
 \begin{figure}[ht]
@@ -824,9 +954,10 @@ class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, s
 \newpage
 \section{Conclusion}
 
-\clearpage
 \newpage
+
 \nocite{*}
-\bibliographystyle{plain}
-\bibliography{bib}
+\bibliography{bib} 
+\bibliographystyle{ieeetr}
+
 \end{document}
