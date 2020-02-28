@@ -2,11 +2,11 @@
 \usepackage[a4paper, inner=1.5cm, outer=3cm, top=2cm,bottom=3cm, bindingoffset=1cm]{geometry}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
+\usepackage{import}
 \usepackage{amsmath}
 \usepackage{tikz}
+\usepackage[maxfloats=256]{morefloats}
 \usepackage{booktabs}
-\usepackage{algorithm}
-\usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{pdflscape}
@@ -20,7 +20,9 @@
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
- 
+
+\maxdeadcycles=1000
+
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},   
     commentstyle=\color{codegreen},
@@ -41,7 +43,7 @@
 }
  
 \lstset{style=mystyle}
- 
+
 \begin{document}
 \begin{titlepage}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
@@ -70,32 +72,34 @@ Ashweta Fondekar
 \end{titlepage}
 
 %declaration
+\onehalfspacing
+%\doublespacing
 \newpage
-\vspace{5cm}
+\vspace{15cm}
 \begin{center}
 
-\textbf{Declaration by Candidate}\\
-
+\Huge{\textbf{Declaration by Candidate}}\\
+\normalsize
 I declare that this project report has been prepared by me and to the best of my
 knowledge, it has not previously formed the basis for the award of any diploma or degree by
 any other University.
-
-
-
 \end{center}
 \newpage
-CERTIFICATE BY SUPERVISOR\\
-Certified that the Project Report is a record of work done by the candidate
-himself/herself/themselves under my guidance during the period of study and that to the
-best of my knowledge, it has not previously formed the basis of the award of any degree or
-diploma of any other University.\\
+\vspace{15cm}
 
+\begin{center}
+\Huge{\textbf{Certificate by Supervisor}}\\
+\normalsize
+Certified that the Project Report is a record of work done by the candidate himself/herself/themselves under my guidance during the period of study and that to the best of my knowledge, it has not previously formed the basis of the award of any degree or diploma of any other University.\\
+\vspace{5cm}
 Ashweta Fondekar\\
 
 Project Supervisor
+\end{center}
 \newpage
 
 \textbf{Work Record}
+
 
 \newpage
 \section{Acknowledgements}
@@ -110,10 +114,27 @@ Project Supervisor
 
 
 \begin{abstract}
-
+Diabetes Mellitus is a disease that prevents the body from properly expanding the
+energy stored from the food consumed. The purpose of this project was to select
+machine learning algorithms that are able to predict or classify a person as diabetic
+or healthy based on the legacy data. The algorithms compared were KNN
+Classifier, Logistic Regression, Decision Tree Classifier, Random Forest
+Classifier, Gradient Boosting Classifier, Support Vector Classifier and the
+Multi-Layered Perceptron. From all the above the Multi-Layered Perceptron gave
+an accuracy of prediction on the dataset as ~79.70\%. To improve the performance
+of the classifier, I have considered new features deduced from the currently
+existing feature set a re-trained the classifier on the new dataset that I generated,
+which is now able to classify the subject as diabetic or healthy with a new accuracy
+of ~93.10\%. A significant change which boosted the accuracy by 13.4\%. After
+selection of the algorithm I further advanced the platform of cluster computing to
+deploy the algorithm onto and generate predictions in without any human
+interference (apart from entering the data itself) ​ and also made the data available
+to the users via an easy to use web application which gives them access to the
+observations then stored in the database after being predicted by the algorithm
+deployed on the nodes.
 \end{abstract}
-\onehalfspacing
-%\doublespacing
+
+
 \section{Introduction}
 In recent days, there has been a sharp increase in the cases of diabetes mellitus. Diabetes mellitus is on the rise amongst many people and the rate of contracting this lifestyle disease could be reduced significantly if proper measures and precautions were to be instilled amongst people the number of people can be reduced.
 
@@ -121,17 +142,42 @@ Machine learning is a growing field in computer science. With the development an
 
 The project encompasses the qualities of Remote Patient Monitoring (RPM) and Clinical Decision Support (CDS). RPM provides medical facilities that have the ability to transmit patient data to healthcare professionals who might very well be halfway around the world. RPM can monitor blood glucose levels and blood pressure. It is particularly helpful for patients with chronic conditions such as type 2 diabetes, hypertension, or cardiac disease. Data collected and transmitted via PRM can be used by a healthcare professional or a healthcare team to detect medical events such as stroke or heart attack that require immediate and aggressive medical intervention. Data collected may be used as part of a research project or health study. RPM is a life-saving system for patients in remote areas who cannot access face-to-face health care. CDS analyzes data from clinical and administrative systems. The aim is to assist healthcare providers in making informed clinical decisions. Data available can provide information to medical professions who are preparing diagnoses or predicting medical conditions like drug interactions and reactions. CDS tools filter information to assist healthcare professionals in caring for individual clients. 
 
-The objective of this project is to create a  system that is able to use the machine learning algorithms and predict the outcome of the parameters entered into the algorithm and help the patient draw a conclusion whether or not he/she has the same traits exibhited by simillar patients that have diabetes. Also the system should have a UI that is capable of displaying the data of the patients to the doctor and to the patients themselves for further interpretation.
+Cluster computing or High-Performance computing frameworks is a form of computing in which bunch of computers (often called nodes) that are connected through a LAN (local area network) so that, they behave like a single machine. A computer cluster help to solve complex operations more efficiently with much faster processing speed, better data integrity than a single computer and they only used for mission-critical applications.
+
+The objective of this project is to create a  system that is able to use the machine learning algorithms and predict the outcome of the parameters entered into the algorithm and help the patient draw a conclusion whether or not he/she has the same traits exhibited by similar patients that have diabetes. Also the system should have a UI that is capable of displaying the data of the patients to the doctor and to the patients themselves for further interpretation.
+
+\newpage
+\section{Project Rationale}
+
+Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood sugar. Hyperglycaemia, or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to serious damage to many of the body's systems, especially the nerves and blood vessels.
+
+Taking a look at the number of people with diabetes, the count has risen from 108 million in 1980 to 422 million in 2014.
+The global prevalence of diabetes among adults over 18 years of age has risen from 4.7\% in 1980 to 8.5\% in 2014. Diabetes prevalence has been rising more rapidly in middle-income and low-income countries.
+Diabetes as a disease is a major cause of blindness, kidney failure, heart attacks, stroke and lower limb amputation amongst those who recognise the fatal disease late in life.
+In 2016, an estimated 1.6 million deaths were directly caused by diabetes. Another 2.2 million deaths were attributable to high blood glucose in 2012. Almost half of all deaths attributable to high blood glucose occur before the age of 70 years. WHO estimates that diabetes was the seventh leading cause of death in 2016. A healthy diet, regular physical activity, maintaining a normal body weight and avoiding tobacco use are ways to prevent or delay the onset of type 2 diabetes. Diabetes can be treated and its consequences avoided or delayed with diet, physical activity, medication and regular screening and treatment for complications. In 2014, 8.5\% of adults aged 18 years and older had diabetes. In 2016, diabetes was the direct cause of 1.6 million deaths and in 2012 high blood glucose was the cause of another 2.2 million deaths.
+
+Diabetes patients are segregated into types. Type 1 diabetes is characterized by deficient insulin production and requires daily administration of insulin. The cause of type 1 diabetes is not known and it is not preventable with current knowledge. A person with type 1 diabetes may have symptoms like excessive excretion of urine, thirst, constant hunger, weight loss, vision changes, and fatigue. These symptoms may occur suddenly.
+
+Type 2 diabetes results from the body’s ineffective use of insulin. Type 2 diabetes comprises the majority of people with diabetes around the world, and is largely the result of excess body weight and physical inactivity. Symptoms may be similar to those of type 1 diabetes, but are often less marked. As a result, the disease may be diagnosed several years after onset, once complications have already arisen.
+
+Until recently, this type of diabetes was seen only in adults but it is now also occurring increasingly frequently in children.
+
+Gestational diabetes is another type of diabtetes where hyperglycaemia with blood glucose values above normal but below those diagnostic of diabetes, occurring during pregnancy. Women with gestational diabetes are at an increased risk of complications during pregnancy and at delivery. They and their children are also at increased risk of type 2 diabetes in the future. Gestational diabetes is diagnosed through prenatal screening, rather than through reported symptoms.
+
+Untreated diabetes can damage the heart, blood vessels, eyes, kidneys, and nerves. Adults with diabetes have a two- to three-fold increased risk of heart attacks and strokes. Combined with reduced blood flow, neuropathy (nerve damage) in the feet increases the chance of foot ulcers, infection and eventual need for limb amputation. Diabetic retinopathy is an important cause of blindness, and occurs as a result of long-term accumulated damage to the small blood vessels in the retina. 2.6\% of global blindness can be attributed to diabetes. Diabetes is among the leading causes of kidney failure.
+
+Early diagnosis can be accomplished through relatively inexpensive testing of blood sugar. Treatment of diabetes involves diet and physical activity along with lowering blood glucose and the levels of other known risk factors that damage blood vessels. Tobacco use cessation is also important to avoid complications. 
 
 \newpage
 \section{Software Requirements}
-The main function of this project is to enable the doctors to advise their patients with the help of the prediction software. The system should be accessible to the patient as well as the doctor, therefore it should have a web interface for the two parties to interact with. 
+The main function of this project is to enable the doctors to advise their patients with the help of the prediction software. The system should be accessible to the patient as well as the doctor, therefore it should have a web interface for the two parties to interact with.
 
 \subsection{Functionalities for Doctors}
 As an owner of a doctors account a doctor should be able to:
 \begin{itemize}
 \item Add new observations for the machine learning algorithm to predict.
 \item Analyse the patients previous records.
+\item Have a dashboard for patient performance monitoring.
 \end{itemize}
 
 \subsection{Functionalities for Patients}
@@ -139,7 +185,6 @@ As the patient, one should be able to:
 \begin{itemize}
 \item Should be able to see the predicted risk of developing diabetes.
 \item Should be able to view historic data.
-\item Should be able to view notes or suggestions left by doctor.
 \end{itemize}
 
 \subsection{Functionalities for Master Nodes}
@@ -147,13 +192,14 @@ As the master nodes:
 \begin{itemize}
 \item Control chunk size.
 \item Remotely update the slave nodes.
-\item Check the availability of nodes.
+\item Check the status of nodes.
 \item Control the SQL database.
 \end{itemize}
 
 \subsection{Functionalities for Slave Nodes}
 \begin{itemize}
-\item should have the machine learning algorithm with can be updated.
+\item Should have the machine learning algorithm tuned as per specifications.
+\item Remote update should be possible.
 \item Remote access should be possible.
 \end{itemize}
 
@@ -175,11 +221,10 @@ According to raspberrypi.org, the Raspberry Pi 3 Model B is the earliest model o
 In this project I will be using 3 Raspberry Pi's to implement a cluster and deploy the machine learning algorithm on.
 
 \subsection{Switch}
-A network switch was used in the project to make up for the lack of ethernet ports available on the router. The dumb network switch 
-was able to connect upto 3 Raspberry Pi and one cable back to the network router itself to connect the switch to the main network.
+A network switch was used in the project to make up for the lack of ethernet ports available on the router.
 
 \subsection{Router}
-A router is required to assign internet protocol addresses to the nodes using dynamic host control protocol (DHCP). The router also is responsible for displaying the nodes connected to the network thereby displaying hostnames and making it more easier to capture the addresses of each node.
+A router is required to assign internet protocol addresses to the nodes using dynamic host control protocol (DHCP). The router also is responsible for displaying the nodes connected to the network thereby displaying host names and making it more easier to capture the addresses of each node.
 
 \subsection{Master Node}
 The master node is assigned the task of managing the the slave nodes connected to the network. The master node and the slave nodes should be connected to the same database to run and execute queries. The master node shall also be assigned with the task of killing a particular process or shutting down a particular node if required.
@@ -200,286 +245,83 @@ The web server provides an interface for the doctor and the patients to read the
 Pandas, is a library that is required for loading the comma separated value file into python. Pandas is a package for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
 
 \subsubsection{Sklearn}
-Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy.
+Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to inter-operate with the Python numerical and scientific libraries NumPy and SciPy.
 
 \subsubsection{Numpy}
-NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. The ancestor of NumPy, Numeric, was originally created by Jim Hugunin with contributions from several other developers. In 2005, Travis Oliphant created NumPy by incorporating features of the competing Numarray into Numeric, with extensive modifications. NumPy is open-source software and has many contributors.
+NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. NumPy is open-source software and has many contributors.
 
 \subsubsection{Itertools}
-The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
+The itertools module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an “iterator algebra” making it possible to construct specialized tools succinctly and efficiently in pure Python.
 
 \subsection{MYSQL}
-MySQL is an open-source relational database management system (RDBMS). Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language.
-
-MySQL is free and open-source software under the terms of the GNU General Public License, and is also available under a variety of proprietary licenses. MySQL was owned and sponsored by the Swedish company MySQL AB, which was bought by Sun Microsystems (now Oracle Corporation). In 2010, when Oracle acquired Sun, Widenius forked the open-source MySQL project to create MariaDB.
-
-MySQL is a component of the LAMP web application software stack (and others), which is an acronym for Linux, Apache, MySQL, Perl/PHP/Python. MySQL is used by many database-driven web applications, including Drupal, Joomla, phpBB, and WordPress. MySQL is also used by many popular websites, including Facebook, Flickr, MediaWiki, Twitter and YouTube.
+MySQL is an open-source relational database management system. MySQL is free and open-source software under the terms of the GNU General Public License, and is also available under a variety of proprietary licenses. MySQL was owned and sponsored by the Swedish company MySQL AB, which was bought by Sun Microsystems (now Oracle Corporation). MySQL is a component of the LAMP web application software stack (and others), which is an acronym for Linux, Apache, MySQL, Perl/PHP/Python. MySQL is used by many database-driven web applications, including Drupal, Joomla, phpBB, and WordPress. MySQL is also used by many popular websites, including Facebook, Flickr, MediaWiki, Twitter and YouTube.
 
 \subsection{Apache Web Server}
-The Apache HTTP Server, colloquially called Apache, is free and open-source cross-platform web server software, released under the terms of Apache License 2.0. Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation.
-
-The vast majority of Apache HTTP Server instances run on a Linux distribution, but current versions also run on Microsoft Windows and a wide variety of Unix-like systems. Past versions also ran on OpenVMS, NetWare, OS/2 and other operating systems, including ports to mainframes.
+The Apache HTTP Server, colloquially called Apache, is free and open-source cross-platform web server software, released under the terms of Apache License 2.0. Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation. The vast majority of Apache HTTP Server instances run on a Linux distribution, but current versions also run on Microsoft Windows and a wide variety of Unix-like systems. Past versions also ran on OpenVMS, NetWare, OS/2 and other operating systems, including ports to mainframes.
 
 \subsection{PHP}
 PHP is a general-purpose programming language originally designed for web development. PHP originally stood for Personal Home Page,
-but it now stands for the recursive initialism PHP: Hypertext Preprocessor.
-
-PHP code may be executed with a command line interface (CLI), embedded into HTML code, or used in combination with various web template systems, web content management systems, and web frameworks. PHP code is usually processed by a PHP interpreter implemented as a module in a web server or as a Common Gateway Interface (CGI) executable. The web server outputs the results of the interpreted and executed PHP code, which may be any type of data, such as generated HTML code or binary image data. PHP can be used for many programming tasks outside of the web context, such as standalone graphical applications and robotic drone control.
+but it now stands for the recursive initialism PHP: Hypertext Preprocessor. PHP code may be executed with a command line interface (CLI), embedded into HTML code, or used in combination with various web template systems, web content management systems, and web frameworks. PHP code is usually processed by a PHP interpreter implemented as a module in a web server or as a Common Gateway Interface (CGI) executable. The web server outputs the results of the interpreted and executed PHP code, which may be any type of data, such as generated HTML code or binary image data. PHP can be used for many programming tasks outside of the web context, such as standalone graphical applications and robotic drone control.
 
 \subsection{AJAX}
 Ajax is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. By decoupling the data interchange layer from the presentation layer, Ajax allows web pages and, by extension, web applications, to change content dynamically without the need to reload the entire page.[3] In practice, modern implementations commonly utilize JSON instead of XML.
 
-Ajax is not a single technology, but rather a group of technologies. HTML and CSS can be used in combination to mark up and style information. The webpage can then be modified by JavaScript to dynamically display—and allow the user to interact with—the new information. The built-in XMLHttpRequest object, or since 2017 the new "fetch()" function within JavaScript, is commonly used to execute Ajax on webpages allowing websites to load content onto the screen without refreshing the page. Ajax is not a new technology, or different language, just existing technologies used in new ways.
+Ajax is not a single technology, but rather a group of technologies. HTML and CSS can be used in combination to mark up and style information. The webpage can then be modified by JavaScript to dynamically display—and allow the user to interact with—the new information. The built-in XMLHttpRequest object, or since 2017 the new "fetch()" function within JavaScript, is commonly used to execute Ajax on web pages allowing websites to load content onto the screen without refreshing the page. Ajax is not a new technology, or different language, just existing technologies used in new ways.
 
 \subsection{GitHub}
 GitHub is a global company that provides hosting for software development version control using Git. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
 
 \subsection{SSH}
-Secure Shell is a cryptographic network protocol for operating network services securely over an unsecured network. Typical applications include remote command-line, login, and remote command execution, but any network service can be secured with SSH. The SSH is used to communicate between the master and slave nodes.
+Secure Shell is a cryptography network protocol for operating network services securely over an unsecured network. Typical applications include remote command-line, login, and remote command execution, but any network service can be secured with SSH. The SSH is used to communicate between the master and slave nodes.
 
 \newpage
-\section{Selecting an Algorithm}
-% Write about the EDA and algorithm selection process.
-The dataset used for this project is from the UCI Machine learning repository and can be found at their website. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and predict the outcomes for given sets of patients. 
+\section{Methodology}
+The dataset used for this project is from the UCI Machine learning repository and can be found at their respective website. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and \ref{table:3} is the accuracy obtained from the predicted outcomes for given sets of patients.
 
-\newpage
-\section{The Multi Layered Perceptron}
-\subsection{Introduction}
-The multilayer perceptron (MLP) is the one of the most commonly used artificial neural networks. The name is a slight misnomer; a multilayer perceptron is not a single perceptron with multiple layers, but rather multiple layers of artificial neurons
-that can be perceptrons. The layers of the MLP form a directed, acyclic graph. Generally, each layer is fully connected to the subsequent layer; the output of each artificial neuron in a layer is an input to every artificial neuron in the next layer
-towards the output. MLPs have three or more layers of artificial neurons.
+Firstly, I began the experiment by examining the amount of people that were recorded by the dataset. We can see that the dataset contains a total of 768 observations. We can see that 268 people are healthy, while the rest of the 500 subjects are diabetic. If converted to percentage, 65.1\% of the subjects are healthy and 34.9\% of subjects are diabetic.
 
-\newpage
-\section{Coding Process}
-% Describe the coding process; write pseudocode; and include images.
-The concept of the system remains simple. The system can be described using the following diagrams.
-\subsection{Designing the System}
-\begin{itemize}
+To proceed with the eploratory data analysis, we can examine the missing values in the dataset. We can see that the dataset has multiple missing values across the columns of the dataset. Plotting of boxplots reveals that the dataset has multiple outliers. To replace these missing values with values to make the predictions more accurate we need to understand the relation of the data to the target variable. To get an understanding we can use the table \ref{table:6} for clarity on the correlation of values.
 
-\item The system firstly reads the records from the database that are not classified as 0 or 1. The master node then converts all the results obtained from the database into chunks as specified by the code. 
-%step 1 start
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-\begin{figure}[!h]
-\centering
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+To fill the missing values in the dataset we have to consider each of the attributes. For example in the insulin parameter, I have observed that the median value for diabetic people is 169.50 muU/ml, while for the section of healthy participants the median insulin value is recorded at 102.50 muU/ml. Likewise, I carried out the observations on the other attibutes of the dataset to fill the missing values via the median of healthy subjects for the healthy subjects whose insulin record is missing and diabetic insulin median for the subjects that are diabetic and do not have values in the columns.
 
-%Shape: Can [id:dp3989446731507247] 
-\draw   (606,68.75) -- (606,170.25) .. controls (606,182.26) and (573.09,192) .. (532.5,192) .. controls (491.91,192) and (459,182.26) .. (459,170.25) -- (459,68.75) .. controls (459,56.74) and (491.91,47) .. (532.5,47) .. controls (573.09,47) and (606,56.74) .. (606,68.75) .. controls (606,80.76) and (573.09,90.5) .. (532.5,90.5) .. controls (491.91,90.5) and (459,80.76) .. (459,68.75) ;
-%Shape: Rectangle [id:dp14170681543352437] 
-\draw   (102,89) -- (325,89) -- (325,158) -- (102,158) -- cycle ;
-%Straight Lines [id:da9571038146445507] 
-\draw    (458,121) -- (326.5,121) ;
-\draw [shift={(324.5,121)}, rotate = 360] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-
-
-% Text Node
-\draw (213.5,123.5) node   [align=left] {Master Node};
-% Text Node
-\draw (534,129) node   [align=left] {SQL Database};
-
-
-\end{tikzpicture}
-\caption{Master Node reading data from the SQL Database.}
-\end{figure}
-%step 1 end
-
-\item odei
-%Step 2 start
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-\begin{figure}[!h]
-\centering
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-
-%Shape: Rectangle [id:dp3356543770553979] 
-\draw   (70,30) -- (560,30) -- (560,250) -- (70,250) -- cycle ;
-%Shape: Square [id:dp5256435827897643] 
-\draw   (190,40) -- (230,40) -- (230,80) -- (190,80) -- cycle ;
-%Shape: Square [id:dp5270357160077517] 
-\draw   (190,90) -- (230,90) -- (230,130) -- (190,130) -- cycle ;
-%Shape: Square [id:dp06437153710385335] 
-\draw   (190,160) -- (230,160) -- (230,200) -- (190,200) -- cycle ;
-%Shape: Circle [id:dp6202571690827927] 
-\draw   (300,60) .. controls (300,48.95) and (308.95,40) .. (320,40) .. controls (331.05,40) and (340,48.95) .. (340,60) .. controls (340,71.05) and (331.05,80) .. (320,80) .. controls (308.95,80) and (300,71.05) .. (300,60) -- cycle ;
-%Shape: Circle [id:dp7260170908934287] 
-\draw   (300,110) .. controls (300,98.95) and (308.95,90) .. (320,90) .. controls (331.05,90) and (340,98.95) .. (340,110) .. controls (340,121.05) and (331.05,130) .. (320,130) .. controls (308.95,130) and (300,121.05) .. (300,110) -- cycle ;
-%Shape: Circle [id:dp9546670114782507] 
-\draw   (300,180) .. controls (300,168.95) and (308.95,160) .. (320,160) .. controls (331.05,160) and (340,168.95) .. (340,180) .. controls (340,191.05) and (331.05,200) .. (320,200) .. controls (308.95,200) and (300,191.05) .. (300,180) -- cycle ;
-%Shape: Circle [id:dp8873752821258001] 
-\draw   (390,110) .. controls (390,98.95) and (398.95,90) .. (410,90) .. controls (421.05,90) and (430,98.95) .. (430,110) .. controls (430,121.05) and (421.05,130) .. (410,130) .. controls (398.95,130) and (390,121.05) .. (390,110) -- cycle ;
-%Straight Lines [id:da6624191220110807] 
-\draw    (230,60) -- (298,60) ;
-\draw [shift={(300,60)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da0866384249373997] 
-\draw    (230,110) -- (298,110) ;
-\draw [shift={(300,110)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da13965027003077846] 
-\draw    (230,180) -- (298,180) ;
-\draw [shift={(300,180)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da7863905838920622] 
-\draw    (230,60) -- (298.37,108.84) ;
-\draw [shift={(300,110)}, rotate = 215.54] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da16736595128940945] 
-\draw    (230,110) -- (298.59,178.59) ;
-\draw [shift={(300,180)}, rotate = 225] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da837081391568496] 
-\draw    (230,180) -- (298.59,111.41) ;
-\draw [shift={(300,110)}, rotate = 495] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da0751297016521475] 
-\draw    (230,110) -- (298.37,61.16) ;
-\draw [shift={(300,60)}, rotate = 504.46] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da2549769311708434] 
-\draw    (340,180) -- (388.84,111.63) ;
-\draw [shift={(390,110)}, rotate = 485.54] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da5966427506538203] 
-\draw    (340,110) -- (388,110) ;
-\draw [shift={(390,110)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da30294544760077824] 
-\draw    (340,60) -- (388.59,108.59) ;
-\draw [shift={(390,110)}, rotate = 225] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da77593748506778] 
-\draw    (430,110) -- (478,110) ;
-\draw [shift={(480,110)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-
-% Text Node
-\draw (314,229.5) node   [align=left] {Slave node with Multilayered Perceptron};
-% Text Node
-\draw (210,60) node   [align=left] {x{\scriptsize 1}};
-% Text Node
-\draw (210,110) node   [align=left] {x{\scriptsize 2}};
-% Text Node
-\draw (210,180) node   [align=left] {x{\scriptsize n}};
-% Text Node
-\draw (501.5,110) node   [align=left] {{\Large y}};
-
-
-\end{tikzpicture}
-\end{figure}
-%Step 2 end
-
-
-\item The chunks containing the data of the queries that were left unpredicted are sent to the cluster in a round robin fashion.
-%step 3
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-\begin{figure}[!h]
-\centering
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
-
-%Shape: Rectangle [id:dp7056891731575645] 
-\draw   (100,151) -- (220,151) -- (220,190) -- (100,190) -- cycle ;
-%Shape: Rectangle [id:dp652502983568856] 
-\draw   (100,200) -- (220,200) -- (220,239) -- (100,239) -- cycle ;
-%Shape: Rectangle [id:dp1370792081503991] 
-\draw   (100,50) -- (220,50) -- (220,89) -- (100,89) -- cycle ;
-%Shape: Rectangle [id:dp3403063589466713] 
-\draw   (100,100) -- (220,100) -- (220,139) -- (100,139) -- cycle ;
-%Shape: Rectangle [id:dp05437739213565784] 
-\draw   (340,100) -- (560,100) -- (560,190) -- (340,190) -- cycle ;
-%Straight Lines [id:da17081303413935167] 
-\draw    (340,150) -- (221.66,71.11) ;
-\draw [shift={(220,70)}, rotate = 393.69] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da6256697337377781] 
-\draw    (340,150) -- (221.94,120.49) ;
-\draw [shift={(220,120)}, rotate = 374.03999999999996] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da3463514586442602] 
-\draw    (340,150) -- (221.97,169.67) ;
-\draw [shift={(220,170)}, rotate = 350.53999999999996] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da6887749797140261] 
-\draw    (340,150) -- (221.73,218.99) ;
-\draw [shift={(220,220)}, rotate = 329.74] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-
-% Text Node
-\draw (160,170.5) node   [align=left] {Slave Node};
-% Text Node
-\draw (160,219.5) node   [align=left] {Slave Node};
-% Text Node
-\draw (160,119.5) node   [align=left] {Slave Node};
-% Text Node
-\draw (160,69.5) node   [align=left] {Slave Node};
-% Text Node
-\draw (450,145) node   [align=left] {Master Node};
-
-
-\end{tikzpicture}
-\end{figure}
-
-%step 3 end
-
-\end{itemize}
-
-\newpage
-\clearpage% Flush earlier floats (otherwise order might not be correct)
-\thispagestyle{empty}% empty page style (?)
-\subsection{Writing Pseudocode}
-\begin{algorithm}
-\caption{Calculate $y = x^n$}
-\begin{algorithmic}
-\REQUIRE $n \geq 0 \vee x \neq 0$
-\ENSURE $y = x^n$
-\STATE $y \leftarrow 1$
-\IF{$n < 0$}
-\STATE $X \leftarrow 1 / x$
-\STATE $N \leftarrow -n$
-\ELSE
-\STATE $X \leftarrow x$
-\STATE $N \leftarrow n$
-\ENDIF
-\WHILE{$N \neq 0$}
-\IF{$N$ is even}
-\STATE $X \leftarrow X \times X$
-\STATE $N \leftarrow N / 2$
-\ELSE[$N$ is odd]
-\STATE $y \leftarrow y \times X$
-\STATE $N \leftarrow N - 1$
-\ENDIF
-\ENDWHILE
-\end{algorithmic}
-\end{algorithm}
+In order to generate new values for the dataset to render more accurate outcomes we look at scatterplots for our attributes. An example would be the Glucose vs Age scatterplot. According to the scatter plot of glucose to age we can see that higher glucose value with increase in age, depicts the glucose level of a diabetic person. 
 
 
 \newpage
 \section{Deploying to Cluster}
 A cluster is a group of two or more servers connected to each other in such a way that they behave like a single server. Each machine in the cluster is called a node. Because each machine in the cluster runs the same services as other machines in the cluster, any machine can stand in for any other machine in the cluster. This becomes important when one machine goes down or must be taken out of service for a time. The remaining machines in the cluster can seamlessly take over the work of the downed machine, providing users with uninterrupted access to services and data.
 
-Benefits of Clustering
-Clustering Intelligence Servers provides the following benefits:
-
-Increased resource availability: If one Intelligence Server in a cluster fails, the other Intelligence Servers in the cluster can pick up the workload. This prevents the loss of valuable time and information if a server fails.
+\subsection{Benefits of Clustering}
+\begin{itemize}
+\item \texttt{Increased resource availability} If one Intelligence Server in a cluster fails, the other Intelligence Servers in the cluster can pick up the workload. This prevents the loss of valuable time and information if a server fails.
 Strategic resource usage: You can distribute projects across nodes in whatever configuration you prefer. This reduces overhead because not all machines need to be running all projects, and allows you to use your resources flexibly.
-Increased performance: Multiple machines provide greater processing power.
-Greater scalability: As your user base grows and report complexity increases, your resources can grow.
-Simplified management: Clustering simplifies the management of large or rapidly growing systems.
-Failover Support
-Failover support ensures that a business intelligence system remains available for use if an application or hardware failure occurs. Clustering provides failover support in two ways:
 
-Load redistribution: When a node fails, the work for which it is responsible is directed to another node or set of nodes.
+\item \texttt{Increased performance} Multiple machines provide greater processing power.
+\item \texttt{Greater scalability} As your user base grows and report complexity increases, your resources can grow.
+\item \texttt{Simplified management} Clustering simplifies the management of large or rapidly growing systems.
+
+Fail-over support ensures that a business intelligence system remains available for use if an application or hardware failure occurs. Clustering provides failover support in two ways:
+\item
+\texttt{Load redistribution} When a node fails, the work for which it is responsible is directed to another node or set of nodes.
 Request recovery: When a node fails, the system attempts to reconnect MicroStrategy Web users with queued or processing requests to another node. Users must log in again to be authenticated on the new node. The user is prompted to resubmit job requests.
-Load Balancing
-Load balancing is a strategy aimed at achieving even distribution of user sessions across Intelligence Servers, so that no single machine is overwhelmed. This strategy is especially valuable when it is difficult to predict the number of requests a server will receive. MicroStrategy achieves four-tier load balancing by incorporating load balancers into the MicroStrategy Web and Web products.
 
-Load is calculated as the number of user sessions connected to a node. The load balancers collect information on the number of user sessions each node is carrying. Using this information at the time a user logs in to a project, MicroStrategy Web connects them to the Intelligence Server node that is carrying the lightest session load. All requests by that user are routed to the node to which they are connected until the user disconnects from the MicroStrategy Web product.
+\item \texttt{Load Balancing}
+Load balancing is a strategy aimed at achieving even distribution of user sessions across Intelligence Servers, so that no single machine is overwhelmed. This strategy is especially valuable when it is difficult to predict the number of requests a server will receive. MicroStrategy achieves four-tier load balancing by incorporating load balancers into the MicroStrategy Web and Web products. Load is calculated as the number of user sessions connected to a node. The load balancers collect information on the number of user sessions each node is carrying. Using this information at the time a user logs in to a project, MicroStrategy Web connects them to the Intelligence Server node that is carrying the lightest session load. All requests by that user are routed to the node to which they are connected until the user disconnects from the MicroStrategy Web product.
 
-Project Distribution and Project Failover
-When you set up several server machines in a cluster, you can distribute projects across those clustered machines or nodes in any configuration, in both Windows and Linux environments. All servers in a cluster do not need to be running all projects. Each node in the cluster can host a different set of projects, which means only a subset of projects need to be loaded on a specific Intelligence Server machine. This feature provides you with flexibility in using your resources, and it provides better scalability and performance because of less overhead on each Intelligence Server machine.
-
-Distributing projects across nodes also provides project failover support. For example, one server is hosting project A and another server is hosting projects B and C. If the first server fails, the other server can host all three projects to ensure project availability.
-
-Project creation, duplication, and deletion in a three-tier, or server, connection are automatically broadcast to all nodes during runtime to ensure synchronization across the cluster.
-
-Work Fencing
+\item
+\texttt{Project Distribution and Project Fail over}
+When you set up several server machines in a cluster, you can distribute projects across those clustered machines or nodes in any configuration, in both Windows and Linux environments. All servers in a cluster do not need to be running all projects. Each node in the cluster can host a different set of projects, which means only a subset of projects need to be loaded on a specific Intelligence Server machine. This feature provides you with flexibility in using your resources, and it provides better scalability and performance because of less overhead on each Intelligence Server machine. Distributing projects across nodes also provides project fail-over support. For example, one server is hosting project A and another server is hosting projects B and C. If the first server fails, the other server can host all three projects to ensure project availability. Project creation, duplication, and deletion in a three-tier, or server, connection are automatically broadcast to all nodes during run-time to ensure synchronization across the cluster.
+\item
+\texttt{Work Fencing}
 User fences and workload fences allow you to reserve nodes of a cluster for either users or a project subscriptions. 
+
+\end{itemize}
 
 \newpage
 \section{Future Scope}
 
 \newpage
-\section{Tables}
+
 {
 \clearpage
 \thispagestyle{empty}
@@ -487,6 +329,7 @@ User fences and workload fences allow you to reserve nodes of a cluster for eith
 \centering
 \begin{table}[]
 \centering
+\section{Tables}
 \begin{tabular}{|l|l|}
 \hline
 Column Name                & Description                                                               \\ \hline
@@ -494,7 +337,7 @@ Pregnancies                & Number of times pregnant.                          
 Glucose                    & Plasma glucose concentration a 2 hours in an oral glucose tolerance test. \\ \hline
 Blood Pressure             & Diastolic blood pressure (mm Hg)                                          \\ \hline
 Skin Thickness             & Triceps skin fold thickness (mm)                                          \\ \hline
-Insulin                    & 2-Hour serum insulin (muU/ml)                                            \\ \hline
+Insulin                    & 2-Hour serum insulin (muU/ml)                                             \\ \hline
 Body Mass Index            & Body mass index (weight in kg/(height in m)\textasciicircum{}2)           \\ \hline
 Diabetes Pedigree Function & Diabetes pedigree function                                                \\ \hline
 Age                        & Age (years)                                                               \\ \hline
@@ -514,700 +357,607 @@ Outcome                    & Class variable (0 or 1) 268 of 768 are 1, the other
 \begin{landscape}
 \centering
 \begin{table}[]
+\centering
 \begin{tabular}{|c|c|c|c|}
 \hline
-Algorithm              & Additional Parameters                              & Train Set Accuracy & Test Set Accuracy \\ \hline
-K Nearest Neighbour    & -                                                  & 0.79               & 0.78              \\ \hline
-Logistic Regression    & C = 1                                              & 0.781              & 0.771             \\ \hline
-Logistic Regression    & C = 0.01                                           & 0.700              & 0.703             \\ \hline
-Logistic Regression    & C = 100                                            & 0.785              & 0.766             \\ \hline
-Decision Tree          & -                                                  & 1.00               & 0.714             \\ \hline
-Decision Tree          & Max Depth = 3                                      & 0.773              & 0.740             \\ \hline
-Random Forest          & Estimators = 100                                   & 1.000              & 0.786             \\ \hline
-Random Forest          & Estimators = 100; Max Depth = 3                    & 0.800              & 0.755             \\ \hline
-Gradient Boosting      & -                                                  & 0.917              & 0.792             \\ \hline
-Gradient Boosting      & Max Depth = 1                                      & 0.804              & 0.781             \\ \hline
-Gradient Boosting      & Learning Rate = 0.01                               & 0.802              & 0.776             \\ \hline
-Support Vector Machine & -                                                  & 1.00               & 0.65              \\ \hline
-Support Vector Machine & Train and Test set scaled using MinMaxScaler       & 0.77               & 0.77              \\ \hline
-Support Vector Machine & C = 1000                                           & 0.790              & 0.797             \\ \hline
-MLP Classifier         & Random State = 42                                  & 0.73               & 0.72              \\ \hline
-MLP Classifier         & Random State = 0                                   & 0.823              & 0.802             \\ \hline
-MLP Classifier         & Max Iterations = 1000                              & 0.908              & 0.792             \\ \hline
-MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0 & 0.806              & 0.797             \\ \hline
+Algorithm              & Additional Parameters                              & Train Set Accuracy \\ \hline
+K Nearest Neighbour    & -                                                  & 0.790              \\ \hline
+Logistic Regression    & C = 1                                              & 0.781              \\ \hline
+Logistic Regression    & C = 0.01                                           & 0.700              \\\hline
+Logistic Regression    & C = 100                                            & 0.785              \\ \hline
+Decision Tree          & -                                                  & 1.000              \\ \hline
+Decision Tree          & Max Depth = 3                                      & 0.773              \\ \hline
+Random Forest          & Estimators = 100                                   & 1.000              \\ \hline
+Random Forest          & Estimators = 100; Max Depth = 3                    & 0.800              \\ \hline
+Gradient Boosting      & -                                                  & 0.917              \\ \hline
+Gradient Boosting      & Max Depth = 1                                      & 0.804              \\ \hline
+Gradient Boosting      & Learning Rate = 0.01                               & 0.802              \\ \hline
+Support Vector Machine & -                                                  & 1.000              \\ \hline
+Support Vector Machine & Train and Test set scaled using MinMaxScaler       & 0.770              \\ \hline
+Support Vector Machine & C = 1000                                           & 0.790              \\ \hline
+MLP Classifier         & Random State = 42                                  & 0.730              \\ \hline
+MLP Classifier         & Random State = 0                                   & 0.823              \\ \hline
+MLP Classifier         & Max Iterations = 1000                              & 0.908              \\ \hline
+MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0 & 0.806              \\ \hline
 \end{tabular}
 \end{table}
-\captionof{table}{Test and Train accuracy's using various machine learning algorithms with various parameters.}
+\captionof{table}{Train accuracy using various machine learning algorithms with various parameters.}
 \label{table:2}
 \end{landscape}
 \clearpage
 }
 
+
+{
+\clearpage
+\begin{landscape}
+\centering
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+Algorithm              & Additional Parameters                               & Test Set Accuracy \\ \hline
+K Nearest Neighbour    & -                                                   & 0.780             \\ \hline
+Logistic Regression    & C = 1                                               & 0.771             \\ \hline
+Logistic Regression    & C = 0.01                                            & 0.703             \\ \hline
+Logistic Regression    & C = 100                                             & 0.766             \\ \hline
+Decision Tree          & -                                                   & 0.714             \\ \hline
+Decision Tree          & Max Depth = 3                                       & 0.740             \\ \hline
+Random Forest          & Estimators = 100                                    & 0.786             \\ \hline
+Random Forest          & Estimators = 100; Max Depth = 3                     & 0.755             \\ \hline
+Gradient Boosting      & -                                                   & 0.792             \\ \hline
+Gradient Boosting      & Max Depth = 1                                       & 0.781             \\ \hline
+Gradient Boosting      & Learning Rate = 0.01                                & 0.776             \\ \hline
+Support Vector Machine & -                                                   & 0.650             \\ \hline
+Support Vector Machine & Train and Test set scaled using MinMaxScaler        & 0.770             \\ \hline
+Support Vector Machine & C = 1000                                            & 0.797             \\ \hline
+MLP Classifier         & Random State = 42                                   & 0.720             \\ \hline
+MLP Classifier         & Random State = 0                                    & 0.802             \\ \hline
+MLP Classifier         & Max Iterations = 1000                               & 0.792             \\ \hline
+MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0  & 0.797             \\ \hline
+\end{tabular}
+\end{table}
+\captionof{table}{Test accuracy using various machine learning algorithms with various parameters.}
+\label{table:3}
+\end{landscape}
+\clearpage
+}
+
+{
+\clearpage
+\begin{landscape}
+\centering
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+Column                     & Number of Non-Zero Values & Percentage \\ \hline
+Pregnancies                & 0                         & 0          \\ \hline
+Glucose                    & 763                       & 0.65       \\ \hline
+Blood Pressure             & 733                       & 4.56       \\ \hline
+Skin Thickness             & 541                       & 29.56      \\ \hline
+Insulin                    & 394                       & 48.7       \\ \hline
+Body Mass Index            & 757                       & 1.43       \\ \hline
+Diabetes Pedigree Function & 0                         & 0          \\ \hline
+Age                        & 0                         & 0          \\ \hline
+Outcome                    & 0                         & 0          \\ \hline
+\end{tabular}
+\end{table}
+\captionof{table}{Null Value Check.}
+\label{table:4}
+\end{landscape}
+\clearpage
+}
+
+{
+\clearpage
+\begin{landscape}
+\centering
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+\hline
+ Pregnancies &  Glucose &  BloodPressure &  SkinThickness &  Insulin &   BMI &  DiabetesPedigreeFunction &  Age &  Outcome \\\hline
+           6 &      148 &             72 &             35 &        0 &  33.6 &                     0.627 &   50 &        1 \\\hline
+           1 &       85 &             66 &             29 &        0 &  26.6 &                     0.351 &   31 &        0 \\\hline
+           8 &      183 &             64 &              0 &        0 &  23.3 &                     0.672 &   32 &        1 \\\hline
+           1 &       89 &             66 &             23 &       94 &  28.1 &                     0.167 &   21 &        0 \\\hline
+           0 &      137 &             40 &             35 &      168 &  43.1 &                     2.288 &   33 &        1 \\\hline
+           5 &      116 &             74 &              0 &        0 &  25.6 &                     0.201 &   30 &        0 \\\hline
+           3 &       78 &             50 &             32 &       88 &  31.0 &                     0.248 &   26 &        1 \\\hline
+          10 &      115 &              0 &              0 &        0 &  35.3 &                     0.134 &   29 &        0 \\\hline
+           2 &      197 &             70 &             45 &      543 &  30.5 &                     0.158 &   53 &        1 \\\hline
+           8 &      125 &             96 &              0 &        0 &   0.0 &                     0.232 &   54 &        1 \\\hline
+           4 &      110 &             92 &              0 &        0 &  37.6 &                     0.191 &   30 &        0 \\\hline
+          10 &      168 &             74 &              0 &        0 &  38.0 &                     0.537 &   34 &        1 \\\hline
+          10 &      139 &             80 &              0 &        0 &  27.1 &                     1.441 &   57 &        0 \\\hline
+           1 &      189 &             60 &             23 &      846 &  30.1 &                     0.398 &   59 &        1 \\\hline
+           5 &      166 &             72 &             19 &      175 &  25.8 &                     0.587 &   51 &        1 \\\hline
+\end{tabular}
+\end{table}
+\captionof{table}{First 15 rows of the raw dataset.}
+\label{table:5}
+\end{landscape}
+\clearpage
+}
+
+
+{
+\clearpage
+\begin{landscape}
+\centering
+\begin{table}[]
+\centering
+\vspace{5cm}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+{} &  Pregnancies &   Glucose &  BloodPressure &  SkinThickness &   Insulin &       BMI &  DPF &       Age &   Outcome 
+\\\hline
+Pregnancies              &     1.000000 &  0.129459 &       0.141282 &      -0.081672 & -0.073535 &  0.017683 &                 -0.03352 &  0.544341 &  0.221898 \\\hline
+Glucose                  &     0.129459 &  1.000000 &       0.152590 &       0.057328 &  0.331357 &  0.221071 &                  0.137337 &  0.263514 &  0.466581 \\\hline
+BloodPressure            &     0.141282 &  0.152590 &       1.000000 &       0.207371 &  0.088933 &  0.281805 &                  0.041265 &  0.239528 &  0.065068 \\\hline
+SkinThickness            &    -0.081672 &  0.057328 &       0.207371 &       1.000000 &  0.436783 &  0.392573 &                  0.183928 & -0.113970 &  0.074752 \\\hline
+Insulin                  &    -0.073535 &  0.331357 &       0.088933 &       0.436783 &  1.000000 &  0.197859 &                  0.185071 & -0.042163 &  0.130548 \\\hline
+BMI                      &     0.017683 &  0.221071 &       0.281805 &       0.392573 &  0.197859 &  1.000000 &                  0.140647 &  0.036242 &  0.292695 \\\hline
+DPF &    -0.033523 &  0.137337 &       0.041265 &       0.183928 &  0.185071 &  0.140647 &                  1.000000 &  0.033561 &  0.173844 \\\hline
+Age                      &     0.544341 &  0.263514 &       0.239528 &      -0.113970 & -0.042163 &  0.036242 &                  0.033561 &  1.000000 &  0.238356 \\\hline
+Outcome                  &     0.221898 &  0.466581 &       0.065068 &       0.074752 &  0.130548 &  0.292695 &                  0.173844 &  0.238356 &  1.000000 \\\hline
+
+\end{tabular}
+\end{table}
+\captionof{table}{Correlation Plot.}
+\label{table:6}
+\end{landscape}
+\clearpage
+}
+
+{
+\clearpage
+\centering
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Fold & Precision & F1 Score & Accuracy & Recall & ROC-AUC Curve \\ \hline
+1    & 0.811     & 0.804    & 0.864    & 0.796  & 0.908         \\ \hline
+2    & 0.787     & 0.733    & 0.825    & 0.685  & 0.896         \\ \hline
+3    & 0.841     & 0.755    & 0.844    & 0.685  & 0.902         \\ \hline
+4    & 0.820     & 0.796    & 0.863    & 0.774  & 0.920         \\ \hline
+5    & 0.783     & 0.832    & 0.876    & 0.887  & 0.933         \\ \hline
+mean & 0.809     & 0.784    & 0.854    & 0.765  & 0.912         \\ \hline
+std  & 0.021     & 0.035    & 0.018    & 0.076  & 0.013         \\ \hline
+\end{tabular}
+\captionof{table}{MLP 5 fold verification.}
+\label{table:7}
+\end{table}
+
+}
+
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Insulin} \\ \hline
+Subject Type      & Level     \\ \hline
+Healthy           & 102.5     \\ \hline
+Diabetic          & 169.5     \\ \hline
+\end{tabular}
+\captionof{table}{Insulin Median Comparison.}
+\label{table:8}
+\end{table}
+
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Glucose} \\ \hline
+Subject Type      & Level     \\ \hline
+Healthy           & 107.0     \\ \hline
+Diabetic          & 140.0     \\ \hline
+\end{tabular}
+\captionof{table}{Glucose Median Comparison.}
+\label{table:9}
+
+\end{table}
+
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Skin Thickness} \\ \hline
+Subject Type      & Level     \\ \hline
+Healthy           & 27.0     \\ \hline
+Diabetic          & 32.0     \\ \hline
+\end{tabular}
+\captionof{table}{Skin Thickness Median Comparison.}
+\label{table:10}
+\end{table}
+
+
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Blood Pressure} \\ \hline
+Subject Type      & Level     \\ \hline
+Healthy           & 70.0    \\ \hline
+Diabetic          & 74.0     \\ \hline
+\end{tabular}
+\captionof{table}{Blood Pressure Median Comparison.}
+\label{table:11}
+\end{table}
+
+
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Body Mass Index} \\ \hline
+Subject Type      & Level     \\ \hline
+Healthy           & 30.1      \\ \hline
+Diabetic          & 34.3      \\ \hline
+\end{tabular}
+\captionof{table}{Body Mass Index Median Comparison.}
+\label{table:12}
+\end{table}
+
+
+
+
+
+
+
+
+
+
 \newpage
-\section{Appendices}
+\clearpage
+
+\section{Appendix I}
 \subsection{K Nearest Neighbours}
-\subsubsection{Function Syntax}
 \begin{lstlisting}
 class sklearn.neighbors.KNeighborsClassifier(n_neighbors=5, weights='uniform', algorithm='auto', leaf_size=30, p=2, metric='minkowski', metric_params=None, n_jobs=None, **kwargs)
 \end{lstlisting}
 
-\subsubsection{Parameters}
-\begin{itemize}
-\item \texttt{n\textunderscore neighbors}`
-Number of neighbors to use by default for kneighbors queries.
-
-\item
-\texttt{weights}
-weight function used in prediction. Possible values:
-
-‘uniform’ : uniform weights. All points in each neighborhood are weighted equally.
-
-‘distance’ : weight points by the inverse of their distance. in this case, closer neighbors of a query point will have a greater influence than neighbors which are further away.
-
-[callable] : a user-defined function which accepts an array of distances, and returns an array of the same shape containing the weights.
-
-\item{algorithm}{‘auto’, ‘ball \textunderscore tree’, ‘kd\textunderscore tree’, ‘brute’}, optional
-Algorithm used to compute the nearest neighbors:
-
-‘ball\textunderscore tree’ will use BallTree
-
-‘kd\textunderscore tree’ will use KDTree
-
-‘brute’ will use a brute-force search.
-
-‘auto’ will attempt to decide the most appropriate algorithm based on the values passed to fit method.
-
-Note: fitting on sparse input will override the setting of this parameter, using brute force.
-
-\item \texttt{leaf\textunderscore size }int, optional (default = 30)
-Leaf size passed to BallTree or KDTree. This can affect the speed of the construction and query, as well as the memory required to store the tree. The optimal value depends on the nature of the problem.
-
-\item \texttt{p} integer, optional (default = 2)
-Power parameter for the Minkowski metric. When p = 1, this is equivalent to using manhattan\textunderscore distance (l1), and euclidean\textunderscore distance (l2) for p = 2. For arbitrary p, minkowski\textunderscore distance (l\textunderscore p) is used.
-
-\item \texttt{metric} string or callable, default ‘minkowski’
-the distance metric to use for the tree. The default metric is minkowski, and with p=2 is equivalent to the standard Euclidean metric. See the documentation of the DistanceMetric class for a list of available metrics. If metric is “precomputed”, X is assumed to be a distance matrix and must be square during fit. X may be a Glossary, in which case only “nonzero” elements may be considered neighbors.
-
-
-metric\textunderscore paramsdict, optional (default = None)
-Additional keyword arguments for the metric function.
-
-n\textunderscore jobsint or None, optional (default=None)
-The number of parallel jobs to run for neighbors search. None means 1 unless in a joblib.parallel\textunderscore backend context. -1 means using all processors. See Glossary for more details. Doesn’t affect fit method.
-\end{itemize}
-
-\newpage
-\subsubsection{Logistic Regression}
+\subsection{Logistic Regression}
 \begin{lstlisting}
 class sklearn.linear_model.LogisticRegression(penalty='l2', dual=False, tol=0.0001, C=1.0, fit_intercept=True, intercept_scaling=1, class_weight=None, random_state=None, solver='lbfgs', max_iter=100, multi_class='auto', verbose=0, warm_start=False, n_jobs=None, l1_ratio=None)
 \end{lstlisting}
 
-\begin{verbatim}
-penalty{‘l1’, ‘l2’, ‘elasticnet’, ‘none’}, default=’l2’
-Used to specify the norm used in the penalization. The ‘newton-cg’, ‘sag’ and ‘lbfgs’ solvers support only l2 penalties. ‘elasticnet’ is only supported by the ‘saga’ solver. If ‘none’ (not supported by the liblinear solver), no regularization is applied.
-
-New in version 0.19: l1 penalty with SAGA solver (allowing ‘multinomial’ + L1)
-
-dualbool, default=False
-Dual or primal formulation. Dual formulation is only implemented for l2 penalty with liblinear solver. Prefer dual=False when n_samples > n_features.
-
-tolfloat, default=1e-4
-Tolerance for stopping criteria.
-
-Cfloat, default=1.0
-Inverse of regularization strength; must be a positive float. Like in support vector machines, smaller values specify stronger regularization.
-
-fit_interceptbool, default=True
-Specifies if a constant (a.k.a. bias or intercept) should be added to the decision function.
-
-intercept_scalingfloat, default=1
-Useful only when the solver ‘liblinear’ is used and self.fit_intercept is set to True. In this case, x becomes [x, self.intercept_scaling], i.e. a “synthetic” feature with constant value equal to intercept_scaling is appended to the instance vector. The intercept becomes intercept_scaling * synthetic_feature_weight.
-
-Note! the synthetic feature weight is subject to l1/l2 regularization as all other features. To lessen the effect of regularization on synthetic feature weight (and therefore on the intercept) intercept_scaling has to be increased.
-
-class_weightdict or ‘balanced’, default=None
-Weights associated with classes in the form {class_label: weight}. If not given, all classes are supposed to have weight one.
-
-The “balanced” mode uses the values of y to automatically adjust weights inversely proportional to class frequencies in the input data as n_samples / (n_classes * np.bincount(y)).
-
-Note that these weights will be multiplied with sample_weight (passed through the fit method) if sample_weight is specified.
-
-New in version 0.17: class_weight=’balanced’
-
-random_stateint, RandomState instance, default=None
-The seed of the pseudo random number generator to use when shuffling the data. If int, random_state is the seed used by the random number generator; If RandomState instance, random_state is the random number generator; If None, the random number generator is the RandomState instance used by np.random. Used when solver == ‘sag’ or ‘liblinear’.
-
-solver{‘newton-cg’, ‘lbfgs’, ‘liblinear’, ‘sag’, ‘saga’}, default=’lbfgs’
-Algorithm to use in the optimization problem.
-
-For small datasets, ‘liblinear’ is a good choice, whereas ‘sag’ and ‘saga’ are faster for large ones.
-
-For multiclass problems, only ‘newton-cg’, ‘sag’, ‘saga’ and ‘lbfgs’ handle multinomial loss; ‘liblinear’ is limited to one-versus-rest schemes.
-
-‘newton-cg’, ‘lbfgs’, ‘sag’ and ‘saga’ handle L2 or no penalty
-
-‘liblinear’ and ‘saga’ also handle L1 penalty
-
-‘saga’ also supports ‘elasticnet’ penalty
-
-‘liblinear’ does not support setting penalty='none'
-
-Note that ‘sag’ and ‘saga’ fast convergence is only guaranteed on features with approximately the same scale. You can preprocess the data with a scaler from sklearn.preprocessing.
-
-New in version 0.17: Stochastic Average Gradient descent solver.
-
-New in version 0.19: SAGA solver.
-
-Changed in version 0.22: The default solver changed from ‘liblinear’ to ‘lbfgs’ in 0.22.
-
-max_iterint, default=100
-Maximum number of iterations taken for the solvers to converge.
-
-multi_class{‘auto’, ‘ovr’, ‘multinomial’}, default=’auto’
-If the option chosen is ‘ovr’, then a binary problem is fit for each label. For ‘multinomial’ the loss minimised is the multinomial loss fit across the entire probability distribution, even when the data is binary. ‘multinomial’ is unavailable when solver=’liblinear’. ‘auto’ selects ‘ovr’ if the data is binary, or if solver=’liblinear’, and otherwise selects ‘multinomial’.
-
-New in version 0.18: Stochastic Average Gradient descent solver for ‘multinomial’ case.
-
-Changed in version 0.22: Default changed from ‘ovr’ to ‘auto’ in 0.22.
-
-verboseint, default=0
-For the liblinear and lbfgs solvers set verbose to any positive number for verbosity.
-
-warm_startbool, default=False
-When set to True, reuse the solution of the previous call to fit as initialization, otherwise, just erase the previous solution. Useless for liblinear solver. See the Glossary.
-
-New in version 0.17: warm_start to support lbfgs, newton-cg, sag, saga solvers.
-
-n_jobsint, default=None
-Number of CPU cores used when parallelizing over classes if multi_class=’ovr’”. This parameter is ignored when the solver is set to ‘liblinear’ regardless of whether ‘multi_class’ is specified or not. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.
-
-l1_ratiofloat, default=None
-The Elastic-Net mixing parameter, with 0 <= l1_ratio <= 1. Only used if penalty='elasticnet'`. Setting ``l1_ratio=0 is equivalent to using penalty='l2', while setting l1_ratio=1 is equivalent to using penalty='l1'. For 0 < l1_ratio <1, the penalty is a combination of L1 and L2.
-\end{verbatim}
-
-\subsubsection{Decision Tree}
+\subsection{Decision Tree}
 \begin{lstlisting}
 class sklearn.tree.DecisionTreeClassifier(criterion='gini', splitter='best', max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features=None, random_state=None, max_leaf_nodes=None, min_impurity_decrease=0.0, min_impurity_split=None, class_weight=None, presort='deprecated', ccp_alpha=0.0)
 \end{lstlisting}
 
-\begin{verbatim}
-criterion{“gini”, “entropy”}, default=”gini”
-The function to measure the quality of a split. Supported criteria are “gini” for the Gini impurity and “entropy” for the information gain.
-
-splitter{“best”, “random”}, default=”best”
-The strategy used to choose the split at each node. Supported strategies are “best” to choose the best split and “random” to choose the best random split.
-
-max_depthint, default=None
-The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than min_samples_split samples.
-
-min_samples_splitint or float, default=2
-The minimum number of samples required to split an internal node:
-
-If int, then consider min_samples_split as the minimum number.
-
-If float, then min_samples_split is a fraction and ceil(min_samples_split * n_samples) are the minimum number of samples for each split.
-
-Changed in version 0.18: Added float values for fractions.
-
-min_samples_leafint or float, default=1
-The minimum number of samples required to be at a leaf node. A split point at any depth will only be considered if it leaves at least min_samples_leaf training samples in each of the left and right branches. This may have the effect of smoothing the model, especially in regression.
-
-If int, then consider min_samples_leaf as the minimum number.
-
-If float, then min_samples_leaf is a fraction and ceil(min_samples_leaf * n_samples) are the minimum number of samples for each node.
-
-Changed in version 0.18: Added float values for fractions.
-
-min_weight_fraction_leaffloat, default=0.0
-The minimum weighted fraction of the sum total of weights (of all the input samples) required to be at a leaf node. Samples have equal weight when sample_weight is not provided.
-
-max_featuresint, float or {“auto”, “sqrt”, “log2”}, default=None
-The number of features to consider when looking for the best split:
-
-If int, then consider max_features features at each split.
-
-If float, then max_features is a fraction and int(max_features * n_features) features are considered at each split.
-
-If “auto”, then max_features=sqrt(n_features).
-
-If “sqrt”, then max_features=sqrt(n_features).
-
-If “log2”, then max_features=log2(n_features).
-
-If None, then max_features=n_features.
-
-Note: the search for a split does not stop until at least one valid partition of the node samples is found, even if it requires to effectively inspect more than max_features features.
-
-random_stateint or RandomState, default=None
-If int, random_state is the seed used by the random number generator; If RandomState instance, random_state is the random number generator; If None, the random number generator is the RandomState instance used by np.random.
-
-max_leaf_nodesint, default=None
-Grow a tree with max_leaf_nodes in best-first fashion. Best nodes are defined as relative reduction in impurity. If None then unlimited number of leaf nodes.
-
-min_impurity_decreasefloat, default=0.0
-A node will be split if this split induces a decrease of the impurity greater than or equal to this value.
-
-The weighted impurity decrease equation is the following:
-
-N_t / N * (impurity - N_t_R / N_t * right_impurity
-                    - N_t_L / N_t * left_impurity)
-where N is the total number of samples, N_t is the number of samples at the current node, N_t_L is the number of samples in the left child, and N_t_R is the number of samples in the right child.
-
-N, N_t, N_t_R and N_t_L all refer to the weighted sum, if sample_weight is passed.
-
-New in version 0.19.
-
-min_impurity_splitfloat, default=1e-7
-Threshold for early stopping in tree growth. A node will split if its impurity is above the threshold, otherwise it is a leaf.
-
-Deprecated since version 0.19: min_impurity_split has been deprecated in favor of min_impurity_decrease in 0.19. The default value of min_impurity_split will change from 1e-7 to 0 in 0.23 and it will be removed in 0.25. Use min_impurity_decrease instead.
-class_weightdict, list of dict or “balanced”, default=None
-Weights associated with classes in the form {class_label: weight}. If None, all classes are supposed to have weight one. For multi-output problems, a list of dicts can be provided in the same order as the columns of y.
-
-Note that for multioutput (including multilabel) weights should be defined for each class of every column in its own dict. For example, for four-class multilabel classification weights should be [{0: 1, 1: 1}, {0: 1, 1: 5}, {0: 1, 1: 1}, {0: 1, 1: 1}] instead of [{1:1}, {2:5}, {3:1}, {4:1}].
-
-The “balanced” mode uses the values of y to automatically adjust weights inversely proportional to class frequencies in the input data as n_samples / (n_classes * np.bincount(y))
-
-For multi-output, the weights of each column of y will be multiplied.
-
-Note that these weights will be multiplied with sample_weight (passed through the fit method) if sample_weight is specified.
-
-presortdeprecated, default=’deprecated’
-This parameter is deprecated and will be removed in v0.24.
-
-Deprecated since version 0.22.
-ccp_alphanon-negative float, default=0.0
-Complexity parameter used for Minimal Cost-Complexity Pruning. The subtree with the largest cost complexity that is smaller than ccp_alpha will be chosen. By default, no pruning is performed. See Minimal Cost-Complexity Pruning for details.
-
-New in version 0.22.
-\end{verbatim}
-
-\newpage
-\subsubsection{Random Forest Classifier}
+\subsection{Random Forest Classifier}
 \begin{lstlisting}
 class sklearn.ensemble.RandomForestClassifier(n_estimators=100, criterion='gini', max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features='auto', max_leaf_nodes=None, min_impurity_decrease=0.0, min_impurity_split=None, bootstrap=True, oob_score=False, n_jobs=None, random_state=None, verbose=0, warm_start=False, class_weight=None, ccp_alpha=0.0, max_samples=None)
 \end{lstlisting}
 
-\begin{verbatim}
-n_estimatorsinteger, optional (default=100)
-The number of trees in the forest.
-
-Changed in version 0.22: The default value of n_estimators changed from 10 to 100 in 0.22.
-
-criterionstring, optional (default=”gini”)
-The function to measure the quality of a split. Supported criteria are “gini” for the Gini impurity and “entropy” for the information gain. Note: this parameter is tree-specific.
-
-max_depthinteger or None, optional (default=None)
-The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than min_samples_split samples.
-
-min_samples_splitint, float, optional (default=2)
-The minimum number of samples required to split an internal node:
-
-If int, then consider min_samples_split as the minimum number.
-
-If float, then min_samples_split is a fraction and ceil(min_samples_split * n_samples) are the minimum number of samples for each split.
-
-Changed in version 0.18: Added float values for fractions.
-
-min_samples_leafint, float, optional (default=1)
-The minimum number of samples required to be at a leaf node. A split point at any depth will only be considered if it leaves at least min_samples_leaf training samples in each of the left and right branches. This may have the effect of smoothing the model, especially in regression.
-
-If int, then consider min_samples_leaf as the minimum number.
-
-If float, then min_samples_leaf is a fraction and ceil(min_samples_leaf * n_samples) are the minimum number of samples for each node.
-
-Changed in version 0.18: Added float values for fractions.
-
-min_weight_fraction_leaffloat, optional (default=0.)
-The minimum weighted fraction of the sum total of weights (of all the input samples) required to be at a leaf node. Samples have equal weight when sample_weight is not provided.
-
-max_featuresint, float, string or None, optional (default=”auto”)
-The number of features to consider when looking for the best split:
-
-If int, then consider max_features features at each split.
-
-If float, then max_features is a fraction and int(max_features * n_features) features are considered at each split.
-
-If “auto”, then max_features=sqrt(n_features).
-
-If “sqrt”, then max_features=sqrt(n_features) (same as “auto”).
-
-If “log2”, then max_features=log2(n_features).
-
-If None, then max_features=n_features.
-
-Note: the search for a split does not stop until at least one valid partition of the node samples is found, even if it requires to effectively inspect more than max_features features.
-
-max_leaf_nodesint or None, optional (default=None)
-Grow trees with max_leaf_nodes in best-first fashion. Best nodes are defined as relative reduction in impurity. If None then unlimited number of leaf nodes.
-
-min_impurity_decreasefloat, optional (default=0.)
-A node will be split if this split induces a decrease of the impurity greater than or equal to this value.
-
-The weighted impurity decrease equation is the following:
-
-N_t / N * (impurity - N_t_R / N_t * right_impurity
-                    - N_t_L / N_t * left_impurity)
-where N is the total number of samples, N_t is the number of samples at the current node, N_t_L is the number of samples in the left child, and N_t_R is the number of samples in the right child.
-
-N, N_t, N_t_R and N_t_L all refer to the weighted sum, if sample_weight is passed.
-
-New in version 0.19.
-
-min_impurity_splitfloat, (default=1e-7)
-Threshold for early stopping in tree growth. A node will split if its impurity is above the threshold, otherwise it is a leaf.
-
-Deprecated since version 0.19: min_impurity_split has been deprecated in favor of min_impurity_decrease in 0.19. The default value of min_impurity_split will change from 1e-7 to 0 in 0.23 and it will be removed in 0.25. Use min_impurity_decrease instead.
-bootstrapboolean, optional (default=True)
-Whether bootstrap samples are used when building trees. If False, the whole datset is used to build each tree.
-
-oob_scorebool (default=False)
-Whether to use out-of-bag samples to estimate the generalization accuracy.
-
-n_jobsint or None, optional (default=None)
-The number of jobs to run in parallel. fit, predict, decision_path and apply are all parallelized over the trees. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.
-
-random_stateint, RandomState instance or None, optional (default=None)
-Controls both the randomness of the bootstrapping of the samples used when building trees (if bootstrap=True) and the sampling of the features to consider when looking for the best split at each node (if max_features < n_features). See Glossary for details.
-
-verboseint, optional (default=0)
-Controls the verbosity when fitting and predicting.
-
-warm_startbool, optional (default=False)
-When set to True, reuse the solution of the previous call to fit and add more estimators to the ensemble, otherwise, just fit a whole new forest. See the Glossary.
-
-class_weightdict, list of dicts, “balanced”, “balanced_subsample” or None, optional (default=None)
-Weights associated with classes in the form {class_label: weight}. If not given, all classes are supposed to have weight one. For multi-output problems, a list of dicts can be provided in the same order as the columns of y.
-
-Note that for multioutput (including multilabel) weights should be defined for each class of every column in its own dict. For example, for four-class multilabel classification weights should be [{0: 1, 1: 1}, {0: 1, 1: 5}, {0: 1, 1: 1}, {0: 1, 1: 1}] instead of [{1:1}, {2:5}, {3:1}, {4:1}].
-
-The “balanced” mode uses the values of y to automatically adjust weights inversely proportional to class frequencies in the input data as n_samples / (n_classes * np.bincount(y))
-
-The “balanced_subsample” mode is the same as “balanced” except that weights are computed based on the bootstrap sample for every tree grown.
-
-For multi-output, the weights of each column of y will be multiplied.
-
-Note that these weights will be multiplied with sample_weight (passed through the fit method) if sample_weight is specified.
-
-ccp_alphanon-negative float, optional (default=0.0)
-Complexity parameter used for Minimal Cost-Complexity Pruning. The subtree with the largest cost complexity that is smaller than ccp_alpha will be chosen. By default, no pruning is performed. See Minimal Cost-Complexity Pruning for details.
-
-New in version 0.22.
-
-max_samplesint or float, default=None
-If bootstrap is True, the number of samples to draw from X to train each base estimator.
-
-If None (default), then draw X.shape[0] samples.
-
-If int, then draw max_samples samples.
-
-If float, then draw max_samples * X.shape[0] samples. Thus, max_samples should be in the interval (0, 1).
-
-New in version 0.22.
-\end{verbatim}
-
-\newpage
-\subsubsection{Gradient Boosting}
+\subsection{Gradient Boosting}
 \begin{lstlisting}
 class sklearn.ensemble.GradientBoostingClassifier(loss='deviance', learning_rate=0.1, n_estimators=100, subsample=1.0, criterion='friedman_mse', min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_depth=3, min_impurity_decrease=0.0, min_impurity_split=None, init=None, random_state=None, max_features=None, verbose=0, max_leaf_nodes=None, warm_start=False, presort='deprecated', validation_fraction=0.1, n_iter_no_change=None, tol=0.0001, ccp_alpha=0.0)
 \end{lstlisting}
 
-\begin{verbatim}
-loss{‘deviance’, ‘exponential’}, optional (default=’deviance’)
-loss function to be optimized. ‘deviance’ refers to deviance (= logistic regression) for classification with probabilistic outputs. For loss ‘exponential’ gradient boosting recovers the AdaBoost algorithm.
-
-learning_ratefloat, optional (default=0.1)
-learning rate shrinks the contribution of each tree by learning_rate. There is a trade-off between learning_rate and n_estimators.
-
-n_estimatorsint (default=100)
-The number of boosting stages to perform. Gradient boosting is fairly robust to over-fitting so a large number usually results in better performance.
-
-subsamplefloat, optional (default=1.0)
-The fraction of samples to be used for fitting the individual base learners. If smaller than 1.0 this results in Stochastic Gradient Boosting. subsample interacts with the parameter n_estimators. Choosing subsample < 1.0 leads to a reduction of variance and an increase in bias.
-
-criterionstring, optional (default=”friedman_mse”)
-The function to measure the quality of a split. Supported criteria are “friedman_mse” for the mean squared error with improvement score by Friedman, “mse” for mean squared error, and “mae” for the mean absolute error. The default value of “friedman_mse” is generally the best as it can provide a better approximation in some cases.
-
-New in version 0.18.
-
-min_samples_splitint, float, optional (default=2)
-The minimum number of samples required to split an internal node:
-
-If int, then consider min_samples_split as the minimum number.
-
-If float, then min_samples_split is a fraction and ceil(min_samples_split * n_samples) are the minimum number of samples for each split.
-
-Changed in version 0.18: Added float values for fractions.
-
-min_samples_leafint, float, optional (default=1)
-The minimum number of samples required to be at a leaf node. A split point at any depth will only be considered if it leaves at least min_samples_leaf training samples in each of the left and right branches. This may have the effect of smoothing the model, especially in regression.
-
-If int, then consider min_samples_leaf as the minimum number.
-
-If float, then min_samples_leaf is a fraction and ceil(min_samples_leaf * n_samples) are the minimum number of samples for each node.
-
-Changed in version 0.18: Added float values for fractions.
-
-min_weight_fraction_leaffloat, optional (default=0.)
-The minimum weighted fraction of the sum total of weights (of all the input samples) required to be at a leaf node. Samples have equal weight when sample_weight is not provided.
-
-max_depthinteger, optional (default=3)
-maximum depth of the individual regression estimators. The maximum depth limits the number of nodes in the tree. Tune this parameter for best performance; the best value depends on the interaction of the input variables.
-
-min_impurity_decreasefloat, optional (default=0.)
-A node will be split if this split induces a decrease of the impurity greater than or equal to this value.
-
-The weighted impurity decrease equation is the following:
-
-N_t / N * (impurity - N_t_R / N_t * right_impurity
-                    - N_t_L / N_t * left_impurity)
-where N is the total number of samples, N_t is the number of samples at the current node, N_t_L is the number of samples in the left child, and N_t_R is the number of samples in the right child.
-
-N, N_t, N_t_R and N_t_L all refer to the weighted sum, if sample_weight is passed.
-
-New in version 0.19.
-
-min_impurity_splitfloat, (default=1e-7)
-Threshold for early stopping in tree growth. A node will split if its impurity is above the threshold, otherwise it is a leaf.
-
-Deprecated since version 0.19: min_impurity_split has been deprecated in favor of min_impurity_decrease in 0.19. The default value of min_impurity_split will change from 1e-7 to 0 in 0.23 and it will be removed in 0.25. Use min_impurity_decrease instead.
-initestimator or ‘zero’, optional (default=None)
-An estimator object that is used to compute the initial predictions. init has to provide fit and predict_proba. If ‘zero’, the initial raw predictions are set to zero. By default, a DummyEstimator predicting the classes priors is used.
-
-random_stateint, RandomState instance or None, optional (default=None)
-If int, random_state is the seed used by the random number generator; If RandomState instance, random_state is the random number generator; If None, the random number generator is the RandomState instance used by np.random.
-
-max_featuresint, float, string or None, optional (default=None)
-The number of features to consider when looking for the best split:
-
-If int, then consider max_features features at each split.
-
-If float, then max_features is a fraction and int(max_features * n_features) features are considered at each split.
-
-If “auto”, then max_features=sqrt(n_features).
-
-If “sqrt”, then max_features=sqrt(n_features).
-
-If “log2”, then max_features=log2(n_features).
-
-If None, then max_features=n_features.
-
-Choosing max_features < n_features leads to a reduction of variance and an increase in bias.
-
-Note: the search for a split does not stop until at least one valid partition of the node samples is found, even if it requires to effectively inspect more than max_features features.
-
-verboseint, default: 0
-Enable verbose output. If 1 then it prints progress and performance once in a while (the more trees the lower the frequency). If greater than 1 then it prints progress and performance for every tree.
-
-max_leaf_nodesint or None, optional (default=None)
-Grow trees with max_leaf_nodes in best-first fashion. Best nodes are defined as relative reduction in impurity. If None then unlimited number of leaf nodes.
-
-warm_startbool, default: False
-When set to True, reuse the solution of the previous call to fit and add more estimators to the ensemble, otherwise, just erase the previous solution. See the Glossary.
-
-presortdeprecated, default=’deprecated’
-This parameter is deprecated and will be removed in v0.24.
-
-Deprecated since version 0.22.
-validation_fractionfloat, optional, default 0.1
-The proportion of training data to set aside as validation set for early stopping. Must be between 0 and 1. Only used if n_iter_no_change is set to an integer.
-
-New in version 0.20.
-
-n_iter_no_changeint, default None
-n_iter_no_change is used to decide if early stopping will be used to terminate training when validation score is not improving. By default it is set to None to disable early stopping. If set to a number, it will set aside validation_fraction size of the training data as validation and terminate training when validation score is not improving in all of the previous n_iter_no_change numbers of iterations. The split is stratified.
-
-New in version 0.20.
-
-tolfloat, optional, default 1e-4
-Tolerance for the early stopping. When the loss is not improving by at least tol for n_iter_no_change iterations (if set to a number), the training stops.
-
-New in version 0.20.
-
-ccp_alphanon-negative float, optional (default=0.0)
-Complexity parameter used for Minimal Cost-Complexity Pruning. The subtree with the largest cost complexity that is smaller than ccp_alpha will be chosen. By default, no pruning is performed. See Minimal Cost-Complexity Pruning for details.
-
-New in version 0.22.
-\end{verbatim}
-
 \newpage
-\subsubsection{Multi Layered Perceptron}
+\subsection{Multi Layered Perceptron}
 \begin{lstlisting}
 class sklearn.neural_network.MLPClassifier(hidden_layer_sizes=(100, ), activation='relu', solver='adam', alpha=0.0001, batch_size='auto', learning_rate='constant', learning_rate_init=0.001, power_t=0.5, max_iter=200, shuffle=True, random_state=None, tol=0.0001, verbose=False, warm_start=False, momentum=0.9, nesterovs_momentum=True, early_stopping=False, validation_fraction=0.1, beta_1=0.9, beta_2=0.999, epsilon=1e-08, n_iter_no_change=10, max_fun=15000)
 \end{lstlisting}
 
-\begin{verbatim}
-hidden_layer_sizestuple, length = n_layers - 2, default=(100,)
-The ith element represents the number of neurons in the ith hidden layer.
-
-activation{‘identity’, ‘logistic’, ‘tanh’, ‘relu’}, default=’relu’
-Activation function for the hidden layer.
-
-‘identity’, no-op activation, useful to implement linear bottleneck, returns f(x) = x
-
-‘logistic’, the logistic sigmoid function, returns f(x) = 1 / (1 + exp(-x)).
-
-‘tanh’, the hyperbolic tan function, returns f(x) = tanh(x).
-
-‘relu’, the rectified linear unit function, returns f(x) = max(0, x)
-
-solver{‘lbfgs’, ‘sgd’, ‘adam’}, default=’adam’
-The solver for weight optimization.
-
-‘lbfgs’ is an optimizer in the family of quasi-Newton methods.
-
-‘sgd’ refers to stochastic gradient descent.
-
-‘adam’ refers to a stochastic gradient-based optimizer proposed by Kingma, Diederik, and Jimmy Ba
-
-Note: The default solver ‘adam’ works pretty well on relatively large datasets (with thousands of training samples or more) in terms of both training time and validation score. For small datasets, however, ‘lbfgs’ can converge faster and perform better.
-
-alphafloat, default=0.0001
-L2 penalty (regularization term) parameter.
-
-batch_sizeint, default=’auto’
-Size of minibatches for stochastic optimizers. If the solver is ‘lbfgs’, the classifier will not use minibatch. When set to “auto”, batch_size=min(200, n_samples)
-
-learning_rate{‘constant’, ‘invscaling’, ‘adaptive’}, default=’constant’
-Learning rate schedule for weight updates.
-
-‘constant’ is a constant learning rate given by ‘learning_rate_init’.
-
-‘invscaling’ gradually decreases the learning rate at each time step ‘t’ using an inverse scaling exponent of ‘power_t’. effective_learning_rate = learning_rate_init / pow(t, power_t)
-
-‘adaptive’ keeps the learning rate constant to ‘learning_rate_init’ as long as training loss keeps decreasing. Each time two consecutive epochs fail to decrease training loss by at least tol, or fail to increase validation score by at least tol if ‘early_stopping’ is on, the current learning rate is divided by 5.
-
-Only used when solver='sgd'.
-
-learning_rate_initdouble, default=0.001
-The initial learning rate used. It controls the step-size in updating the weights. Only used when solver=’sgd’ or ‘adam’.
-
-power_tdouble, default=0.5
-The exponent for inverse scaling learning rate. It is used in updating effective learning rate when the learning_rate is set to ‘invscaling’. Only used when solver=’sgd’.
-
-max_iterint, default=200
-Maximum number of iterations. The solver iterates until convergence (determined by ‘tol’) or this number of iterations. For stochastic solvers (‘sgd’, ‘adam’), note that this determines the number of epochs (how many times each data point will be used), not the number of gradient steps.
-
-shufflebool, default=True
-Whether to shuffle samples in each iteration. Only used when solver=’sgd’ or ‘adam’.
-
-random_stateint, RandomState instance or None, default=None
-If int, random_state is the seed used by the random number generator; If RandomState instance, random_state is the random number generator; If None, the random number generator is the RandomState instance used by np.random.
-
-tolfloat, default=1e-4
-Tolerance for the optimization. When the loss or score is not improving by at least tol for n_iter_no_change consecutive iterations, unless learning_rate is set to ‘adaptive’, convergence is considered to be reached and training stops.
-
-verbosebool, default=False
-Whether to print progress messages to stdout.
-
-warm_startbool, default=False
-When set to True, reuse the solution of the previous call to fit as initialization, otherwise, just erase the previous solution. See the Glossary.
-
-momentumfloat, default=0.9
-Momentum for gradient descent update. Should be between 0 and 1. Only used when solver=’sgd’.
-
-nesterovs_momentumboolean, default=True
-Whether to use Nesterov’s momentum. Only used when solver=’sgd’ and momentum > 0.
-
-early_stoppingbool, default=False
-Whether to use early stopping to terminate training when validation score is not improving. If set to true, it will automatically set aside 10% of training data as validation and terminate training when validation score is not improving by at least tol for n_iter_no_change consecutive epochs. The split is stratified, except in a multilabel setting. Only effective when solver=’sgd’ or ‘adam’
-
-validation_fractionfloat, default=0.1
-The proportion of training data to set aside as validation set for early stopping. Must be between 0 and 1. Only used if early_stopping is True
-
-beta_1float, default=0.9
-Exponential decay rate for estimates of first moment vector in adam, should be in [0, 1). Only used when solver=’adam’
-
-beta_2float, default=0.999
-Exponential decay rate for estimates of second moment vector in adam, should be in [0, 1). Only used when solver=’adam’
-
-epsilonfloat, default=1e-8
-Value for numerical stability in adam. Only used when solver=’adam’
-
-n_iter_no_changeint, default=10
-Maximum number of epochs to not meet tol improvement. Only effective when solver=’sgd’ or ‘adam’
-
-New in version 0.20.
-
-max_funint, default=15000
-Only used when solver=’lbfgs’. Maximum number of loss function calls. The solver iterates until convergence (determined by ‘tol’), number of iterations reaches max_iter, or this number of loss function calls. Note that number of loss function calls will be greater than or equal to the number of iterations for the MLPClassifier.
-
-New in version 0.22.
-\end{verbatim}
-\newpage
 \subsection{SVM}
 \begin{lstlisting}
 class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, decision_function_shape='ovr', break_ties=False, random_state=None)
 \end{lstlisting}
+%include for many images
+\clearpage
 
-\begin{verbatim}
-Cfloat, optional (default=1.0)
-Regularization parameter. The strength of the regularization is inversely proportional to C. Must be strictly positive. The penalty is a squared l2 penalty.
+\stepcounter{section} 
+\section{Appendix II}
 
-kernelstring, optional (default=’rbf’)
-Specifies the kernel type to be used in the algorithm. It must be one of ‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’ or a callable. If none is given, ‘rbf’ will be used. If a callable is given it is used to pre-compute the kernel matrix from data matrices; that matrix should be an array of shape (n_samples, n_samples).
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{1.png}
+\caption{\label{fig:8} Diabetic v/s Healthy Subject Count.}
+\end{figure}
 
-degreeint, optional (default=3)
-Degree of the polynomial kernel function (‘poly’). Ignored by all other kernels.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{10.png}
+\caption{\label{fig:1} Subject distribution across Body Mass Index range.}
+\end{figure}
 
-gamma{‘scale’, ‘auto’} or float, optional (default=’scale’)
-Kernel coefficient for ‘rbf’, ‘poly’ and ‘sigmoid’.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{11.png}
+\caption{\label{fig:2} Subject distribution across age.}
+\end{figure}
 
-if gamma='scale' (default) is passed then it uses 1 / (n_features * X.var()) as value of gamma,
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{14.png}
+\caption{\label{fig:5} Subjects Insulin Distribution across ranges.}
+\end{figure}
 
-if ‘auto’, uses 1 / n_features.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{12.png}
+\caption{\label{fig:3} Subjects distribution via Pregnancies.}
+\end{figure}
 
-Changed in version 0.22: The default value of gamma changed from ‘auto’ to ‘scale’.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{13.png}
+\caption{\label{fig:4} Subjects distribution via Diabetes Pedigree Function.}
+\end{figure}
 
-coef0float, optional (default=0.0)
-Independent term in kernel function. It is only significant in ‘poly’ and ‘sigmoid’.
 
-shrinkingboolean, optional (default=True)
-Whether to use the shrinking heuristic.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{15.png}
+\caption{\label{fig:6} Plot of N0}
+\end{figure}
 
-probabilityboolean, optional (default=False)
-Whether to enable probability estimates. This must be enabled prior to calling fit, will slow down that method as it internally uses 5-fold cross-validation, and predict_proba may be inconsistent with predict. Read more in the User Guide.
 
-tolfloat, optional (default=1e-3)
-Tolerance for stopping criterion.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{2.png}
+\caption{\label{fig:9} Diabetic v/s Healthy Subjects Percentage.}
+\end{figure}
 
-cache_sizefloat, optional
-Specify the size of the kernel cache (in MB).
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{3.png}
+\caption{\label{fig:10} Boxplot for all attributes with outliers.}
+\end{figure}
 
-class_weight{dict, ‘balanced’}, optional
-Set the parameter C of class i to class_weight[i]*C for SVC. If not given, all classes are supposed to have weight one. The “balanced” mode uses the values of y to automatically adjust weights inversely proportional to class frequencies in the input data as n_samples / (n_classes * np.bincount(y))
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{4a.png}
+\caption{\label{fig:11} Heatmap using Pearsons Correlation Coefficient.}
+\end{figure}
 
-verbosebool, default: False
-Enable verbose output. Note that this setting takes advantage of a per-process runtime setting in libsvm that, if enabled, may not work properly in a multithreaded context.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{4.png}
+\caption{\label{fig:12} Number of missing values in count and percentage.}
+\end{figure}
 
-max_iterint, optional (default=-1)
-Hard limit on iterations within solver, or -1 for no limit.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{5.png}
+\caption{\label{fig:13} Glucose v/s Age scatterplot.}
+\end{figure}
 
-decision_function_shape‘ovo’, ‘ovr’, default=’ovr’
-Whether to return a one-vs-rest (‘ovr’) decision function of shape (n_samples, n_classes) as all other classifiers, or the original one-vs-one (‘ovo’) decision function of libsvm which has shape (n_samples, n_classes * (n_classes - 1) / 2). However, one-vs-one (‘ovo’) is always used as multi-class strategy.
 
-Changed in version 0.19: decision_function_shape is ‘ovr’ by default.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{7.png}
+\caption{\label{fig:15} Subjects glucose distribution.}
+\end{figure}
 
-New in version 0.17: decision_function_shape=’ovr’ is recommended.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{8.png}
+\caption{\label{fig:16} Skin Thickness distribution of subjects.}
+\end{figure}
 
-Changed in version 0.17: Deprecated decision_function_shape=’ovo’ and None.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{9.png}
+\caption{\label{fig:17} Blood Pressure distribution of subjects.}
+\end{figure}
 
-break_tiesbool, optional (default=False)
-If true, decision_function_shape='ovr', and number of classes > 2, predict will break ties according to the confidence values of decision_function; otherwise the first class among the tied classes is returned. Please note that breaking ties comes at a relatively high computational cost compared to a simple predict.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{6.png}
+\caption{\label{fig:14} Subjects Insulin distributon.}
+\end{figure}
 
-New in version 0.22.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{download(1).png}
+\caption{\label{fig:18} New feature N1.}
+\end{figure}
 
-random_stateint, RandomState instance or None, optional (default=None)
-The seed of the pseudo random number generator used when shuffling the data for probability estimates. If int, random_state is the seed used by the random number generator; If RandomState instance, random_state is the random number generator; If None, the random number generator is the RandomState instance used by np.random.
-\end{verbatim}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{download(2).png}
+\caption{\label{fig:19} New feature N3.}
+\end{figure}
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{download(3).png}
+\caption{\label{fig:20}  New feature N4.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{download(4).png}
+\caption{\label{fig:21}  New feature N6.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{download(5).png}
+\caption{\label{fig:22}  New feature N7.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(13).png}
+\caption{\label{fig:23} N1 barplot for diabetic and healthy population.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(14).png}
+\caption{\label{fig:24} N1 distribution in percentage.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(15).png}
+\caption{\label{fig:25} N2 barplot for diabetic and healthy population.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(16).png}
+\caption{\label{fig:26} N2 distribution in percentage.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(17).png}
+\caption{\label{fig:27} Pregnancies v/s age scatterplot.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(18).png}
+\caption{\label{fig:28} N3 barplot for diabetic and healthy population.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(19).png}
+\caption{\label{fig:29} N3 distribution in percentage.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(20).png}
+\caption{\label{fig:30} Glucose v/s Blood Pressure scatterplot.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(21).png}
+\caption{\label{fig:31} N4 barplot for diabetic and healthy population.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(22).png}
+\caption{\label{fig:32} N4 distribution by target.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(23).png}
+\caption{\label{fig:33} N5 barplot for diabetic and healthy population.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(24).png}
+\caption{\label{fig:34} N5 distribution by target.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(25).png}
+\caption{\label{fig:35} Skin Thickness v/s BMI scatterplot.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(26).png}
+\caption{\label{fig:36} N6 barplot for diabetic and healthy population.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(27).png}
+\caption{\label{fig:37} N6 distribution by target.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(28).png}
+\caption{\label{fig:38} Glucose v/s Body Mass Index scatterplot.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(29).png}
+\caption{\label{fig:39} N7 barplot for diabetic and healthy population.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(30).png}
+\caption{\label{fig:40} N7 distribution by target.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(32).png}
+\caption{\label{fig:41} N9 barplot for diabetic and healthy population.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(33).png}
+\caption{\label{fig:42} N9 distribution by target.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(34).png}
+\caption{\label{fig:43} N10 barplot for diabetic and healthy population.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(35).png}
+\caption{\label{fig:44} N10 distribution by target.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(37).png}
+\caption{\label{fig:45} N11 barplot for diabetic and healthy population.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(38).png}
+\caption{\label{fig:46} N11 distribution by target.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(40).png}
+\caption{\label{fig:47} N15 barplot for diabetic and healthy population.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(41).png}
+\caption{\label{fig:48} N15 distribution by target.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{newplot(42).png}
+\caption{\label{fig:49} Extended heatmap with new features combined.}
+\end{figure}
+
+\clearpage
 \newpage
 \section{Conclusion}
-%https://www.scott-clark.com/2018/10/01/types-of-information-systems-used-in-healthcare-facilities/
-%https://doc-archives.microstrategy.com/producthelp/10.11/SystemAdmin/WebHelp/Lang_1033/Content/Benefits_of_clustering.htm
-%https://www.sciencedirect.com/science/article/pii/S1319157819316076
-%https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291096-9136%28199807%2915%3A7%3C539%3A%3AAID-DIA668%3E3.0.CO%3B2-S
-%https://link.springer.com/chapter/10.1007/978-981-15-0339-9_17
+
 \newpage
-\bibliography{bib}
+
+\nocite{*}
+\bibliography{bib} 
+\bibliographystyle{ieeetr}
+
 \end{document}

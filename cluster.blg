@@ -1,0 +1,73 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: cluster.aux
+The style file: ieeetr.bst
+Database file #1: bib.bib
+I was expecting a `,' or a `}'---line 15 of file bib.bib
+ : @article{discrimination 
+ :                         threshold - yellowbrick v1.0.1 documentation, title={Discrimination Threshold¶}, url={https://www.scikit-yb.org/en/latest/api/classifier/threshold.html}, journal={Discrimination Threshold - Yellowbrick v1.0.1 documentation}}
+I'm skipping whatever remains of this entry
+Repeated entry---line 34 of file bib.bib
+ : @article{scikit
+ :                , title={sklearn.preprocessing.StandardScaler}, url={https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html}, journal={scikit}}
+I'm skipping whatever remains of this entry
+Repeated entry---line 36 of file bib.bib
+ : @article{scikit
+ :                , title={sklearn.preprocessing.StandardScaler}, url={https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html}, journal={scikit}}
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 38 of file bib.bib
+ : @book{national 
+ :                institute of diabetes and digestive and kidney diseases_2016, title={What is Diabetes?}, url={https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes}, journal={National Institute of Diabetes and Digestive and Kidney Diseases}, publisher={U.S. Department of Health and Human Services}, year={2016}, month={Dec}}
+I'm skipping whatever remains of this entry
+Warning--empty author in discrimination
+Warning--empty title in discrimination
+Warning--empty journal in discrimination
+Warning--empty year in discrimination
+Warning--empty author in scikit
+Warning--empty year in scikit
+Warning--empty author and editor in national
+Warning--empty title in national
+Warning--empty publisher in national
+Warning--empty year in national
+You've used 14 entries,
+            1876 wiz_defined-function locations,
+            546 strings with 5236 characters,
+and the built_in function-call counts, 1907 in all, are:
+= -- 142
+> -- 81
+< -- 0
++ -- 35
+- -- 21
+* -- 151
+:= -- 307
+add.period$ -- 14
+call.type$ -- 14
+change.case$ -- 12
+chr.to.int$ -- 0
+cite$ -- 24
+duplicate$ -- 109
+empty$ -- 221
+format.name$ -- 21
+if$ -- 426
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 12
+newline$ -- 46
+num.names$ -- 11
+pop$ -- 63
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 30
+stack$ -- 0
+substring$ -- 0
+swap$ -- 10
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 10
+while$ -- 11
+width$ -- 16
+write$ -- 105
+(There were 4 error messages)
