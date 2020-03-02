@@ -2,6 +2,7 @@
 \usepackage[a4paper, inner=1.5cm, outer=3cm, top=2cm,bottom=3cm, bindingoffset=1cm]{geometry}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
+\usepackage[nottoc]{tocbibind}
 \usepackage{import}
 \usepackage{amsmath}
 \usepackage{tikz}
@@ -67,6 +68,7 @@ under the supervision of
 \\
 Ashweta Fondekar
 \\
+\vspace{3cm}
 \textbf{PARVATIBAI CHOWGULE COLLEGE OF ARTS \& SCIENCE AUTONOMOUS}
 \\June 2019
 \end{titlepage}
@@ -145,6 +147,10 @@ The project encompasses the qualities of Remote Patient Monitoring (RPM) and Cli
 Cluster computing or High-Performance computing frameworks is a form of computing in which bunch of computers (often called nodes) that are connected through a LAN (local area network) so that, they behave like a single machine. A computer cluster help to solve complex operations more efficiently with much faster processing speed, better data integrity than a single computer and they only used for mission-critical applications.
 
 The objective of this project is to create a  system that is able to use the machine learning algorithms and predict the outcome of the parameters entered into the algorithm and help the patient draw a conclusion whether or not he/she has the same traits exhibited by similar patients that have diabetes. Also the system should have a UI that is capable of displaying the data of the patients to the doctor and to the patients themselves for further interpretation.
+
+\newpage
+\section{Objective}
+The obective of this project is to select an algorithm that is capable of classifying a healthy person from a diabetic person.
 
 \newpage
 \section{Project Rationale}
@@ -605,7 +611,19 @@ Diabetic          & 34.3      \\ \hline
 \label{table:12}
 \end{table}
 
-
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Nodes & Time Taken (s) \\\hline
+x1    & 33.45          \\\hline
+x2    & 25.31          \\\hline
+x3    & 21.84          \\\hline
+x4    & 16.79         \\\hline
+\end{tabular}
+\captionof{table}{Statistics using clustered approach.}
+\label{table:13}
+\end{table}
 
 
 
@@ -653,10 +671,19 @@ class sklearn.neural_network.MLPClassifier(hidden_layer_sizes=(100, ), activatio
 \begin{lstlisting}
 class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, decision_function_shape='ovr', break_ties=False, random_state=None)
 \end{lstlisting}
-%include for many images
-\clearpage
 
-\stepcounter{section} 
+\subsection{Standard Scaler}
+\begin{lstlisting}
+sklearn.preprocessing.StandardScaler(copy=True, with_mean=True, with_std=True)
+\end{lstlisting}
+
+\subsection{Label Encoder}
+\begin{lstlisting}
+sklearn.preprocessing.LabelEncoder
+\end{lstlisting}
+
+\clearpage
+%\stepcounter{section} 
 \section{Appendix II}
 
 \begin{figure}[ht]
@@ -958,6 +985,6 @@ class sklearn.svm.SVC(C=1.0, kernel='rbf', degree=3, gamma='scale', coef0=0.0, s
 
 \nocite{*}
 \bibliography{bib} 
-\bibliographystyle{ieeetr}
+\bibliographystyle{plain}
 
 \end{document}

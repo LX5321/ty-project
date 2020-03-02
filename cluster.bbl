@@ -1,59 +1,133 @@
 \begin{thebibliography}{10}
 
-\bibitem{watson_2019}
-S.~Watson, ``Diabetes: Symptoms, causes, treatment, prevention, and more,''
-  {\em Healthline}, Mar 2019.
+\bibitem{itertools}
+9.7. itertools - functions creating iterators for efficient looping.
+\newblock \url{https://docs.python.org/2/library/itertools.html}.
 
-\bibitem{kinaSUR}
-{Ministry for Primary Industries}, ``{Kina sea urchin regions in NZ}.''
-  \url{http://fs.fish.govt.nz/Page.aspx?pk=7&sc=SUR}, 2013.
-\newblock Online; accessed 29 January 2014.
-
-\bibitem{chatrati_hossain_goyal_bhan_bhattacharya_gaurav_tiwari_2020}
-S.~P. Chatrati, G.~Hossain, A.~Goyal, A.~Bhan, S.~Bhattacharya, D.~Gaurav, and
-  S.~M. Tiwari, ``Smart home health monitoring system for predicting type 2
-  diabetes and hypertension,'' {\em Journal of King Saud University - Computer
-  and Information Sciences}, Jan 2020.
-
-\bibitem{deva_2015}
-D.~Deva, ``Qcon rio - machine learning for everyone,'' {\em LinkedIn
-  SlideShare}, Aug 2015.
-
-\bibitem{discrimination}
-
-
-\bibitem{kaur_kaur_1970}
-P.~Kaur and R.~Kaur, ``Comparative analysis of classification techniques for
-  diagnosis of diabetes,'' {\em SpringerLink}, Jan 1970.
-
-\bibitem{alberti_zimmet_2004}
-K.~Alberti and P.~Zimmet, ``Definition, diagnosis and classification of
-  diabetes mellitus and its complications. part 1: diagnosis and classification
-  of diabetes mellitus. provisional report of a who consultation,'' Jul 2004.
-
-\bibitem{lisa_gladman_lisa_2019}
-L.~G. Lisa, L.~Gladman, and Lisa, ``Types of healthcare information systems -
-  scott-clark medical,'' {\em Scott}, Nov 2019.
-
-\bibitem{maladkar_2019}
-K.~Maladkar, ``Why is random search better than grid search for machine
-  learning,'' {\em Analytics India Magazine}, Sep 2019.
-
-\bibitem{mandal_2019}
-A.~Mandal, ``What is diabetes?,'' {\em News}, Feb 2019.
-
-\bibitem{mandot_2018}
-P.~Mandot, ``What is lightgbm, how to implement it? how to fine tune the
-  parameters?,'' {\em Medium}, Dec 2018.
-
-\bibitem{norena_2018}
-S.~Norena, ``Python model tuning methods using cross validation and grid
-  search,'' {\em Medium}, Jun 2018.
+\bibitem{pandas}
+About pandas.
+\newblock \url{https://pandas.pydata.org/about/index.html}.
 
 \bibitem{scikit}
-``sklearn.preprocessing.labelencoder,'' {\em scikit}.
+Getting started.
+\newblock \url{https://scikit-learn.org/stable/getting_started.html}.
 
-\bibitem{national}
+\bibitem{numpy}
+Numpy.
+\newblock \url{https://numpy.org/}.
 
+\bibitem{niddkd}
+{\em What is Diabetes?}
+\newblock U.S. Department of Health and Human Services, 2016.
+
+\bibitem{alberti_zimmet_2004}
+K.G.M.M. Alberti and P.Z. Zimmet.
+\newblock Definition, diagnosis and classification of diabetes mellitus and its
+  complications. part 1: diagnosis and classification of diabetes mellitus.
+  provisional report of a who consultation, Jul 2004.
+
+\bibitem{chatrati_hossain_goyal_bhan_bhattacharya_gaurav_tiwari_2020}
+Saiteja~Prasad Chatrati, Gahangir Hossain, Ayush Goyal, Anupama Bhan, Sayantan
+  Bhattacharya, Devottam Gaurav, and Sanju~Mishra Tiwari.
+\newblock Smart home health monitoring system for predicting type 2 diabetes
+  and hypertension.
+\newblock {\em Journal of King Saud University - Computer and Information
+  Sciences}, Jan 2020.
+
+\bibitem{deva_2015}
+Dhiana Deva.
+\newblock Qcon rio - machine learning for everyone.
+\newblock {\em LinkedIn SlideShare}, Aug 2015.
+
+\bibitem{diabetes_india}
+{Editor}.
+\newblock {Over 30 million have now been diagnosed with diabetes in India. The
+  CPR (Crude prevalence rate) in the urban areas of India is thought to be 9
+  per cent.}
+\newblock
+  \url{https://www.diabetes.co.uk/global-diabetes/diabetes-in-india.html},
+  2019.
+\newblock Online; accessed 25 February 2020.
+
+\bibitem{rpi}
+Raspberry~Pi Foundation.
+\newblock Raspberry pi 3 model b.
+\newblock \url{https://www.raspberrypi.org/products/raspberry-pi-3-model-b/},
+  Jan 2020.
+
+\bibitem{internationaldiabetesfederation}
+{International Diabetes Federation}.
+\newblock {Home}.
+\newblock
+  \url{https://www.idf.org/e-library/epidemiology-research/diabetes-atlas/134-idf-diabetes-atlas-8th-edition.html},
+  2016.
+\newblock Online; accessed 12 February 2020.
+
+\bibitem{kaur_kaur_1970}
+Paramjot Kaur and Ramanpreet Kaur.
+\newblock Comparative analysis of classification techniques for diagnosis of
+  diabetes.
+\newblock {\em SpringerLink}, Jan 1970.
+
+\bibitem{lisa_gladman_lisa_2019}
+Lisa~Gladman Lisa, Lisa Gladman, and Lisa.
+\newblock Types of healthcare information systems - scott-clark medical.
+\newblock {\em Scott}, Nov 2019.
+
+\bibitem{maladkar_2019}
+Kishan Maladkar.
+\newblock Why is random search better than grid search for machine learning.
+\newblock {\em Analytics India Magazine}, Sep 2019.
+
+\bibitem{mandal_2019}
+Ananya Mandal.
+\newblock What is diabetes?
+\newblock {\em News}, Feb 2019.
+
+\bibitem{mandot_2018}
+Pushkar Mandot.
+\newblock What is lightgbm, how to implement it? how to fine tune the
+  parameters?
+\newblock {\em Medium}, Dec 2018.
+
+\bibitem{norena_2018}
+Sebastian Norena.
+\newblock Python model tuning methods using cross validation and grid search.
+\newblock {\em Medium}, Jun 2018.
+
+\bibitem{scikit2}
+{Scikit-Learn}.
+\newblock {sklearn.preprocessing.LabelEncoder}.
+\newblock
+  \url{https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html},
+  2019.
+\newblock Online; accessed 25 February 2020.
+
+\bibitem{scikit1}
+{Scikit-Learn}.
+\newblock {sklearn.preprocessing.StandardScaler}.
+\newblock
+  \url{https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html},
+  2019.
+\newblock Online; accessed 25 February 2020.
+
+\bibitem{watson_2019}
+Stephanie Watson.
+\newblock Diabetes: Symptoms, causes, treatment, prevention, and more.
+\newblock {\em Healthline}, Mar 2019.
+
+\bibitem{yellowbrick_dt}
+{Yellowbrick}.
+\newblock {Discrimination Threshold - yellowbrick v1.0.1 documentation}.
+\newblock
+  \url{https://www.scikit-yb.org/en/latest/api/classifier/threshold.html},
+  2019.
+\newblock Online; accessed 25 February 2020.
+
+\bibitem{diabetesmellitus}
+Zou, Quan, Qu, Luo, Yamei, Yin, Dehui, Ju, Ying, Tang, and et~al.
+\newblock {\em Predicting Diabetes Mellitus With Machine Learning Techniques}.
+\newblock PhD thesis, School of Computer Science and Technology, Tianjin
+  University, Tianjin, China, 2018.
 
 \end{thebibliography}
