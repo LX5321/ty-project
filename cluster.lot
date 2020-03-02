@@ -1,14 +1,16 @@
 \babel@toc {english}{}
-\contentsline {table}{\numberline {1}{\ignorespaces Pima Indians dataset header.}}{25}{table.1}
-\contentsline {table}{\numberline {2}{\ignorespaces Train accuracy using various machine learning algorithms with various parameters.}}{26}{table.2}
-\contentsline {table}{\numberline {3}{\ignorespaces Test accuracy using various machine learning algorithms with various parameters.}}{27}{table.3}
-\contentsline {table}{\numberline {4}{\ignorespaces Null Value Check.}}{28}{table.4}
-\contentsline {table}{\numberline {5}{\ignorespaces First 15 rows of the raw dataset.}}{29}{table.5}
-\contentsline {table}{\numberline {6}{\ignorespaces Correlation Plot.}}{30}{table.6}
-\contentsline {table}{\numberline {7}{\ignorespaces MLP 5 fold verification.}}{31}{table.7}
-\contentsline {table}{\numberline {8}{\ignorespaces Insulin Median Comparison.}}{31}{table.8}
-\contentsline {table}{\numberline {9}{\ignorespaces Glucose Median Comparison.}}{31}{table.9}
-\contentsline {table}{\numberline {10}{\ignorespaces Skin Thickness Median Comparison.}}{31}{table.10}
-\contentsline {table}{\numberline {11}{\ignorespaces Blood Pressure Median Comparison.}}{31}{table.11}
-\contentsline {table}{\numberline {12}{\ignorespaces Body Mass Index Median Comparison.}}{31}{table.12}
-\contentsline {table}{\numberline {13}{\ignorespaces Statistics using clustered approach.}}{32}{table.13}
+\contentsline {table}{\numberline {1}{\ignorespaces Pima Indians dataset header.}}{39}{table.1}
+\contentsline {table}{\numberline {2}{\ignorespaces Train accuracy using various machine learning algorithms with various parameters.}}{40}{table.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Test accuracy using various machine learning algorithms with various parameters.}}{41}{table.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Null Value Check.}}{42}{table.4}
+\contentsline {table}{\numberline {5}{\ignorespaces First 15 rows of the raw dataset.}}{43}{table.5}
+\contentsline {table}{\numberline {6}{\ignorespaces Correlation Plot.}}{44}{table.6}
+\contentsline {table}{\numberline {7}{\ignorespaces MLP 5 fold verification.}}{45}{table.7}
+\contentsline {table}{\numberline {8}{\ignorespaces Insulin Median Comparison.}}{45}{table.8}
+\contentsline {table}{\numberline {9}{\ignorespaces Glucose Median Comparison.}}{45}{table.9}
+\contentsline {table}{\numberline {10}{\ignorespaces Skin Thickness Median Comparison.}}{45}{table.10}
+\contentsline {table}{\numberline {11}{\ignorespaces Blood Pressure Median Comparison.}}{45}{table.11}
+\contentsline {table}{\numberline {12}{\ignorespaces Body Mass Index Median Comparison.}}{45}{table.12}
+\contentsline {table}{\numberline {13}{\ignorespaces Statistics using clustered approach.}}{46}{table.13}
+\contentsline {table}{\numberline {14}{\ignorespaces Confusion Matrix for Model.}}{46}{table.14}
+\contentsline {table}{\numberline {15}{\ignorespaces Model Performance Metrics.}}{46}{table.15}

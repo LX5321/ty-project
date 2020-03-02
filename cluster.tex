@@ -4,6 +4,7 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[nottoc]{tocbibind}
 \usepackage{import}
+\usepackage{nomencl}
 \usepackage{amsmath}
 \usepackage{tikz}
 \usepackage[maxfloats=256]{morefloats}
@@ -16,6 +17,7 @@
 \usepackage{capt-of} 
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{multirow}
 \usepackage{setspace}
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -113,6 +115,8 @@ Project Supervisor
 \newpage
 \listoftables
 \newpage
+\makenomenclature
+\newpage
 
 
 \begin{abstract}
@@ -127,10 +131,9 @@ an accuracy of prediction on the dataset as ~79.70\%. To improve the performance
 of the classifier, I have considered new features deduced from the currently
 existing feature set a re-trained the classifier on the new dataset that I generated,
 which is now able to classify the subject as diabetic or healthy with a new accuracy
-of ~93.10\%. A significant change which boosted the accuracy by 13.4\%. After
-selection of the algorithm I further advanced the platform of cluster computing to
+of ~85.42\%. After selection of the algorithm I further advanced the platform of cluster computing to
 deploy the algorithm onto and generate predictions in without any human
-interference (apart from entering the data itself) ​ and also made the data available
+interference​ and also made the data available
 to the users via an easy to use web application which gives them access to the
 observations then stored in the database after being predicted by the algorithm
 deployed on the nodes.
@@ -173,6 +176,342 @@ Gestational diabetes is another type of diabtetes where hyperglycaemia with bloo
 Untreated diabetes can damage the heart, blood vessels, eyes, kidneys, and nerves. Adults with diabetes have a two- to three-fold increased risk of heart attacks and strokes. Combined with reduced blood flow, neuropathy (nerve damage) in the feet increases the chance of foot ulcers, infection and eventual need for limb amputation. Diabetic retinopathy is an important cause of blindness, and occurs as a result of long-term accumulated damage to the small blood vessels in the retina. 2.6\% of global blindness can be attributed to diabetes. Diabetes is among the leading causes of kidney failure.
 
 Early diagnosis can be accomplished through relatively inexpensive testing of blood sugar. Treatment of diabetes involves diet and physical activity along with lowering blood glucose and the levels of other known risk factors that damage blood vessels. Tobacco use cessation is also important to avoid complications. 
+
+\newpage
+\section{Review of Literature}
+For the study I have chosen to perform a comparitive study between the K Nearest Neighbours algorithm, Logistic Regression, Decision Tree Classifier, Random Forest Classifier, Gradient Boosting Classifier, Support Vector Machine and finally a Multi Layered Perceptron for the classifier groups. 
+
+% =============== KNN ======================
+
+K Nearest Neighbours, is a supervised machine learning algorithm and relies on labeled input data to learn a function that produces an appropriate output when given new unlabeled data. Supervised machine learning algorithms are used to solve classification or regression problems. A classification problem has a discrete value as its output. Unlike supervised learning that tries to learn a function that will allow us to make predictions given some new unlabeled data, unsupervised learning tries to learn the basic structure of the data to give us more insight into the data. The KNN algorithm assumes that similar things exist in close proximity. In other words, similar things are near to each other. The advantages of the KNN algorithm include the reasons that the algorithm is simple and easy to implement, no need to build a model, tune several parameters, or make additional assumptions and furthermore can be used for classification, regression, and search due to its versatile nature. KNN’s main disadvantage of becoming significantly slower as the volume of data increases makes it an impractical choice in environments where predictions need to be made rapidly. Moreover, there are faster algorithms that can produce more accurate classification and regression results.
+However, provided you have sufficient computing resources to speedily handle the data you are using to make predictions, KNN can still be useful in solving problems that have solutions that depend on identifying similar objects. An example of this is using the KNN algorithm in recommender systems, an application of KNN-search.
+
+% =================== LOG REGRESSION ===================
+
+The linear regression model can work well for regression, but fails for classification. Why is that? In case of two classes, you could label one of the classes with 0 and the other with 1 and use linear regression. Technically it works and most linear model programs will spit out weights for you. But there are a few problems with this approach:
+
+A linear model does not output probabilities, but it treats the classes as numbers (0 and 1) and fits the best hyperplane (for a single feature, it is a line) that minimizes the distances between the points and the hyperplane. So it simply interpolates between the points, and you cannot interpret it as probabilities. A linear model also extrapolates and gives you values below zero and above one. This is a good sign that there might be a smarter approach to classification. Since the predicted outcome is not a probability, but a linear interpolation between points, there is no meaningful threshold at which you can distinguish one class from the other. 
+
+The logistic regression algorithm even if called regression, is a classification method which is based on the probability for
+a sample to belong to a class. As our probabilities must be continuous in R and bounded between (0, 1), it's necessary to introduce a threshold function to filter the term z. The name logistic comes from the decision to use the sigmoid (or logistic) function:
+$$\sigma(z) = \dfrac{1}{1+e^z}$$
+
+% =============== DECISION TREE ================
+
+Not all problems can be solved with linear methods. The world is non-linear. It has been observed that tree based models have been able to map non-linearity effectively. Methods like decision trees, random forest, gradient boosting are being popularly used in all kinds of data science problems.
+
+Decision Tree algorithm belongs to the family of supervised learning algorithms. Unlike other supervised learning algorithms, decision tree algorithm can be used for solving regression and classification problems too. The general motive of using Decision Tree is to create a training model which can use to predict class or value of target variables by learning decision rules inferred from prior data (training data). The primary challenge in the decision tree implementation is to identify which attributes do we need to consider as the root node and each level. Decision tress often mimic the human level thinking so it’s simple to understand the data and make some good interpretations.
+Dividing efficiently based on maximum information gain is key to decision tree classifier. However, in real world with millions of data dividing into pure class in practically not feasible (it may take longer training time) and so we stop at points in nodes of tree when fulfilled with certain parameters (for example impurity percentage). Decision tree is classification strategy as opposed to the algorithm for classification. It takes top down approach and uses divide and conquer method to arrive at decision. We can have multiple leaf classes with this approach.
+
+A decision tree is a decision support tool that uses a tree-like graph or model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility. It is one way to display an algorithm that only contains conditional control statements.
+A decision tree is a flowchart-like structure in which each internal node represents a “test” on an attribute (e.g. whether a coin flip comes up heads or tails), each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes). The paths from root to leaf represent classification rules.
+Tree based learning algorithms are considered to be one of the best and mostly used supervised learning methods. Tree based methods empower predictive models with high accuracy, stability and ease of interpretation. Unlike linear models, they map non-linear relationships quite well. They are adaptable at solving any kind of problem at hand (classification or regression). Decision Tree algorithms are referred to as CART (Classification and Regression Trees).
+
+Decision trees have a natural “if … then … else …” construction that makes it fit easily into a programmatic structure. They also are well suited to categorization problems where attributes or features are systematically checked to determine a final category. For example, a decision tree could be used effectively to determine the species of an animal.
+
+As a result, the decision making tree is one of the more popular classification algorithms being used in Data Mining and Machine Learning. Example applications include:
+· Evaluation of brand expansion opportunities for a business using historical sales data
+· Determination of likely buyers of a product using demographic data to enable targeting of limited advertisement budget
+· Prediction of likelihood of default for applicant borrowers using predictive models generated from historical data
+· Help with prioritization of emergency room patient treatment using a predictive model based on factors such as age, blood pressure, gender, location and severity of pain, and other measurements
+· Decision trees are commonly used in operations research, specifically in decision analysis, to help identify a strategy most likely to reach a goal.
+Because of their simplicity, tree diagrams have been used in a broad range of industries and disciplines including civil planning, energy, financial, engineering, healthcare, pharmaceutical, education, law, and business.
+
+Decision tree is a type of supervised learning algorithm (having a pre-defined target variable) that is mostly used in classification problems. It works for both categorical and continuous input and output variables. In this technique, we split the population or sample into two or more homogeneous sets (or sub-populations) based on most significant splitter / differentiator in input variables.
+
+Advantages of Decision Tree:
+Easy to Understand: Decision tree output is very easy to understand even for people from non-analytical background. It does not require any statistical knowledge to read and interpret them. Its graphical representation is very intuitive and users can easily relate their hypothesis.
+Useful in Data exploration: Decision tree is one of the fastest way to identify most significant variables and relation between two or more variables. With the help of decision trees, we can create new variables / features that has better power to predict target variable. It can also be used in data exploration stage. For e.g., we are working on a problem where we have information available in hundreds of variables, there decision tree will help to identify most significant variable.
+Decision trees implicitly perform variable screening or feature selection.
+Decision trees require relatively little effort from users for data preparation.
+Less data cleaning required: It requires less data cleaning compared to some other modeling techniques. It is not influenced by outliers and missing values to a fair degree.
+Data type is not a constraint: It can handle both numerical and categorical variables. Can also handle multi-output problems.
+Non-Parametric Method: Decision tree is considered to be a non-parametric method. This means that decision trees have no assumptions about the space distribution and the classifier structure.
+Non-linear relationships between parameters do not affect tree performance.
+The number of hyper-parameters to be tuned is almost null.
+
+Disadvantages of Decision Tree:
+Over fitting: Decision-tree learners can create over-complex trees that do not generalize the data well. This is called overfitting. Over fitting is one of the most practical difficulty for decision tree models. This problem gets solved by setting constraints on model parameters and pruning.
+Not fit for continuous variables: While working with continuous numerical variables, decision tree loses information, when it categorizes variables in different categories.
+Decision trees can be unstable because small variations in the data might result in a completely different tree being generated. This is called variance, which needs to be lowered by methods like bagging and boosting.
+Greedy algorithms cannot guarantee to return the globally optimal decision tree. This can be mitigated by training multiple trees, where the features and samples are randomly sampled with replacement.
+Decision tree learners create biased trees if some classes dominate. It is therefore recommended to balance the data set prior to fitting with the decision tree.
+Information gain in a decision tree with categorical variables gives a biased response for attributes with greater no. of categories.
+Generally, it gives low prediction accuracy for a dataset as compared to other machine learning algorithms.
+Calculations can become complex when there are many class label.
+
+% ================= RANDOM FOREST ================
+
+The random forest is a model made up of many decision trees. Rather than just simply averaging the prediction of trees (which we could call a “forest”), this model uses two key concepts that gives it the name random:
+Random sampling of training data points when building trees
+Random subsets of features considered when splitting nodes
+
+When training, each tree in a random forest learns from a random sample of the data points. The samples are drawn with replacement, known as bootstrapping, which means that some samples will be used multiple times in a single tree. The idea is that by training each tree on different samples, although each tree might have high variance with respect to a particular set of the training data, overall, the entire forest will have lower variance but not at the cost of increasing the bias.
+At test time, predictions are made by averaging the predictions of each decision tree. This procedure of training each individual learner on different bootstrapped subsets of the data and then averaging the predictions is known as bagging, short for bootstrap aggregating.
+
+The random forest combines hundreds or thousands of decision trees, trains each one on a slightly different set of the observations, splitting nodes in each tree considering a limited number of the features. The final predictions of the random forest are made by averaging the predictions of each individual tree.
+
+Decision tree: an intuitive model that makes decisions based on a sequence of questions asked about feature values. Has low bias and high variance leading to overfitting the training data.
+Gini Impurity: a measure that the decision tree tries to minimize when splitting each node. Represents the probability that a randomly selected sample from a node will be incorrectly classified according to the distribution of samples in the node.
+Bootstrapping: sampling random sets of observations with replacement.
+Random subsets of features: selecting a random set of the features when considering splits for each node in a decision tree.
+Random Forest: ensemble model made of many decision trees using bootstrapping, random subsets of features, and average voting to make predictions. This is an example of a bagging ensemble.
+Bias-variance tradeoff: a core issue in machine learning describing the balance between a model with high flexibility (high variance) that learns the training data very well at the cost of not being able to generalize to new data , and an inflexible model (high bias) that cannot learn the training data. A random forest reduces the variance of a single decision tree leading to better predictions on new data.
+
+% ============ GRADIENT BOOSTING ================
+
+Boosting is a method of converting weak learners into strong learners. In boosting, each new tree is a fit on a modified version of the original data set. The gradient boosting algorithm (gbm) can be most easily explained by first introducing the AdaBoost Algorithm.The AdaBoost Algorithm begins by training a decision tree in which each observation is assigned an equal weight. After evaluating the first tree, we increase the weights of those observations that are difficult to classify and lower the weights for those that are easy to classify. The second tree is therefore grown on this weighted data. Here, the idea is to improve upon the predictions of the first tree. Our new model is therefore Tree 1 + Tree 2. We then compute the classification error from this new 2-tree ensemble model and grow a third tree to predict the revised residuals. We repeat this process for a specified number of iterations. Subsequent trees help us to classify observations that are not well classified by the previous trees. Predictions of the final ensemble model is therefore the weighted sum of the predictions made by the previous tree models.
+Gradient Boosting trains many models in a gradual, additive and sequential manner. The major difference between AdaBoost and Gradient Boosting Algorithm is how the two algorithms identify the shortcomings of weak learners (eg. decision trees). While the AdaBoost model identifies the shortcomings by using high weight data points, gradient boosting performs the same by using gradients in the loss function (y=ax+b+e , e needs a special mention as it is the error term). The loss function is a measure indicating how good are model’s coefficients are at fitting the underlying data. A logical understanding of loss function would depend on what we are trying to optimise. For example, if we are trying to predict the sales prices by using a regression, then the loss function would be based off the error between true and predicted house prices. Similarly, if our goal is to classify credit defaults, then the loss function would be a measure of how good our predictive model is at classifying bad loans. One of the biggest motivations of using gradient boosting is that it allows one to optimise a user specified cost function, instead of a loss function that usually offers less control and does not essentially correspond with real world applications.
+
+Hyperparameter tuning is especially significant for gbm modelling since they are prone to overfitting. The special process of tuning the number of iterations for an algorithm such as gbm and random forest is called “Early Stopping”. Early Stopping performs model optimisation by monitoring the model’s performance on a separate test data set and stopping the training procedure once the performance on the test data stops improving beyond a certain number of iterations.
+It avoids overfitting by attempting to automatically select the inflection point where performance on the test dataset starts to decrease while performance on the training dataset continues to improve as the model starts to overfit. In the context of gbm, early stopping can be based either on an out of bag sample set (“OOB”) or cross- validation (“cv”). Like mentioned above, the ideal time to stop training the model is when the validation error has decreased and started to stabilise before it starts increasing due to overfitting.
+
+How Gradient Boosting Works
+Gradient boosting involves three elements:
+
+A loss function to be optimized.
+A weak learner to make predictions.
+An additive model to add weak learners to minimize the loss function.
+1. Loss Function
+The loss function used depends on the type of problem being solved.
+
+It must be differentiable, but many standard loss functions are supported and you can define your own.
+
+For example, regression may use a squared error and classification may use logarithmic loss.
+
+A benefit of the gradient boosting framework is that a new boosting algorithm does not have to be derived for each loss function that may want to be used, instead, it is a generic enough framework that any differentiable loss function can be used.
+
+2. Weak Learner
+Decision trees are used as the weak learner in gradient boosting.
+
+Specifically regression trees are used that output real values for splits and whose output can be added together, allowing subsequent models outputs to be added and “correct” the residuals in the predictions.
+
+Trees are constructed in a greedy manner, choosing the best split points based on purity scores like Gini or to minimize the loss.
+
+Initially, such as in the case of AdaBoost, very short decision trees were used that only had a single split, called a decision stump. Larger trees can be used generally with 4-to-8 levels.
+
+It is common to constrain the weak learners in specific ways, such as a maximum number of layers, nodes, splits or leaf nodes.
+
+This is to ensure that the learners remain weak, but can still be constructed in a greedy manner.
+
+3. Additive Model
+Trees are added one at a time, and existing trees in the model are not changed.
+
+A gradient descent procedure is used to minimize the loss when adding trees.
+
+Traditionally, gradient descent is used to minimize a set of parameters, such as the coefficients in a regression equation or weights in a neural network. After calculating error or loss, the weights are updated to minimize that error.
+
+Instead of parameters, we have weak learner sub-models or more specifically decision trees. After calculating the loss, to perform the gradient descent procedure, we must add a tree to the model that reduces the loss (i.e. follow the gradient). We do this by parameterizing the tree, then modify the parameters of the tree and move in the right direction by (reducing the residual loss.
+
+Generally this approach is called functional gradient descent or gradient descent with functions.
+
+The output for the new tree is then added to the output of the existing sequence of trees in an effort to correct or improve the final output of the model.
+
+A fixed number of trees are added or training stops once loss reaches an acceptable level or no longer improves on an external validation dataset.
+
+% =============== svm ==============
+Moving on we have the SVM. The objective of the support vector machine algorithm is to find a hyperplane in an N-dimensional space(N — the number of features) that distinctly classifies the data points. To separate the two classes of data points, there are many possible hyperplanes that could be chosen. Our objective is to find a plane that has the maximum margin, i.e the maximum distance between data points of both classes. Maximizing the margin distance provides some reinforcement so that future data points can be classified with more confidence. Hyperplanes are decision boundaries that help classify the data points. Data points falling on either side of the hyperplane can be attributed to different classes. Also, the dimension of the hyperplane depends upon the number of features. If the number of input features is 2, then the hyperplane is just a line. If the number of input features is 3, then the hyperplane becomes a two-dimensional plane. It becomes difficult to imagine when the number of features exceeds 3.
+Support vectors are data points that are closer to the hyperplane and influence the position and orientation of the hyperplane. Using these support vectors, we maximize the margin of the classifier. Deleting the support vectors will change the position of the hyperplane.
+
+Maximal-Margin Classifier
+The Maximal-Margin Classifier is a hypothetical classifier that best explains how SVM works in practice.
+
+The numeric input variables (x) in your data (the columns) form an n-dimensional space. For example, if you had two input variables, this would form a two-dimensional space.
+
+A hyperplane is a line that splits the input variable space. In SVM, a hyperplane is selected to best separate the points in the input variable space by their class, either class 0 or class 1. In two-dimensions you can visualize this as a line and let’s assume that all of our input points can be completely separated by this line. For example:
+
+B0 + (B1 * X1) + (B2 * X2) = 0
+
+Where the coefficients (B1 and B2) that determine the slope of the line and the intercept (B0) are found by the learning algorithm, and X1 and X2 are the two input variables.
+
+You can make classifications using this line. By plugging in input values into the line equation, you can calculate whether a new point is above or below the line.
+
+Above the line, the equation returns a value greater than 0 and the point belongs to the first class (class 0).
+Below the line, the equation returns a value less than 0 and the point belongs to the second class (class 1).
+A value close to the line returns a value close to zero and the point may be difficult to classify.
+If the magnitude of the value is large, the model may have more confidence in the prediction.
+The distance between the line and the closest data points is referred to as the margin. The best or optimal line that can separate the two classes is the line that as the largest margin. This is called the Maximal-Margin hyperplane.
+
+The margin is calculated as the perpendicular distance from the line to only the closest points. Only these points are relevant in defining the line and in the construction of the classifier. These points are called the support vectors. They support or define the hyperplane.
+
+The hyperplane is learned from training data using an optimization procedure that maximizes the margin.
+
+Soft Margin Classifier
+In practice, real data is messy and cannot be separated perfectly with a hyperplane.
+
+The constraint of maximizing the margin of the line that separates the classes must be relaxed. This is often called the soft margin classifier. This change allows some points in the training data to violate the separating line.
+
+An additional set of coefficients are introduced that give the margin wiggle room in each dimension. These coefficients are sometimes called slack variables. This increases the complexity of the model as there are more parameters for the model to fit to the data to provide this complexity.
+
+A tuning parameter is introduced called simply C that defines the magnitude of the wiggle allowed across all dimensions. The C parameters defines the amount of violation of the margin allowed. A C=0 is no violation and we are back to the inflexible Maximal-Margin Classifier described above. The larger the value of C the more violations of the hyperplane are permitted.
+
+During the learning of the hyperplane from data, all training instances that lie within the distance of the margin will affect the placement of the hyperplane and are referred to as support vectors. And as C affects the number of instances that are allowed to fall within the margin, C influences the number of support vectors used by the model.
+
+The smaller the value of C, the more sensitive the algorithm is to the training data (higher variance and lower bias).
+The larger the value of C, the less sensitive the algorithm is to the training data (lower variance and higher bias).
+Support Vector Machines (Kernels)
+The SVM algorithm is implemented in practice using a kernel.
+
+The learning of the hyperplane in linear SVM is done by transforming the problem using some linear algebra, which is out of the scope of this introduction to SVM.
+
+A powerful insight is that the linear SVM can be rephrased using the inner product of any two given observations, rather than the observations themselves. The inner product between two vectors is the sum of the multiplication of each pair of input values.
+
+For example, the inner product of the vectors [2, 3] and [5, 6] is 2*5 + 3*6 or 28.
+
+The equation for making a prediction for a new input using the dot product between the input (x) and each support vector (xi) is calculated as follows:
+
+f(x) = B0 + sum(ai * (x,xi))
+
+This is an equation that involves calculating the inner products of a new input vector (x) with all support vectors in training data. The coefficients B0 and ai (for each input) must be estimated from the training data by the learning algorithm.
+
+Linear Kernel SVM
+The dot-product is called the kernel and can be re-written as:
+
+K(x, xi) = sum(x * xi)
+
+The kernel defines the similarity or a distance measure between new data and the support vectors. The dot product is the similarity measure used for linear SVM or a linear kernel because the distance is a linear combination of the inputs.
+
+Other kernels can be used that transform the input space into higher dimensions such as a Polynomial Kernel and a Radial Kernel. This is called the Kernel Trick.
+
+It is desirable to use more complex kernels as it allows lines to separate the classes that are curved or even more complex. This in turn can lead to more accurate classifiers.
+
+Polynomial Kernel SVM
+Instead of the dot-product, we can use a polynomial kernel, for example:
+
+K(x,xi) = 1 + sum(x * xi)^d
+
+Where the degree of the polynomial must be specified by hand to the learning algorithm. When d=1 this is the same as the linear kernel. The polynomial kernel allows for curved lines in the input space.
+
+Radial Kernel SVM
+Finally, we can also have a more complex radial kernel. For example:
+
+K(x,xi) = exp(-gamma * sum((x – xi^2))
+
+Where gamma is a parameter that must be specified to the learning algorithm. A good default value for gamma is 0.1, where gamma is often 0 < gamma < 1. The radial kernel is very local and can create complex regions within the feature space, like closed polygons in two-dimensional space.
+
+% =============== MLP =====================
+
+Coming to the last model we have the Multilayered Perceptron. Multilayer Perceptrons, or MLPs for short, are the classical type of neural network.
+
+They are comprised of one or more layers of neurons. Data is fed to the input layer, there may be one or more hidden layers providing levels of abstraction, and predictions are made on the output layer, also called the visible layer.
+
+MLPs are suitable for classification prediction problems where inputs are assigned a class or label.
+
+They are also suitable for regression prediction problems where a real-valued quantity is predicted given a set of inputs. Data is often provided in a tabular format, such as you would see in a CSV file or a spreadsheet.
+
+Use MLPs For:
+
+Tabular datasets
+Classification prediction problems
+Regression prediction problems
+They are very flexible and can be used generally to learn a mapping from inputs to outputs.
+
+This flexibility allows them to be applied to other types of data. For example, the pixels of an image can be reduced down to one long row of data and fed into a MLP. The words of a document can also be reduced to one long row of data and fed to a MLP. Even the lag observations for a time series prediction problem can be reduced to a long row of data and fed to a MLP.
+
+
+1. Multi-Layer Perceptrons
+The field of artificial neural networks is often just called neural networks or multi-layer perceptrons after perhaps the most useful type of neural network. A perceptron is a single neuron model that was a precursor to larger neural networks.
+
+It is a field that investigates how simple models of biological brains can be used to solve difficult computational tasks like the predictive modeling tasks we see in machine learning. The goal is not to create realistic models of the brain, but instead to develop robust algorithms and data structures that we can use to model difficult problems.
+
+The power of neural networks come from their ability to learn the representation in your training data and how to best relate it to the output variable that you want to predict. In this sense neural networks learn a mapping. Mathematically, they are capable of learning any mapping function and have been proven to be a universal approximation algorithm.
+
+The predictive capability of neural networks comes from the hierarchical or multi-layered structure of the networks. The data structure can pick out (learn to represent) features at different scales or resolutions and combine them into higher-order features. For example from lines, to collections of lines to shapes.
+
+2. Neurons
+The building block for neural networks are artificial neurons.
+
+These are simple computational units that have weighted input signals and produce an output signal using an activation function.
+
+Neuron Weights
+You may be familiar with linear regression, in which case the weights on the inputs are very much like the coefficients used in a regression equation.
+
+Like linear regression, each neuron also has a bias which can be thought of as an input that always has the value 1.0 and it too must be weighted.
+
+For example, a neuron may have two inputs in which case it requires three weights. One for each input and one for the bias.
+
+Weights are often initialized to small random values, such as values in the range 0 to 0.3, although more complex initialization schemes can be used.
+
+Like linear regression, larger weights indicate increased complexity and fragility. It is desirable to keep weights in the network small and regularization techniques can be used.
+
+Activation
+The weighted inputs are summed and passed through an activation function, sometimes called a transfer function.
+
+An activation function is a simple mapping of summed weighted input to the output of the neuron. It is called an activation function because it governs the threshold at which the neuron is activated and strength of the output signal.
+
+Historically simple step activation functions were used where if the summed input was above a threshold, for example 0.5, then the neuron would output a value of 1.0, otherwise it would output a 0.0.
+
+Traditionally non-linear activation functions are used. This allows the network to combine the inputs in more complex ways and in turn provide a richer capability in the functions they can model. Non-linear functions like the logistic also called the sigmoid function were used that output a value between 0 and 1 with an s-shaped distribution, and the hyperbolic tangent function also called tanh that outputs the same distribution over the range -1 to +1.
+
+More recently the rectifier activation function has been shown to provide better results.
+
+3. Networks of Neurons
+Neurons are arranged into networks of neurons.
+
+A row of neurons is called a layer and one network can have multiple layers. The architecture of the neurons in the network is often called the network topology.
+
+Input or Visible Layers
+The bottom layer that takes input from your dataset is called the visible layer, because it is the exposed part of the network. Often a neural network is drawn with a visible layer with one neuron per input value or column in your dataset. These are not neurons as described above, but simply pass the input value though to the next layer.
+
+Hidden Layers
+Layers after the input layer are called hidden layers because that are not directly exposed to the input. The simplest network structure is to have a single neuron in the hidden layer that directly outputs the value.
+
+Given increases in computing power and efficient libraries, very deep neural networks can be constructed. Deep learning can refer to having many hidden layers in your neural network. They are deep because they would have been unimaginably slow to train historically, but may take seconds or minutes to train using modern techniques and hardware.
+
+Output Layer
+The final hidden layer is called the output layer and it is responsible for outputting a value or vector of values that correspond to the format required for the problem.
+
+The choice of activation function in he output layer is strongly constrained by the type of problem that you are modeling. For example:
+
+A regression problem may have a single output neuron and the neuron may have no activation function.
+A binary classification problem may have a single output neuron and use a sigmoid activation function to output a value between 0 and 1 to represent the probability of predicting a value for the class 1. This can be turned into a crisp class value by using a threshold of 0.5 and snap values less than the threshold to 0 otherwise to 1.
+A multi-class classification problem may have multiple neurons in the output layer, one for each class (e.g. three neurons for the three classes in the famous iris flowers classification problem). In this case a softmax activation function may be used to output a probability of the network predicting each of the class values. Selecting the output with the highest probability can be used to produce a crisp class classification value.
+4. Training Networks
+Once configured, the neural network needs to be trained on your dataset.
+
+Data Preparation
+You must first prepare your data for training on a neural network.
+
+Data must be numerical, for example real values. If you have categorical data, such as a sex attribute with the values “male” and “female”, you can convert it to a real-valued representation called a one hot encoding. This is where one new column is added for each class value (two columns in the case of sex of male and female) and a 0 or 1 is added for each row depending on the class value for that row.
+
+This same one hot encoding can be used on the output variable in classification problems with more than one class. This would create a binary vector from a single column that would be easy to directly compare to the output of the neuron in the network’s output layer, that as described above, would output one value for each class.
+
+Neural networks require the input to be scaled in a consistent way. You can rescale it to the range between 0 and 1 called normalization. Another popular technique is to standardize it so that the distribution of each column has the mean of zero and the standard deviation of 1.
+
+Scaling also applies to image pixel data. Data such as words can be converted to integers, such as the popularity rank of the word in the dataset and other encoding techniques.
+
+Stochastic Gradient Descent
+The classical and still preferred training algorithm for neural networks is called stochastic gradient descent.
+
+This is where one row of data is exposed to the network at a time as input. The network processes the input upward activating neurons as it goes to finally produce an output value. This is called a forward pass on the network. It is the type of pass that is also used after the network is trained in order to make predictions on new data.
+
+The output of the network is compared to the expected output and an error is calculated. This error is then propagated back through the network, one layer at a time, and the weights are updated according to the amount that they contributed to the error. This clever bit of math is called the backpropagation algorithm.
+
+The process is repeated for all of the examples in your training data. One of updating the network for the entire training dataset is called an epoch. A network may be trained for tens, hundreds or many thousands of epochs.
+
+Weight Updates
+The weights in the network can be updated from the errors calculated for each training example and this is called online learning. It can result in fast but also chaotic changes to the network.
+
+Alternatively, the errors can be saved up across all of the training examples and the network can be updated at the end. This is called batch learning and is often more stable.
+
+Typically, because datasets are so large and because of computational efficiencies, the size of the batch, the number of examples the network is shown before an update is often reduced to a small number, such as tens or hundreds of examples.
+
+The amount that weights are updated is controlled by a configuration parameters called the learning rate. It is also called the step size and controls the step or change made to network weight for a given error. Often small weight sizes are used such as 0.1 or 0.01 or smaller.
+
+The update equation can be complemented with additional configuration terms that you can set.
+
+Momentum is a term that incorporates the properties from the previous weight update to allow the weights to continue to change in the same direction even when there is less error being calculated.
+Learning Rate Decay is used to decrease the learning rate over epochs to allow the network to make large changes to the weights at the beginning and smaller fine tuning changes later in the training schedule.
+Prediction
+Once a neural network has been trained it can be used to make predictions.
+
+You can make predictions on test or validation data in order to estimate the skill of the model on unseen data. You can also deploy it operationally and use it to make predictions continuously.
+
+The network topology and the final set of weights is all that you need to save from the model. Predictions are made by providing the input to the network and performing a forward-pass allowing it to generate an output that you can use as a prediction.
+
+
+
+
 
 \newpage
 \section{Software Requirements}
@@ -327,14 +666,15 @@ User fences and workload fences allow you to reserve nodes of a cluster for eith
 \section{Future Scope}
 
 \newpage
-
 {
 \clearpage
-\thispagestyle{empty}
+%\thispagestyle{empty}
 \begin{landscape}
+
 \centering
 \begin{table}[]
 \centering
+\vspace{5cm}
 \section{Tables}
 \begin{tabular}{|l|l|}
 \hline
@@ -359,7 +699,6 @@ Outcome                    & Class variable (0 or 1) 268 of 768 are 1, the other
 
 {
 \clearpage
-\thispagestyle{empty}
 \begin{landscape}
 \centering
 \begin{table}[]
@@ -625,9 +964,33 @@ x4    & 16.79         \\\hline
 \label{table:13}
 \end{table}
 
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{4}{|c|}{Confusion Matrix}                  \\ \hline
+\multirow{4}{*}{Real} & 0 & \textbf{451} & \textbf{49}  \\ \cline{2-4} 
+                      & 1 & \textbf{63}  & \textbf{205} \\ \cline{2-4} 
+                      &   & 0            & 1            \\ \cline{2-4} 
+                      & \multicolumn{3}{c|}{Predicted}  \\ \hline
+\end{tabular}
+\captionof{table}{Confusion Matrix for Model.}
+\label{table:14}
+\end{table}
 
-
-
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Metrics} \\ \hline
+F1 Score        & 0.7854      \\ \hline
+Recall          & 0.7649      \\ \hline
+Precision       & 0.8071      \\ \hline
+Accuracy        & 0.8542      \\ \hline
+\end{tabular}
+\captionof{table}{Model Performance Metrics.}
+\label{table:15}
+\end{table}
 
 
 
