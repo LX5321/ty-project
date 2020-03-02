@@ -3,56 +3,66 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: cluster.aux
 The style file: plain.bst
 Database file #1: bib.bib
-Repeated entry---line 205 of file bib.bib
+Warning--entry type for "git" isn't style-file defined
+--line 1 of file bib.bib
+Repeated entry---line 306 of file bib.bib
  : @misc{svm
  :          ,
 I'm skipping whatever remains of this entry
-Warning--to sort, need author, editor, or key in niddkd
-Warning--to sort, need author or key in itertools
+Repeated entry---line 516 of file bib.bib
+ : @article{10.1145/500559.500561
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 534 of file bib.bib
+ : @inproceedings{10.1145/131214.131287
+ :                                     ,
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in pandas
 Warning--to sort, need author or key in scikit
 Warning--to sort, need author or key in numpy
+Warning--to sort, need author or key in itertools
 Warning--to sort, need author or key in mysql
+Warning--to sort, need author, editor, or key in niddkd
 Warning--empty author and editor in niddkd
-You've used 68 entries,
+You've used 76 entries,
             2118 wiz_defined-function locations,
-            863 strings with 15671 characters,
-and the built_in function-call counts, 20494 in all, are:
-= -- 2109
-> -- 769
+            897 strings with 16667 characters,
+and the built_in function-call counts, 22157 in all, are:
+= -- 2265
+> -- 825
 < -- 18
-+ -- 315
-- -- 244
-* -- 1053
-:= -- 3198
-add.period$ -- 223
-call.type$ -- 68
-change.case$ -- 320
++ -- 340
+- -- 260
+* -- 1112
+:= -- 3474
+add.period$ -- 246
+call.type$ -- 76
+change.case$ -- 352
 chr.to.int$ -- 0
-cite$ -- 75
-duplicate$ -- 999
-empty$ -- 1714
-format.name$ -- 244
-if$ -- 4622
+cite$ -- 83
+duplicate$ -- 1055
+empty$ -- 1890
+format.name$ -- 260
+if$ -- 4986
 int.to.chr$ -- 0
-int.to.str$ -- 68
+int.to.str$ -- 76
 missing$ -- 49
-newline$ -- 341
-num.names$ -- 125
-pop$ -- 441
+newline$ -- 380
+num.names$ -- 141
+pop$ -- 505
 preamble$ -- 1
-purify$ -- 258
+purify$ -- 282
 quote$ -- 0
-skip$ -- 850
+skip$ -- 909
 stack$ -- 0
-substring$ -- 772
-swap$ -- 346
+substring$ -- 813
+swap$ -- 354
 text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 260
+type$ -- 292
 warning$ -- 7
-while$ -- 150
-width$ -- 70
-write$ -- 767
-(There was 1 error message)
+while$ -- 166
+width$ -- 78
+write$ -- 844
+(There were 3 error messages)

@@ -3,49 +3,50 @@
 \BOOKMARK [1][-]{section*.3}{List of Tables}{}% 3
 \BOOKMARK [1][-]{section.2}{Introduction}{}% 4
 \BOOKMARK [1][-]{section.3}{Objective}{}% 5
-\BOOKMARK [1][-]{section.4}{Project Rationale}{}% 6
-\BOOKMARK [1][-]{section.5}{Review of Literature}{}% 7
-\BOOKMARK [1][-]{section.6}{Software Requirements}{}% 8
-\BOOKMARK [2][-]{subsection.6.1}{Functionalities for Doctors}{section.6}% 9
-\BOOKMARK [2][-]{subsection.6.2}{Functionalities for Patients}{section.6}% 10
-\BOOKMARK [2][-]{subsection.6.3}{Functionalities for Master Nodes}{section.6}% 11
-\BOOKMARK [2][-]{subsection.6.4}{Functionalities for Slave Nodes}{section.6}% 12
-\BOOKMARK [1][-]{section.7}{Hardware Requirements}{}% 13
-\BOOKMARK [2][-]{subsection.7.1}{Raspberry Pi}{section.7}% 14
-\BOOKMARK [2][-]{subsection.7.2}{Switch}{section.7}% 15
-\BOOKMARK [2][-]{subsection.7.3}{Router}{section.7}% 16
-\BOOKMARK [2][-]{subsection.7.4}{Master Node}{section.7}% 17
-\BOOKMARK [2][-]{subsection.7.5}{Slave Node}{section.7}% 18
-\BOOKMARK [2][-]{subsection.7.6}{Database}{section.7}% 19
-\BOOKMARK [2][-]{subsection.7.7}{Web Server}{section.7}% 20
-\BOOKMARK [1][-]{section.8}{Technology Stack}{}% 21
-\BOOKMARK [2][-]{subsection.8.1}{Python}{section.8}% 22
-\BOOKMARK [3][-]{subsubsection.8.1.1}{Pandas}{subsection.8.1}% 23
-\BOOKMARK [3][-]{subsubsection.8.1.2}{Sklearn}{subsection.8.1}% 24
-\BOOKMARK [3][-]{subsubsection.8.1.3}{Numpy}{subsection.8.1}% 25
-\BOOKMARK [3][-]{subsubsection.8.1.4}{Itertools}{subsection.8.1}% 26
-\BOOKMARK [2][-]{subsection.8.2}{MYSQL}{section.8}% 27
-\BOOKMARK [2][-]{subsection.8.3}{Apache Web Server}{section.8}% 28
-\BOOKMARK [2][-]{subsection.8.4}{PHP}{section.8}% 29
-\BOOKMARK [2][-]{subsection.8.5}{AJAX}{section.8}% 30
-\BOOKMARK [2][-]{subsection.8.6}{GitHub}{section.8}% 31
-\BOOKMARK [2][-]{subsection.8.7}{SSH}{section.8}% 32
-\BOOKMARK [1][-]{section.9}{Exploratory Data Analysis}{}% 33
-\BOOKMARK [1][-]{section.10}{Deploying to Cluster}{}% 34
-\BOOKMARK [2][-]{subsection.10.1}{Benefits of Clustering}{section.10}% 35
-\BOOKMARK [1][-]{section.11}{Future Scope}{}% 36
-\BOOKMARK [1][-]{section.12}{Tables}{}% 37
-\BOOKMARK [1][-]{section.13}{Appendix I}{}% 38
-\BOOKMARK [2][-]{subsection.13.1}{K Nearest Neighbours}{section.13}% 39
-\BOOKMARK [2][-]{subsection.13.2}{Logistic Regression}{section.13}% 40
-\BOOKMARK [2][-]{subsection.13.3}{Decision Tree}{section.13}% 41
-\BOOKMARK [2][-]{subsection.13.4}{Random Forest Classifier}{section.13}% 42
-\BOOKMARK [2][-]{subsection.13.5}{Gradient Boosting}{section.13}% 43
-\BOOKMARK [2][-]{subsection.13.6}{Multi Layered Perceptron}{section.13}% 44
-\BOOKMARK [2][-]{subsection.13.7}{SVM}{section.13}% 45
-\BOOKMARK [2][-]{subsection.13.8}{Standard Scaler}{section.13}% 46
-\BOOKMARK [2][-]{subsection.13.9}{Label Encoder}{section.13}% 47
-\BOOKMARK [1][-]{section.14}{Appendix II}{}% 48
-\BOOKMARK [1][-]{section.15}{Appendix III}{}% 49
-\BOOKMARK [1][-]{section.16}{Conclusion}{}% 50
-\BOOKMARK [1][-]{section*.4}{References}{}% 51
+\BOOKMARK [2][-]{subsection.3.1}{Existing System}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Proposed System}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Project Rationale}{}% 8
+\BOOKMARK [1][-]{section.5}{Review of Literature}{}% 9
+\BOOKMARK [1][-]{section.6}{Software Requirements}{}% 10
+\BOOKMARK [2][-]{subsection.6.1}{Functionalities for Doctors}{section.6}% 11
+\BOOKMARK [2][-]{subsection.6.2}{Functionalities for Patients}{section.6}% 12
+\BOOKMARK [2][-]{subsection.6.3}{Functionalities for Master Nodes}{section.6}% 13
+\BOOKMARK [2][-]{subsection.6.4}{Functionalities for Slave Nodes}{section.6}% 14
+\BOOKMARK [1][-]{section.7}{Hardware Requirements}{}% 15
+\BOOKMARK [2][-]{subsection.7.1}{Raspberry Pi}{section.7}% 16
+\BOOKMARK [2][-]{subsection.7.2}{Switch}{section.7}% 17
+\BOOKMARK [2][-]{subsection.7.3}{Router}{section.7}% 18
+\BOOKMARK [2][-]{subsection.7.4}{Master Node}{section.7}% 19
+\BOOKMARK [2][-]{subsection.7.5}{Slave Node}{section.7}% 20
+\BOOKMARK [2][-]{subsection.7.6}{Database}{section.7}% 21
+\BOOKMARK [2][-]{subsection.7.7}{Web Server}{section.7}% 22
+\BOOKMARK [1][-]{section.8}{Technology Stack}{}% 23
+\BOOKMARK [2][-]{subsection.8.1}{Python}{section.8}% 24
+\BOOKMARK [3][-]{subsubsection.8.1.1}{Pandas}{subsection.8.1}% 25
+\BOOKMARK [3][-]{subsubsection.8.1.2}{Sklearn}{subsection.8.1}% 26
+\BOOKMARK [3][-]{subsubsection.8.1.3}{Numpy}{subsection.8.1}% 27
+\BOOKMARK [3][-]{subsubsection.8.1.4}{Itertools}{subsection.8.1}% 28
+\BOOKMARK [2][-]{subsection.8.2}{MYSQL}{section.8}% 29
+\BOOKMARK [2][-]{subsection.8.3}{Apache Web Server}{section.8}% 30
+\BOOKMARK [2][-]{subsection.8.4}{PHP}{section.8}% 31
+\BOOKMARK [2][-]{subsection.8.5}{AJAX}{section.8}% 32
+\BOOKMARK [2][-]{subsection.8.6}{GitHub}{section.8}% 33
+\BOOKMARK [2][-]{subsection.8.7}{SSH}{section.8}% 34
+\BOOKMARK [1][-]{section.9}{Exploratory Data Analysis}{}% 35
+\BOOKMARK [1][-]{section.10}{Results}{}% 36
+\BOOKMARK [1][-]{section.11}{Future Scope}{}% 37
+\BOOKMARK [1][-]{section.12}{Tables}{}% 38
+\BOOKMARK [1][-]{section.13}{Appendix I}{}% 39
+\BOOKMARK [2][-]{subsection.13.1}{K Nearest Neighbours}{section.13}% 40
+\BOOKMARK [2][-]{subsection.13.2}{Logistic Regression}{section.13}% 41
+\BOOKMARK [2][-]{subsection.13.3}{Decision Tree}{section.13}% 42
+\BOOKMARK [2][-]{subsection.13.4}{Random Forest Classifier}{section.13}% 43
+\BOOKMARK [2][-]{subsection.13.5}{Gradient Boosting}{section.13}% 44
+\BOOKMARK [2][-]{subsection.13.6}{Multi Layered Perceptron}{section.13}% 45
+\BOOKMARK [2][-]{subsection.13.7}{SVM}{section.13}% 46
+\BOOKMARK [2][-]{subsection.13.8}{Standard Scaler}{section.13}% 47
+\BOOKMARK [2][-]{subsection.13.9}{Label Encoder}{section.13}% 48
+\BOOKMARK [1][-]{section.14}{Appendix II}{}% 49
+\BOOKMARK [1][-]{section.15}{Appendix III}{}% 50
+\BOOKMARK [1][-]{section.16}{Conclusion}{}% 51
+\BOOKMARK [1][-]{section*.4}{References}{}% 52

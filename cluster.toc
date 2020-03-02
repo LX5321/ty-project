@@ -4,49 +4,50 @@
 \contentsline {section}{List of Tables}{9}{section*.3}
 \contentsline {section}{\numberline {2}Introduction}{10}{section.2}
 \contentsline {section}{\numberline {3}Objective}{12}{section.3}
+\contentsline {subsection}{\numberline {3.1}Existing System}{12}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Proposed System}{12}{subsection.3.2}
 \contentsline {section}{\numberline {4}Project Rationale}{13}{section.4}
 \contentsline {section}{\numberline {5}Review of Literature}{15}{section.5}
-\contentsline {section}{\numberline {6}Software Requirements}{29}{section.6}
-\contentsline {subsection}{\numberline {6.1}Functionalities for Doctors}{29}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Functionalities for Patients}{29}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Functionalities for Master Nodes}{29}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Functionalities for Slave Nodes}{29}{subsection.6.4}
-\contentsline {section}{\numberline {7}Hardware Requirements}{30}{section.7}
-\contentsline {subsection}{\numberline {7.1}Raspberry Pi}{30}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Switch}{30}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Router}{30}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Master Node}{30}{subsection.7.4}
-\contentsline {subsection}{\numberline {7.5}Slave Node}{31}{subsection.7.5}
-\contentsline {subsection}{\numberline {7.6}Database}{31}{subsection.7.6}
-\contentsline {subsection}{\numberline {7.7}Web Server}{31}{subsection.7.7}
-\contentsline {section}{\numberline {8}Technology Stack}{32}{section.8}
-\contentsline {subsection}{\numberline {8.1}Python}{32}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Pandas}{32}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Sklearn}{32}{subsubsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.3}Numpy}{32}{subsubsection.8.1.3}
-\contentsline {subsubsection}{\numberline {8.1.4}Itertools}{32}{subsubsection.8.1.4}
-\contentsline {subsection}{\numberline {8.2}MYSQL}{32}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Apache Web Server}{33}{subsection.8.3}
-\contentsline {subsection}{\numberline {8.4}PHP}{33}{subsection.8.4}
-\contentsline {subsection}{\numberline {8.5}AJAX}{33}{subsection.8.5}
-\contentsline {subsection}{\numberline {8.6}GitHub}{34}{subsection.8.6}
-\contentsline {subsection}{\numberline {8.7}SSH}{34}{subsection.8.7}
-\contentsline {section}{\numberline {9}Exploratory Data Analysis}{35}{section.9}
-\contentsline {section}{\numberline {10}Deploying to Cluster}{36}{section.10}
-\contentsline {subsection}{\numberline {10.1}Benefits of Clustering}{36}{subsection.10.1}
-\contentsline {section}{\numberline {11}Future Scope}{38}{section.11}
-\contentsline {section}{\numberline {12}Tables}{39}{section.12}
-\contentsline {section}{\numberline {13}Appendix I}{47}{section.13}
-\contentsline {subsection}{\numberline {13.1}K Nearest Neighbours}{47}{subsection.13.1}
-\contentsline {subsection}{\numberline {13.2}Logistic Regression}{47}{subsection.13.2}
-\contentsline {subsection}{\numberline {13.3}Decision Tree}{47}{subsection.13.3}
-\contentsline {subsection}{\numberline {13.4}Random Forest Classifier}{47}{subsection.13.4}
-\contentsline {subsection}{\numberline {13.5}Gradient Boosting}{47}{subsection.13.5}
-\contentsline {subsection}{\numberline {13.6}Multi Layered Perceptron}{48}{subsection.13.6}
-\contentsline {subsection}{\numberline {13.7}SVM}{48}{subsection.13.7}
-\contentsline {subsection}{\numberline {13.8}Standard Scaler}{48}{subsection.13.8}
-\contentsline {subsection}{\numberline {13.9}Label Encoder}{48}{subsection.13.9}
-\contentsline {section}{\numberline {14}Appendix II}{49}{section.14}
-\contentsline {section}{\numberline {15}Appendix III}{75}{section.15}
-\contentsline {section}{\numberline {16}Conclusion}{83}{section.16}
-\contentsline {section}{References}{84}{section*.4}
+\contentsline {section}{\numberline {6}Software Requirements}{27}{section.6}
+\contentsline {subsection}{\numberline {6.1}Functionalities for Doctors}{27}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Functionalities for Patients}{27}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Functionalities for Master Nodes}{27}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Functionalities for Slave Nodes}{27}{subsection.6.4}
+\contentsline {section}{\numberline {7}Hardware Requirements}{28}{section.7}
+\contentsline {subsection}{\numberline {7.1}Raspberry Pi}{28}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Switch}{28}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Router}{28}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Master Node}{28}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Slave Node}{29}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}Database}{29}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}Web Server}{29}{subsection.7.7}
+\contentsline {section}{\numberline {8}Technology Stack}{30}{section.8}
+\contentsline {subsection}{\numberline {8.1}Python}{30}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Pandas}{30}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Sklearn}{30}{subsubsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.3}Numpy}{30}{subsubsection.8.1.3}
+\contentsline {subsubsection}{\numberline {8.1.4}Itertools}{30}{subsubsection.8.1.4}
+\contentsline {subsection}{\numberline {8.2}MYSQL}{30}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Apache Web Server}{31}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}PHP}{31}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}AJAX}{31}{subsection.8.5}
+\contentsline {subsection}{\numberline {8.6}GitHub}{32}{subsection.8.6}
+\contentsline {subsection}{\numberline {8.7}SSH}{32}{subsection.8.7}
+\contentsline {section}{\numberline {9}Exploratory Data Analysis}{33}{section.9}
+\contentsline {section}{\numberline {10}Results}{34}{section.10}
+\contentsline {section}{\numberline {11}Future Scope}{35}{section.11}
+\contentsline {section}{\numberline {12}Tables}{36}{section.12}
+\contentsline {section}{\numberline {13}Appendix I}{43}{section.13}
+\contentsline {subsection}{\numberline {13.1}K Nearest Neighbours}{43}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.2}Logistic Regression}{43}{subsection.13.2}
+\contentsline {subsection}{\numberline {13.3}Decision Tree}{43}{subsection.13.3}
+\contentsline {subsection}{\numberline {13.4}Random Forest Classifier}{43}{subsection.13.4}
+\contentsline {subsection}{\numberline {13.5}Gradient Boosting}{43}{subsection.13.5}
+\contentsline {subsection}{\numberline {13.6}Multi Layered Perceptron}{44}{subsection.13.6}
+\contentsline {subsection}{\numberline {13.7}SVM}{44}{subsection.13.7}
+\contentsline {subsection}{\numberline {13.8}Standard Scaler}{44}{subsection.13.8}
+\contentsline {subsection}{\numberline {13.9}Label Encoder}{44}{subsection.13.9}
+\contentsline {section}{\numberline {14}Appendix II}{45}{section.14}
+\contentsline {section}{\numberline {15}Appendix III}{71}{section.15}
+\contentsline {section}{\numberline {16}Conclusion}{79}{section.16}
+\contentsline {section}{References}{80}{section*.4}

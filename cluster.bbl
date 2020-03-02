@@ -22,7 +22,9 @@ Numpy.
 
 \bibitem{niddkd}
 {\em What is Diabetes?}
-\newblock U.S. Department of Health and Human Services, 2016.
+\newblock U.S. Department of Health and Human Services,
+  https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes,
+  December 2016.
 
 \bibitem{alberti_zimmet_2004}
 K.G.M.M. Alberti and P.Z. Zimmet.
@@ -73,12 +75,23 @@ Leo Breiman and Adele Cutler.
   \url{https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm#workings},
   Jun 2003.
 
+\bibitem{cds}
+Jennifer Bresnick.
+\newblock Understanding the basics of clinical decision support systems.
+\newblock
+  \url{https://healthitanalytics.com/features/understanding-the-basics-of-clinical-decision-support-systems},
+  Dec 2017.
+
 \bibitem{decision_tree}
 Rajesh~S. Brid.
 \newblock Decision trees, a simple way to visualise descisions.
 \newblock
   \url{https://medium.com/greyatom/decision-trees-a-simple-way-to-visualize-a-decision-dc506a403aeb},
   Oct 2018.
+
+\bibitem{git}
+Korbin Brown.
+\newblock What is github, and what is it used for?, 2019.
 
 \bibitem{10.1145/2516604.2516614}
 Suzana Brown and Timothy~X. Brown.
@@ -101,6 +114,13 @@ Jason Brownlee.
 \newblock
   \url{https://machinelearningmastery.com/when-to-use-mlp-cnn-and-rnn-neural-networks/},
   July 2018.
+
+\bibitem{IBM}
+IBM~Knowledge Center.
+\newblock What is distributed computing.
+\newblock
+  \url{https://www.ibm.com/support/knowledgecenter/en/SSAL2T_8.2.0/com.ibm.cics.tx.doc/concepts/c_wht_is_distd_comptg.html},
+  Nov 2014.
 
 \bibitem{10.1145/2998476.2998497}
 Omprakash Chandrakar and Jatinderkumar~R. Saini.
@@ -156,6 +176,24 @@ Syahizul~Amri Dzulkifli, Mohd Najib~Mohd Salleh, and Kashif~Hussain Talpur.
   2019.
 \newblock Online; accessed 25 February 2020.
 
+\bibitem{rpm}
+Editor.
+\newblock The rise of remote patient monitoring.
+\newblock
+  \url{https://thejournalofmhealth.com/the-rise-of-remote-patient-monitoring/},
+  May 2019.
+
+\bibitem{apache}
+Apache Foundation.
+\newblock Apache http server project.
+\newblock \url{https://httpd.apache.org/ABOUT_APACHE.html}, Jun 2000.
+
+\bibitem{ajax}
+Mozilla Foundation.
+\newblock Getting started with ajax.
+\newblock
+  \url{https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started}.
+
 \bibitem{rpi}
 Raspberry~Pi Foundation.
 \newblock Raspberry pi 3 model b.
@@ -183,6 +221,11 @@ Roger Gimson, Jonathan Bowen, and Tim Gleeson.
 \newblock In {\em Proceedings of the 2nd Workshop on Making Distributed Systems
   Work}, EW 2, page 1–3, New York, NY, USA, 1986. Association for Computing
   Machinery.
+
+\bibitem{php}
+The~PHP Group.
+\newblock What is php?
+\newblock \url{https://www.php.net/manual/en/intro-whatis.php}.
 
 \bibitem{gbm}
 Prince Grover.
@@ -236,6 +279,11 @@ B.~Sarojini Ilango and N.~Ramaraj.
 \newblock In {\em Proceedings of the 1st Amrita ACM-W Celebration on Women in
   Computing in India}, A2CWiC ’10, New York, NY, USA, 2010. Association for
   Computing Machinery.
+
+\bibitem{ssh}
+SSH~Communications Inc.
+\newblock Ssh (secure shell).
+\newblock \url{https://www.ssh.com/ssh}, Apr 2018.
 
 \bibitem{internationaldiabetesfederation}
 {International Diabetes Federation}.
