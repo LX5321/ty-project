@@ -10,6 +10,7 @@
 \usepackage[maxfloats=256]{morefloats}
 \usepackage{booktabs}
 \usepackage{graphicx}
+\usepackage{eso-pic}
 \usepackage{hyperref}
 \usepackage{pdflscape}
 \usepackage{adjustbox}
@@ -23,7 +24,6 @@
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-
 \maxdeadcycles=1000
 
 \lstdefinestyle{mystyle}{
@@ -104,7 +104,6 @@ Project Supervisor
 
 \textbf{Work Record}
 
-
 \newpage
 \section{Acknowledgements}
 
@@ -114,8 +113,6 @@ Project Supervisor
 \listoffigures
 \newpage
 \listoftables
-\newpage
-\makenomenclature
 \newpage
 
 
@@ -378,14 +375,14 @@ It is desirable to use more complex kernels as it allows lines to separate the c
 Polynomial Kernel SVM
 Instead of the dot-product, we can use a polynomial kernel, for example:
 
-K(x,xi) = 1 + sum(x * xi)^d
+$$K(x,xi) = 1 + sum(x * xi)^d$$
 
 Where the degree of the polynomial must be specified by hand to the learning algorithm. When d=1 this is the same as the linear kernel. The polynomial kernel allows for curved lines in the input space.
 
 Radial Kernel SVM
 Finally, we can also have a more complex radial kernel. For example:
 
-K(x,xi) = exp(-gamma * sum((x – xi^2))
+$$K(x,xi) = exp(-gamma * sum((x – xi^2))$$
 
 Where gamma is a parameter that must be specified to the learning algorithm. A good default value for gamma is 0.1, where gamma is often 0 < gamma < 1. The radial kernel is very local and can create complex regions within the feature space, like closed polygons in two-dimensional space.
 
@@ -620,7 +617,7 @@ GitHub is a global company that provides hosting for software development versio
 Secure Shell is a cryptography network protocol for operating network services securely over an unsecured network. Typical applications include remote command-line, login, and remote command execution, but any network service can be secured with SSH. The SSH is used to communicate between the master and slave nodes.
 
 \newpage
-\section{Methodology}
+\section{Exploratory Data Analysis}
 The dataset used for this project is from the UCI Machine learning repository and can be found at their respective website. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and \ref{table:3} is the accuracy obtained from the predicted outcomes for given sets of patients.
 
 Firstly, I began the experiment by examining the amount of people that were recorded by the dataset. We can see that the dataset contains a total of 768 observations. We can see that 268 people are healthy, while the rest of the 500 subjects are diabetic. If converted to percentage, 65.1\% of the subjects are healthy and 34.9\% of subjects are diabetic.
@@ -1339,13 +1336,56 @@ sklearn.preprocessing.LabelEncoder
 \includegraphics[width=1\textwidth]{newplot(42).png}
 \caption{\label{fig:49} Extended heatmap with new features combined.}
 \end{figure}
+\clearpage
+\newpage
+\section{Appendix III}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{1se.png}
+\caption{\label{fig:50} Extended heatmap with new features combined.}
+\end{figure}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{2se.png}
+\caption{\label{fig:51} Extended heatmap with new features combined.}
+\end{figure}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{3se.png}
+\caption{\label{fig:52} Extended heatmap with new features combined.}
+\end{figure}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{4se.png}
+\caption{\label{fig:53} Extended heatmap with new features combined.}
+\end{figure}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{5se.png}
+\caption{\label{fig:54} Extended heatmap with new features combined.}
+\end{figure}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{6se.png}
+\caption{\label{fig:55} Extended heatmap with new features combined.}
+\end{figure}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{7se.png}
+\caption{\label{fig:56} Extended heatmap with new features combined.}
+\end{figure}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{8se.png}
+\caption{\label{fig:57} Extended heatmap with new features combined.}
+\end{figure}
 
 \clearpage
 \newpage
 \section{Conclusion}
 
-\newpage
 
+\newpage
 \nocite{*}
 \bibliography{bib} 
 \bibliographystyle{plain}

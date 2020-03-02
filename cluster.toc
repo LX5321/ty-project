@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {8.5}AJAX}{33}{subsection.8.5}
 \contentsline {subsection}{\numberline {8.6}GitHub}{34}{subsection.8.6}
 \contentsline {subsection}{\numberline {8.7}SSH}{34}{subsection.8.7}
-\contentsline {section}{\numberline {9}Methodology}{35}{section.9}
+\contentsline {section}{\numberline {9}Exploratory Data Analysis}{35}{section.9}
 \contentsline {section}{\numberline {10}Deploying to Cluster}{36}{section.10}
 \contentsline {subsection}{\numberline {10.1}Benefits of Clustering}{36}{subsection.10.1}
 \contentsline {section}{\numberline {11}Future Scope}{38}{section.11}
@@ -47,5 +47,6 @@
 \contentsline {subsection}{\numberline {13.8}Standard Scaler}{48}{subsection.13.8}
 \contentsline {subsection}{\numberline {13.9}Label Encoder}{48}{subsection.13.9}
 \contentsline {section}{\numberline {14}Appendix II}{49}{section.14}
-\contentsline {section}{\numberline {15}Conclusion}{75}{section.15}
-\contentsline {section}{References}{76}{section*.4}
+\contentsline {section}{\numberline {15}Appendix III}{75}{section.15}
+\contentsline {section}{\numberline {16}Conclusion}{83}{section.16}
+\contentsline {section}{References}{84}{section*.4}

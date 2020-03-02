@@ -1,337 +1,441 @@
 \begin{thebibliography}{10}
 
-\bibitem{watson_2019}
-S.~Watson, ``Diabetes: Symptoms, causes, treatment, prevention, and more,''
-  {\em Healthline}, Mar 2019.
+\bibitem{itertools}
+9.7. itertools - functions creating iterators for efficient looping.
+\newblock \url{https://docs.python.org/2/library/itertools.html}.
 
-\bibitem{diabetes_india}
-{Editor}, ``{Over 30 million have now been diagnosed with diabetes in India.
-  The CPR (Crude prevalence rate) in the urban areas of India is thought to be
-  9 per cent.}.''
-  \url{https://www.diabetes.co.uk/global-diabetes/diabetes-in-india.html},
-  2019.
-\newblock Online; accessed 25 February 2020.
+\bibitem{pandas}
+About pandas.
+\newblock \url{https://pandas.pydata.org/about/index.html}.
 
-\bibitem{chatrati_hossain_goyal_bhan_bhattacharya_gaurav_tiwari_2020}
-S.~P. Chatrati, G.~Hossain, A.~Goyal, A.~Bhan, S.~Bhattacharya, D.~Gaurav, and
-  S.~M. Tiwari, ``Smart home health monitoring system for predicting type 2
-  diabetes and hypertension,'' {\em Journal of King Saud University - Computer
-  and Information Sciences}, Jan 2020.
+\bibitem{scikit}
+Getting started.
+\newblock \url{https://scikit-learn.org/stable/getting_started.html}.
 
-\bibitem{deva_2015}
-D.~Deva, ``Qcon rio - machine learning for everyone,'' {\em LinkedIn
-  SlideShare}, Aug 2015.
+\bibitem{mysql}
+Mysql documentation.
+\newblock \url{https://dev.mysql.com/doc/}.
 
-\bibitem{yellowbrick_dt}
-{Yellowbrick}, ``{Discrimination Threshold - yellowbrick v1.0.1
-  documentation}.''
-  \url{https://www.scikit-yb.org/en/latest/api/classifier/threshold.html},
-  2019.
-\newblock Online; accessed 25 February 2020.
-
-\bibitem{kaur_kaur_1970}
-P.~Kaur and R.~Kaur, ``Comparative analysis of classification techniques for
-  diagnosis of diabetes,'' {\em SpringerLink}, Jan 1970.
-
-\bibitem{alberti_zimmet_2004}
-K.~Alberti and P.~Zimmet, ``Definition, diagnosis and classification of
-  diabetes mellitus and its complications. part 1: diagnosis and classification
-  of diabetes mellitus. provisional report of a who consultation,'' Jul 2004.
-
-\bibitem{lisa_gladman_lisa_2019}
-L.~G. Lisa, L.~Gladman, and Lisa, ``Types of healthcare information systems -
-  scott-clark medical,'' {\em Scott}, Nov 2019.
-
-\bibitem{maladkar_2019}
-K.~Maladkar, ``Why is random search better than grid search for machine
-  learning,'' {\em Analytics India Magazine}, Sep 2019.
-
-\bibitem{mandal_2019}
-A.~Mandal, ``What is diabetes?,'' {\em News}, Feb 2019.
-
-\bibitem{mandot_2018}
-P.~Mandot, ``What is lightgbm, how to implement it? how to fine tune the
-  parameters?,'' {\em Medium}, Dec 2018.
-
-\bibitem{norena_2018}
-S.~Norena, ``Python model tuning methods using cross validation and grid
-  search,'' {\em Medium}, Jun 2018.
-
-\bibitem{scikit2}
-{Scikit-Learn}, ``{sklearn.preprocessing.LabelEncoder}.''
-  \url{https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html},
-  2019.
-\newblock Online; accessed 25 February 2020.
-
-\bibitem{scikit1}
-{Scikit-Learn}, ``{sklearn.preprocessing.StandardScaler}.''
-  \url{https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html},
-  2019.
-\newblock Online; accessed 25 February 2020.
+\bibitem{numpy}
+Numpy.
+\newblock \url{https://numpy.org/}.
 
 \bibitem{niddkd}
 {\em What is Diabetes?}
 \newblock U.S. Department of Health and Human Services, 2016.
 
-\bibitem{diabetesmellitus}
-Zou, Quan, Qu, Luo, Yamei, Yin, Dehui, Ju, Ying, Tang, and et~al., {\em
-  Predicting Diabetes Mellitus With Machine Learning Techniques}.
-\newblock PhD thesis, School of Computer Science and Technology, Tianjin
-  University, Tianjin, China, 2018.
+\bibitem{alberti_zimmet_2004}
+K.G.M.M. Alberti and P.Z. Zimmet.
+\newblock Definition, diagnosis and classification of diabetes mellitus and its
+  complications. part 1: diagnosis and classification of diabetes mellitus.
+  provisional report of a who consultation, Jul 2004.
 
-\bibitem{internationaldiabetesfederation}
-{International Diabetes Federation}, ``{Home}.''
-  \url{https://www.idf.org/e-library/epidemiology-research/diabetes-atlas/134-idf-diabetes-atlas-8th-edition.html},
-  2016.
-\newblock Online; accessed 12 February 2020.
+\bibitem{10.1145/2107556.2107572}
+Dari AlHuwail and Rodrigo Barnes.
+\newblock Diabetes care in the age of informatics: Kuwait-scotland health
+  innovation network.
+\newblock In {\em Proceedings of the Second Kuwait Conference on E-Services and
+  e-Systems}, KCESS ’11, New York, NY, USA, 2011. Association for Computing
+  Machinery.
 
-\bibitem{rpi}
-R.~P. Foundation, ``Raspberry pi 3 model b.''
-  \url{https://www.raspberrypi.org/products/raspberry-pi-3-model-b/}, Jan 2020.
+\bibitem{10.1145/3018896.3036387}
+Lujain AlThunayan, Nahed AlSahdi, and Liyakathunisa Syed.
+\newblock Comparative analysis of different classification algorithms for
+  prediction of diabetes disease.
+\newblock In {\em Proceedings of the Second International Conference on
+  Internet of Things, Data and Cloud Computing}, ICC ’17, New York, NY, USA,
+  2017. Association for Computing Machinery.
 
-\bibitem{itertools}
-``9.7. itertools - functions creating iterators for efficient looping.''
-  \url{https://docs.python.org/2/library/itertools.html}.
+\bibitem{10.1145/41526.41531}
+G.~O. Barnett.
+\newblock History of the development of medical information systems at the
+  laboratory of computer science at massachusetts general hospital.
+\newblock In {\em Proceedings of ACM Conference on History of Medical
+  Informatics}, HMI ’87, page 43–49, New York, NY, USA, 1987. Association
+  for Computing Machinery.
 
-\bibitem{pandas}
-``About pandas.'' \url{https://pandas.pydata.org/about/index.html}.
-
-\bibitem{scikit}
-``Getting started.''
-  \url{https://scikit-learn.org/stable/getting_started.html}.
-
-\bibitem{numpy}
-``Numpy.'' \url{https://numpy.org/}.
-
-\bibitem{mysql}
-``Mysql documentation.'' \url{https://dev.mysql.com/doc/}.
+\bibitem{10.1145/1476793.1476911}
+Walter~L. Bennett, Charles~F. Stroebel, and Bernard~C. Glueck.
+\newblock Hospital automation: Something more than a computer.
+\newblock In {\em Proceedings of the May 14-16, 1969, Spring Joint Computer
+  Conference}, AFIPS ’69 (Spring), page 709–714, New York, NY, USA, 1969.
+  Association for Computing Machinery.
 
 \bibitem{bonaccorso_2017}
-G.~Bonaccorso, {\em Machine Learning Algorithms}, vol.~1.
-\newblock Packt Publishing Ltd., 1~ed., 2017.
-
-\bibitem{basic_biostats}
-J.~I. Hoffman, {\em Basic Biostatistics for Medical and Biomedical
-  Practitioners}.
-\newblock Academic Press, 2019.
-
-\bibitem{knn1}
-O.~Harrison, ``Machine learning basics with the k-nearest neighbors
-  algorithm.''
-  \url{https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761},
-  Sep 2018.
-
-\bibitem{decision_tree}
-R.~S. Brid, ``Decision trees, a simple way to visualise descisions..''
-  \url{https://medium.com/greyatom/decision-trees-a-simple-way-to-visualize-a-decision-dc506a403aeb},
-  Oct 2018.
-
-\bibitem{decision_tree1}
-P.~Gupta, ``Decision trees in machine learning..''
-  \url{https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052},
-  May 2017.
-
-\bibitem{RF1}
-W.~Koehrsen, ``An implementation and explanation of the random forest in
-  python.''
-  \url{https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76},
-  Aug 2018.
+Giuseppe Bonaccorso.
+\newblock {\em Machine Learning Algorithms}, volume~1.
+\newblock Packt Publishing Ltd., 1 edition, 2017.
 
 \bibitem{RF2}
-L.~Breiman and A.~Cutler, ``Random forests.''
+Leo Breiman and Adele Cutler.
+\newblock Random forests.
+\newblock
   \url{https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm#workings},
   Jun 2003.
 
-\bibitem{10.5555/212782}
-D.~Michie, D.~J. Spiegelhalter, C.~C. Taylor, and J.~Campbell, eds., {\em
-  Machine Learning, Neural and Statistical Classification}.
-\newblock USA: Ellis Horwood, 1995.
+\bibitem{decision_tree}
+Rajesh~S. Brid.
+\newblock Decision trees, a simple way to visualise descisions.
+\newblock
+  \url{https://medium.com/greyatom/decision-trees-a-simple-way-to-visualize-a-decision-dc506a403aeb},
+  Oct 2018.
 
-\bibitem{10.3389/fnbot.2013.00021}
-A.~Natekin and A.~Knoll, ``Gradient boosting machines, a tutorial,'' {\em
-  Frontiers in Neurorobotics}, vol.~7, p.~21, 2013.
-
-\bibitem{gbm}
-P.~Grover, ``Gradient boosting from scratch.''
-  \url{https://medium.com/mlreview/gradient-boosting-from-scratch-1e317ae4587d},
-  Dec 2017.
-
-\bibitem{gbm1}
-H.~Singh, ``Understanding gradient boosting machines.''
-  \url{https://towardsdatascience.com/understanding-gradient-boosting-machines-9be756fe76ab},
-  Nov 2018.
-
-\bibitem{svm}
-R.~Gandhi, ``Support vector machine — introduction to machine learning
-  algorithms.''
-  \url{https://towardsdatascience.com/support-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47},
-  Jun 2018.
-
-\bibitem{article}
-S.~Sathyanarayana, ``A gentle introduction to backpropagation,'' {\em Numeric
-  Insight, Inc Whitepaper}, 07 2014.
-
-\bibitem{10.1145/1015330.1015415}
-R.~Collobert and S.~Bengio, ``Links between perceptrons, mlps and svms,'' in
-  {\em Proceedings of the Twenty-First International Conference on Machine
-  Learning}, ICML ’04, (New York, NY, USA), p.~23, Association for Computing
-  Machinery, 2004.
-
-\bibitem{2091}
-P.~D. {Wasserman} and T.~{Schwartz}, ``Neural networks. ii. what are they and
-  why is everybody so interested in them now?,'' {\em IEEE Expert}, vol.~3,
-  pp.~10--15, Spring 1988.
+\bibitem{10.1145/2516604.2516614}
+Suzana Brown and Timothy~X. Brown.
+\newblock Value of mobile monitoring for diabetes in developing countries.
+\newblock In {\em Proceedings of the Sixth International Conference on
+  Information and Communication Technologies and Development: Full Papers -
+  Volume 1}, ICTD ’13, page 267–273, New York, NY, USA, 2013. Association
+  for Computing Machinery.
 
 \bibitem{mlp1}
-J.~Brownlee, ``Crash course on multi-layer perceptron neural networks.''
+Jason Brownlee.
+\newblock Crash course on multi-layer perceptron neural networks.
+\newblock
   \url{https://machinelearningmastery.com/neural-networks-crash-course/}, May
   2016.
 
 \bibitem{mlp2}
-J.~Brownlee, ``When to use mlp, cnn, and rnn neural networks.''
+Jason Brownlee.
+\newblock When to use mlp, cnn, and rnn neural networks.
+\newblock
   \url{https://machinelearningmastery.com/when-to-use-mlp-cnn-and-rnn-neural-networks/},
   July 2018.
 
-\bibitem{10.5555/1074100.1074638}
-A.~Laine, {\em Neural Networks}, p.~1233–1239.
-\newblock GBR: John Wiley and Sons Ltd., 2003.
+\bibitem{10.1145/2998476.2998497}
+Omprakash Chandrakar and Jatinderkumar~R. Saini.
+\newblock Development of indian weighted diabetic risk score (iwdrs) using
+  machine learning techniques for type-2 diabetes.
+\newblock In {\em Proceedings of the 9th Annual ACM India Conference}, COMPUTE
+  ’16, page 125–128, New York, NY, USA, 2016. Association for Computing
+  Machinery.
 
-\bibitem{10.1145/2330784.2330917}
-K.~O. Stanley, ``Evolving neural networks,'' in {\em Proceedings of the 14th
-  Annual Conference Companion on Genetic and Evolutionary Computation}, GECCO
-  ’12, (New York, NY, USA), p.~805–826, Association for Computing
-  Machinery, 2012.
+\bibitem{chatrati_hossain_goyal_bhan_bhattacharya_gaurav_tiwari_2020}
+Saiteja~Prasad Chatrati, Gahangir Hossain, Ayush Goyal, Anupama Bhan, Sayantan
+  Bhattacharya, Devottam Gaurav, and Sanju~Mishra Tiwari.
+\newblock Smart home health monitoring system for predicting type 2 diabetes
+  and hypertension.
+\newblock {\em Journal of King Saud University - Computer and Information
+  Sciences}, Jan 2020.
 
-\bibitem{10.5555/3122009.3242044}
-I.~Hubara, M.~Courbariaux, D.~Soudry, R.~El-Yaniv, and Y.~Bengio, ``Quantized
-  neural networks: Training neural networks with low precision weights and
-  activations,'' {\em J. Mach. Learn. Res.}, vol.~18, p.~6869–6898, Jan.
-  2017.
-
-\bibitem{10.1145/1858378.1858391}
-B.~S. Ilango and N.~Ramaraj, ``A hybrid prediction model with f-score feature
-  selection for type ii diabetes databases,'' in {\em Proceedings of the 1st
-  Amrita ACM-W Celebration on Women in Computing in India}, A2CWiC ’10, (New
-  York, NY, USA), Association for Computing Machinery, 2010.
-
-\bibitem{10.1145/1281192.1281294}
-M.~Hua and J.~Pei, ``Cleaning disguised missing data: A heuristic approach,''
-  in {\em Proceedings of the 13th ACM SIGKDD International Conference on
-  Knowledge Discovery and Data Mining}, KDD ’07, (New York, NY, USA),
-  p.~950–958, Association for Computing Machinery, 2007.
-
-\bibitem{10.1145/3372422.3372432}
-S.~A. Dzulkifli, M.~N.~M. Salleh, and K.~H. Talpur, ``Improved weighted
-  learning support vector machines (svm) for high accuracy,'' in {\em
-  Proceedings of the 2019 2nd International Conference on Computational
-  Intelligence and Intelligent Systems}, CIIS 2019, (New York, NY, USA),
-  p.~40–44, Association for Computing Machinery, 2019.
-
-\bibitem{10.1145/1330598.1330708}
-Z.~Shevked and L.~Dakovski, ``Learning and classification with prime implicants
-  applied to medical data diagnosis,'' in {\em Proceedings of the 2007
-  International Conference on Computer Systems and Technologies}, CompSysTech
-  ’07, (New York, NY, USA), Association for Computing Machinery, 2007.
-
-\bibitem{10.1145/2490257.2490269}
-Y.~Kokkinos and K.~G. Margaritis, ``Parallel and local learning for fast
-  probabilistic neural networks in scalable data mining,'' in {\em Proceedings
-  of the 6th Balkan Conference in Informatics}, BCI ’13, (New York, NY, USA),
-  p.~47–52, Association for Computing Machinery, 2013.
-
-\bibitem{10.1145/3320326.3320359}
-G.~Oumaima, E.~Lotfi, E.~Fatiha, and B.~Mohammed, ``Deep learning approach as
-  new tool for type 2 diabetes detection,'' in {\em Proceedings of the 2nd
-  International Conference on Networking, Information Systems \& Security},
-  NISS19, (New York, NY, USA), Association for Computing Machinery, 2019.
-
-\bibitem{10.1145/500559.500561}
-S.~Rajsbaum, ``Distributed computing,'' {\em SIGACT News}, vol.~32, p.~53–62,
-  Sept. 2001.
-
-\bibitem{10.1145/131214.131287}
-M.~T.~M. Liu, ``Distributed computing,'' in {\em Proceedings of the 1992 ACM
-  Annual Conference on Communications}, CSC ’92, (New York, NY, USA), p.~560,
-  Association for Computing Machinery, 1992.
-
-\bibitem{10.5555/1858583.1858601}
-J.~Guo, ``Toward distributed computing,'' {\em J. Comput. Sci. Coll.}, vol.~26,
-  p.~122–131, Dec. 2010.
-
-\bibitem{10.1145/503956.503978}
-R.~Gimson, J.~Bowen, and T.~Gleeson, ``Distributed computing software
-  project,'' in {\em Proceedings of the 2nd Workshop on Making Distributed
-  Systems Work}, EW 2, (New York, NY, USA), p.~1–3, Association for Computing
-  Machinery, 1986.
-
-\bibitem{10.1145/369836.369843}
-S.~Rajsbaum, ``Principles of distributed computing: An exciting challenge,''
-  {\em SIGACT News}, vol.~31, p.~52–61, Dec. 2000.
-
-\bibitem{10.1145/285070.285074}
-D.~Smith, ``Computerizing computer science,'' {\em Commun. ACM}, vol.~41,
-  p.~21–23, Sept. 1998.
-
-\bibitem{10.1145/1476793.1476911}
-W.~L. Bennett, C.~F. Stroebel, and B.~C. Glueck, ``Hospital automation:
-  Something more than a computer,'' in {\em Proceedings of the May 14-16, 1969,
-  Spring Joint Computer Conference}, AFIPS ’69 (Spring), (New York, NY, USA),
-  p.~709–714, Association for Computing Machinery, 1969.
-
-\bibitem{10.5555/1074100.1074452}
-L.~E. Perreault and L.~Ohno-Machado, {\em Hospital Information System (HIS)},
-  p.~788–790.
-\newblock GBR: John Wiley and Sons Ltd., 2003.
-
-\bibitem{10.1145/41526.41531}
-G.~O. Barnett, ``History of the development of medical information systems at
-  the laboratory of computer science at massachusetts general hospital,'' in
-  {\em Proceedings of ACM Conference on History of Medical Informatics}, HMI
-  ’87, (New York, NY, USA), p.~43–49, Association for Computing Machinery,
-  1987.
-
-\bibitem{10.1145/1500412.1500506}
-D.~J. Mishelevich, ``Hospital information systems tutorial: A guide for
-  computer scientists and practitioners,'' in {\em Proceedings of the May 4-7,
-  1981, National Computer Conference}, AFIPS ’81, (New York, NY, USA),
-  p.~631–639, Association for Computing Machinery, 1981.
+\bibitem{10.1145/1015330.1015415}
+Ronan Collobert and Samy Bengio.
+\newblock Links between perceptrons, mlps and svms.
+\newblock In {\em Proceedings of the Twenty-First International Conference on
+  Machine Learning}, ICML ’04, page~23, New York, NY, USA, 2004. Association
+  for Computing Machinery.
 
 \bibitem{10.1145/3318236.3318247}
-F.~Darwish, C.~Silva, and M.~Saraee, ``Diabetics’ self-management systems:
-  Drawbacks and potential enhancements,'' in {\em Proceedings of the 2019 2nd
-  International Conference on Geoinformatics and Data Analysis}, ICGDA 2019,
-  (New York, NY, USA), p.~76–82, Association for Computing Machinery, 2019.
+Fahad Darwish, Charith Silva, and Mo~Saraee.
+\newblock Diabetics’ self-management systems: Drawbacks and potential
+  enhancements.
+\newblock In {\em Proceedings of the 2019 2nd International Conference on
+  Geoinformatics and Data Analysis}, ICGDA 2019, page 76–82, New York, NY,
+  USA, 2019. Association for Computing Machinery.
 
-\bibitem{10.1145/2998476.2998497}
-O.~Chandrakar and J.~R. Saini, ``Development of indian weighted diabetic risk
-  score (iwdrs) using machine learning techniques for type-2 diabetes,'' in
-  {\em Proceedings of the 9th Annual ACM India Conference}, COMPUTE ’16, (New
-  York, NY, USA), p.~125–128, Association for Computing Machinery, 2016.
+\bibitem{deva_2015}
+Dhiana Deva.
+\newblock Qcon rio - machine learning for everyone.
+\newblock {\em LinkedIn SlideShare}, Aug 2015.
 
-\bibitem{10.1145/3018896.3036387}
-L.~AlThunayan, N.~AlSahdi, and L.~Syed, ``Comparative analysis of different
-  classification algorithms for prediction of diabetes disease,'' in {\em
-  Proceedings of the Second International Conference on Internet of Things,
-  Data and Cloud Computing}, ICC ’17, (New York, NY, USA), Association for
-  Computing Machinery, 2017.
+\bibitem{10.1145/3372422.3372432}
+Syahizul~Amri Dzulkifli, Mohd Najib~Mohd Salleh, and Kashif~Hussain Talpur.
+\newblock Improved weighted learning support vector machines (svm) for high
+  accuracy.
+\newblock In {\em Proceedings of the 2019 2nd International Conference on
+  Computational Intelligence and Intelligent Systems}, CIIS 2019, page 40–44,
+  New York, NY, USA, 2019. Association for Computing Machinery.
+
+\bibitem{diabetes_india}
+{Editor}.
+\newblock {Over 30 million have now been diagnosed with diabetes in India. The
+  CPR (Crude prevalence rate) in the urban areas of India is thought to be 9
+  per cent.}
+\newblock
+  \url{https://www.diabetes.co.uk/global-diabetes/diabetes-in-india.html},
+  2019.
+\newblock Online; accessed 25 February 2020.
+
+\bibitem{rpi}
+Raspberry~Pi Foundation.
+\newblock Raspberry pi 3 model b.
+\newblock \url{https://www.raspberrypi.org/products/raspberry-pi-3-model-b/},
+  Jan 2020.
+
+\bibitem{svm}
+Rohith Gandhi.
+\newblock Support vector machine — introduction to machine learning
+  algorithms.
+\newblock
+  \url{https://towardsdatascience.com/support-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47},
+  Jun 2018.
 
 \bibitem{10.1145/3297280.3297537}
-M.~George, A.~M. Chacko, S.~K. Kurien, and N.~Ali, ``Diabetes care in cloud -
-  research challenges,'' in {\em Proceedings of the 34th ACM/SIGAPP Symposium
-  on Applied Computing}, SAC ’19, (New York, NY, USA), p.~160–162,
-  Association for Computing Machinery, 2019.
+Merlin George, Anu~Mary Chacko, Sudeep~Koshy Kurien, and Naseer Ali.
+\newblock Diabetes care in cloud - research challenges.
+\newblock In {\em Proceedings of the 34th ACM/SIGAPP Symposium on Applied
+  Computing}, SAC ’19, page 160–162, New York, NY, USA, 2019. Association
+  for Computing Machinery.
 
-\bibitem{10.1145/2516604.2516614}
-S.~Brown and T.~X. Brown, ``Value of mobile monitoring for diabetes in
-  developing countries,'' in {\em Proceedings of the Sixth International
-  Conference on Information and Communication Technologies and Development:
-  Full Papers - Volume 1}, ICTD ’13, (New York, NY, USA), p.~267–273,
-  Association for Computing Machinery, 2013.
+\bibitem{10.1145/503956.503978}
+Roger Gimson, Jonathan Bowen, and Tim Gleeson.
+\newblock Distributed computing software project.
+\newblock In {\em Proceedings of the 2nd Workshop on Making Distributed Systems
+  Work}, EW 2, page 1–3, New York, NY, USA, 1986. Association for Computing
+  Machinery.
 
-\bibitem{10.1145/2107556.2107572}
-D.~AlHuwail and R.~Barnes, ``Diabetes care in the age of informatics:
-  Kuwait-scotland health innovation network,'' in {\em Proceedings of the
-  Second Kuwait Conference on E-Services and e-Systems}, KCESS ’11, (New
-  York, NY, USA), Association for Computing Machinery, 2011.
+\bibitem{gbm}
+Prince Grover.
+\newblock Gradient boosting from scratch.
+\newblock
+  \url{https://medium.com/mlreview/gradient-boosting-from-scratch-1e317ae4587d},
+  Dec 2017.
+
+\bibitem{10.5555/1858583.1858601}
+Jiang Guo.
+\newblock Toward distributed computing.
+\newblock {\em J. Comput. Sci. Coll.}, 26(2):122–131, December 2010.
+
+\bibitem{decision_tree1}
+Prashant Gupta.
+\newblock Decision trees in machine learning.
+\newblock
+  \url{https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052},
+  May 2017.
+
+\bibitem{knn1}
+Onel Harrison.
+\newblock Machine learning basics with the k-nearest neighbors algorithm.
+\newblock
+  \url{https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761},
+  Sep 2018.
+
+\bibitem{basic_biostats}
+Julien~I.E. Hoffman.
+\newblock {\em Basic Biostatistics for Medical and Biomedical Practitioners}.
+\newblock Academic Press, 2019.
+
+\bibitem{10.1145/1281192.1281294}
+Ming Hua and Jian Pei.
+\newblock Cleaning disguised missing data: A heuristic approach.
+\newblock In {\em Proceedings of the 13th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD ’07, page 950–958, New York,
+  NY, USA, 2007. Association for Computing Machinery.
+
+\bibitem{10.5555/3122009.3242044}
+Itay Hubara, Matthieu Courbariaux, Daniel Soudry, Ran El-Yaniv, and Yoshua
+  Bengio.
+\newblock Quantized neural networks: Training neural networks with low
+  precision weights and activations.
+\newblock {\em J. Mach. Learn. Res.}, 18(1):6869–6898, January 2017.
+
+\bibitem{10.1145/1858378.1858391}
+B.~Sarojini Ilango and N.~Ramaraj.
+\newblock A hybrid prediction model with f-score feature selection for type ii
+  diabetes databases.
+\newblock In {\em Proceedings of the 1st Amrita ACM-W Celebration on Women in
+  Computing in India}, A2CWiC ’10, New York, NY, USA, 2010. Association for
+  Computing Machinery.
+
+\bibitem{internationaldiabetesfederation}
+{International Diabetes Federation}.
+\newblock {Home}.
+\newblock
+  \url{https://www.idf.org/e-library/epidemiology-research/diabetes-atlas/134-idf-diabetes-atlas-8th-edition.html},
+  2016.
+\newblock Online; accessed 12 February 2020.
+
+\bibitem{johannes1988using}
+R~S Johannes.
+\newblock Using the g algorithm to forecast the onset of diabetes mellitus.
+\newblock {\em Johns Hopkins APL Technical Digest}, 10:262--266, 1988.
+
+\bibitem{kaur_kaur_1970}
+Paramjot Kaur and Ramanpreet Kaur.
+\newblock Comparative analysis of classification techniques for diagnosis of
+  diabetes.
+\newblock {\em SpringerLink}, Jan 1970.
+
+\bibitem{RF1}
+Will Koehrsen.
+\newblock An implementation and explanation of the random forest in python.
+\newblock
+  \url{https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76},
+  Aug 2018.
+
+\bibitem{10.1145/2490257.2490269}
+Yiannis Kokkinos and Konstantinos~G. Margaritis.
+\newblock Parallel and local learning for fast probabilistic neural networks in
+  scalable data mining.
+\newblock In {\em Proceedings of the 6th Balkan Conference in Informatics}, BCI
+  ’13, page 47–52, New York, NY, USA, 2013. Association for Computing
+  Machinery.
+
+\bibitem{10.5555/1074100.1074638}
+Andrew Laine.
+\newblock {\em Neural Networks}, page 1233–1239.
+\newblock John Wiley and Sons Ltd., GBR, 2003.
+
+\bibitem{lisa_gladman_lisa_2019}
+Lisa~Gladman Lisa, Lisa Gladman, and Lisa.
+\newblock Types of healthcare information systems - scott-clark medical.
+\newblock {\em Scott}, Nov 2019.
+
+\bibitem{10.1145/131214.131287}
+Ming T.~(Mike) Liu.
+\newblock Distributed computing.
+\newblock In {\em Proceedings of the 1992 ACM Annual Conference on
+  Communications}, CSC ’92, page 560, New York, NY, USA, 1992. Association
+  for Computing Machinery.
+
+\bibitem{maladkar_2019}
+Kishan Maladkar.
+\newblock Why is random search better than grid search for machine learning.
+\newblock {\em Analytics India Magazine}, Sep 2019.
+
+\bibitem{mandal_2019}
+Ananya Mandal.
+\newblock What is diabetes?
+\newblock {\em News}, Feb 2019.
+
+\bibitem{mandot_2018}
+Pushkar Mandot.
+\newblock What is lightgbm, how to implement it? how to fine tune the
+  parameters?
+\newblock {\em Medium}, Dec 2018.
+
+\bibitem{10.5555/212782}
+Donald Michie, D.~J. Spiegelhalter, C.~C. Taylor, and John Campbell, editors.
+\newblock {\em Machine Learning, Neural and Statistical Classification}.
+\newblock Ellis Horwood, USA, 1995.
+
+\bibitem{10.1145/1500412.1500506}
+David~J. Mishelevich.
+\newblock Hospital information systems tutorial: A guide for computer
+  scientists and practitioners.
+\newblock In {\em Proceedings of the May 4-7, 1981, National Computer
+  Conference}, AFIPS ’81, page 631–639, New York, NY, USA, 1981.
+  Association for Computing Machinery.
+
+\bibitem{10.3389/fnbot.2013.00021}
+Alexey Natekin and Alois Knoll.
+\newblock Gradient boosting machines, a tutorial.
+\newblock {\em Frontiers in Neurorobotics}, 7:21, 2013.
+
+\bibitem{norena_2018}
+Sebastian Norena.
+\newblock Python model tuning methods using cross validation and grid search.
+\newblock {\em Medium}, Jun 2018.
+
+\bibitem{10.1145/3320326.3320359}
+Ghafki Oumaima, Elachaak Lotfi, Elouaai Fatiha, and Bouhorma Mohammed.
+\newblock Deep learning approach as new tool for type 2 diabetes detection.
+\newblock In {\em Proceedings of the 2nd International Conference on
+  Networking, Information Systems \& Security}, NISS19, New York, NY, USA,
+  2019. Association for Computing Machinery.
+
+\bibitem{10.5555/1074100.1074452}
+Leslie~E. Perreault and Lucila Ohno-Machado.
+\newblock {\em Hospital Information System (HIS)}, page 788–790.
+\newblock John Wiley and Sons Ltd., GBR, 2003.
+
+\bibitem{10.1145/369836.369843}
+Sergio Rajsbaum.
+\newblock Principles of distributed computing: An exciting challenge.
+\newblock {\em SIGACT News}, 31(4):52–61, December 2000.
+
+\bibitem{10.1145/500559.500561}
+Sergio Rajsbaum.
+\newblock Distributed computing.
+\newblock {\em SIGACT News}, 32(3):53–62, September 2001.
+
+\bibitem{10.1145/3109761.3158404}
+Ignacio Rodr\'{\i}guez-Rodr\'{\i}guez, Miguel~\'{A}ngel Zamora, and
+  Jos\'{e}-Victor Rodr\'{\i}guez.
+\newblock On predicting glycaemia in type 1 diabetes mellitus patients by using
+  support vector machines.
+\newblock In {\em Proceedings of the 1st International Conference on Internet
+  of Things and Machine Learning}, IML ’17, New York, NY, USA, 2017.
+  Association for Computing Machinery.
+
+\bibitem{article}
+Shashi Sathyanarayana.
+\newblock A gentle introduction to backpropagation.
+\newblock {\em Numeric Insight, Inc Whitepaper}, 07 2014.
+
+\bibitem{scikit2}
+{Scikit-Learn}.
+\newblock {sklearn.preprocessing.LabelEncoder}.
+\newblock
+  \url{https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html},
+  2019.
+\newblock Online; accessed 25 February 2020.
+
+\bibitem{scikit1}
+{Scikit-Learn}.
+\newblock {sklearn.preprocessing.StandardScaler}.
+\newblock
+  \url{https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html},
+  2019.
+\newblock Online; accessed 25 February 2020.
+
+\bibitem{10.1145/1330598.1330708}
+Zekie Shevked and Ludmil Dakovski.
+\newblock Learning and classification with prime implicants applied to medical
+  data diagnosis.
+\newblock In {\em Proceedings of the 2007 International Conference on Computer
+  Systems and Technologies}, CompSysTech ’07, New York, NY, USA, 2007.
+  Association for Computing Machinery.
+
+\bibitem{gbm1}
+Harshdeep Singh.
+\newblock Understanding gradient boosting machines.
+\newblock
+  \url{https://towardsdatascience.com/understanding-gradient-boosting-machines-9be756fe76ab},
+  Nov 2018.
+
+\bibitem{10.1145/285070.285074}
+Don Smith.
+\newblock Computerizing computer science.
+\newblock {\em Commun. ACM}, 41(9):21–23, September 1998.
+
+\bibitem{10.1145/2330784.2330917}
+Kenneth~O. Stanley.
+\newblock Evolving neural networks.
+\newblock In {\em Proceedings of the 14th Annual Conference Companion on
+  Genetic and Evolutionary Computation}, GECCO ’12, page 805–826, New York,
+  NY, USA, 2012. Association for Computing Machinery.
+
+\bibitem{2091}
+P.~D. {Wasserman} and T.~{Schwartz}.
+\newblock Neural networks. ii. what are they and why is everybody so interested
+  in them now?
+\newblock {\em IEEE Expert}, 3(1):10--15, Spring 1988.
+
+\bibitem{watson_2019}
+Stephanie Watson.
+\newblock Diabetes: Symptoms, causes, treatment, prevention, and more.
+\newblock {\em Healthline}, Mar 2019.
+
+\bibitem{yellowbrick_dt}
+{Yellowbrick}.
+\newblock {Discrimination Threshold - yellowbrick v1.0.1 documentation}.
+\newblock
+  \url{https://www.scikit-yb.org/en/latest/api/classifier/threshold.html},
+  2019.
+\newblock Online; accessed 25 February 2020.
+
+\bibitem{10.1145/3326172.3326213}
+Faizan Zafar, Saad Raza, Muhammad~Umair Khalid, and Muhammad~Ali Tahir.
+\newblock Predictive analytics in healthcare for diabetes prediction.
+\newblock In {\em Proceedings of the 2019 9th International Conference on
+  Biomedical Engineering and Technology}, ICBET’ 19, page 253–259, New
+  York, NY, USA, 2019. Association for Computing Machinery.
+
+\bibitem{diabetesmellitus}
+Zou, Quan, Qu, Luo, Yamei, Yin, Dehui, Ju, Ying, Tang, and et~al.
+\newblock {\em Predicting Diabetes Mellitus With Machine Learning Techniques}.
+\newblock PhD thesis, School of Computer Science and Technology, Tianjin
+  University, Tianjin, China, 2018.
 
 \end{thebibliography}
