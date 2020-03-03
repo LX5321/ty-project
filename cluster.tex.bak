@@ -4,7 +4,6 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[nottoc]{tocbibind}
 \usepackage{import}
-\usepackage{glossaries}
 \usepackage{nomencl}
 \usepackage{amsmath}
 \usepackage{tikz}
@@ -26,21 +25,6 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 \maxdeadcycles=1000
-
-\makeglossaries
-
-\newglossaryentry{latex}
-{
-    name=latex,
-    description={Is a mark up language specially suited 
-    for scientific documents}
-}
-
-\newglossaryentry{maths}
-{
-    name=mathematics,
-    description={Mathematics is what mathematicians do}
-}
 
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},   
@@ -124,12 +108,14 @@ Ashweta Anand Fondekar\\
 
 Project Supervisor
 \end{center}
-\newpage
 
-\textbf{Work Record}
-
+\clearpage
 \newpage
 \section{Acknowledgements}
+I have taken up sincere efforts in this project. However, it would not have been possible without the kind support and help of many individuals. I would like to extend my sincere thanks to all of them.
+
+I am highly indebted to Tr. Ashweta Anand Fondekar for their guidance and constant supervision as well as for providing necessary information regarding the project and also for their support in completing the project. I would also like to express my gratitude towards my parents for their kind co-operation and encouragement which help me in completion of this project. I would like to express my special gratitude and thanks to Sir. Kumaresh for giving me such attention and time for all the hardware related matters. My thanks and appreciations also go to my college faculty for aiding me in developing the project and people who have willingly helped me out with their abilities.
+
 
 \newpage
 \tableofcontents
@@ -168,7 +154,7 @@ Machine learning is a growing field in computer science. With the development an
 
 The project encompasses the qualities of Remote Patient Monitoring (RPM)\cite{rpm} and Clinical Decision Support (CDS)\cite{cds}. RPM provides medical facilities that have the ability to transmit patient data to healthcare professionals who might very well be halfway around the world. RPM can monitor blood glucose levels and blood pressure. It is particularly helpful for patients with chronic conditions such as type 2 diabetes, hypertension, or cardiac disease. Data collected and transmitted via PRM can be used by a healthcare professional or a healthcare team to detect medical events such as stroke or heart attack that require immediate and aggressive medical intervention. Data collected may be used as part of a research project or health study. RPM is a life-saving system for patients in remote areas who cannot access face-to-face health care. CDS analyzes data from clinical and administrative systems. The aim is to assist healthcare providers in making informed clinical decisions. Data available can provide information to medical professions who are preparing diagnoses or predicting medical conditions like drug interactions and reactions. CDS tools filter information to assist healthcare professionals in caring for individual clients. 
 
-Cluster computing or High-Performance computing frameworks is a form of computing in which bunch of computers (often called nodes) that are connected through a LAN (local area network) so that, they behave like a single machine. A computer cluster help to solve complex operations more efficiently with much faster processing speed, better data integrity than a single computer and they are mostly used for critical applications.
+Machine learning is also becoming a great contender to traditional algorithms. Modern Machine Learning Algorithms are able to overcome strictly static program instructions and make data-driven predictions that help companies make decisions with minimal human intervention. IDC forecasts that spending on Machine Learning will grow from \$12 billion in 2017 to \$57.6 billion by 2021 \cite{dzone}. Cluster Computing or High-Performance computing frameworks is a form of computing in which bunch of computers (often called nodes) that are connected through a LAN (local area network) so that, they behave like a single machine. A computer cluster help to solve complex operations more efficiently with much faster processing speed, better data integrity than a single computer and they are mostly used for critical applications. These are now capable of housing machine learning algorithms
 
 \newpage
 \section{Objective}
@@ -176,12 +162,12 @@ Cluster computing or High-Performance computing frameworks is a form of computin
 Currently, there exist no integrated systems for predicting diabetes. There are however multitudes of researches being carried out on diabetic patient and looking for newer traits that can help predict the onset of the sickness.
 
 \subsection{Proposed System}
-The obective of this project is to select an algorithm that is capable of classifying a healthy person from a diabetic person. After which the selected algorithm will be deployed to a group of computers which will help us expand the computing capabilities further than a single computer. The model should then write to a database than can be queried to present data to the users who will interface the said program. 
+The objective of this project is to select an algorithm that is capable of classifying a healthy person from a diabetic person. After which the selected algorithm will be deployed to a group of computers which will help us expand the computing capabilities further than a single computer. The model should then write to a database than can be queried to present data to the users who will interface the said program. 
 
 \newpage
 \section{Project Rationale}
 
-Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood sugar. Hyperglycaemia, or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to serious damage to many of the body's systems, especially the nerves and blood vessels.
+Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood sugar. Hyperglycemia, or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to serious damage to many of the body's systems, especially the nerves and blood vessels.
 
 Taking a look at the number of people with diabetes, the count has risen from 108 million in 1980 to 422 million in 2014.
 The global prevalence of diabetes among adults over 18 years of age has risen from 4.7\% in 1980 to 8.5\% in 2014. Diabetes prevalence has been rising more rapidly in middle-income and low-income countries.
@@ -194,15 +180,15 @@ Type 2 diabetes results from the body’s ineffective use of insulin. Type 2 dia
 
 Until recently, this type of diabetes was seen only in adults but it is now also occurring increasingly frequently in children.
 
-Gestational diabetes is another type of diabtetes where hyperglycaemia with blood glucose values above normal but below those diagnostic of diabetes, occurring during pregnancy. Women with gestational diabetes are at an increased risk of complications during pregnancy and at delivery. They and their children are also at increased risk of type 2 diabetes in the future. Gestational diabetes is diagnosed through prenatal screening, rather than through reported symptoms.
+Gestational diabetes is another type of diabetes where hyperglycemia with blood glucose values above normal but below those diagnostic of diabetes, occurring during pregnancy. Women with gestational diabetes are at an increased risk of complications during pregnancy and at delivery. They and their children are also at increased risk of type 2 diabetes in the future. Gestational diabetes is diagnosed through prenatal screening, rather than through reported symptoms.
 
 Untreated diabetes can damage the heart, blood vessels, eyes, kidneys, and nerves. Adults with diabetes have a two- to three-fold increased risk of heart attacks and strokes. Combined with reduced blood flow, neuropathy (nerve damage) in the feet increases the chance of foot ulcers, infection and eventual need for limb amputation. Diabetic retinopathy is an important cause of blindness, and occurs as a result of long-term accumulated damage to the small blood vessels in the retina. 2.6\% of global blindness can be attributed to diabetes. Diabetes is among the leading causes of kidney failure.
 
-Early diagnosis can be accomplished through relatively inexpensive testing of blood sugar. Treatment of diabetes involves diet and physical activity along with lowering blood glucose and the levels of other known risk factors that damage blood vessels. Tobacco use cessation is also important to avoid complications. 
+Early diagnosis can be accomplished through relatively inexpensive testing of blood sugar. Treatment of diabetes involves diet and physical activity along with lowering blood glucose and the levels of other known risk factors that damage blood vessels. Tobacco use cessation is also important to avoid complications. \cite{alberti_zimmet_2004}\cite{internationaldiabetesfederation}
 
 \newpage
 \section{Review of Literature}
-For the study I have chosen to perform a comparitive study between the K Nearest Neighbours algorithm, Logistic Regression, Decision Tree Classifier, Random Forest Classifier, Gradient Boosting Classifier, Support Vector Machine and finally a Multi Layered Perceptron for the classifier groups. 
+For the study I have chosen to perform a comparative study between the K Nearest Neighbours algorithm, Logistic Regression, Decision Tree Classifier, Random Forest Classifier, Gradient Boosting Classifier, Support Vector Machine and finally a Multi Layered Perceptron for the classifier groups. 
 
 % =============== KNN ======================
 
@@ -211,9 +197,9 @@ However, provided the user has sufficient computing resources to speedily handle
 
 % =================== LOG REGRESSION ===================
 
-The linear regression model can work well for regression, but fails for classification. The reason for this being that in case of two classes, you could label one of the classes with 0 and the other with 1 and use linear regression. Technically it works and most linear model programs will yeild weights for you. But there are a few problems with this approach:
+The linear regression model can work well for regression, but fails for classification. The reason for this being that in case of two classes, you could label one of the classes with 0 and the other with 1 and use linear regression. Technically it works and most linear model programs will yield weights for you. But there are a few problems with this approach:
 
-A linear model does not output probabilities, but it treats the classes as numbers (0 and 1) and fits the best hyperplane (for a single feature, it is a line) that minimizes the distances between the points and the hyperplane. So it simply interpolates between the points, and you cannot interpret it as probabilities. A linear model also extrapolates and gives you values below zero and above one. This is a good sign that there might be a smarter approach to classification. Since the predicted outcome is not a probability, but a linear interpolation between points, there is no meaningful threshold at which you can distinguish one class from the other. 
+A linear model does not output probabilities, but it treats the classes as numbers (0 and 1) and fits the best hyper-plane (for a single feature, it is a line) that minimizes the distances between the points and the hyperbola. So it simply interpolates between the points, and you cannot interpret it as probabilities. A linear model also extrapolates and gives you values below zero and above one. This is a good sign that there might be a smarter approach to classification. Since the predicted outcome is not a probability, but a linear interpolation between points, there is no meaningful threshold at which you can distinguish one class from the other. 
 
 The logistic regression algorithm even if called regression, is a classification method which is based on the probability for
 a sample to belong to a class. As our probabilities must be continuous in R and bounded between (0, 1), it's necessary to introduce a threshold function to filter the term z. The name logistic comes from the decision to use the sigmoid (or logistic) function:
@@ -237,31 +223,54 @@ As a result, the decision making tree is one of the more popular classification 
 
 Decision tree is a type of supervised learning algorithm (having a pre-defined target variable) that is mostly used in classification problems. It works for both categorical and continuous input and output variables. In this technique, we split the population or sample into two or more homogeneous sets (or sub-populations) based on most significant splitter / differentiator in input variables.
 
-Advantages of Decision Tree:
+Some advantages of decision trees are as follows:
+
+\begin{itemize}
+\item 
 Easy to Understand: Decision tree output is very easy to understand even for people from non-analytical background. It does not require any statistical knowledge to read and interpret them. Its graphical representation is very intuitive and users can easily relate their hypothesis.
 
+\item
 Useful in Data exploration: Decision tree is one of the fastest way to identify most significant variables and relation between two or more variables. With the help of decision trees, we can create new variables / features that has better power to predict target variable. It can also be used in data exploration stage. For e.g., we are working on a problem where we have information available in hundreds of variables, there decision tree will help to identify most significant variable.
 
+\item
 Decision trees implicitly perform variable screening or feature selection.
 
+\item
 Decision trees require relatively little effort from users for data preparation.
 Less data cleaning required: It requires less data cleaning compared to some other modeling techniques. It is not influenced by outliers and missing values to a fair degree.
 
+\item
 Data type is not a constraint: It can handle both numerical and categorical variables. Can also handle multi-output problems.
 Non-Parametric Method: Decision tree is considered to be a non-parametric method. This means that decision trees have no assumptions about the space distribution and the classifier structure.
 
+\item
 Non-linear relationships between parameters do not affect tree performance.
+\item
 The number of hyper-parameters to be tuned is almost null.
 
-Disadvantages of Decision Tree:
+\end{itemize}
+
+
+However there are some drawback to the decision tree algorithm also:
+\begin{itemize}
+\item
 Over fitting: Decision-tree learners can create over-complex trees that do not generalize the data well. This is called overfitting. Over fitting is one of the most practical difficulty for decision tree models. This problem gets solved by setting constraints on model parameters and pruning.
+\item
 Not fit for continuous variables: While working with continuous numerical variables, decision tree loses information, when it categorizes variables in different categories.
+\item
 Decision trees can be unstable because small variations in the data might result in a completely different tree being generated. This is called variance, which needs to be lowered by methods like bagging and boosting.
+\item
 Greedy algorithms cannot guarantee to return the globally optimal decision tree. This can be mitigated by training multiple trees, where the features and samples are randomly sampled with replacement.
+\item
 Decision tree learners create biased trees if some classes dominate. It is therefore recommended to balance the data set prior to fitting with the decision tree.
+\item
 Information gain in a decision tree with categorical variables gives a biased response for attributes with greater no. of categories.
+\item
 Generally, it gives low prediction accuracy for a dataset as compared to other machine learning algorithms.
+\item
 Calculations can become complex when there are many class label.
+\end{itemize}
+
 
 % ================= RANDOM FOREST ================
 
@@ -273,17 +282,17 @@ When training, each tree in a random forest learns from a random sample of the d
 
 The random forest combines hundreds or thousands of decision trees, trains each one on a slightly different set of the observations, splitting nodes in each tree considering a limited number of the features. The final predictions of the random forest are made by averaging the predictions of each individual tree.
 
-Decision tree a model that makes decisions based on a sequence of questions asked about feature values. It has low bias and high variance leading to overfitting the training data. Each decision tree has a factor known as Gini Impurity. The gini impurity of a tree is measure that the decision tree tries to minimize when splitting each node. Represents the probability that a randomly selected sample from a node will be incorrectly classified according to the distribution of samples in the node. In order to make the algorithm more random we also look at a technique called bootstrapping which is sampling random sets of observations with replacement. Random subsets of features comes into play when selecting a random set of the features when considering splits for each node in a decision tree. Random Forest is the ensemble model made of many decision trees using bootstrapping, random subsets of features, and average voting to make predictions. Looking at the Bias-variance tradeoff which a core issue in machine learning describing the balance between a model with high flexibility (high variance) that learns the training data very well at the cost of not being able to generalize to new data that is passed to it out of the dataset, and an inflexible model (high bias) that cannot learn the training data. A random forest reduces the variance of a single decision tree leading to better predictions on new data.
+Decision tree a model that makes decisions based on a sequence of questions asked about feature values. It has low bias and high variance leading to overfitting the training data. Each decision tree has a factor known as Gini Impurity. The gini impurity of a tree is measure that the decision tree tries to minimize when splitting each node. Represents the probability that a randomly selected sample from a node will be incorrectly classified according to the distribution of samples in the node. In order to make the algorithm more random we also look at a technique called bootstrapping which is sampling random sets of observations with replacement. Random subsets of features comes into play when selecting a random set of the features when considering splits for each node in a decision tree. Random Forest is the ensemble model made of many decision trees using bootstrapping, random subsets of features, and average voting to make predictions. Looking at the Bias-variance trade-off which a core issue in machine learning describing the balance between a model with high flexibility (high variance) that learns the training data very well at the cost of not being able to generalize to new data that is passed to it out of the dataset, and an inflexible model (high bias) that cannot learn the training data. A random forest reduces the variance of a single decision tree leading to better predictions on new data.
 
 % ============ GRADIENT BOOSTING ================
 
-Boosting is a method of converting weak learners into strong learners. In boosting, each new tree is a fit on a modified version of the original data set. The gradient boosting algorithm can be most easily explained by first introducing the AdaBoost Algorithm. The AdaBoost Algorithm begins by training a decision tree in which each observation is assigned an equal weight. After evaluating the first tree, we increase the weights of those observations that are difficult to classify and lower the weights for those that are easy to classify. The second tree is therefore grown on this weighted data. Here, the idea is to improve upon the predictions of the first tree. Our new model is therefore $Tree 1 + Tree 2$. We then compute the classification error from this new 2-tree ensemble model and grow a third tree to predict the revised residuals. We repeat this process for a specified number of iterations. Subsequent trees help us to classify observations that are not well classified by the previous trees. Predictions of the final ensemble model is therefore the weighted sum of the predictions made by the previous tree models.
+Boosting is a method of converting weak learners into strong learners. In boosting, each new tree is a fit on a modified version of the original data set. The gradient boosting algorithm can be most easily explained by first introducing the Ada-Boost Algorithm. The Ada-Boost Algorithm begins by training a decision tree in which each observation is assigned an equal weight. After evaluating the first tree, we increase the weights of those observations that are difficult to classify and lower the weights for those that are easy to classify. The second tree is therefore grown on this weighted data. Here, the idea is to improve upon the predictions of the first tree. Our new model is therefore $Tree 1 + Tree 2$. We then compute the classification error from this new 2-tree ensemble model and grow a third tree to predict the revised residuals. We repeat this process for a specified number of iterations. Subsequent trees help us to classify observations that are not well classified by the previous trees. Predictions of the final ensemble model is therefore the weighted sum of the predictions made by the previous tree models.
 
-Gradient Boosting trains many models in a gradual, additive and sequential manner. The major difference between AdaBoost and Gradient Boosting Algorithm is how the two algorithms identify the shortcomings of weak learners (eg. decision trees). While the AdaBoost model identifies the shortcomings by using high weight data points, gradient boosting performs the same by using gradients in the loss function ($y=ax+b+e$ , $e$ needs a special mention as it is the error term). The loss function is a measure indicating how good are model’s coefficients are at fitting the underlying data. A logical understanding of loss function would depend on what we are trying to optimise. For example, if we were to consider that we are trying to predict the sales prices by using a regression, then the loss function would be based off the error between true and predicted house prices. Similarly, if our goal is to classify credit defaults, then the loss function would be a measure of how good our predictive model is at classifying bad loans. One of the biggest motivations of using gradient boosting is that it allows one to optimise a user specified cost function, instead of a loss function that usually offers less control and does not essentially correspond with real world applications.
+Gradient Boosting trains many models in a gradual, additive and sequential manner. The major difference between Ada-Boost and Gradient Boosting Algorithm is how the two algorithms identify the shortcomings of weak learners (eg. decision trees). While the Ada-Boost model identifies the shortcomings by using high weight data points, gradient boosting performs the same by using gradients in the loss function ($y=ax+b+e$ , $e$ needs a special mention as it is the error term). The loss function is a measure indicating how good are model’s coefficients are at fitting the underlying data. A logical understanding of loss function would depend on what we are trying to optimise. For example, if we were to consider that we are trying to predict the sales prices by using a regression, then the loss function would be based off the error between true and predicted house prices. Similarly, if our goal is to classify credit defaults, then the loss function would be a measure of how good our predictive model is at classifying bad loans. One of the biggest motivations of using gradient boosting is that it allows one to optimise a user specified cost function, instead of a loss function that usually offers less control and does not essentially correspond with real world applications.
 
-Hyperparameter tuning is especially significant for gradient boosting algorithm since they are prone to overfitting. The special process of tuning the number of iterations for an algorithm such as gradient boosting modelling and random forest is called “Early Stopping”. Early Stopping performs model optimisation by monitoring the model’s performance on a separate test data set and stopping the training procedure once the performance on the test data stops improving beyond a certain number of iterations. It avoids overfitting by attempting to automatically select the inflection point where performance on the test dataset starts to decrease while performance on the training dataset continues to improve as the model starts to overfit. In the context of gradient boosting, early stopping can be based either on an out of bag sample set (“OOB”) or cross-validation (“cv”). Like mentioned above, the ideal time to stop training the model is when the validation error has decreased and started to stabilise before it starts increasing due to overfitting.
+Hyper-parameter tuning is especially significant for gradient boosting algorithm since they are prone to overfitting. The special process of tuning the number of iterations for an algorithm such as gradient boosting modelling and random forest is called “Early Stopping”. Early Stopping performs model optimisation by monitoring the model’s performance on a separate test data set and stopping the training procedure once the performance on the test data stops improving beyond a certain number of iterations. It avoids overfitting by attempting to automatically select the inflection point where performance on the test dataset starts to decrease while performance on the training dataset continues to improve as the model starts to overfit. In the context of gradient boosting, early stopping can be based either on an out of bag sample set (“OOB”) or cross-validation (“cv”). Like mentioned above, the ideal time to stop training the model is when the validation error has decreased and started to stabilise before it starts increasing due to overfitting.
 
-Gradient boosting involves three qunitessential elements. A loss function to be optimized, a weak learner to make predictions and finally, an additive model to add weak learners to minimize the loss function.
+Gradient boosting involves three quintessential elements. A loss function to be optimized, a weak learner to make predictions and finally, an additive model to add weak learners to minimize the loss function.
 
 Some important terms of gradient boosting algorithm is the loss function. The loss function used depends on the type of problem being solved. It must be differentiable, but many standard loss functions are supported and you can define your own loss function. A benefit of the gradient boosting framework is that a new boosting algorithm does not have to be derived for each loss function that may want to be used, instead, it is a generic enough framework that any differentiable loss function can be used.
 
@@ -292,12 +301,12 @@ Weak Learners, are the decision trees are used as the weak learner in gradient b
 Additive Model is an algorithm wherein trees are added one at a time, and existing trees in the model are not changed. A gradient descent procedure is used to minimize the loss when adding trees.  Instead of parameters, we have weak learner sub-models or more specifically decision trees. After calculating the loss, to perform the gradient descent procedure, we must add a tree to the model that reduces the loss (i.e. follow the gradient). We do this by parameterizing the tree, then modify the parameters of the tree and move in the right direction by (reducing the residual loss. Generally this approach is called functional gradient descent or gradient descent with functions. The output for the new tree is then added to the output of the existing sequence of trees in an effort to correct or improve the final output of the model. A fixed number of trees are added or training stops once loss reaches an acceptable level or no longer improves on an external validation dataset.
 
 % =============== svm ==============
-Moving on we have the SVM. The objective of the support vector machine algorithm is to find a hyperplane in an N-dimensional space(N being the number of features) that distinctly classifies the data points. To separate the two classes of data points, there are many possible hyperplanes that could be chosen. Our objective is to find a plane that has the maximum margin, i.e the maximum distance between data points of both classes. Maximizing the margin distance provides some reinforcement so that future data points can be classified with more confidence. Hyperplanes are decision boundaries that help classify the data points. Data points falling on either side of the hyperplane can be attributed to different classes. Also, the dimension of the hyperplane depends upon the number of features. If the number of input features is 2, then the hyperplane is just a line. If the number of input features is 3, then the hyperplane becomes a two-dimensional plane. It becomes difficult to imagine when the number of features exceeds 3. Support vectors are data points that are closer to the hyperplane and influence the position and orientation of the hyperplane. Using these support vectors, we maximize the margin of the classifier. Deleting the support vectors will change the position of the hyperplane.
+Moving on we have the SVM. The objective of the support vector machine algorithm is to find a hyper-plane in an N-dimensional space(N being the number of features) that distinctly classifies the data points. To separate the two classes of data points, there are many possible hyperbola that could be chosen. Our objective is to find a plane that has the maximum margin, i.e the maximum distance between data points of both classes. Maximizing the margin distance provides some reinforcement so that future data points can be classified with more confidence. Hyper-planes are decision boundaries that help classify the data points. Data points falling on either side of the hyper-plane can be attributed to different classes. Also, the dimension of the hyper-plane depends upon the number of features. If the number of input features is 2, then the hyper-plane is just a line. If the number of input features is 3, then the hyper-plane becomes a two-dimensional plane. It becomes difficult to imagine when the number of features exceeds 3. Support vectors are data points that are closer to the hyper-plane and influence the position and orientation of the hyper-plane. Using these support vectors, we maximize the margin of the classifier. Deleting the support vectors will change the position of the hyper-plane.
 
 Maximal-Margin Classifier
 The Maximal-Margin Classifier is a hypothetical classifier that best explains how SVM works in practice. The numeric input variables (x) in your data (the columns) form an n-dimensional space. For example, if you had two input variables, this would form a two-dimensional space.
 
-A hyperplane is a line that splits the input variable space. In SVM, a hyperplane is selected to best separate the points in the input variable space by their class, either class 0 or class 1. In two-dimensions one can visualize this as a line and all of the input points can be completely separated by this line. For example:
+A hyper-plane is a line that splits the input variable space. In SVM, a hyper-plane is selected to best separate the points in the input variable space by their class, either class 0 or class 1. In two-dimensions one can visualize this as a line and all of the input points can be completely separated by this line. For example:
 
 $$B0 + (B1 * X1) + (B2 * X2) = 0$$
 
@@ -305,16 +314,16 @@ Where the coefficients ($B1$ and $B2$) that determine the slope of the line and 
 
 By plugging in input values into the line equation, it can be calculated, whether a new point is above or below the line.
 
-If the point is above the line, the equation returns a value greater than 0 and the point belongs to the first class (class 0). If below the line, the equation returns a value less than 0 and the point belongs to the second class (class 1). A value close to the line returns a value close to zero and the point may be difficult to classify. If the magnitude of the value is large, the model may have more confidence in the prediction. The distance between the line and the closest data points is referred to as the margin. The best or optimal line that can separate the two classes is the line that as the largest margin. This is called the Maximal-Margin hyperplane. The margin is calculated as the perpendicular distance from the line to only the closest points. Only these points are relevant in defining the line and in the construction of the classifier. These points are called the support vectors. They support or define the hyperplane. The hyperplane is learned from training data using an optimization procedure that maximizes the margin.
+If the point is above the line, the equation returns a value greater than 0 and the point belongs to the first class (class 0). If below the line, the equation returns a value less than 0 and the point belongs to the second class (class 1). A value close to the line returns a value close to zero and the point may be difficult to classify. If the magnitude of the value is large, the model may have more confidence in the prediction. The distance between the line and the closest data points is referred to as the margin. The best or optimal line that can separate the two classes is the line that as the largest margin. This is called the Maximal-Margin hyper-plane. The margin is calculated as the perpendicular distance from the line to only the closest points. Only these points are relevant in defining the line and in the construction of the classifier. These points are called the support vectors. They support or define the hyper-plane. The hyper-plane is learned from training data using an optimization procedure that maximizes the margin.
 
 Soft Margin Classifier
-In practice, real data is messy and cannot be separated perfectly with a hyperplane.
+In practice, real data is messy and cannot be separated perfectly with a hyper-plane.
 
 The constraint of maximizing the margin of the line that separates the classes must be relaxed. This is often called the soft margin classifier. This change allows some points in the training data to violate the separating line.
 
-A tuning parameter is introduced called simply C that defines the magnitude of the wiggle allowed across all dimensions. The C parameters defines the amount of violation of the margin allowed. A C=0 is no violation and we are back to the inflexible Maximal-Margin Classifier described above. The larger the value of C the more violations of the hyperplane are permitted.
+A tuning parameter is introduced called simply C that defines the magnitude of the wiggle allowed across all dimensions. The C parameters defines the amount of violation of the margin allowed. A C=0 is no violation and we are back to the inflexible Maximal-Margin Classifier described above. The larger the value of C the more violations of the hyper-plane are permitted.
 
-During the learning of the hyperplane from data, all training instances that lie within the distance of the margin will affect the placement of the hyperplane and are referred to as support vectors. And as C affects the number of instances that are allowed to fall within the margin, C influences the number of support vectors used by the model.
+During the learning of the hyper-plane from data, all training instances that lie within the distance of the margin will affect the placement of the hyper-plane and are referred to as support vectors. And as C affects the number of instances that are allowed to fall within the margin, C influences the number of support vectors used by the model.
 
 The smaller the value of C, the more sensitive the algorithm is to the training data (higher variance and lower bias). The larger the value of C, the less sensitive the algorithm is to the training data (lower variance and higher bias). A powerful insight is that the linear SVM can be rephrased using the inner product of any two given observations, rather than the observations themselves. The inner product between two vectors is the sum of the multiplication of each pair of input values.
 
@@ -377,7 +386,7 @@ The final hidden layer is called the output layer and it is responsible for outp
 
 \item
 Stochastic Gradient Descent
-The classical and still preferred training algorithm for neural networks is called stochastic gradient descent. This is where one row of data is exposed to the network at a time as input. The network processes the input upward activating neurons as it goes to finally produce an output value. This is called a forward pass on the network. It is the type of pass that is also used after the network is trained in order to make predictions on new data. The output of the network is compared to the expected output and an error is calculated. This error is then propagated back through the network, one layer at a time, and the weights are updated according to the amount that they contributed to the error. This clever bit of math is called the backpropagation algorithm. The process is repeated for all of the examples in your training data. One of updating the network for the entire training dataset is called an epoch. A network may be trained for tens, hundreds or many thousands of epochs.
+The classical and still preferred training algorithm for neural networks is called stochastic gradient descent. This is where one row of data is exposed to the network at a time as input. The network processes the input upward activating neurons as it goes to finally produce an output value. This is called a forward pass on the network. It is the type of pass that is also used after the network is trained in order to make predictions on new data. The output of the network is compared to the expected output and an error is calculated. This error is then propagated back through the network, one layer at a time, and the weights are updated according to the amount that they contributed to the error. This clever bit of math is called the back-propagation algorithm. The process is repeated for all of the examples in your training data. One of updating the network for the entire training dataset is called an epoch. A network may be trained for tens, hundreds or many thousands of epochs.
 
 \item
 Weight Updates - The weights in the network can be updated from the errors calculated for each training example and this is called online learning. It can result in fast but also chaotic changes to the network. Alternatively, the errors can be saved up across all of the training examples and the network can be updated at the end. This is called batch learning and is often more stable. Typically, because datasets are so large and because of computational efficiencies, the size of the batch, the number of examples the network is shown before an update is often reduced to a small number, such as tens or hundreds of examples. The amount that weights are updated is controlled by a configuration parameters called the learning rate. It is also called the step size and controls the step or change made to network weight for a given error. Often small weight sizes are used such as 0.1 or 0.01 or smaller.
@@ -391,7 +400,31 @@ Prediction - Once a neural network has been trained it can be used to make predi
 
 \end{itemize}
 
-Neural networks require the input to be scaled in a consistent way. Rescaling it to the range between 0 and 1 called normalization. Another popular technique is to standardize it so that the distribution of each column has the mean of zero and the standard deviation of 1. Scaling also applies to image pixel data. Data such as words can be converted to integers, such as the popularity rank of the word in the dataset and other encoding techniques.
+Neural networks require the input to be scaled in a consistent way. Re-scaling it to the range between 0 and 1 called normalization. Another popular technique is to standardize it so that the distribution of each column has the mean of zero and the standard deviation of 1. Scaling also applies to image pixel data. Data such as words can be converted to integers, such as the popularity rank of the word in the dataset and other encoding techniques.
+
+Furthermore for evaluation of the model we will be using techniques such as\cite{metrics}, 
+
+\begin{itemize}
+\item
+\texttt{Accuracy}: Accuracy is a common evaluation metric for classification problems. It is defined as the number of correct predictions made as a ratio of all predictions made. 
+
+\item
+\texttt{Area Under Curve (AUC)}: Area under ROC Curve is a performance metric for measuring the ability of a binary classifier to discriminate between positive and negative classes.
+\item
+\texttt{F-Score}: F-measure (also F-score) is a measure of a test’s accuracy that considers both the precision and the recall of the test to compute the score. Precision is the number of correct positive results divided by the total predicted positive observations. 
+
+\item
+\texttt{Recall}: Recall is the number of correct positive results divided by the number of all relevant samples (total actual positives).
+\item
+\texttt{Confusion Matrix}: Used in the context of clustering. These N x N matrices (where N is the number of clusters) are designed as followed: the element in cell (i, j) represents the number of observations, in the test training set (as opposed to the control training set, in a cross-validation setting) that belong to cluster i and are assigned (by the clustering algorithm) to cluster j. When these numbers are transformed into proportions, these matrices are sometimes called contingency tables. A wrongly assigned observation is called false positive (non-fraudulent transaction erroneously labelled as fraudulent) or false negative (fraudulent transaction erroneously labelled as non- fraudulent). The higher the concentration of observations in the diagonal of the confusion matrix, the higher the accuracy / predictive power of your clustering algorithm.
+
+\item
+\texttt{ROC Curve}: Unlike the lift chart, the ROC curve is almost independent of the response rate. The receiver operating characteristic (ROC), or ROC curve, is a graphical plot that illustrates the performance of a binary classifier system as its discrimination threshold is varied. The curve is created by plotting the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. The true-positive rate is also known as sensitivity or the sensitivity index d', known as "d-prime" in signal detection and biomedical informatics, or recall in machine learning. The false-positive rate is also known as the fall-out and can be calculated as (1 - specificity). The ROC curve is thus the sensitivity as a function of fall-out.
+
+\item
+\texttt{Cross Validation}: Cross-validation is a technique that involves partitioning the original observation dataset into a training set, used to train the model, and an independent set used to evaluate the analysis. The most common cross-validation technique is k-fold cross-validation, where the original dataset is partitioned into k equal size subsamples, called folds. The k is a user-specified number, usually with 5 or 10 as its preferred value. This is repeated k times, such that each time, one of the k subsets is used as the test set/validation set and the other k-1 subsets are put together to form a training set. The error estimation is averaged over all k trials to get the total effectiveness of our model. For instance, when performing five-fold cross-validation, the data is first partitioned into 5 parts of (approximately) equal size. A sequence of models is trained. The first model is trained using the first fold as the test set, and the remaining folds are used as the training set. This is repeated for each of these 5 splits of the data and the estimation of accuracy is averaged over all 5 trials to get the total effectiveness of our model. As can be seen, every data point gets to be in a test set exactly once and gets to be in a training set k-1 times. This significantly reduces bias, as we’re using most of the data for fitting, and it also significantly reduces variance, as most of the data is also being used in the test set. Interchanging the training and test sets also adds to the effectiveness of this method.
+
+\end{itemize}
 
 A distributed computer system consists of multiple software components that are on multiple computers, but run as a single system. The computers that are in a distributed system can be physically close together and connected by a local network, or they can be geographically distant and connected by a wide area network. A distributed system can consist of any number of possible configurations, such as mainframes, personal computers, workstations, minicomputers, and so on. The goal of distributed computing is to make such a network work as a single computer.
 
@@ -402,11 +435,11 @@ Scalability - The system can easily be expanded by adding more machines as neede
 \item
 Redundancy - Several machines can provide the same services, so if one is unavailable, work does not stop. Additionally, because many smaller machines can be used, this redundancy does not need to be prohibitively expensive.
 \end{itemize}
-Distributed computing systems can run on hardware that is provided by many vendors, and can use a variety of standards-based software components. Such systems are independent of the underlying software. They can run on various operating systems, and can use various communications protocols. Some hardware might use UNIX or Linux as the operating system, while other hardware might use Windows operating systems. For intermachine communications, this hardware can use SNA or TCP/IP on Ethernet or Token Ring.
+Distributed computing systems can run on hardware that is provided by many vendors, and can use a variety of standards-based software components. Such systems are independent of the underlying software. They can run on various operating systems, and can use various communications protocols. Some hardware might use UNIX or Linux as the operating system, while other hardware might use Windows operating systems. For inter-machine communications, this hardware can use SNA or TCP/IP on Ethernet or Token Ring.
 
 
 \newpage
-\section{Software Requirements}
+\section{Functionality Specifications}
 The main function of this project is to enable the doctors to advise their patients with the help of the prediction software. The system should be accessible to the patient as well as the doctor, therefore it should have a web interface for the two parties to interact with.
 
 \subsection{Functionalities for Doctors}
@@ -437,7 +470,6 @@ As the master nodes:
 \begin{itemize}
 \item Should have the machine learning algorithm tuned as per specifications.
 \item Remote update should be possible.
-\item Remote access should be possible.
 \end{itemize}
 
 \newpage
@@ -511,18 +543,137 @@ GitHub is a global company that provides hosting for software development versio
 \subsection{SSH}
 Secure Shell is a cryptography network protocol for operating network services securely over an unsecured network. Typical applications include remote command-line, login, and remote command execution, but any network service can be secured with SSH. The SSH is used to communicate between the master and slave nodes.\cite{ssh}
 
+\subsection{Node.js}
+Node.js is an open-source and cross-platform JavaScript reunite environment. Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.
+
+A Node.js app is run in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.
+
+When Node.js needs to perform an I/O operation, like reading from the network, accessing a database or the filesystem, instead of blocking the thread and wasting CPU cycles waiting, Node.js will resume the operations when the response comes back.
+
+This allows Node.js to handle thousands of concurrent connections with a single server without introducing the burden of managing thread concurrency, which could be a significant source of bugs.
+
+Node.js has a unique advantage because millions of frontend developers that write JavaScript for the browser are now able to write the server-side code in addition to the client-side code without the need to learn a completely different language.
+
+In Node.js the new ECMAScript standards can be used without problems, as you don't have to wait for all your users to update their browsers - you are in charge of deciding which ECMAScript version to use by changing the Node.js version, and you can also enable specific experimental features by running Node.js with flags.\cite{nodejs}
+
+\subsubsection{Express.js}
+Express.js, or simply Express, is a web application framework for Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs. It has been called the de facto standard server framework for Node.js.\cite{expressjs}
+
+\subsubsection{Body Parser}
+Being able to parse a payload given to a node.js back end typically via a post request is a very common task when doing something with express.js. As such there is a built in way to quickly do this thanks to the body-parser module that is included with every express.js install (at least with the versions I have used thus far). In order to get into body parsing it is necessary to put together at least a basic full stack application.\cite{bodyparser}
+
+
 \newpage
 \section{Exploratory Data Analysis}
-The dataset used for this project is from the UCI Machine learning repository and can be found at their respective website. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and \ref{table:3} is the accuracy obtained from the predicted outcomes for given sets of patients.
+The dataset used for this project is from the UCI Machine learning repository and can be found at their respective website\cite{johannes1988using}. Table \ref{table:2} is an outcome of the accuracy of the algorithms subjected to train and \ref{table:3} is the accuracy obtained from the predicted outcomes for given sets of patients.
 
 Firstly, I began the experiment by examining the amount of people that were recorded by the dataset. We can see that the dataset contains a total of 768 observations. We can see that 268 people are healthy, while the rest of the 500 subjects are diabetic. If converted to percentage, 65.1\% of the subjects are healthy and 34.9\% of subjects are diabetic.
 
-To proceed with the eploratory data analysis, we can examine the missing values in the dataset. We can see that the dataset has multiple missing values across the columns of the dataset. Plotting of boxplots reveals that the dataset has multiple outliers. To replace these missing values with values to make the predictions more accurate we need to understand the relation of the data to the target variable. To get an understanding we can use the table \ref{table:6} for clarity on the correlation of values.
+To proceed with the exploratory data analysis, we can examine the missing values in the dataset. We can see that the dataset has multiple missing values across the columns of the dataset. Plotting of box-plots reveals that the dataset has multiple outliers. To replace these missing values with values to make the predictions more accurate we need to understand the relation of the data to the target variable. To get an understanding we can use the table \ref{table:6} for clarity on the correlation of values.
 
-To fill the missing values in the dataset we have to consider each of the attributes. For example in the insulin parameter, I have observed that the median value for diabetic people is 169.50 muU/ml, while for the section of healthy participants the median insulin value is recorded at 102.50 muU/ml. Likewise, I carried out the observations on the other attibutes of the dataset to fill the missing values via the median of healthy subjects for the healthy subjects whose insulin record is missing and diabetic insulin median for the subjects that are diabetic and do not have values in the columns.
+To fill the missing values in the dataset we have to consider each of the attributes. For example in the insulin parameter, I have observed that the median value for diabetic people is 169.50 muU/ml, while for the section of healthy participants the median insulin value is recorded at 102.50 muU/ml. Likewise, I carried out the observations on the other attributes of the dataset to fill the missing values via the median of healthy subjects for the healthy subjects whose insulin record is missing and diabetic insulin median for the subjects that are diabetic and do not have values in the columns.
 
-In order to generate new values for the dataset to render more accurate outcomes we look at scatterplots for our attributes. An example would be the Glucose vs Age scatterplot. According to the scatter plot of glucose to age we can see that higher glucose value with increase in age, depicts the glucose level of a diabetic person. 
+In order to generate new values for the dataset to render more accurate outcomes we look at scatter-plots for our attributes. An example would be the Glucose vs Age scatter-plot. According to the scatter plot of glucose to age we can see that higher glucose value with increase in age, depicts the glucose level of a diabetic person.
 
+To generate new features to improve the accuracy of classification, I have introduced new values into the dataset.
+
+\begin{enumerate}
+
+\item \texttt{N0}: Body Mass Index * Skin Thickness
+\item \texttt{N1}: All subjects with Age $<$ 30 and Glucose Level $<$=120
+\item \texttt{N2}: All subjects with BMI $<$=30
+\item \texttt{N3}: All subjects with Age $<$= 30 and Pregnancies $<$= 6
+\item \texttt{N4}: All subjects with Glucose $<$= 105 and BloodPressure $<$= 80
+\item \texttt{N5}: All subjects with SkinThickness $<$= 20
+\item \texttt{N6}: All subjects with BMI $<$ 30 and SkinThickness $<$= 20
+\item \texttt{N7}: All subjects with Glucose $<$= 105 and BMI $<$= 30
+\item \texttt{N8}: Number of Pregnancies / Age of Subject
+\item \texttt{N9}: All subjects with Insulin $<$ 200
+\item \texttt{N10}: All subjects with Blood Pressure $<$ 80
+\item \texttt{N11}: All subjects with Pregnancies $>$ 0 and $<$ 4
+\item \texttt{N12}: Age of Subject * Diabetes Pedigree Function
+\item \texttt{N13}: Glucose * Diabetes Pedigree Function
+\item \texttt{N14}: Age * Insulin
+\end{enumerate} 
+
+These values when passed through the standard scaler\cite{scikit1} and label encoder\cite{scikit2} help us reduce the poor performance in classification, shown in table \ref{table:2} and table \ref{table:3}, leaving us with an accuracy of 85\% as shown in table \ref{table:15}.
+
+\clearpage
+\newpage
+\section{Building Software}
+To extend the functionality of the system I have coded an algorithm that distributes the workloads across nodes in a distributed computing environment, built a website that displays the readings of the subject measured by a doctor and lastly a simple API written in node js that can interface with our database to provide scalability. All the software coded here has been coded using a VCS (Version Control System) namely GitHub to track versions of software and make bug tracking and patching of software easy. Updates across all computers are also easily acheived using a VCS.
+
+\subsection{The Distributed Computational Algorithm}
+This algorithm was written using Python and relies on SSH to communicate between nodes and master. The algorithm is capable of being altered via files that are read prior to runtime, thereby preventing hard-coded values from bottlenecking the performance and scalability of the code. In addition to this algorithms the master node is capable of updating itself and the slave nodes by simply running a command as a command line parameter.
+
+The algorithm should be run on the master node to interface with all the slave nodes. The algorithm is written as follows:
+\begin{enumerate}
+\item Read the hosts declared in the host file.
+\item Read queries in database that have not yet been classified as diabetic or healthy.
+\item Break the string of query ids into chunks of size $n$ defined in the environment file.
+\item Loop through the nodes sending the chunks of size $n$ to be predicted, using the selected machine learning algorithm.
+\item If no records are detected, wait for an interval $time$ and then continue as specified in step 2.
+\end{enumerate}
+
+On the slave nodes end, the slave follows the following algorithm, 
+\begin{enumerate}
+\item Read dataset from the local storage/ database.
+\item Train machine learning algorithm to predict the incoming queries.
+\item Read the query ids sent via the master node.
+\item Store query id for further use.
+\item Read the columns from the database and plug the values into the machine learning algorithm to generate  classifications on.
+\item After classifying as diabetic or healthy, push the value into the database.
+\item Continue from step 5 until the data sent via the master node in step 4 becomes 0.
+\end{enumerate}
+
+
+\subsection{The Web User Interface}
+For this interface I have used PHP and Bootstrap as a main approach to coding the website. The website features a patient and a doctor model where the doctor is responsible for measuring the attributes required by the algorithm as mentioned in table \ref{table:1}. This is then handled by the master and slave node model in the background and then the resultant data is then displayed to the user via a dashboard generated which includes interactive charts for the user to better understand the data.
+
+\subsubsection{For Doctors}
+The doctor can input data and monitor the patient performance via the dashboard. To insert data into to database via the user interface the doctor has to follow the steps stated below.
+\begin{enumerate}
+\item Log into the user interface with appropriate credentials.
+\item Select Find Patient button on the homepage.
+\item Search for the patient via the AJAX powered form.
+\item Choose Add New.
+\item Insert observations into the form rendered.
+\end{enumerate}
+
+To monitor the patients progress, the doctor has to
+\begin{enumerate}
+\item Log into the user interface with appropriate credentials.
+\item Select Find Patient button on the homepage.
+\item Search for the patient via the AJAX powered form.
+\item Choose Information.
+\item A dashboard with the patients data is now displayed.
+\end{enumerate} 
+
+\subsubsection{For Patients}
+Patients are only allowed to monitor their progress, therefore after logging into the interface with appropriate credentials the user is shown the dashboard for further representation of collected data.
+
+\subsection{The Application Programming Interface}
+An API is a set of definitions and protocols for building and integrating application software. API stands for application programming interface.
+
+APIs let products or service communicate with other products and services without having to know how they’re implemented. This can simplify app development, saving time and money. When designing new tools and products—or managing existing ones—APIs give you flexibility; simplify design, administration, and use; and provide opportunities for innovation.
+
+Because APIs simplify how developers integrate new application components into an existing architecture, they help business and IT teams collaborate. Business needs often change quickly in response to ever shifting digital markets, where new competitors can change a whole industry with a new app. In order to stay competitive, it's important to support the rapid development and deployment of innovative services. Cloud-native application development is an identifiable way to increase development speed, and it relies on connecting a microservices application architecture through APIs.
+
+APIs are a simplified way to connect ones own infrastructure through cloud-native app development, but they also allow you to share data with customers and other external users. 
+
+In short, APIs let you open up access to your resources while maintaining security and control. Connecting to APIs, and creating applications that consume the data or functionality exposed by APIs, can be done with a distributed integration platform that connects everything—including legacy systems, and the Internet of Things (IoT).\cite{redhat}
+
+Therefore, I have built a simple node.js api displayed in figure \ref{fig:58} that is capable of interfacing with the database to read and write values to the database. API's also reduce traffic and can be integrated with multitudes of services to scale the functionality of the platform.
+
+
+
+
+
+
+
+
+
+\clearpage
 \newpage
 \section{Results}
 After completing the Exploratory Data Analysis stage and putting the selected model through the k fold verification test we get the following results.
@@ -564,7 +715,34 @@ The algorithm is now capable of generating predictions with 85.41\% accuracy. A 
 \end{table}
 
 
-Table \ref{table:14} shows the segregation of the correct and incorrect predictions. 
+Table \ref{table:14} shows the segregation of the correct and incorrect predictions. The model successfully  predicts the diabetic subjects as diabetic 205 times and the healthy subjects as healthy 451 times. However, there are times when it has classified subjects wrongly. Here we can see that, a healthy subjects has been classified as diabetic 63 times and diabetic subjects have been classified as healthy 49 times.
+
+We can hold this true since:
+$$Accuracy = \dfrac{451+205}{451+49+63+205}$$
+$$=\dfrac{656}{768}$$
+$$=0.8541x100$$
+$$=85.41$$
+
+
+Which yields 85.41\% accuracy on predictions from the 79.70\% that we previously obtained on our dataset.
+
+After deploying the algorithm to a cluster and decentralising it, we can see that there is a considerable reduction in time taken to classify observations for subjects. When run on a single node, it takes 33.45 seconds to predict 2000 observations. We can see that with increase in number of nodes subjected to the data, there is a sharp decrease in time taken to compute the results for the data.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Nodes & Time Taken (s) \\\hline
+x1    & 33.45          \\\hline
+x2    & 25.31          \\\hline
+x3    & 21.84          \\\hline
+x4    & 16.79         \\\hline
+\end{tabular}
+\captionof{table}{Reduction in time taken using distributed computing approach.}
+\label{table:13}
+\end{table}
+
+Finally, we can summarise the performance of our model into one table. Table \ref{table:15} represents the metrics of my model generated after using the new and scaled dataset along with new attributes.
 
 \begin{table}[ht]
 \centering
@@ -580,9 +758,28 @@ Accuracy        & 0.8542      \\ \hline
 \label{table:15}
 \end{table}
 
+
+
+
+\clearpage
 \newpage
 \section{Future Scope}
+This project has much future scope, owing to the ever developing, volatile nature of computer hardware and software. The project can be generalised to suit any type of disease prediction after selecting the appropriate machine learning algorithm and then deploying the chosen algorithm to the cluster nodes. More diseases can also be predicted using the algorithm and if an API was able to interface between hardware and software to obtain live data from patients.
 
+
+\clearpage
+\newpage
+\section{Conclusion}
+In this project I improved upon the accuracy of classification of a healthy and diabetic patient from 79.70\% to 85.41\%. This was possible since I followed the principle of "Garbage In - Garbage Out". This means that poor, unrelated data caused performance reduction in models which was reduced by deducing new features that helped make the algorithm more stable and classify subjects more accurately. Furthermore, I leveraged the distribted computing concept to reduce the time taken to generate predictions to accomodate more load and make the system scalable in nature. Also, an interface was built for the doctors and patients to insert and observe new classifications remotely through a web interface. The project also has a simple API capable of accessing the database for future use.
+
+This project can possibly help many people diagonise the onset of diabetes mellitus before it is too late. By measuring using simple features like insulin, blood pressure we can now diagnose with 85.41\% accuracy whether or not a person tends to be diabetic.
+
+
+
+
+
+
+%======================================= Tables ==============================================
 \newpage
 {
 \clearpage
@@ -692,6 +889,7 @@ MLP Classifier         & Max Iterations = 1000; Alpha = 1; Random State = 0  & 0
 \centering
 \begin{table}[]
 \centering
+\vspace{5cm}
 \begin{tabular}{|l|l|l|}
 \hline
 Column                     & Number of Non-Zero Values & Percentage \\ \hline
@@ -718,6 +916,7 @@ Outcome                    & 0                         & 0          \\ \hline
 \centering
 \begin{table}[]
 \centering
+\vspace{1.5cm}
 \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 \hline
  Pregnancies &  Glucose &  BloodPressure &  SkinThickness &  Insulin &   BMI &  DiabetesPedigreeFunction &  Age &  Outcome \\\hline
@@ -847,23 +1046,6 @@ Diabetic          & 34.3      \\ \hline
 \captionof{table}{Body Mass Index Median Comparison.}
 \label{table:12}
 \end{table}
-
-\begin{table}[]
-\centering
-\begin{tabular}{|c|c|}
-\hline
-Nodes & Time Taken (s) \\\hline
-x1    & 33.45          \\\hline
-x2    & 25.31          \\\hline
-x3    & 21.84          \\\hline
-x4    & 16.79         \\\hline
-\end{tabular}
-\captionof{table}{Statistics using clustered approach.}
-\label{table:13}
-\end{table}
-
-
-
 
 \newpage
 \clearpage
@@ -1069,7 +1251,7 @@ sklearn.preprocessing.LabelEncoder
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(16).png}
-\caption{\label{fig:26} N2 distribution in percentage.}
+\caption{\label{fig:26} N2 distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
@@ -1087,7 +1269,7 @@ sklearn.preprocessing.LabelEncoder
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(19).png}
-\caption{\label{fig:29} N3 distribution in percentage.}
+\caption{\label{fig:29} N3 distribution by target.}
 \end{figure}
 
 \begin{figure}[ht]
@@ -1207,7 +1389,7 @@ sklearn.preprocessing.LabelEncoder
 \begin{figure}[ht]
 \centering
 \includegraphics[width=1\textwidth]{newplot(42).png}
-\caption{\label{fig:49} Extended heatmap with new features combined.}
+\caption{\label{fig:49} Extended heat-map with new features combined.}
 \end{figure}
 \clearpage
 \newpage
@@ -1250,17 +1432,25 @@ sklearn.preprocessing.LabelEncoder
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.5\textwidth]{8se.png}
-\caption{\label{fig:57} Form Validation and error handling to prevent erraneous values in database.}
+\caption{\label{fig:57} Form Validation and error handling to prevent erroneous values in database.}
 \end{figure}
 
+
+
+{
 \clearpage
-\newpage
-\section{Conclusion}
+\begin{landscape}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.5\textwidth]{nodejsapi.png}
+\caption{\label{fig:58} API built with Node.js capable of interfacing w/ database.}
+\end{figure}
+\end{landscape}
+}
 
-
+\clearpage
 \newpage
 \nocite{*}
 \bibliography{bib} 
 \bibliographystyle{plain}
-\printglossaries
 \end{document}

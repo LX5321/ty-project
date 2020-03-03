@@ -1,16 +1,16 @@
 \babel@toc {english}{}
-\contentsline {table}{\numberline {1}{\ignorespaces MLP 5 fold verification.}}{34}{table.1}
-\contentsline {table}{\numberline {2}{\ignorespaces Confusion Matrix for Model.}}{34}{table.2}
-\contentsline {table}{\numberline {3}{\ignorespaces Model Performance Metrics.}}{34}{table.3}
-\contentsline {table}{\numberline {4}{\ignorespaces Pima Indians dataset header.}}{36}{table.4}
-\contentsline {table}{\numberline {5}{\ignorespaces Train accuracy using various machine learning algorithms with various parameters.}}{37}{table.5}
-\contentsline {table}{\numberline {6}{\ignorespaces Test accuracy using various machine learning algorithms with various parameters.}}{38}{table.6}
-\contentsline {table}{\numberline {7}{\ignorespaces Null Value Check.}}{39}{table.7}
-\contentsline {table}{\numberline {8}{\ignorespaces First 15 rows of the raw dataset.}}{40}{table.8}
-\contentsline {table}{\numberline {9}{\ignorespaces Correlation Plot.}}{41}{table.9}
-\contentsline {table}{\numberline {10}{\ignorespaces Insulin Median Comparison.}}{42}{table.10}
-\contentsline {table}{\numberline {11}{\ignorespaces Glucose Median Comparison.}}{42}{table.11}
-\contentsline {table}{\numberline {12}{\ignorespaces Skin Thickness Median Comparison.}}{42}{table.12}
-\contentsline {table}{\numberline {13}{\ignorespaces Blood Pressure Median Comparison.}}{42}{table.13}
-\contentsline {table}{\numberline {14}{\ignorespaces Body Mass Index Median Comparison.}}{42}{table.14}
-\contentsline {table}{\numberline {15}{\ignorespaces Statistics using clustered approach.}}{42}{table.15}
+\contentsline {table}{\numberline {1}{\ignorespaces MLP 5 fold verification.}}{44}{table.1}
+\contentsline {table}{\numberline {2}{\ignorespaces Confusion Matrix for Model.}}{44}{table.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Reduction in time taken using distributed computing approach.}}{45}{table.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Model Performance Metrics.}}{45}{table.4}
+\contentsline {table}{\numberline {5}{\ignorespaces Pima Indians dataset header.}}{47}{table.5}
+\contentsline {table}{\numberline {6}{\ignorespaces Train accuracy using various machine learning algorithms with various parameters.}}{48}{table.6}
+\contentsline {table}{\numberline {7}{\ignorespaces Test accuracy using various machine learning algorithms with various parameters.}}{49}{table.7}
+\contentsline {table}{\numberline {8}{\ignorespaces Null Value Check.}}{50}{table.8}
+\contentsline {table}{\numberline {9}{\ignorespaces First 15 rows of the raw dataset.}}{51}{table.9}
+\contentsline {table}{\numberline {10}{\ignorespaces Correlation Plot.}}{52}{table.10}
+\contentsline {table}{\numberline {11}{\ignorespaces Insulin Median Comparison.}}{53}{table.11}
+\contentsline {table}{\numberline {12}{\ignorespaces Glucose Median Comparison.}}{53}{table.12}
+\contentsline {table}{\numberline {13}{\ignorespaces Skin Thickness Median Comparison.}}{53}{table.13}
+\contentsline {table}{\numberline {14}{\ignorespaces Blood Pressure Median Comparison.}}{53}{table.14}
+\contentsline {table}{\numberline {15}{\ignorespaces Body Mass Index Median Comparison.}}{53}{table.15}

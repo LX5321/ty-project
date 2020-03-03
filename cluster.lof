@@ -1,57 +1,59 @@
 \babel@toc {english}{}
-\contentsline {figure}{\numberline {1}{\ignorespaces Diabetic v/s Healthy Subject Count.}}{45}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Subject distribution across Body Mass Index range.}}{46}{figure.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Subject distribution across age.}}{46}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Subjects Insulin Distribution across ranges.}}{47}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Subjects distribution via Pregnancies.}}{47}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Subjects distribution via Diabetes Pedigree Function.}}{48}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Plot of N0}}{48}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Diabetic v/s Healthy Subjects Percentage.}}{49}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Boxplot for all attributes with outliers.}}{50}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Heatmap using Pearsons Correlation Coefficient.}}{51}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Number of missing values in count and percentage.}}{51}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Glucose v/s Age scatterplot.}}{52}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Subjects glucose distribution.}}{52}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Skin Thickness distribution of subjects.}}{53}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Blood Pressure distribution of subjects.}}{53}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Subjects Insulin distributon.}}{54}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces New feature N1.}}{54}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces New feature N3.}}{55}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces New feature N4.}}{55}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces New feature N6.}}{56}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces New feature N7.}}{56}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces N1 barplot for diabetic and healthy population.}}{57}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces N1 distribution in percentage.}}{57}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces N2 barplot for diabetic and healthy population.}}{58}{figure.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces N2 distribution in percentage.}}{58}{figure.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Pregnancies v/s age scatterplot.}}{59}{figure.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces N3 barplot for diabetic and healthy population.}}{59}{figure.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces N3 distribution in percentage.}}{60}{figure.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces Glucose v/s Blood Pressure scatterplot.}}{60}{figure.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces N4 barplot for diabetic and healthy population.}}{61}{figure.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces N4 distribution by target.}}{61}{figure.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces N5 barplot for diabetic and healthy population.}}{62}{figure.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces N5 distribution by target.}}{62}{figure.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces Skin Thickness v/s BMI scatterplot.}}{63}{figure.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces N6 barplot for diabetic and healthy population.}}{63}{figure.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces N6 distribution by target.}}{64}{figure.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces Glucose v/s Body Mass Index scatterplot.}}{64}{figure.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces N7 barplot for diabetic and healthy population.}}{65}{figure.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces N7 distribution by target.}}{65}{figure.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces N9 barplot for diabetic and healthy population.}}{66}{figure.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces N9 distribution by target.}}{66}{figure.41}
-\contentsline {figure}{\numberline {42}{\ignorespaces N10 barplot for diabetic and healthy population.}}{67}{figure.42}
-\contentsline {figure}{\numberline {43}{\ignorespaces N10 distribution by target.}}{67}{figure.43}
-\contentsline {figure}{\numberline {44}{\ignorespaces N11 barplot for diabetic and healthy population.}}{68}{figure.44}
-\contentsline {figure}{\numberline {45}{\ignorespaces N11 distribution by target.}}{68}{figure.45}
-\contentsline {figure}{\numberline {46}{\ignorespaces N15 barplot for diabetic and healthy population.}}{69}{figure.46}
-\contentsline {figure}{\numberline {47}{\ignorespaces N15 distribution by target.}}{69}{figure.47}
-\contentsline {figure}{\numberline {48}{\ignorespaces Extended heat-map with new features combined.}}{70}{figure.48}
-\contentsline {figure}{\numberline {49}{\ignorespaces Landing Page for website user interface depicted on iPhone 5SE.}}{71}{figure.49}
-\contentsline {figure}{\numberline {50}{\ignorespaces User Login Page for website user interface depicted on iPhone 5SE.}}{72}{figure.50}
-\contentsline {figure}{\numberline {51}{\ignorespaces Interactive and responsive graphs with touch or mouse hover capable interaction depicted on iPhone 5SE.}}{73}{figure.51}
-\contentsline {figure}{\numberline {52}{\ignorespaces Percentage of predicted risk for every patient.}}{74}{figure.52}
-\contentsline {figure}{\numberline {53}{\ignorespaces Modal based interaction for specific activities.}}{75}{figure.53}
-\contentsline {figure}{\numberline {54}{\ignorespaces User interface for doctors. Kept to a minimal for hassle free operation.}}{76}{figure.54}
-\contentsline {figure}{\numberline {55}{\ignorespaces AJAX enable live search for patients.}}{77}{figure.55}
-\contentsline {figure}{\numberline {56}{\ignorespaces Form Validation and error handling to prevent erroneous values in database.}}{78}{figure.56}
+\contentsline {figure}{\numberline {1}{\ignorespaces Model that forms the basis of selecting machine learning algorithms.}}{36}{figure.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Diabetic v/s Healthy Subject Count.}}{56}{figure.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Subject distribution across Body Mass Index range.}}{57}{figure.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Subject distribution across age.}}{57}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Subjects Insulin Distribution across ranges.}}{58}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Subjects distribution via Pregnancies.}}{58}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Subjects distribution via Diabetes Pedigree Function.}}{59}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Plot of N0}}{59}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Diabetic v/s Healthy Subjects Percentage.}}{60}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Boxplot for all attributes with outliers.}}{61}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Heatmap using Pearsons Correlation Coefficient.}}{62}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Number of missing values in count and percentage.}}{62}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Glucose v/s Age scatterplot.}}{63}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Subjects glucose distribution.}}{63}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Skin Thickness distribution of subjects.}}{64}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Blood Pressure distribution of subjects.}}{64}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Subjects Insulin distributon.}}{65}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces New feature N1.}}{65}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces New feature N3.}}{66}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces New feature N4.}}{66}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces New feature N6.}}{67}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces New feature N7.}}{67}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces N1 barplot for diabetic and healthy population.}}{68}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces N1 distribution in percentage.}}{68}{figure.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces N2 barplot for diabetic and healthy population.}}{69}{figure.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces N2 distribution by target.}}{69}{figure.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces Pregnancies v/s age scatterplot.}}{70}{figure.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces N3 barplot for diabetic and healthy population.}}{70}{figure.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces N3 distribution by target.}}{71}{figure.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces Glucose v/s Blood Pressure scatterplot.}}{71}{figure.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces N4 barplot for diabetic and healthy population.}}{72}{figure.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces N4 distribution by target.}}{72}{figure.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces N5 barplot for diabetic and healthy population.}}{73}{figure.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces N5 distribution by target.}}{73}{figure.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces Skin Thickness v/s BMI scatterplot.}}{74}{figure.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces N6 barplot for diabetic and healthy population.}}{74}{figure.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces N6 distribution by target.}}{75}{figure.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces Glucose v/s Body Mass Index scatterplot.}}{75}{figure.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces N7 barplot for diabetic and healthy population.}}{76}{figure.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces N7 distribution by target.}}{76}{figure.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces N9 barplot for diabetic and healthy population.}}{77}{figure.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces N9 distribution by target.}}{77}{figure.42}
+\contentsline {figure}{\numberline {43}{\ignorespaces N10 barplot for diabetic and healthy population.}}{78}{figure.43}
+\contentsline {figure}{\numberline {44}{\ignorespaces N10 distribution by target.}}{78}{figure.44}
+\contentsline {figure}{\numberline {45}{\ignorespaces N11 barplot for diabetic and healthy population.}}{79}{figure.45}
+\contentsline {figure}{\numberline {46}{\ignorespaces N11 distribution by target.}}{79}{figure.46}
+\contentsline {figure}{\numberline {47}{\ignorespaces N15 barplot for diabetic and healthy population.}}{80}{figure.47}
+\contentsline {figure}{\numberline {48}{\ignorespaces N15 distribution by target.}}{80}{figure.48}
+\contentsline {figure}{\numberline {49}{\ignorespaces Extended heat-map with new features combined.}}{81}{figure.49}
+\contentsline {figure}{\numberline {50}{\ignorespaces Landing Page for website user interface depicted on iPhone 5SE.}}{82}{figure.50}
+\contentsline {figure}{\numberline {51}{\ignorespaces User Login Page for website user interface depicted on iPhone 5SE.}}{83}{figure.51}
+\contentsline {figure}{\numberline {52}{\ignorespaces Interactive and responsive graphs with touch or mouse hover capable interaction depicted on iPhone 5SE.}}{84}{figure.52}
+\contentsline {figure}{\numberline {53}{\ignorespaces Percentage of predicted risk for every patient.}}{85}{figure.53}
+\contentsline {figure}{\numberline {54}{\ignorespaces Modal based interaction for specific activities.}}{86}{figure.54}
+\contentsline {figure}{\numberline {55}{\ignorespaces User interface for doctors. Kept to a minimal for hassle free operation.}}{87}{figure.55}
+\contentsline {figure}{\numberline {56}{\ignorespaces AJAX enable live search for patients.}}{88}{figure.56}
+\contentsline {figure}{\numberline {57}{\ignorespaces Form Validation and error handling to prevent erroneous values in database.}}{89}{figure.57}
+\contentsline {figure}{\numberline {58}{\ignorespaces API built with Node.js capable of interfacing w/ database.}}{90}{figure.58}

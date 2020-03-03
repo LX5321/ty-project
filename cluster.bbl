@@ -188,17 +188,37 @@ Apache Foundation.
 \newblock Apache http server project.
 \newblock \url{https://httpd.apache.org/ABOUT_APACHE.html}, Jun 2000.
 
+\bibitem{bootstrap}
+Bootstrap Foundation.
+\newblock Bootstrap.
+\newblock \url{https://getbootstrap.com/}, Jan 2020.
+
 \bibitem{ajax}
 Mozilla Foundation.
 \newblock Getting started with ajax.
 \newblock
   \url{https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started}.
 
+\bibitem{expressjs}
+OpenJS Foundation.
+\newblock Express.js changelog.
+\newblock \url{http://expressjs.com/en/changelog/4x.html}, Jan 2020.
+
+\bibitem{nodejs}
+OpenJS Foundation.
+\newblock Introduction to node.js.
+\newblock \url{https://nodejs.dev/introduction-to-nodejs}, Jan 2020.
+
 \bibitem{rpi}
 Raspberry~Pi Foundation.
 \newblock Raspberry pi 3 model b.
 \newblock \url{https://www.raspberrypi.org/products/raspberry-pi-3-model-b/},
   Jan 2020.
+
+\bibitem{smithhealth}
+Daniel Frutuoso.
+\newblock Smith - smart monitor health system.
+\newblock Master's thesis, University of Coimbra, 2014-2015.
 
 \bibitem{svm}
 Rohith Gandhi.
@@ -279,6 +299,13 @@ B.~Sarojini Ilango and N.~Ramaraj.
 \newblock In {\em Proceedings of the 1st Amrita ACM-W Celebration on Women in
   Computing in India}, A2CWiC ’10, New York, NY, USA, 2010. Association for
   Computing Machinery.
+
+\bibitem{redhat}
+Red~Hat Inc.
+\newblock What is an api?
+\newblock
+  \url{https://www.redhat.com/en/topics/api/what-are-application-programming-interfaces},
+  Jan 2020.
 
 \bibitem{ssh}
 SSH~Communications Inc.
@@ -365,6 +392,20 @@ David~J. Mishelevich.
   Conference}, AFIPS ’81, page 631–639, New York, NY, USA, 1981.
   Association for Computing Machinery.
 
+\bibitem{metrics}
+Steve Mutuvi.
+\newblock Introduction to machine learning model evaluation.
+\newblock
+  \url{https://heartbeat.fritz.ai/introduction-to-machine-learning-model-evaluation-fa859e1b2d7f},
+  Apr 2019.
+
+\bibitem{dzone}
+A.~Tyagi N.A.~Farooqui, Ritika.
+\newblock Prediction model for diabetes mellitus using machine learning
+  techniques.
+\newblock \url{ https://www.researchgate.net/publication/324587610}, March
+  2018.
+
 \bibitem{10.3389/fnbot.2013.00021}
 Alexey Natekin and Alois Knoll.
 \newblock Gradient boosting machines, a tutorial.
@@ -374,6 +415,11 @@ Alexey Natekin and Alois Knoll.
 Sebastian Norena.
 \newblock Python model tuning methods using cross validation and grid search.
 \newblock {\em Medium}, Jun 2018.
+
+\bibitem{chartjs}
+Chart.js Org.
+\newblock Chart.js.
+\newblock \url{https://www.chartjs.org/}, Jan 2020.
 
 \bibitem{10.1145/3320326.3320359}
 Ghafki Oumaima, Elachaak Lotfi, Elouaai Fatiha, and Bouhorma Mohammed.
@@ -386,6 +432,13 @@ Ghafki Oumaima, Elachaak Lotfi, Elouaai Fatiha, and Bouhorma Mohammed.
 Leslie~E. Perreault and Lucila Ohno-Machado.
 \newblock {\em Hospital Information System (HIS)}, page 788–790.
 \newblock John Wiley and Sons Ltd., GBR, 2003.
+
+\bibitem{bodyparser}
+Dustin~John Pfister.
+\newblock The express.js body parser module, and basic full stack development.
+\newblock
+  \url{https://dustinpfister.github.io/2018/05/27/express-body-parser/}, Jan
+  2020.
 
 \bibitem{10.1145/369836.369843}
 Sergio Rajsbaum.
@@ -405,6 +458,12 @@ Ignacio Rodr\'{\i}guez-Rodr\'{\i}guez, Miguel~\'{A}ngel Zamora, and
 \newblock In {\em Proceedings of the 1st International Conference on Internet
   of Things and Machine Learning}, IML ’17, New York, NY, USA, 2017.
   Association for Computing Machinery.
+
+\bibitem{nr}
+Ryan~A. Rossi and Nesreen~K. Ahmed.
+\newblock The network data repository with interactive graph analytics and
+  visualization.
+\newblock In {\em AAAI}, 2015.
 
 \bibitem{article}
 Shashi Sathyanarayana.
