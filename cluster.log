@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.2.13)  4 MAR 2020 09:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.2.13)  4 MAR 2020 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1623,7 +1623,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1729.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1729.
 
 Package rerunfilecheck Info: File `cluster.out' has not changed.
-(rerunfilecheck)             Checksum: 3AC8BB709046B718775DC1F25932A4D0;5160.
+(rerunfilecheck)             Checksum: D3F06F7C5AE12423B52A1956385FD6C7;5160.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1729.
  ) 
 Here is how much of TeX's memory you used:
@@ -1633,7 +1633,7 @@ Here is how much of TeX's memory you used:
  24465 multiletter control sequences out of 15000+600000
  11072 words of font info for 40 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 249i,15n,243p,1786b,1083s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 249i,15n,243p,1789b,1083s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -1646,7 +1646,7 @@ sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on cluster.pdf (104 pages, 3286206 bytes).
+Output written on cluster.pdf (104 pages, 3286174 bytes).
 PDF statistics:
  1536 PDF objects out of 1728 (max. 8388607)
  1290 compressed objects within 13 object streams

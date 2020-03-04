@@ -50,7 +50,7 @@
 \contentsline {subsubsection}{\numberline {10.4.5}Gradient Boosting}{37}{subsubsection.10.4.5}
 \contentsline {subsubsection}{\numberline {10.4.6}Support Vector Machines}{39}{subsubsection.10.4.6}
 \contentsline {subsubsection}{\numberline {10.4.7}Multi-Layered Perceptrons}{41}{subsubsection.10.4.7}
-\contentsline {subsubsection}{\numberline {10.4.8}Comparitive Study}{45}{subsubsection.10.4.8}
+\contentsline {subsubsection}{\numberline {10.4.8}Comparative Study}{45}{subsubsection.10.4.8}
 \contentsline {subsubsection}{\numberline {10.4.9}Performance Results}{46}{subsubsection.10.4.9}
 \contentsline {section}{\numberline {11}Results}{47}{section.11}
 \contentsline {section}{\numberline {12}Algorithm for Load Distribution}{49}{section.12}
