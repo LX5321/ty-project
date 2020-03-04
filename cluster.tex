@@ -64,15 +64,15 @@ A project report submitted in partial fulfilment of the requirement for the degr
 \textbf{Bachelor in Science\\In\\Computer Science}
 \\by\\
 \vspace{1cm}
-\Large
-Alexander Roque Rodrigues
+\textbf{Alexander Roque Rodrigues}
 \\
 \normalsize
-\vspace{0.5cm}
+\vspace{1cm}
 under the supervision of
+\vspace{1cm}
 \\
-\Large
-Ashweta Anand Fondekar
+\LARGE
+\textbf{Ashweta Anand Fondekar}
 \\
 \vspace{3cm}
 \Large
@@ -150,6 +150,51 @@ College Seal
 
 \clearpage
 \newpage
+
+\section{Work Record}
+Name of Department: Department of Computer Science\\
+Name of the Candidate: Alexander Roque Rodrigues\\
+Subject: Computer Science\\
+Year:\\
+Title: MACHINE LEARNING FOR PREDICTING DIABETES MELLITUS\\
+
+
+
+\begingroup
+\setlength{\tabcolsep}{6pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
+\begin{table}[ht]
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Date               & \begin{tabular}[c]{@{}c@{}}Description\\ of work\end{tabular}                                & \begin{tabular}[c]{@{}c@{}}Library/\\ Laboratory/\\ Field work\end{tabular} & \begin{tabular}[c]{@{}c@{}}Signature\\ of\\ Authority\end{tabular} & \begin{tabular}[c]{@{}c@{}}Signature\\ of Guide\end{tabular} \\ \hline
+August 30, 2019    & Began Literature Review.                                                                     & Library                                                                     &                                                                    &                                                              \\ \hline
+September 27, 2019 & \begin{tabular}[c]{@{}c@{}}Shortlisted machine learning\\ algorithms to test.\end{tabular}   & Library                                                                     &                                                                    &                                                              \\ \hline
+October 25, 2019   & \begin{tabular}[c]{@{}c@{}}Presented outline of\\ models and workflow.\end{tabular}          & Library                                                                     &                                                                    &                                                              \\ \hline
+October 27, 2019   & \begin{tabular}[c]{@{}c@{}}Began EDA and machine\\ learning algorithm phase.\end{tabular}    & Laboratory                                                                  &                                                                    &                                                              \\ \hline
+November 22, 2019  & \begin{tabular}[c]{@{}c@{}}Began writing algorithm\\ for distributed computing.\end{tabular} & Laboratory                                                                  &                                                                    &                                                              \\ \hline
+December 13, 2019  & Began API Development.                                                                       & Laboratory                                                                  &                                                                    &                                                              \\ \hline
+January 17, 2020   & \begin{tabular}[c]{@{}c@{}}Began work on\\ Web Application.\end{tabular}                     & Laboratory                                                                  &                                                                    &                                                              \\ \hline
+January 31, 2020   & \begin{tabular}[c]{@{}c@{}}Algorithm subjected to\\ testing and modifications.\end{tabular}  & Laboratory                                                                  &                                                                    &                                                              \\ \hline
+February 21, 2020  & \begin{tabular}[c]{@{}c@{}}Testing whole system\\ complete.\end{tabular}                     & Laboratory                                                                  &                                                                    &                                                              \\ \hline
+\end{tabular}
+\end{table}
+\endgroup
+
+\begin{flushleft}
+\vspace{0.8cm}
+Signature of Student\\
+\vspace{1.5cm}
+Signature of Guide\\
+\end{flushleft}
+
+\begin{flushright}
+\vspace{-0.9cm}
+Signature of HOD\\
+\end{flushright}
+
+\clearpage
+\newpage
+
 \section{Acknowledgements}
 First of all, I am thankful to God as without Him by my side, I would not be here;
 for the strength given to me to fight against all adversities. The following document
@@ -226,14 +271,13 @@ The document is organized as follows:
 \newpage
 \section{Objective}
 \subsection{Existing System}
-Currently, there exist only systems for monitoring diabetes. Examples of these begin Medtronic\cite{medtronic} and Onetouch\cite{onetouch} are used for instantaneous results. There are also multitudes of researches being carried out on diabetic patient and looking for newer traits that can help predict the onset of the sickness.
+Currently, there exist only systems for monitoring diabetes. Using these products diabetes checking is possible for only a single individual. These devices are unable to learn from previous user inputs and therefore generate results for that instant of measurement. Examples of these being Medtronic\cite{medtronic} and Onetouch\cite{onetouch} are used for instantaneous results. There are also multitudes of researches being carried out on diabetic patient and looking for newer traits that can help predict the onset of the sickness.
 
 \subsection{Proposed System}
-The objective of this project is to select an algorithm that is capable of classifying a healthy person from a diabetic person. After which the selected algorithm will be deployed to a group of computers which will help us expand the computing capabilities further than a single computer. The model should then write to a database than can be queried to present data to the users who will interface the said program. The software should also be extensible and scalable in nature to accomodate load in terms of processing power and capable of being interface with other applications and products to expand domain use.
+The objective of this project is to select an algorithm that is capable of classifying a healthy person from a diabetic person using legacy data collected. After which the selected algorithm will be deployed to a group or cluster of computers which will help us expand the computing capabilities further than a single computer. The model should then write to a database than can be queried to present data to the users who will interface the database and results through the program. The software should also be extensible and scalable in nature to accomodate load in terms of processing power and capable of being interfaced with other applications and products to expand domain use.
 
 \newpage
 \section{Project Rationale}
-
 Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood sugar. Hyperglycemia, or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to serious damage to many of the body's systems, especially the nerves and blood vessels.
 
 Taking a look at the number of people with diabetes, the count has risen from 108 million in 1980 to 422 million in 2014.
@@ -321,13 +365,15 @@ As the master nodes:
 \item Remotely update the slave nodes.
 \item Check the status of nodes.
 \item Control the SQL database.
+\item System should have high uptime and low rate of failure.
 \end{itemize}
 
 \subsubsection{Functionalities for Slave Nodes}
 \begin{itemize}
 \item Should have the machine learning algorithm tuned as per specifications.
 \item Remote update should be possible.
-\item Remote connectivity should be possible
+\item Remote connectivity should be possible.
+\item Hot Swap facility should be made available.
 \end{itemize}
 
 
@@ -360,7 +406,7 @@ but it now stands for the recursive initialism PHP: Hypertext Preprocessor. PHP 
 \subsection{AJAX}
 Ajax is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. With Ajax, web applications can send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. By decoupling the data interchange layer from the presentation layer, Ajax allows web pages and, by extension, web applications, to change content dynamically without the need to reload the entire page.\cite{ajax}
 
-Ajax is not a single technology, but rather a group of technologies. HTML and CSS can be used in combination to mark up and style information. The webpage can then be modified by JavaScript to dynamically display—and allow the user to interact with—the new information. The built-in XMLHttpRequest object, or since 2017 the new "fetch()" function within JavaScript, is commonly used to execute Ajax on web pages allowing websites to load content onto the screen without refreshing the page. Ajax is not a new technology, or different language, just existing technologies used in new ways.
+AJAX is not a single technology, but rather a group of technologies. HTML and CSS can be used in combination to mark up and style information. The webpage can then be modified by JavaScript to dynamically display—and allow the user to interact with—the new information. The built-in XMLHttpRequest object, or since 2017 the new "fetch()" function within JavaScript, is commonly used to execute AJAX on web pages allowing websites to load content onto the screen without refreshing the page. AJAX is not a new technology, or different language, just existing technologies used in new ways.
 
 \subsection{GitHub}
 GitHub is a global company that provides hosting for software development version control using Git. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.\cite{git}
@@ -812,7 +858,7 @@ Fold & Precision & F1 Score & Accuracy & Recall & ROC-AUC Curve \\ \hline
 mean & 0.809     & 0.784    & 0.854    & 0.765  & 0.912         \\ \hline
 std  & 0.021     & 0.035    & 0.018    & 0.076  & 0.013         \\ \hline
 \end{tabular}
-\captionof{table}{MLP 5 fold verification.}
+\captionof{table}{Multi Layered Perceptron 5 fold verification.}
 \label{table:7}
 \end{table}
 }
@@ -931,7 +977,7 @@ On the \textbf{slave nodes} end, the slave follows the following algorithm,
 \item Store query id for further use.
 \item Read the columns from the database and plug the values into the machine learning algorithm to generate  classifications on.
 \item After classifying as diabetic or healthy, push the value into the database.
-\item Continue from step 5 until the data sent via the master node in step 4 becomes 0.
+\item Continue from step 5 until the data sent via the master node in step 4 becomes null.
 \end{enumerate}
 
 \newpage
@@ -944,7 +990,7 @@ As an owner of a doctors account a doctor should be able to:
 \begin{itemize}
 \item Add new observations for the machine learning algorithm to predict.
 \item Analyse the patients previous records.
-\item Have a dashboard for patient performance monitoring.
+\item Have a dashboard for patient health and record monitoring.
 \end{itemize}
 
 \subsection{Functionalities for Patients}
@@ -990,7 +1036,7 @@ In short, APIs let you open up access to your resources while maintaining securi
 
 Therefore, I have built a simple node.js API displayed in figure \ref{fig:58} that is capable of interfacing with the database to read and write values to the database. API's also reduce traffic and can be integrated with multitudes of services to scale the functionality of the platform.
 
-To look at the use of an application programming interface, we simply start the server at \texttt{localhost:3000} using the command \texttt{nodemon node server.js}. This starts the server at \texttt{localhost} on port \texttt{3000}. The API can then be inovked by using the url \texttt{http://127.0.0.1:3000/} in any browser or by using CURL in the terminal on Unix systems. The response sent by the server will be in JSON (\textbf{J}ava\textbf{S}cript \textbf{O}bject \textbf{N}otation)format as follows:
+To look at the use of an application programming interface, we simply start the server at \texttt{localhost:3000} using the command \texttt{nodemon node server.js}. This starts the server at \texttt{localhost} on port \texttt{3000}. The API can then be inovked by using the url \texttt{http://127.0.0.1:3000/} in any browser or by using CURL in the terminal on Unix systems. The response sent by the server will be in JSON (\textbf{J}ava\textbf{S}cript \textbf{O}bject \textbf{N}otation) format as follows:
 \begin{center}
 $\lbrace$\texttt{"error":true,"message":"Welcome to the API v1.0.0 by Alexander Roque Rodrigues."}$\rbrace$
 \end{center}
