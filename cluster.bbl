@@ -48,6 +48,12 @@ Lujain AlThunayan, Nahed AlSahdi, and Liyakathunisa Syed.
   Internet of Things, Data and Cloud Computing}, ICC ’17, New York, NY, USA,
   2017. Association for Computing Machinery.
 
+\bibitem{dzone}
+Olu Babacamp.
+\newblock The rise of machine learning.
+\newblock \url{https://dzone.com/articles/the-rise-of-machine-learning}, Aug
+  2018.
+
 \bibitem{10.1145/41526.41531}
 G.~O. Barnett.
 \newblock History of the development of medical information systems at the
@@ -278,6 +284,11 @@ Julien~I.E. Hoffman.
 \newblock {\em Basic Biostatistics for Medical and Biomedical Practitioners}.
 \newblock Academic Press, 2019.
 
+\bibitem{onetouch}
+LifeScan~IP Holdings.
+\newblock Home.
+\newblock \url{https://www.onetouch.com/}, Feb 2018.
+
 \bibitem{10.1145/1281192.1281294}
 Ming Hua and Jian Pei.
 \newblock Cleaning disguised missing data: A heuristic approach.
@@ -319,6 +330,26 @@ SSH~Communications Inc.
   \url{https://www.idf.org/e-library/epidemiology-research/diabetes-atlas/134-idf-diabetes-atlas-8th-edition.html},
   2016.
 \newblock Online; accessed 12 February 2020.
+
+\bibitem{datanormal}
+Urvashi Jaitley.
+\newblock Why data normalization is necessary for machine learning models.
+\newblock
+  \url{https://medium.com/@urvashilluniya/why-data-normalization-is-necessary-for-machine-learning-models-681b65a05029},
+  Oct 2018.
+
+\bibitem{kumarandchitra}
+Chitra Jegan.
+\newblock Classification of diabetes disease using support vector machine.
+\newblock {\em International Journal of Engineering Research and Applications},
+  3:1797 -- 1801, 04 2013.
+
+\bibitem{semisupervised}
+Meng-Long Li Ya-Ping~Fang Jiang~Wu, Yuan-Bo~Diao and Dai-Chuan Ma.
+\newblock A semi-supervised learning based method: Laplacian support vector
+  machine used in diabetes disease diagnosis.
+\newblock {\em Interdisciplinary Sciences: Computational Life Sciences},
+  3:1867--1462, 03 2009.
 
 \bibitem{johannes1988using}
 R~S Johannes.
@@ -379,6 +410,11 @@ Pushkar Mandot.
   parameters?
 \newblock {\em Medium}, Dec 2018.
 
+\bibitem{medtronic}
+Medtronic.
+\newblock Home.
+\newblock \url{https://www.medtronicdiabetes.com/home}, March 2018.
+
 \bibitem{10.5555/212782}
 Donald Michie, D.~J. Spiegelhalter, C.~C. Taylor, and John Campbell, editors.
 \newblock {\em Machine Learning, Neural and Statistical Classification}.
@@ -399,7 +435,7 @@ Steve Mutuvi.
   \url{https://heartbeat.fritz.ai/introduction-to-machine-learning-model-evaluation-fa859e1b2d7f},
   Apr 2019.
 
-\bibitem{dzone}
+\bibitem{predusingml}
 A.~Tyagi N.A.~Farooqui, Ritika.
 \newblock Prediction model for diabetes mellitus using machine learning
   techniques.
@@ -439,6 +475,18 @@ Dustin~John Pfister.
 \newblock
   \url{https://dustinpfister.github.io/2018/05/27/express-body-parser/}, Jan
   2020.
+
+\bibitem{POLAT2007702}
+Kemal Polat and Salih Güneş.
+\newblock An expert system approach based on principal component analysis and
+  adaptive neuro-fuzzy inference system to diagnosis of diabetes disease.
+\newblock {\em Digital Signal Processing}, 17(4):702 -- 710, 2007.
+
+\bibitem{POLAT2008482}
+Kemal Polat, Salih Güneş, and Ahmet Arslan.
+\newblock A cascade learning system for classification of diabetes disease:
+  Generalized discriminant analysis and least square support vector machine.
+\newblock {\em Expert Systems with Applications}, 34(1):482 -- 487, 2008.
 
 \bibitem{10.1145/369836.369843}
 Sergio Rajsbaum.
@@ -512,6 +560,20 @@ Kenneth~O. Stanley.
 \newblock In {\em Proceedings of the 14th Annual Conference Companion on
   Genetic and Evolutionary Computation}, GECCO ’12, page 805–826, New York,
   NY, USA, 2012. Association for Computing Machinery.
+
+\bibitem{cleandata}
+Smishad Thomas.
+\newblock Data cleaning in machine learning: Best practices and methods.
+\newblock
+  \url{https://www.einfochips.com/blog/data-cleaning-in-machine-learning-best-practices-and-methods/},
+  Nov 2018.
+
+\bibitem{biomedcentral}
+R.~Valdez-M.~Gwinn W.~Yu, T.~Liu and M.~Khoury.
+\newblock Application of support vector machine modeling for prediction of
+  common diseases: the case of diabetes and pre-diabetes.
+\newblock {\em BMC Medical Informatics and Decision Making,}, 10:1472--6947, 04
+  2010.
 
 \bibitem{2091}
 P.~D. {Wasserman} and T.~{Schwartz}.

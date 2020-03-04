@@ -3,24 +3,26 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: cluster.aux
 The style file: plain.bst
 Database file #1: bib.bib
-Repeated entry---line 26 of file bib.bib
- : @misc{dzone
- :            ,
-I'm skipping whatever remains of this entry
 Warning--entry type for "git" isn't style-file defined
---line 43 of file bib.bib
-Repeated entry---line 395 of file bib.bib
+--line 135 of file bib.bib
+Repeated entry---line 487 of file bib.bib
  : @misc{svm
  :          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 605 of file bib.bib
+Repeated entry---line 697 of file bib.bib
  : @article{10.1145/500559.500561
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 623 of file bib.bib
+Repeated entry---line 715 of file bib.bib
  : @inproceedings{10.1145/131214.131287
  :                                     ,
 I'm skipping whatever remains of this entry
+Name 1 in "W. Yu, T. Liu, R. Valdez, M. Gwinn, and M. Khoury" has a comma at the end for entry biomedcentral
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "W. Yu, T. Liu, R. Valdez, M. Gwinn, and M. Khoury" for entry biomedcentral
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Jiang Wu, Yuan-Bo Diao, Meng-Long Li, Ya-Ping Fang and Dai-Chuan Ma" for entry semisupervised
+while executing---line 1049 of file plain.bst
 Warning--to sort, need author or key in pandas
 Warning--to sort, need author or key in scikit
 Warning--to sort, need author or key in numpy
@@ -28,45 +30,51 @@ Warning--to sort, need author or key in itertools
 Warning--to sort, need author or key in mysql
 Warning--to sort, need author, editor, or key in niddkd
 Warning--empty author and editor in niddkd
-You've used 86 entries,
+Too many commas in name 1 of "Jiang Wu, Yuan-Bo Diao, Meng-Long Li, Ya-Ping Fang and Dai-Chuan Ma" for entry semisupervised
+while executing---line 1090 of file plain.bst
+Name 1 in "W. Yu, T. Liu, R. Valdez, M. Gwinn, and M. Khoury" has a comma at the end for entry biomedcentral
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "W. Yu, T. Liu, R. Valdez, M. Gwinn, and M. Khoury" for entry biomedcentral
+while executing---line 1090 of file plain.bst
+You've used 96 entries,
             2118 wiz_defined-function locations,
-            937 strings with 17784 characters,
-and the built_in function-call counts, 24307 in all, are:
-= -- 2469
-> -- 901
+            989 strings with 19551 characters,
+and the built_in function-call counts, 27074 in all, are:
+= -- 2740
+> -- 1000
 < -- 18
-+ -- 374
-- -- 282
-* -- 1196
-:= -- 3839
-add.period$ -- 276
-call.type$ -- 86
-change.case$ -- 393
++ -- 418
+- -- 312
+* -- 1371
+:= -- 4296
+add.period$ -- 306
+call.type$ -- 96
+change.case$ -- 438
 chr.to.int$ -- 0
-cite$ -- 93
-duplicate$ -- 1133
-empty$ -- 2108
-format.name$ -- 282
-if$ -- 5451
+cite$ -- 103
+duplicate$ -- 1223
+empty$ -- 2362
+format.name$ -- 312
+if$ -- 6040
 int.to.chr$ -- 0
-int.to.str$ -- 86
-missing$ -- 50
-newline$ -- 430
-num.names$ -- 161
-pop$ -- 581
+int.to.str$ -- 96
+missing$ -- 55
+newline$ -- 480
+num.names$ -- 181
+pop$ -- 636
 preamble$ -- 1
-purify$ -- 313
+purify$ -- 348
 quote$ -- 0
-skip$ -- 979
+skip$ -- 1052
 stack$ -- 0
-substring$ -- 865
-swap$ -- 364
+substring$ -- 1060
+swap$ -- 374
 text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 332
+type$ -- 372
 warning$ -- 7
-while$ -- 186
-width$ -- 88
-write$ -- 945
-(There were 4 error messages)
+while$ -- 211
+width$ -- 98
+write$ -- 1050
+(There were 9 error messages)
